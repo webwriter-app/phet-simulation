@@ -1,6 +1,7 @@
 {
   "name": "@webwriter/phet-simulation",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "description": "Collection of web templates for interactive animations from PhET that visualise a variety of topics from the fields of physics, chemistry and mathematics.",
   "keywords": [
     "webwriter-widget"
   ],
@@ -114,7 +115,8 @@
     "./snippets/molarity.html": "./snippets/molarity.html",
     "./snippets/ohms-law.html": "./snippets/ohms-law.html",
     "./snippets/resistance-in-a-wire.html": "./snippets/resistance-in-a-wire.html",
-    "./snippets/build-an-atom.html": "./snippets/build-an-atom.html"
+    "./snippets/build-an-atom.html": "./snippets/build-an-atom.html",
+    "./icon": "./icon.svg"
   },
   "editingConfig": {
     ".": {
