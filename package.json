@@ -1,6 +1,6 @@
 {
     "name": "@webwriter/phet-simulation",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Collection of web templates for interactive animations from PhET that visualise a variety of topics from the fields of physics, chemistry and mathematics.",
     "keywords": [
         "webwriter-widget",
@@ -133,6 +133,9 @@
         ".": {
             "label": {
                 "_": "PhET Simulation"
+            },
+            "description": {
+                "de": "Sammlung von Webvorlagen für interaktive Animationen von PhET, die eine Vielzahl von Themen aus den Bereichen Physik, Chemie und Mathematik umfassen."
             }
         },
         "./snippets/center-and-variability": {
