@@ -1,9 +1,12 @@
 {
     "name": "@webwriter/phet-simulation",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Collection of web templates for interactive animations from PhET that visualise a variety of topics from the fields of physics, chemistry and mathematics.",
     "keywords": [
         "webwriter-widget",
+        "widget-simulational",
+        "widget-conceptual",
+        "widget-contextual",
         "widget-lang-en",
         "widget-online",
         "iscedf2013-05",
