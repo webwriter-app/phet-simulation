@@ -1,0 +1,3 @@
+sims/*.js linguist-generated=true
+sims/LICENSE-* linguist-generated=true whitespace=-blank-at-eof
+sims/adapters.js linguist-generated=false

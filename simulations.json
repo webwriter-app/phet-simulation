@@ -13847,5 +13847,56 @@
             "states-of-matter",
             "states-of-matter-basics"
         ]
+    },
+    "alpha-decay": {
+        "title": "Alpha Decay"
+    },
+    "beta-decay": {
+        "title": "Beta Decay"
+    },
+    "buoyancy": {
+        "title": "Buoyancy"
+    },
+    "buoyancy-basics": {
+        "title": "Buoyancy: Basics"
+    },
+    "faradays-electromagnetic-lab": {
+        "title": "Faraday's Electromagnetic Lab"
+    },
+    "generator": {
+        "title": "Generator"
+    },
+    "magnet-and-compass": {
+        "title": "Magnet and Compass"
+    },
+    "magnets-and-electromagnets": {
+        "title": "Magnets and Electromagnets"
+    },
+    "membrane-transport": {
+        "title": "Membrane Transport"
+    },
+    "models-of-the-hydrogen-atom": {
+        "title": "Models of the Hydrogen Atom"
+    },
+    "number-pairs": {
+        "title": "Number Pairs"
+    },
+    "projectile-data-lab": {
+        "title": "Projectile Data Lab"
+    },
+    "projectile-sampling-distributions": {
+        "title": "Projectile Sampling Distributions"
+    },
+    "quantum-bound-states": {
+        "title": "Quantum Bound States"
+    },
+    "quantum-coin-toss": {
+        "title": "Quantum Coin Toss"
+    },
+    "quantum-measurement": {
+        "title": "Quantum Measurement"
+    },
+    "quantum-wave-interference": {
+        "title": "Quantum Wave Interference"
     }
 }

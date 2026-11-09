@@ -1,0 +1,698 @@
+{
+  "sources": {
+    "acid-base-solutions": {
+      "commit": "4cb2f435402a1d81c0227a5fae5957ba86777fab",
+      "version": "1.4.0-dev.8"
+    },
+    "alpha-decay": {
+      "commit": "8a34707a1a32d50c6d74f94ba0453137599e068e",
+      "version": "1.0.0-dev.0"
+    },
+    "area-builder": {
+      "commit": "28835cf71b5407dec7d80a4007165b208b751bf9",
+      "version": "1.2.0-dev.0"
+    },
+    "area-model-algebra": {
+      "commit": "77b7a63d48282936cc4ec68ae65ad3075d337ded",
+      "version": "1.4.0-dev.0"
+    },
+    "area-model-decimals": {
+      "commit": "b886063d0b0898de5dee264afade95e27d2e1146",
+      "version": "1.3.0-dev.0"
+    },
+    "area-model-introduction": {
+      "commit": "1fe24945a9fa9247be61de7cdd8ef20bc5b1513a",
+      "version": "1.3.0-dev.0"
+    },
+    "area-model-multiplication": {
+      "commit": "1a351bd1b522d7fb5fc90809d6b0cdb5c06d71b0",
+      "version": "1.4.0-dev.0"
+    },
+    "arithmetic": {
+      "commit": "ec9b6baf2ee13e0e2f7b0108b037bbc57a749d2d",
+      "version": "1.3.0-dev.0"
+    },
+    "atomic-interactions": {
+      "commit": "5adbf8855b7cc62c61b1d6ded5a66688261d8e09",
+      "version": "1.3.0-dev.0"
+    },
+    "balancing-act": {
+      "commit": "e437735edde2ae4ed8d14f2fe3668cc80f514164",
+      "version": "1.4.0-dev.2"
+    },
+    "balancing-chemical-equations": {
+      "commit": "ed64420efe4f1a67e3a91b93ccc258b087983753",
+      "version": "2.2.0-dev.0"
+    },
+    "balloons-and-static-electricity": {
+      "commit": "06c1a43c1e9e6f54581f6a24893415377ead99b9",
+      "version": "1.6.0-dev.4"
+    },
+    "beers-law-lab": {
+      "commit": "14c87fd6c248a3264262a11e5780f68242b9bd65",
+      "version": "1.9.0-dev.0"
+    },
+    "bending-light": {
+      "commit": "49561360fb99890cc72ee9669e01c11bc7196374",
+      "version": "1.3.0-dev.0"
+    },
+    "beta-decay": {
+      "commit": "078ada1470c8fd0484f3a706dc095a96f0d64ca7",
+      "version": "1.0.0-dev.0"
+    },
+    "blackbody-spectrum": {
+      "commit": "c61ebbc9b9e3f203ce34a8e5bea2f1f8a094ec46",
+      "version": "1.1.0-dev.0"
+    },
+    "build-a-fraction": {
+      "commit": "687f4a367db31a25e210720778d64baaf575d11b",
+      "version": "1.1.0-dev.0"
+    },
+    "build-a-molecule": {
+      "commit": "a2f9f46bef7b3e6120594516c06c79722f77892d",
+      "version": "1.1.0-dev.2"
+    },
+    "build-a-nucleus": {
+      "commit": "fe06526ab7d96673ab4822cd51c77c12af97814b",
+      "version": "1.2.0-dev.1"
+    },
+    "build-an-atom": {
+      "commit": "3fd3f2b462f95f88727382393a8bfa78167b5528",
+      "version": "1.10.0-dev.0"
+    },
+    "buoyancy": {
+      "commit": "b14b3ea7be8bdd7d4a0a593e756551657da1e785",
+      "version": "1.3.0-dev.2"
+    },
+    "buoyancy-basics": {
+      "commit": "2d380fcc56f039555890703f1cd787b6d130adf0",
+      "version": "1.3.0-dev.0"
+    },
+    "calculus-grapher": {
+      "commit": "f0b9028945a1867fea08093d4cedb1448e91d495",
+      "version": "1.2.0-dev.0"
+    },
+    "capacitor-lab-basics": {
+      "commit": "e5ac54b29a64989778b52b6a36844a4119b899ec",
+      "version": "1.8.0-dev.6"
+    },
+    "center-and-variability": {
+      "commit": "14c524a6e8adc9fb7d65de12ea4d5a4fc15124f7",
+      "version": "1.3.0-dev.0"
+    },
+    "charges-and-fields": {
+      "commit": "184768264db2e08a70932998a03fe47dac6a04e9",
+      "version": "1.1.0-dev.12"
+    },
+    "circuit-construction-kit-ac": {
+      "commit": "f648e14252d25e030a2343e3d787ae1fd67abd6f",
+      "version": "1.1.0-dev.4"
+    },
+    "circuit-construction-kit-ac-virtual-lab": {
+      "commit": "3db4ca70f5e180069b5f90a4f2d8778af3b5b0d7",
+      "version": "1.1.0-dev.0"
+    },
+    "circuit-construction-kit-dc": {
+      "commit": "a9f23a146d9651f34e9f37d8e5efae2e3eeb11db",
+      "version": "1.6.0-dev.0"
+    },
+    "circuit-construction-kit-dc-virtual-lab": {
+      "commit": "32cd00719e84db5950049ae2e0d7435c963569e2",
+      "version": "1.6.0-dev.0"
+    },
+    "collision-lab": {
+      "commit": "0c71664e44a7f18440e3db8c3d8d1549e0f8fb6d",
+      "version": "1.2.0-dev.0"
+    },
+    "color-vision": {
+      "commit": "2d5cc9c9f54081c3d49e05b84b0c18a52e94f2b8",
+      "version": "1.4.0-dev.0"
+    },
+    "concentration": {
+      "commit": "6d755b2ec72078944d1e3148f71298c2ae09541b",
+      "version": "1.9.0-dev.0"
+    },
+    "coulombs-law": {
+      "commit": "543d8c92a359c13adee8f716c5dbaa3a9b63bf9c",
+      "version": "1.1.0-dev.0"
+    },
+    "curve-fitting": {
+      "commit": "9002a66f53f925f3c060bfad0c09c9daf11f9812",
+      "version": "1.1.0-dev.0"
+    },
+    "density": {
+      "commit": "ae4eedabee41e4b67799f4d54f6a847249b04739",
+      "version": "1.3.0-dev.0"
+    },
+    "diffusion": {
+      "commit": "59fef5297bd086f8f2666802b7082810ccff4b7e",
+      "version": "1.2.0-dev.0"
+    },
+    "energy-forms-and-changes": {
+      "commit": "e8201c94ebd3c6721fbcfa0ad91b4c6823bb94bc",
+      "version": "1.5.0-dev.5"
+    },
+    "energy-skate-park": {
+      "commit": "9f56f0addf2b3b4a921f2843d0a6f767694251dd",
+      "version": "1.4.0-dev.1"
+    },
+    "energy-skate-park-basics": {
+      "commit": "a7defc2a7ba9a0fe0e456a6d8e7e4010bc4c3c44",
+      "version": "1.5.0-dev.2"
+    },
+    "equality-explorer": {
+      "commit": "16d9761efdb728ef69c8294d3aa139ef5b22e49d",
+      "version": "1.3.0-dev.0"
+    },
+    "equality-explorer-basics": {
+      "commit": "f267b06d5b877302f0b40ec4319e3faef9db1cf2",
+      "version": "1.3.0-dev.0"
+    },
+    "equality-explorer-two-variables": {
+      "commit": "8023b7f3a2f5104a28dbfc159132467fcaa0b179",
+      "version": "1.3.0-dev.0"
+    },
+    "expression-exchange": {
+      "commit": "6ef5913c91ed8c3ac3fb752e573738a9581d5c94",
+      "version": "1.2.0-dev.2"
+    },
+    "faradays-electromagnetic-lab": {
+      "commit": "8f8933ab413d620db7abf3b3fa91db44e70253bb",
+      "version": "1.1.0-dev.0",
+      "launcherArgs": [
+        "preferences"
+      ]
+    },
+    "faradays-law": {
+      "commit": "e76537584a77762d2cfda66e56d090418f7e13bb",
+      "version": "1.5.0-dev.3"
+    },
+    "forces-and-motion-basics": {
+      "commit": "343c5662f4253e3b62eee78870fed18503088bea",
+      "version": "2.7.0-dev.0"
+    },
+    "fourier-making-waves": {
+      "commit": "44aab71d222b48e908b462e1ab4a073723078106",
+      "version": "1.2.0-dev.0"
+    },
+    "fraction-matcher": {
+      "commit": "f21cf79a908843427b81ff48d555e1751a0d649c",
+      "version": "1.3.0-dev.2"
+    },
+    "fractions-equality": {
+      "commit": "f3e6b2c43d3ff3856ef6772751487cde736f9c35",
+      "version": "1.2.0-dev.0"
+    },
+    "fractions-intro": {
+      "commit": "d8c16e6edb2f402670baa1fbb0ec312440fe4245",
+      "version": "1.1.0-dev.0"
+    },
+    "fractions-mixed-numbers": {
+      "commit": "e2bcc4704cfd0d377cae9239c5d1460f47e62624",
+      "version": "1.1.0-dev.1"
+    },
+    "friction": {
+      "commit": "5e622c311f286f3adf239f30197f6717d2e3699e",
+      "version": "1.7.0-dev.0"
+    },
+    "function-builder": {
+      "commit": "da57c29eef4989fb18b397d8f4fcbbcffb41687a",
+      "version": "1.3.0-dev.3"
+    },
+    "function-builder-basics": {
+      "commit": "9fb71ed96a749e063261a5075f50ef30de2e529c",
+      "version": "1.3.0-dev.2"
+    },
+    "gas-properties": {
+      "commit": "bd757dedf4458672e64abcadb536c2a41ca7f9a3",
+      "version": "1.2.0-dev.9"
+    },
+    "gases-intro": {
+      "commit": "9bf2adfcec4115f6abfa4e6eb8e301aaba555f13",
+      "version": "1.2.0-dev.0"
+    },
+    "gene-expression-essentials": {
+      "commit": "69e1963ba55ee13036f8c9bb344e8b9f1ed90d89",
+      "version": "1.1.0-dev.0"
+    },
+    "generator": {
+      "commit": "9aed9e8a5ffe9d27a2c0358174aecc722e0caeb3",
+      "version": "1.1.0-dev.0",
+      "launcherArgs": [
+        "preferences"
+      ]
+    },
+    "geometric-optics": {
+      "commit": "dbd9965ec98c2672af07484619ab3a2fcceba462",
+      "version": "1.4.0-dev.2"
+    },
+    "geometric-optics-basics": {
+      "commit": "1e08fff2109625343287f427150cd755b5e654d2",
+      "version": "1.4.0-dev.1"
+    },
+    "graphing-lines": {
+      "commit": "433706d73a33f1b5d73334fae45cb6c2b656cdf3",
+      "version": "1.5.0-dev.0"
+    },
+    "graphing-quadratics": {
+      "commit": "ca511937e70248076cca99ecbcc2c3f609524f6d",
+      "version": "1.5.0-dev.0"
+    },
+    "graphing-slope-intercept": {
+      "commit": "b90737ca60088322cbed1c8104d53d28e03717db",
+      "version": "1.3.0-dev.0"
+    },
+    "gravity-and-orbits": {
+      "commit": "66b21a35fbe9fa28e7bbf293bc137c5844e71fc7",
+      "version": "1.7.0-dev.7"
+    },
+    "gravity-force-lab": {
+      "commit": "59ec3b75f96e061c6b7f3b5c50509a4cd1f2e33c",
+      "version": "2.3.0-dev.5"
+    },
+    "gravity-force-lab-basics": {
+      "commit": "26194a8cb9d1a1f6b4af3af8263af9ce2c2b3dbe",
+      "version": "1.2.0-dev.0"
+    },
+    "greenhouse-effect": {
+      "commit": "2ab38d3a46ba1df5c02981d9e97179eb59b8cb25",
+      "version": "1.4.0-dev.0"
+    },
+    "hookes-law": {
+      "commit": "48d5d2cbc5b24f45e0eb20c4f23bfb3f41e76526",
+      "version": "1.3.0-dev.0"
+    },
+    "isotopes-and-atomic-mass": {
+      "commit": "c40a3c5ffebe45375ef91a38cf19d2efe8872d49",
+      "version": "1.2.0-dev.1"
+    },
+    "john-travoltage": {
+      "commit": "b375757164828120eead020f104b2f976d154c95",
+      "version": "1.7.0-dev.1"
+    },
+    "keplers-laws": {
+      "commit": "028794e79a34173957417526834aeee04771abef",
+      "version": "1.3.0-dev.0"
+    },
+    "least-squares-regression": {
+      "commit": "f8898c1dc66ea81648fbb660e57b6ef51ab67b7a",
+      "version": "1.3.0-dev.0"
+    },
+    "magnet-and-compass": {
+      "commit": "b507c619515a0765d8c588c8a932a40e5717b8c2",
+      "version": "1.1.0-dev.0",
+      "launcherArgs": [
+        "preferences"
+      ]
+    },
+    "magnets-and-electromagnets": {
+      "commit": "20e9e3357240dfaa27b68b9b36e96746a0f6df68",
+      "version": "1.1.0-dev.0",
+      "launcherArgs": [
+        "preferences"
+      ]
+    },
+    "make-a-ten": {
+      "commit": "3eb77fe6a76637c0a0e3061fb43b5ec1bbb2aaef",
+      "version": "1.1.0-dev.0"
+    },
+    "masses-and-springs": {
+      "commit": "f69e16e126ae0ab4f6c571cc6e2f7da42a089556",
+      "version": "1.1.0-dev.2"
+    },
+    "masses-and-springs-basics": {
+      "commit": "7e26b71e932bc7728b29b29e316c44698c983363",
+      "version": "1.1.0-dev.1"
+    },
+    "mean-share-and-balance": {
+      "commit": "25524a80e4da6bc4fbecd968da26a8bb716676fa",
+      "version": "1.2.0-dev.0"
+    },
+    "membrane-transport": {
+      "commit": "c999f38b58405ccca50ca03f6830891bd1c766b6",
+      "version": "1.1.0-dev.0"
+    },
+    "models-of-the-hydrogen-atom": {
+      "commit": "dadab50ed6dd3da835d5a6bc0cad99eb20b5eff6",
+      "version": "1.1.0-dev.0"
+    },
+    "molarity": {
+      "commit": "18c41284416bd00da7e2d392ea8ab1ca44574bf5",
+      "version": "1.6.0-dev.6"
+    },
+    "molecule-polarity": {
+      "commit": "bbb6d2967c2be194696f86469554a39d3de73dcf",
+      "version": "2.1.0-dev.0"
+    },
+    "molecule-shapes": {
+      "commit": "42526327588a92ce89aac7513ac0ab446e98c918",
+      "version": "1.7.0-dev.0"
+    },
+    "molecule-shapes-basics": {
+      "commit": "f4158b65529af505bedcfb78948db8a3f8156b0d",
+      "version": "1.7.0-dev.0"
+    },
+    "molecules-and-light": {
+      "commit": "fba6884f817733de01cbace01f48d11f631de80c",
+      "version": "1.6.0-dev.8"
+    },
+    "my-solar-system": {
+      "commit": "6f435a2f5e95bf2ea8cee2b8ad58306cb20415f6",
+      "version": "1.4.0-dev.0"
+    },
+    "natural-selection": {
+      "commit": "8668396d01b1721d385d72392c56374280d22314",
+      "version": "1.6.0-dev.2"
+    },
+    "neuron": {
+      "commit": "29e5572196bea1c2ef61a801d8ba433e7156a8dc",
+      "version": "1.2.0-dev.0"
+    },
+    "normal-modes": {
+      "commit": "97950dfe99e8ce53065370cb626b8e9e3e5972f6",
+      "version": "1.1.0-dev.0"
+    },
+    "number-compare": {
+      "commit": "101181b00e35310752898b482d127b009749f328",
+      "version": "1.1.0-dev.0"
+    },
+    "number-line-distance": {
+      "commit": "befc386dab329f6797f71f5452d94d29a6f7c7ec",
+      "version": "1.2.0-dev.1"
+    },
+    "number-line-integers": {
+      "commit": "d861a540df5a14fabcc47379748b140fa7c1400c",
+      "version": "1.3.0-dev.0"
+    },
+    "number-line-operations": {
+      "commit": "79ccba4fda0d692a8aba290e411e07e1c30937e8",
+      "version": "1.2.0-dev.0"
+    },
+    "number-pairs": {
+      "commit": "81cc1c21d38bfa0806daee9ce869dcb25dc57bc6",
+      "version": "2.1.0-dev.0"
+    },
+    "number-play": {
+      "commit": "f4f923426c498953d2442d351345125c35bb7656",
+      "version": "1.2.0-dev.3"
+    },
+    "ohms-law": {
+      "commit": "c3d66432b7497b2ea3e5e45c054f6ae0d0874092",
+      "version": "1.5.0-dev.6"
+    },
+    "pendulum-lab": {
+      "commit": "c87eecd55a11cd4e861d7b842ad944b5a531b358",
+      "version": "1.1.0-dev.5"
+    },
+    "ph-scale": {
+      "commit": "32a7eebca084b5c94fa76bd6801559912d0cb7c0",
+      "version": "1.8.0-dev.0"
+    },
+    "ph-scale-basics": {
+      "commit": "032ae4730c7a484abd3957bce939d08fab0c5ae8",
+      "version": "1.8.0-dev.0"
+    },
+    "plinko-probability": {
+      "commit": "f599410654aa6984218927986e5471d3a239e3dc",
+      "version": "1.2.0-dev.6"
+    },
+    "projectile-data-lab": {
+      "commit": "4b627e4c18896a9eb92aa4db4e240a43c0cf5a34",
+      "version": "1.1.0-dev.8"
+    },
+    "projectile-motion": {
+      "commit": "139ca2065dbb6e9450d0cf222db3d1ad75838b5d",
+      "version": "1.1.0-dev.41"
+    },
+    "projectile-sampling-distributions": {
+      "commit": "89084b161436df06429e948cfcab909281b06c6a",
+      "version": "1.2.0-dev.3"
+    },
+    "proportion-playground": {
+      "commit": "6a70837e9f60aa605eb3b70e2323812caa42c2a2",
+      "version": "1.1.0-dev.3"
+    },
+    "quadrilateral": {
+      "commit": "c93bf61254bb0101f4a6c3eca623246fc6627422",
+      "version": "1.2.0-dev.0"
+    },
+    "quantum-bound-states": {
+      "commit": "b94494b5984a64baa292811c97fb6ae9c0efb758",
+      "version": "1.0.0-dev.0"
+    },
+    "quantum-coin-toss": {
+      "commit": "50edc93c3c4df98c850741f80936d20b9ac83bb4",
+      "version": "1.1.0-dev.0"
+    },
+    "quantum-measurement": {
+      "commit": "a8ba5aa3e5a5e1c5286a3a515f2dc0894d9cc46f",
+      "version": "1.1.0-dev.0"
+    },
+    "quantum-wave-interference": {
+      "commit": "17d1efd55f7688e0d4944575669efe3c3b77b33e",
+      "version": "1.0.0-dev.0"
+    },
+    "ratio-and-proportion": {
+      "commit": "fa5e83043c81b16e45aa28889b8ca58d6110aafb",
+      "version": "1.3.0-dev.2"
+    },
+    "reactants-products-and-leftovers": {
+      "commit": "a97142ecc1964bcc1fa13147c8d93a481d2599d3",
+      "version": "1.4.0-dev.0"
+    },
+    "resistance-in-a-wire": {
+      "commit": "45a4724a4862fd9b4d9fa00299d5f57e638f31a8",
+      "version": "1.7.0-dev.5"
+    },
+    "rutherford-scattering": {
+      "commit": "60de0d0a65431cdbbde0faeff6db229a82537d6d",
+      "version": "1.2.0-dev.4"
+    },
+    "sound-waves": {
+      "commit": "ac0d53da05c1477ecb92c08da8b7fb338f70c9b1",
+      "version": "1.2.0-dev.0"
+    },
+    "states-of-matter": {
+      "commit": "d70a4e51d6851a7f1dcafe7dfaf9b3e745bb03c7",
+      "version": "1.3.0-dev.3"
+    },
+    "states-of-matter-basics": {
+      "commit": "c95ff8e367170f3c72258e662a6b2a6dbc977658",
+      "version": "1.3.0-dev.0"
+    },
+    "trig-tour": {
+      "commit": "1c536cb0c013d0a2dec5e359835e4b0fd04ba6e7",
+      "version": "1.2.0-dev.0"
+    },
+    "under-pressure": {
+      "commit": "25395e0b08554edb3f34bc81da4d93fb9d5a300f",
+      "version": "1.2.0-dev.0"
+    },
+    "unit-rates": {
+      "commit": "c435f6eeba35fa0b1e41aa574143c28357641f8c",
+      "version": "1.2.0-dev.0"
+    },
+    "vector-addition": {
+      "commit": "960224b44c2ac0f09df323960fd976c8af3fe591",
+      "version": "1.3.0-dev.0"
+    },
+    "vector-addition-equations": {
+      "commit": "38be3b6cc3efa551dc23c8542e459cf1776ec719",
+      "version": "1.3.0-dev.0"
+    },
+    "wave-interference": {
+      "commit": "c8a2a6652863f74448a45c2063e9c02fceb38912",
+      "version": "2.1.0-dev.2"
+    },
+    "wave-on-a-string": {
+      "commit": "ec9b7b7af447397d0ae87ad2ad5f3bcd6bde19ac",
+      "version": "1.3.0-dev.0"
+    },
+    "waves-intro": {
+      "commit": "a76642a8427f23e2bc56cc91a549f6aa6fb4bd10",
+      "version": "1.2.0-dev.0"
+    }
+  },
+  "dependencies": {
+    "area-model-common": {
+      "sha": "a05f81fc90e9e4b62e97045ff5333f15c21ffd9e",
+      "branch": "main"
+    },
+    "assert": {
+      "sha": "51cb1f03d29ea7ba229d27533e544e789d5a2a31",
+      "branch": "main"
+    },
+    "axon": {
+      "sha": "82b4e17ccc32d6474aa570b8214c16d179f70ba0",
+      "branch": "main"
+    },
+    "bamboo": {
+      "sha": "daddd45a17019ecdb24bbdd48c43d1b4c8d61c6f",
+      "branch": "main"
+    },
+    "brand": {
+      "sha": "3748f9717bb6c13642cccd8c76894472f81f721d",
+      "branch": "main"
+    },
+    "chipper": {
+      "sha": "f641e833668bd2befcc4703429674513b8c77e49",
+      "branch": "main"
+    },
+    "circuit-construction-kit-common": {
+      "sha": "70d379a30b3a8dee512474145e44b610600d4f57",
+      "branch": "main"
+    },
+    "counting-common": {
+      "sha": "58d6960c4ff74078d864c9bd09ceb40df6b427ae",
+      "branch": "main"
+    },
+    "density-buoyancy-common": {
+      "sha": "e03a567639f2467457f653a153e0dbb5e80c9606",
+      "branch": "main"
+    },
+    "dot": {
+      "sha": "0ff846769ed8a29c38d0ea13fa2bd231ee06dae5",
+      "branch": "main"
+    },
+    "fluid-pressure-and-flow": {
+      "sha": "32e9c31137881f20978ecdf3679347a793304f29",
+      "branch": "main"
+    },
+    "fractions-common": {
+      "sha": "069376f2c0395a8dce3324d2d92f6dffe46f720e",
+      "branch": "main"
+    },
+    "griddle": {
+      "sha": "a2b35ff18d44bcaade1f6be46b2a5fecbc7c573e",
+      "branch": "main"
+    },
+    "inverse-square-law-common": {
+      "sha": "fc96a5647d443c729c79f609d1be2e679a95085e",
+      "branch": "main"
+    },
+    "joist": {
+      "sha": "edcbaae09a003b909708ce0d04e26c33ae70edc1",
+      "branch": "main"
+    },
+    "kite": {
+      "sha": "b7686ed3ecbae95ae93bdbe16b8eec7141e2a013",
+      "branch": "main"
+    },
+    "mobius": {
+      "sha": "a5af534ad6048335c7b42e7ed3ee94b4d0c05a34",
+      "branch": "main"
+    },
+    "my-solar-system": {
+      "sha": "6f435a2f5e95bf2ea8cee2b8ad58306cb20415f6",
+      "branch": "main"
+    },
+    "nitroglycerin": {
+      "sha": "03b0e470f2eca7a361851e2184740c67eaca8dbb",
+      "branch": "main"
+    },
+    "nuclear-decay-common": {
+      "sha": "fd3edd6b48d4488f11c15896b0bb7463e51e1df0",
+      "branch": "main"
+    },
+    "number-line-common": {
+      "sha": "4608f44539c71d50e7fe2776c6fcbe059e9c9adb",
+      "branch": "main"
+    },
+    "number-suite-common": {
+      "sha": "ce5d9690194f0cfdaf385616939b047e31579e01",
+      "branch": "main"
+    },
+    "perennial-alias": {
+      "sha": "34c814d2f57503198cbe5b34d6dcab1670366a72",
+      "branch": "main"
+    },
+    "phet-core": {
+      "sha": "32a5205cb8820e4fb8cee3507d65475cab4345f4",
+      "branch": "main"
+    },
+    "phetcommon": {
+      "sha": "92defd570c6cbfe33eb8fb29946d7a12086e8102",
+      "branch": "main"
+    },
+    "phetmarks": {
+      "sha": "c15304e819926d3bb276d9f7bbdcc1f5b022668d",
+      "branch": "main"
+    },
+    "query-string-machine": {
+      "sha": "26dc5594df5bcdcb115ea78143e5d969869f1398",
+      "branch": "main"
+    },
+    "scenery": {
+      "sha": "a1d2d0cdc4bd193f1e615e9fc9d478dc0e311920",
+      "branch": "main"
+    },
+    "scenery-phet": {
+      "sha": "28ec8bf39e7f5220559083e69aba66414e7aac70",
+      "branch": "main"
+    },
+    "sherpa": {
+      "sha": "25989fdefee120460c5009ad7f1cf34f423511d6",
+      "branch": "main"
+    },
+    "shred": {
+      "sha": "aa51ff84b3b6f49c4ab216124c37177258c5ebb4",
+      "branch": "main"
+    },
+    "soccer-common": {
+      "sha": "c43d3096c565fda6359eb53c13fe84fe5ed3872e",
+      "branch": "main"
+    },
+    "solar-system-common": {
+      "sha": "8e0fb37fe07e75fdc4e8ca35df7cfacae8cc33d0",
+      "branch": "main"
+    },
+    "states-of-matter": {
+      "sha": "d70a4e51d6851a7f1dcafe7dfaf9b3e745bb03c7",
+      "branch": "main"
+    },
+    "sun": {
+      "sha": "0b80a0b7da64c217c871d6331a7e9b4ac0e8d46f",
+      "branch": "main"
+    },
+    "tambo": {
+      "sha": "619bc99a152b42220384f612af42ed8d4d8198ce",
+      "branch": "main"
+    },
+    "tandem": {
+      "sha": "1941b7519a9b24fc4dbda60e63dc993a50cf2f63",
+      "branch": "main"
+    },
+    "tangible": {
+      "sha": "8193569f3d0c7004ed471541a9360a33b1bb29fb",
+      "branch": "main"
+    },
+    "tappi": {
+      "sha": "c25d0979f38ba45c0556f030bd302d1fdb3a7252",
+      "branch": "main"
+    },
+    "twixt": {
+      "sha": "8a83e0017b1388c7fd36419ed78200693d3bc944",
+      "branch": "main"
+    },
+    "utterance-queue": {
+      "sha": "a1043edf202165df9cf93da6a24ad56b9ca578d6",
+      "branch": "main"
+    },
+    "vegas": {
+      "sha": "c26e0aef7ce1e0bd4a036a2d77f03ba845fa3f02",
+      "branch": "main"
+    },
+    "vibe": {
+      "sha": "6e9d441a784990e98b877b2a3bd6d28d218a5fcc",
+      "branch": "main"
+    }
+  },
+  "babel": {
+    "repository": "https://github.com/phetsims/babel.git",
+    "commit": "40c856350aaa2a771f69232eef2e2dbe2c9b4606",
+    "locales": [
+      "en",
+      "de"
+    ]
+  }
+}
