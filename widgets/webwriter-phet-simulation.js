@@ -67,7 +67,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
         output { display: block; padding: .4em .65em; font: inherit; }
         output[hidden] { display: none; }
       </style>
-      <output role="status">Loading Kepler’s Laws…</output>
+      <output role="status" hidden></output>
     `
     this.#status = shadow.querySelector("output")
   }
@@ -87,7 +87,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     iframe.sandbox.add("allow-scripts", "allow-popups", "allow-popups-to-escape-sandbox")
     iframe.srcdoc = frameSource(this.ownerDocument)
     this.#frame = iframe
-    this.#setStatus("Loading Kepler’s Laws…")
+    this.#setStatus("")
     this.#status.after(iframe)
     this.#visibilityObserver = new IntersectionObserver(([entry]) => {
       if (!this.isConnected || this.#visible === entry.isIntersecting) return
