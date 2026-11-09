@@ -8,6 +8,8 @@ import KeplersLawsModel from '../common/model/KeplersLawsModel.js';
 import KeplersLawsPreferences from '../common/model/KeplersLawsPreferences.js';
 import KeplersLawsScreenView from '../common/view/KeplersLawsScreenView.js';
 
+import installSimulationBridge from './installSimulationBridge.js';
+
 const bridge = 'webwriter-keplers-laws/v1';
 const build = 'keplers-laws@1.2.11-webwriter.1';
 const screenIds = [ 'first-law', 'second-law', 'third-law', 'all-laws' ];
@@ -177,141 +179,18 @@ function screenState( screen: KeplerScreen ) {
   };
 }
 
-function installBridge( sim: Sim, screens: KeplerScreen[] ): void {
-  const adapters = screens.map( screenState );
-  const { visualModel, audioModel, localizationModel } = sim.preferencesModel;
-  const locale = localizationModel.localeProperty;
-  const locales = locale.availableRuntimeLocales;
-
-  const readSnapshot = () => ( {
-    schemaVersion: 1,
-    build,
-    activeScreen: screenIds[ screens.findIndex( screen => screen === sim.selectedScreenProperty.value ) ] ?? 'home',
-    screens: Object.fromEntries( adapters.map( ( adapter, index ) => [ screenIds[ index ], adapter.read() ] ) )
-  } );
-
-  const readPreferences = () => ( {
-    enabledScreens: sim.availableScreensProperty.value.map( index => screenIds[ index - 1 ] ),
-    locale: locale.value,
-    colorProfile: visualModel.colorProfileProperty.value,
-    audio: audioModel.audioEnabledProperty.value ? 'enabled' : 'muted',
-    moreOrbitalData: KeplersLawsPreferences.moreOrbitalDataVisibleProperty.value
-  } );
-
-  const initialSnapshot = readSnapshot();
-
-  const prepareSnapshot = ( input: unknown ) => {
-    const snapshot = input === null ? initialSnapshot : object( input );
-    if ( snapshot.schemaVersion !== 1 || snapshot.build !== build ) {
-      throw new Error( 'This snapshot belongs to a different simulation build or schema.' );
-    }
-    const index = screenIds.findIndex( id => id === snapshot.activeScreen );
-    if ( index < 0 && snapshot.activeScreen !== 'home' ) {
-      throw new Error( 'The saved active screen is unknown.' );
-    }
-    const states = object( snapshot.screens );
-    const changes = adapters.map( ( adapter, i ) => adapter.prepare( states[ screenIds[ i ] ] ) );
-    return () => {
-      changes.forEach( change => change() );
-      const target = index < 0 ? sim.homeScreen : screens[ index ];
-      if ( target && ( target === sim.homeScreen && sim.activeSimScreensProperty.value.length > 1 ||
-                       sim.activeSimScreensProperty.value.includes( target ) ) ) {
-        sim.selectedScreenProperty.value = target;
-      }
-    };
-  };
-
-  const preparePreferences = ( input: unknown ) => {
-    const settings = object( input );
-    const { enabledScreens, locale: language, colorProfile, audio, moreOrbitalData } = settings;
-    if ( !Array.isArray( enabledScreens ) || !enabledScreens.length ||
-         new Set( enabledScreens ).size !== enabledScreens.length ||
-         !enabledScreens.every( id => screenIds.includes( id ) ) ||
-         typeof language !== 'string' || !locales.includes( language ) ||
-         ( colorProfile !== 'default' && colorProfile !== 'projector' ) ||
-         ( audio !== 'enabled' && audio !== 'muted' ) || typeof moreOrbitalData !== 'boolean' ) {
-      throw new Error( 'The simulation preferences are invalid.' );
-    }
-    return () => {
-      sim.availableScreensProperty.value = enabledScreens.map( id => screenIds.indexOf( id ) + 1 );
-      locale.value = language;
-      visualModel.colorProfileProperty.value = colorProfile;
-      audioModel.audioEnabledProperty.value = audio === 'enabled';
-      KeplersLawsPreferences.moreOrbitalDataVisibleProperty.value = moreOrbitalData;
-    };
-  };
-
-  const connect = ( event: MessageEvent ) => {
-    if ( event.source !== window.parent || event.data?.bridge !== bridge ||
-         event.data.type !== 'connect' || event.ports.length !== 1 ) {
-      return;
-    }
-    window.removeEventListener( 'message', connect );
-    const port = event.ports[ 0 ];
-    port.onmessage = ( { data } ) => {
-      if ( !Number.isSafeInteger( data?.id ) ) {
-        return;
-      }
-      try {
-        if ( data.type === 'read' ) {
-          port.postMessage( { id: data.id, value: { snapshot: readSnapshot(), preferences: readPreferences() } } );
-        }
-        else if ( data.type === 'apply' ) {
-          const value = object( data.value );
-          const applyPreferences = 'preferences' in value ? preparePreferences( value.preferences ) : null;
-          const applySnapshot = 'snapshot' in value ? prepareSnapshot( value.snapshot ) : null;
-          applyPreferences?.();
-          applySnapshot?.();
-          port.postMessage( { id: data.id } );
-        }
-        else {
-          throw new Error( 'Unknown simulation request.' );
-        }
-      }
-      catch ( error ) {
-        port.postMessage( { id: data.id, error: error instanceof Error ? error.message : String( error ) } );
-      }
-    };
-    port.postMessage( {
-      type: 'connected',
-      capabilities: { locales, defaults: readPreferences(), initialSnapshot: JSON.stringify( initialSnapshot ) }
-    } );
-
-    // Signal completed interactions, not animation frames or each drag update.
-    const pointers = new Set<number>();
-    window.addEventListener( 'pointerdown', event => {
-      if ( event.isTrusted ) {
-        pointers.add( event.pointerId );
-        port.postMessage( { type: 'input-start' } );
-      }
-    }, true );
-    const endPointer = ( event: PointerEvent ) => {
-      if ( event.isTrusted && pointers.delete( event.pointerId ) && pointers.size === 0 ) {
-        port.postMessage( { type: 'input-end' } );
-      }
-    };
-    window.addEventListener( 'pointerup', endPointer, true );
-    window.addEventListener( 'pointercancel', endPointer, true );
-    const endInput = ( event: MouseEvent | KeyboardEvent ) => {
-      if ( event.isTrusted && pointers.size === 0 ) {
-        port.postMessage( { type: 'input-end' } );
-      }
-    };
-    window.addEventListener( 'click', endInput, true );
-    window.addEventListener( 'keyup', endInput, true );
-  };
-  window.addEventListener( 'message', connect );
-  // The ready message contains no state. All data travels on the private port.
-  window.parent.postMessage( { bridge, type: 'ready' }, '*' );
-}
-
 export default function installWebWriter( sim: Sim, screens: KeplerScreen[] ): void {
-  if ( window.parent !== window ) {
-    // Joist initializes the models and views asynchronously after sim.start().
-    sim.isConstructionCompleteProperty.lazyLink( complete => {
-      if ( complete ) {
-        installBridge( sim, screens );
+  installSimulationBridge( sim, () => ( {
+    bridge,
+    build,
+    screens: screens.map( ( screen, index ) => ( { id: screenIds[ index ], screen, ...screenState( screen ) } ) ),
+    readPreferences: () => ( { moreOrbitalData: KeplersLawsPreferences.moreOrbitalDataVisibleProperty.value } ),
+    preparePreferences: settings => {
+      const { moreOrbitalData } = settings;
+      if ( typeof moreOrbitalData !== 'boolean' ) {
+        throw new Error( 'The simulation preferences are invalid.' );
       }
-    } );
-  }
+      return () => { KeplersLawsPreferences.moreOrbitalDataVisibleProperty.value = moreOrbitalData; };
+    }
+  } ) );
 }

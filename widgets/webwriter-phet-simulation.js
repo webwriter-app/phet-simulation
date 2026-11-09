@@ -1,25 +1,22 @@
-import simulation from "../sims/keplers-laws.js"
-
-const bridge = "webwriter-keplers-laws/v1"
+import {adapters, defaultType} from "../sims/adapters.js"
+import {hostedSource, supportsProjector} from "../sims/hosted.js"
+import catalog from "../simulations.json" with {type: "json"}
 const interactionSaveDelay = 650
 const playbackSaveInterval = 10000
 
-const screens = [
-  {value: "first-law", label: "First Law"},
-  {value: "second-law", label: "Second Law"},
-  {value: "third-law", label: "Third Law"},
-  {value: "all-laws", label: "All Laws"},
-]
-const screenIds = screens.map(screen => screen.value)
 const snapshotSelector = ':scope > script[type="application/json"][slot="data"]:not([src])'
-const preferenceAttributes = ["enabled-screens", "lang", "color-profile", "audio", "more-orbital-data"]
+const preferenceAttributes = ["lang", "color-profile", "audio", ...[...adapters.values()].flatMap(adapter => [
+  adapter.screenAttribute, ...Object.values(adapter.preferences).map(option => option.attribute),
+])]
 const choices = (values) => values.map(([value, label]) => ({value, label}))
+const simulations = choices(Object.entries(catalog).map(([id, entry]) => [id, entry.title])
+  .sort((a, b) => a[1].localeCompare(b[1], "en")))
 
 function readJSON(value) {
   return value === null ? null : JSON.parse(value)
 }
 
-function frameSource(document) {
+function frameSource(document, simulation) {
   const nonce = document.querySelector("script[nonce]")?.nonce
   if (!nonce) return simulation
 
@@ -31,14 +28,16 @@ function frameSource(document) {
 }
 
 export class WebWriterPhetSimulation extends HTMLElement {
-  static observedAttributes = ["locale", "contenteditable", ...preferenceAttributes]
+  static observedAttributes = ["type", "locale", "contenteditable", ...preferenceAttributes]
 
   static optionGroups = {
+    simulation: {label: "Simulation"},
     screens: {label: "Screens"},
     preferences: {label: "Preferences"},
   }
 
   #frame
+  #frameType
   #status
   #window
   #port
@@ -78,18 +77,11 @@ export class WebWriterPhetSimulation extends HTMLElement {
     this.#window.addEventListener("message", this.#onFrameReady)
     this.#authoredObserver.observe(this, {
       subtree: true, childList: true, characterData: true, attributes: true,
-      attributeFilter: ["slot", "type", "src"],
+      attributeFilter: ["slot", "type", "src", "data-simulation"],
     })
     for (let ancestor = this.parentElement; ancestor; ancestor = ancestor.parentElement) {
       this.#authoredObserver.observe(ancestor, {attributes: true, attributeFilter: ["lang"]})
     }
-    const iframe = this.ownerDocument.createElement("iframe")
-    iframe.title = "Kepler’s Laws · Adapted from PhET"
-    iframe.sandbox.add("allow-scripts", "allow-popups", "allow-popups-to-escape-sandbox")
-    iframe.srcdoc = frameSource(this.ownerDocument)
-    this.#frame = iframe
-    this.#setStatus("")
-    this.#status.after(iframe)
     this.#visibilityObserver = new IntersectionObserver(([entry]) => {
       if (!this.isConnected || this.#visible === entry.isIntersecting) return
       this.#visible = entry.isIntersecting
@@ -97,22 +89,16 @@ export class WebWriterPhetSimulation extends HTMLElement {
     })
     this.#visibilityObserver.observe(this)
     this.ownerDocument.addEventListener("visibilitychange", this.#onVisibilityChange)
-    this.#readyTimer = this.#window.setTimeout(() => {
-      this.#setStatus("Kepler’s Laws did not start. Reload the document to try again.")
-    }, 20000)
+    this.#scheduleApply()
   }
 
   disconnectedCallback() {
-    this.#scheduleSave()
     this.#authoredObserver.disconnect()
     this.#visibilityObserver.disconnect()
     this.#visible = false
     this.ownerDocument.removeEventListener("visibilitychange", this.#onVisibilityChange)
     this.#window.removeEventListener("message", this.#onFrameReady)
-    this.#window.clearTimeout(this.#readyTimer)
-    this.#closePort()
-    this.#frame.remove()
-    this.#frame = undefined
+    this.#unmountSimulation()
     this.#window = undefined
   }
 
@@ -125,10 +111,25 @@ export class WebWriterPhetSimulation extends HTMLElement {
     else this.#scheduleApply()
   }
 
+  get type() {
+    return this.getAttribute("type") ?? defaultType
+  }
+
+  set type(value) {
+    this.setAttribute("type", value)
+  }
+
+  get #adapter() {
+    return adapters.get(this.type)
+  }
+
   get enabledScreens() {
+    const adapter = this.#adapter
+    if (!adapter) return []
+    const screenIds = adapter.screens.map(screen => screen.value)
     let values
     try {
-      values = readJSON(this.getAttribute("enabled-screens"))
+      values = readJSON(this.getAttribute(adapter.screenAttribute))
     }
     catch {
       // Treat an unreadable screen list as the default.
@@ -137,18 +138,20 @@ export class WebWriterPhetSimulation extends HTMLElement {
     return valid.length ? valid : [...screenIds]
   }
 
-  #simulationLocale() {
+  #simulationLocale(locales, fallback = "en") {
     const language = this.getAttribute("lang") ?? this.getAttribute("locale") ??
       this.parentElement?.closest("[lang]")?.getAttribute("lang") ?? ""
     const parts = language.toLowerCase().replaceAll("_", "-").split("-")
-    const locales = this.#capabilities.locales
+    // New catalog entries may only have a title. Let the public build fall
+    // back to English if it does not ship the requested language.
+    if (!locales) return /^[a-z]{2,3}$/.test(parts[0]) ? parts[0] : fallback
     while (parts.length) {
       const tag = parts.join("-")
       const locale = locales.find(candidate => candidate.toLowerCase().replaceAll("_", "-") === tag)
       if (locale) return locale
       parts.pop()
     }
-    return this.#capabilities.defaults.locale
+    return fallback
   }
 
   get colorProfile() {
@@ -159,23 +162,17 @@ export class WebWriterPhetSimulation extends HTMLElement {
     return this.getAttribute("audio") === "muted" ? "muted" : "enabled"
   }
 
-  get moreOrbitalData() {
-    return this.hasAttribute("more-orbital-data")
-  }
-
   get options() {
-    const disabled = !this.isContentEditable || !this.#capabilities
-    return {
-      enabledScreens: {
-        label: "Enabled screens", attribute: "enabled-screens", group: "screens",
-        type: "select", control: "tree", multiple: true, options: screens, disabled,
-        description: "Choose the screens learners can open. Clearing the selection enables all screens.",
-      },
-      moreOrbitalData: {
-        label: "More orbital data", attribute: "more-orbital-data", group: "preferences", type: Boolean, disabled,
+    const disabled = !this.isContentEditable
+    const adapter = this.#adapter
+    const options = {
+      type: {
+        label: "Simulation", attribute: "type", group: "simulation",
+        type: "select", options: simulations, disabled,
       },
       colorProfile: {
-        label: "Color profile", attribute: "color-profile", group: "preferences", type: "select", disabled,
+        label: "Color profile", attribute: "color-profile", group: "preferences",
+        type: "select", disabled: disabled || !(adapter || supportsProjector(this.type)),
         options: choices([["default", "Default"], ["projector", "Projector"]]),
       },
       audio: {
@@ -183,6 +180,18 @@ export class WebWriterPhetSimulation extends HTMLElement {
         options: choices([["enabled", "Enabled"], ["muted", "Muted"]]),
       },
     }
+    if (adapter) {
+      const loading = disabled || !this.#capabilities
+      options.enabledScreens = {
+        label: "Enabled screens", attribute: adapter.screenAttribute, group: "screens",
+        type: "select", control: "tree", multiple: true, options: adapter.screens, disabled: loading,
+        description: "Choose the screens learners can open. Clearing the selection enables all screens.",
+      }
+      for (const [name, option] of Object.entries(adapter.preferences)) {
+        options[name] = {...option, group: "preferences", disabled: loading}
+      }
+    }
+    return options
   }
 
   /** Reads the live model and preferences without editing the document. */
@@ -190,16 +199,60 @@ export class WebWriterPhetSimulation extends HTMLElement {
     // Queue authored changes even if their mutation observer has not run yet.
     this.#scheduleApply()
     await Promise.resolve()
+    if (!this.#adapter) throw new Error("This simulation does not provide checkpoints.")
     return this.#request("read")
   }
 
+  #mountSimulation() {
+    this.#unmountSimulation()
+    const type = this.#frameType = this.type
+    this.#setStatus("")
+    this.#refreshOptions()
+    if (!Object.hasOwn(catalog, type)) {
+      this.#setStatus("Choose a PhET simulation from the Simulation setting.")
+      return
+    }
+
+    const iframe = this.ownerDocument.createElement("iframe")
+    iframe.title = catalog[type].title
+    iframe.sandbox.add("allow-scripts", "allow-popups", "allow-popups-to-escape-sandbox")
+    const adapter = this.#adapter
+    if (!adapter) iframe.sandbox.add("allow-same-origin")
+    this.#frame = iframe
+    this.#status.after(iframe)
+    if (!adapter) return
+
+    this.#readyTimer = this.#window.setTimeout(() => {
+      this.#setStatus(`${iframe.title} did not start. Reload the document to try again.`)
+    }, 20000)
+    adapter.load().then(({default: simulation}) => {
+      if (iframe === this.#frame) iframe.srcdoc = frameSource(this.ownerDocument, simulation)
+    }).catch(() => {
+      if (iframe !== this.#frame) return
+      this.#window.clearTimeout(this.#readyTimer)
+      this.#setStatus(`${iframe.title} could not be loaded.`)
+    })
+  }
+
+  #unmountSimulation() {
+    this.#scheduleSave()
+    this.#window.clearTimeout(this.#readyTimer)
+    this.#closePort()
+    this.#frame?.remove()
+    this.#frame = undefined
+    this.#frameType = undefined
+  }
+
   #onFrameReady = event => {
+    const bridge = this.#adapter?.bridge
+    if (!bridge || this.#frameType !== this.type) return
     if (this.#port || event.source !== this.#frame?.contentWindow || event.origin !== "null" ||
         event.data?.bridge !== bridge || event.data.type !== "ready") return
 
     const channel = new MessageChannel()
     this.#port = channel.port1
     channel.port1.onmessage = ({data}) => {
+      if (this.#port !== channel.port1 || this.#frameType !== this.type) return
       if (data?.type === "connected") {
         this.#window.clearTimeout(this.#readyTimer)
         this.#capabilities = data.capabilities
@@ -284,7 +337,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
         this.#lastSnapshot = serialized
         this.#writeSnapshot(serialized)
       }
-      const playing = snapshot.screens[snapshot.activeScreen]?.timing.playing
+      const playing = this.#adapter.isPlaying(snapshot)
       this.#scheduleSave(playing ? playbackSaveInterval : undefined)
     }
     catch {
@@ -293,12 +346,17 @@ export class WebWriterPhetSimulation extends HTMLElement {
   }
 
   #readSnapshot() {
-    const value = this.querySelector(snapshotSelector)?.textContent.trim()
+    const value = this.#snapshotBlock()?.textContent.trim()
     return !value || value === "null" ? null : value
   }
 
+  #snapshotBlock() {
+    return [...this.querySelectorAll(snapshotSelector)]
+      .find(block => (block.getAttribute("data-simulation") ?? defaultType) === this.type)
+  }
+
   #writeSnapshot(snapshot) {
-    const existing = this.querySelector(snapshotSelector)
+    const existing = this.#snapshotBlock()
     const block = existing ?? this.ownerDocument.createElement("script")
     if (block.childNodes.length === 1 && block.firstChild.nodeType === Node.TEXT_NODE) {
       block.firstChild.data = snapshot
@@ -307,6 +365,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     if (!existing) {
       block.type = "application/json"
       block.slot = "data"
+      if (this.type !== defaultType) block.setAttribute("data-simulation", this.type)
       this.append(block)
     }
   }
@@ -314,18 +373,29 @@ export class WebWriterPhetSimulation extends HTMLElement {
   #readPreferences() {
     return JSON.stringify({
       enabledScreens: this.enabledScreens,
-      locale: this.#simulationLocale(),
+      locale: this.#simulationLocale(this.#capabilities.locales, this.#capabilities.defaults.locale),
       colorProfile: this.colorProfile,
       audio: this.audio,
-      moreOrbitalData: this.moreOrbitalData,
+      ...Object.fromEntries(Object.entries(this.#adapter.preferences).map(([name, option]) =>
+        [name, this.hasAttribute(option.attribute)])),
     })
   }
 
   #scheduleApply() {
-    if (this.#scheduled || !this.#capabilities) return
+    if (this.#scheduled || !this.isConnected) return
     this.#scheduled = true
     queueMicrotask(() => {
       this.#scheduled = false
+      if (!this.isConnected) return
+      if (this.#frameType !== this.type) this.#mountSimulation()
+      if (!this.#adapter && this.#frame) {
+        const {translations} = catalog[this.type]
+        const source = hostedSource(this.type, {
+          locale: this.#simulationLocale(translations && Object.keys(translations)),
+          audio: this.audio, colorProfile: this.colorProfile,
+        })
+        if (this.#frame.src !== source) this.#frame.src = source
+      }
       if (!this.#capabilities) return
       const snapshot = this.#readSnapshot()
       const preferences = this.#readPreferences()

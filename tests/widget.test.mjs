@@ -48,7 +48,10 @@ async function browserInput(profile, pageURL) {
 test("Kepler’s Laws saves author interactions and restores authored state in a sandboxed browser frame", {timeout: 50000}, async () => {
   assert.ok(browser && existsSync(browser), "Set CHROME_BIN to a Chrome or Chromium executable.")
   const profile = await mkdtemp(join(tmpdir(), "webwriter-phet-test-"))
-  const paths = new Set(["/tests/widget.browser.js", "/widgets/webwriter-phet-simulation.js", "/sims/keplers-laws.js"])
+  const paths = new Set([
+    "/tests/widget.browser.js", "/widgets/webwriter-phet-simulation.js", "/sims/keplers-laws.js",
+    "/sims/adapters.js", "/sims/hosted.js", "/simulations.json",
+  ])
   let resolve, reject
   const result = new Promise((onResult, onError) => { resolve = onResult; reject = onError })
   let input
@@ -77,7 +80,8 @@ test("Kepler’s Laws saves author interactions and restores authored state in a
     else if (paths.has(request.url)) {
       try {
         const source = await readFile(new URL(".." + request.url, import.meta.url))
-        response.writeHead(200, {"Content-Type": "text/javascript"}).end(source)
+        const contentType = request.url.endsWith(".json") ? "application/json" : "text/javascript"
+        response.writeHead(200, {"Content-Type": contentType}).end(source)
       }
       catch (error) {
         response.writeHead(404).end()

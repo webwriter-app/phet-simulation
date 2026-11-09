@@ -75,6 +75,8 @@ function installAdapter() {
   }
   const adapterTargetDir = join( sourceDir, 'js/webwriter' );
   mkdirSync( adapterTargetDir, { recursive: true } );
+  copyFileSync( join( packageRoot, 'adaptations/shared/installSimulationBridge.ts' ),
+    join( adapterTargetDir, 'installSimulationBridge.ts' ) );
   for ( const file of adapterFiles ) {
     copyFileSync( join( adapterSourceDir, file ), join( adapterTargetDir, file ) );
   }
@@ -109,7 +111,7 @@ function emitArtifact() {
   const notice = [
     'Kepler\'s Laws 1.2.11 adapted-from-phet, built from the public PhET source release.',
     `Source: ${lock.source.repository} at ${lock.source.commit}.`,
-    `WebWriter adapter sources: adaptations/keplers-laws/*.ts (see ${lock.source.license} license text in LICENSE-keplers-laws).`,
+    `WebWriter adapter sources: adaptations/keplers-laws/ and adaptations/shared/ (see ${lock.source.license} license text in LICENSE-keplers-laws).`,
     'The embedded PhET HTML retains its CC BY-NC 4.0 attribution and bundled third-party license notices.'
   ].join( '\n * ' );
   const moduleSource = `/*\n * ${notice}\n */\nexport default ${JSON.stringify( html )};\n`;

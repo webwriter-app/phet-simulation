@@ -51,7 +51,7 @@ async function run() {
   widget.lang = ""
   same((await widget.getSimulationState()).preferences.locale, initial.preferences.locale, "Empty lang did not use the default")
   document.documentElement.lang = "en"
-  const frame = widget.shadowRoot.querySelector("iframe")
+  let frame = widget.shadowRoot.querySelector("iframe")
   const dimensions = element => [element.clientWidth, element.clientHeight]
   same(dimensions(frame), dimensions(widget), "Iframe fills the widget")
   const defaultHeight = widget.clientHeight
@@ -142,6 +142,29 @@ async function run() {
     return value && value !== started && !JSON.parse(value).screens["third-law"].timing.playing && value
   })
   same(JSON.parse(checkpoint).activeScreen, "third-law", "Captured active screen")
+
+  widget.type = "diffusion"
+  await waitFor(() => widget.shadowRoot.querySelector("iframe")?.src.includes("/diffusion/"))
+  const hosted = widget.shadowRoot.querySelector("iframe")
+  const url = new URL(hosted.src)
+  same(url.origin, "https://phet.colorado.edu", "Hosted simulation origin")
+  same(Object.fromEntries(url.searchParams), {locale: "de", audio: "muted", colorProfile: "projector"},
+    "General settings followed the type change")
+  check(!widget.options.enabledScreens && !widget.options.moreOrbitalData, "Kepler settings leaked into another simulation")
+  same(savedText.data, checkpoint, "Switching simulations overwrote the Kepler checkpoint")
+
+  widget.type = "pendulum-lab"
+  await waitFor(() => widget.shadowRoot.querySelector("iframe")?.src.includes("/pendulum-lab/"))
+  check(!new URL(widget.shadowRoot.querySelector("iframe").src).searchParams.has("colorProfile"),
+    "An unsupported projector profile was sent to Pendulum Lab")
+  same(widget.colorProfile, "projector", "Switching to a sim without projector mode lost the general setting")
+
+  widget.removeAttribute("type")
+  await waitFor(() => !widget.options.enabledScreens.disabled)
+  frame = widget.shadowRoot.querySelector("iframe")
+  const switchedBack = await widget.getSimulationState()
+  same(switchedBack.snapshot, JSON.parse(checkpoint), "Switching back restored the Kepler checkpoint")
+  same(switchedBack.preferences, configured.preferences, "Switching back restored general and Kepler settings")
 
   const incompatible = {...JSON.parse(checkpoint), schemaVersion: 2}
   savedText.data = JSON.stringify(incompatible)

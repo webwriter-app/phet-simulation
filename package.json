@@ -132,7 +132,24 @@
         "./snippets/ohms-law.html": "./snippets/ohms-law.html",
         "./snippets/resistance-in-a-wire.html": "./snippets/resistance-in-a-wire.html",
         "./snippets/build-an-atom.html": "./snippets/build-an-atom.html",
-        "./icon": "./icon.svg"
+        "./icon": "./icon.svg",
+        "./snippets/alpha-decay.html": "./snippets/alpha-decay.html",
+        "./snippets/beta-decay.html": "./snippets/beta-decay.html",
+        "./snippets/buoyancy.html": "./snippets/buoyancy.html",
+        "./snippets/buoyancy-basics.html": "./snippets/buoyancy-basics.html",
+        "./snippets/faradays-electromagnetic-lab.html": "./snippets/faradays-electromagnetic-lab.html",
+        "./snippets/generator.html": "./snippets/generator.html",
+        "./snippets/magnet-and-compass.html": "./snippets/magnet-and-compass.html",
+        "./snippets/magnets-and-electromagnets.html": "./snippets/magnets-and-electromagnets.html",
+        "./snippets/membrane-transport.html": "./snippets/membrane-transport.html",
+        "./snippets/models-of-the-hydrogen-atom.html": "./snippets/models-of-the-hydrogen-atom.html",
+        "./snippets/number-pairs.html": "./snippets/number-pairs.html",
+        "./snippets/projectile-data-lab.html": "./snippets/projectile-data-lab.html",
+        "./snippets/projectile-sampling-distributions.html": "./snippets/projectile-sampling-distributions.html",
+        "./snippets/quantum-bound-states.html": "./snippets/quantum-bound-states.html",
+        "./snippets/quantum-coin-toss.html": "./snippets/quantum-coin-toss.html",
+        "./snippets/quantum-measurement.html": "./snippets/quantum-measurement.html",
+        "./snippets/quantum-wave-interference.html": "./snippets/quantum-wave-interference.html"
     },
     "editingConfig": {
         "./widgets/webwriter-phet-simulation": {
@@ -685,6 +702,91 @@
         "./snippets/build-an-atom": {
             "label": {
                 "_": "Build an Atom"
+            }
+        },
+        "./snippets/alpha-decay": {
+            "label": {
+                "_": "Alpha Decay"
+            }
+        },
+        "./snippets/beta-decay": {
+            "label": {
+                "_": "Beta Decay"
+            }
+        },
+        "./snippets/buoyancy": {
+            "label": {
+                "_": "Buoyancy"
+            }
+        },
+        "./snippets/buoyancy-basics": {
+            "label": {
+                "_": "Buoyancy: Basics"
+            }
+        },
+        "./snippets/faradays-electromagnetic-lab": {
+            "label": {
+                "_": "Faraday's Electromagnetic Lab"
+            }
+        },
+        "./snippets/generator": {
+            "label": {
+                "_": "Generator"
+            }
+        },
+        "./snippets/magnet-and-compass": {
+            "label": {
+                "_": "Magnet and Compass"
+            }
+        },
+        "./snippets/magnets-and-electromagnets": {
+            "label": {
+                "_": "Magnets and Electromagnets"
+            }
+        },
+        "./snippets/membrane-transport": {
+            "label": {
+                "_": "Membrane Transport"
+            }
+        },
+        "./snippets/models-of-the-hydrogen-atom": {
+            "label": {
+                "_": "Models of the Hydrogen Atom"
+            }
+        },
+        "./snippets/number-pairs": {
+            "label": {
+                "_": "Number Pairs"
+            }
+        },
+        "./snippets/projectile-data-lab": {
+            "label": {
+                "_": "Projectile Data Lab"
+            }
+        },
+        "./snippets/projectile-sampling-distributions": {
+            "label": {
+                "_": "Projectile Sampling Distributions"
+            }
+        },
+        "./snippets/quantum-bound-states": {
+            "label": {
+                "_": "Quantum Bound States"
+            }
+        },
+        "./snippets/quantum-coin-toss": {
+            "label": {
+                "_": "Quantum Coin Toss"
+            }
+        },
+        "./snippets/quantum-measurement": {
+            "label": {
+                "_": "Quantum Measurement"
+            }
+        },
+        "./snippets/quantum-wave-interference": {
+            "label": {
+                "_": "Quantum Wave Interference"
             }
         }
     },
