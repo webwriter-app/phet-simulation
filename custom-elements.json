@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "widgets/webwriter-phet-simulation.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Embed an interactive PhET simulation and save experiment checkpoints in the document.\nSee the [usage guide](USAGE.md) for authoring, preferences, and checkpoints.",
+          "name": "WebWriterPhetSimulation",
+          "members": [
+            {
+              "kind": "field",
+              "name": "optionGroups",
+              "type": {
+                "text": "object"
+              },
+              "static": true,
+              "default": "{ simulation: {label: \"Simulation\"}, screens: {label: \"Screens\"}, preferences: {label: \"Preferences\"}, }"
+            },
+            {
+              "kind": "field",
+              "name": "#frame",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#frameType",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#status",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#window",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#port",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#readyTimer",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#capabilities",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#requests",
+              "privacy": "private",
+              "default": "new Map()"
+            },
+            {
+              "kind": "field",
+              "name": "#nextRequest",
+              "privacy": "private",
+              "type": {
+                "text": "number"
+              },
+              "default": "0"
+            },
+            {
+              "kind": "field",
+              "name": "#scheduled",
+              "privacy": "private",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "#applyRevision",
+              "privacy": "private",
+              "type": {
+                "text": "number"
+              },
+              "default": "0"
+            },
+            {
+              "kind": "field",
+              "name": "#lastSnapshot",
+              "privacy": "private",
+              "type": {
+                "text": "null"
+              },
+              "default": "null"
+            },
+            {
+              "kind": "field",
+              "name": "#lastPreferences",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#authoredObserver",
+              "privacy": "private",
+              "default": "new MutationObserver(() => this.#scheduleApply())"
+            },
+            {
+              "kind": "field",
+              "name": "#visibilityObserver",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#visible",
+              "privacy": "private",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "#saveDelay",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#saveTimer",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#saveRevision",
+              "privacy": "private",
+              "type": {
+                "text": "number"
+              },
+              "default": "0"
+            },
+            {
+              "kind": "field",
+              "name": "type"
+            },
+            {
+              "kind": "field",
+              "name": "#adapter",
+              "privacy": "private",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "enabledScreens",
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "#simulationLocale",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "locales"
+                },
+                {
+                  "name": "fallback",
+                  "default": "\"en\""
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "colorProfile",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "audio",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "regionAndCulture",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "options",
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "getSimulationState",
+              "description": "Reads the live model and preferences without editing the document."
+            },
+            {
+              "kind": "method",
+              "name": "#mountSimulation",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "#unmountSimulation",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#onFrameReady",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "#closePort",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "#request",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "type"
+                },
+                {
+                  "name": "value"
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "#onVisibilityChange",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "#canSave",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "#scheduleSave",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "delay"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "#saveSnapshot",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "revision"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "#readSnapshot",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "#snapshotBlock",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "#writeSnapshot",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "snapshot"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "#preferenceOptionValue",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "name"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "#readPreferences",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "#scheduleApply",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "#setStatus",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "message"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "#refreshOptions",
+              "privacy": "private"
+            }
+          ],
+          "events": [
+            {
+              "name": "optionschange",
+              "type": {
+                "text": "Event"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "type",
+              "type": {
+                "text": "string"
+              },
+              "description": "Simulation ID from the catalog. Defaults to keplers-laws."
+            },
+            {
+              "name": "locale"
+            },
+            {
+              "name": "contenteditable"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Simulation language. Inherits the document language when omitted.",
+              "name": "lang"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Set to muted to turn off simulation audio.",
+              "name": "audio"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Set to projector for the projection color profile, where available.",
+              "name": "color-profile"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Region and culture setting, where available.",
+              "name": "region-and-culture"
+            }
+          ],
+          "superclass": {
+            "name": "HTMLElement"
+          },
+          "tagName": "webwriter-phet-simulation",
+          "customElement": true,
+          "modulePath": "widgets/webwriter-phet-simulation.js",
+          "definitionPath": "widgets/webwriter-phet-simulation.js"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "WebWriterPhetSimulation",
+          "declaration": {
+            "name": "WebWriterPhetSimulation",
+            "module": "widgets/webwriter-phet-simulation.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "webwriter-phet-simulation",
+          "declaration": {
+            "name": "WebWriterPhetSimulation",
+            "module": "widgets/webwriter-phet-simulation.js"
+          }
+        }
+      ]
+    }
+  ]
+}

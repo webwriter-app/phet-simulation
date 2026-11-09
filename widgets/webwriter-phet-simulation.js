@@ -51,6 +51,16 @@ function frameSource(document, simulation, locale) {
   return "<!doctype html>" + parsed.documentElement.outerHTML
 }
 
+/**
+ * Embed an interactive PhET simulation and save experiment checkpoints in the document.
+ * See the [usage guide](USAGE.md) for authoring, preferences, and checkpoints.
+ *
+ * @attr {string} type - Simulation ID from the catalog. Defaults to keplers-laws.
+ * @attr {string} lang - Simulation language. Inherits the document language when omitted.
+ * @attr {string} audio - Set to muted to turn off simulation audio.
+ * @attr {string} color-profile - Set to projector for the projection color profile, where available.
+ * @attr {string} region-and-culture - Region and culture setting, where available.
+ */
 export class WebWriterPhetSimulation extends HTMLElement {
   static observedAttributes = ["type", "locale", "contenteditable", ...preferenceAttributes]
 
