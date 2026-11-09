@@ -1,6 +1,8 @@
 import simulation from "../sims/keplers-laws.js"
 
 const bridge = "webwriter-keplers-laws/v1"
+const interactionSaveDelay = 650
+const playbackSaveInterval = 10000
 
 const screens = [
   {value: "first-law", label: "First Law"},
@@ -48,6 +50,11 @@ export class WebWriterPhetSimulation extends HTMLElement {
   #applyRevision = 0
   #lastSnapshot = null
   #lastPreferences
+  #visibilityObserver
+  #visible = false
+  #saveDelay
+  #saveTimer
+  #saveRevision = 0
 
   constructor() {
     super()
@@ -79,12 +86,23 @@ export class WebWriterPhetSimulation extends HTMLElement {
     this.#frame = iframe
     this.#setStatus("Loading Kepler’s Laws…")
     this.#status.after(iframe)
+    this.#visibilityObserver = new IntersectionObserver(([entry]) => {
+      if (!this.isConnected || this.#visible === entry.isIntersecting) return
+      this.#visible = entry.isIntersecting
+      this.#onVisibilityChange()
+    })
+    this.#visibilityObserver.observe(this)
+    this.ownerDocument.addEventListener("visibilitychange", this.#onVisibilityChange)
     this.#readyTimer = this.#window.setTimeout(() => {
       this.#setStatus("Kepler’s Laws did not start. Reload the document to try again.")
     }, 20000)
   }
 
   disconnectedCallback() {
+    this.#scheduleSave()
+    this.#visibilityObserver.disconnect()
+    this.#visible = false
+    this.ownerDocument.removeEventListener("visibilitychange", this.#onVisibilityChange)
     this.#window.removeEventListener("message", this.#onFrameReady)
     this.#window.clearTimeout(this.#readyTimer)
     this.#closePort()
@@ -95,7 +113,10 @@ export class WebWriterPhetSimulation extends HTMLElement {
 
   attributeChangedCallback(name, oldValue, value) {
     if (oldValue === value || !this.isConnected) return
-    if (name === "snapshot" || name === "contenteditable") this.#refreshOptions()
+    if (name !== "snapshot" || value !== this.#lastSnapshot) this.#scheduleSave()
+    if (name === "contenteditable" || (name === "snapshot" && (oldValue === null || value === null))) {
+      this.#refreshOptions()
+    }
     if (name !== "contenteditable") this.#scheduleApply()
   }
 
@@ -159,13 +180,9 @@ export class WebWriterPhetSimulation extends HTMLElement {
   get actions() {
     const disabled = !this.isContentEditable || !this.#capabilities
     return {
-      captureSnapshot: {
-        label: "Capture snapshot", group: "state", disabled,
-        description: "Save the current experiment on all four screens to the document.",
-      },
       restoreSnapshot: {
-        label: "Restore snapshot", group: "state", disabled: disabled || !this.hasAttribute("snapshot"),
-        description: "Return the experiment to the saved checkpoint.",
+        label: "Restore saved state", group: "state", disabled: disabled || !this.hasAttribute("snapshot"),
+        description: "Return the experiment to the last automatically saved state.",
       },
     }
   }
@@ -177,23 +194,9 @@ export class WebWriterPhetSimulation extends HTMLElement {
     return this.#request("read")
   }
 
-  async captureSnapshot() {
-    if (!this.isContentEditable) return
-    const port = this.#port
-    const previousSnapshot = this.getAttribute("snapshot")
-    const previousPreferences = this.#readPreferences()
-    const {snapshot} = await this.getSimulationState()
-    if (port !== this.#port || !this.isContentEditable ||
-        previousSnapshot !== this.getAttribute("snapshot") || previousPreferences !== this.#readPreferences()) {
-      throw new Error("The simulation changed while the snapshot was being captured.")
-    }
-    const serialized = JSON.stringify(snapshot)
-    this.#lastSnapshot = serialized
-    this.setAttribute("snapshot", serialized)
-  }
-
   async restoreSnapshot() {
     if (!this.isContentEditable || !this.hasAttribute("snapshot")) return
+    this.#scheduleSave()
     await this.#request("apply", {snapshot: readJSON(this.getAttribute("snapshot"))})
   }
 
@@ -210,6 +213,12 @@ export class WebWriterPhetSimulation extends HTMLElement {
         this.#setStatus("")
         this.#refreshOptions()
         this.#scheduleApply()
+      }
+      else if (data?.type === "input-start") {
+        this.#scheduleSave()
+      }
+      else if (data?.type === "input-end" && this.isContentEditable) {
+        this.#scheduleSave(interactionSaveDelay)
       }
       else {
         const pending = this.#requests.get(data?.id)
@@ -249,6 +258,42 @@ export class WebWriterPhetSimulation extends HTMLElement {
       this.#requests.set(id, {resolve, reject, timer})
       this.#port.postMessage({id, type, value})
     })
+  }
+
+  #onVisibilityChange = () => this.#scheduleSave(this.#saveDelay)
+
+  #canSave() {
+    return this.isConnected && this.isContentEditable && this.#capabilities &&
+      this.#visible && !this.ownerDocument.hidden
+  }
+
+  #scheduleSave(delay) {
+    const revision = ++this.#saveRevision
+    this.#window?.clearTimeout(this.#saveTimer)
+    this.#saveDelay = delay
+    if (delay !== undefined && this.#canSave()) {
+      this.#saveTimer = this.#window.setTimeout(() => void this.#saveSnapshot(revision), delay)
+    }
+  }
+
+  async #saveSnapshot(revision) {
+    if (revision !== this.#saveRevision || !this.#canSave()) return
+    try {
+      const {snapshot} = await this.getSimulationState()
+      // Undo, redo, remote edits and newer input invalidate a pending read.
+      if (revision !== this.#saveRevision || !this.#canSave()) return
+      const serialized = JSON.stringify(snapshot)
+      const authored = this.getAttribute("snapshot") ?? this.#capabilities.initialSnapshot
+      if (serialized !== authored) {
+        this.#lastSnapshot = serialized
+        this.setAttribute("snapshot", serialized)
+      }
+      const playing = snapshot.screens[snapshot.activeScreen]?.timing.playing
+      this.#scheduleSave(playing ? playbackSaveInterval : undefined)
+    }
+    catch {
+      if (revision === this.#saveRevision) this.#scheduleSave()
+    }
   }
 
   #readPreferences() {

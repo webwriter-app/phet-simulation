@@ -272,7 +272,33 @@ function installBridge( sim: Sim, screens: KeplerScreen[] ): void {
         port.postMessage( { id: data.id, error: error instanceof Error ? error.message : String( error ) } );
       }
     };
-    port.postMessage( { type: 'connected', capabilities: { locales, defaults: readPreferences() } } );
+    port.postMessage( {
+      type: 'connected',
+      capabilities: { locales, defaults: readPreferences(), initialSnapshot: JSON.stringify( initialSnapshot ) }
+    } );
+
+    // Signal completed interactions, not animation frames or each drag update.
+    const pointers = new Set<number>();
+    window.addEventListener( 'pointerdown', event => {
+      if ( event.isTrusted ) {
+        pointers.add( event.pointerId );
+        port.postMessage( { type: 'input-start' } );
+      }
+    }, true );
+    const endPointer = ( event: PointerEvent ) => {
+      if ( event.isTrusted && pointers.delete( event.pointerId ) && pointers.size === 0 ) {
+        port.postMessage( { type: 'input-end' } );
+      }
+    };
+    window.addEventListener( 'pointerup', endPointer, true );
+    window.addEventListener( 'pointercancel', endPointer, true );
+    const endInput = ( event: MouseEvent | KeyboardEvent ) => {
+      if ( event.isTrusted && pointers.size === 0 ) {
+        port.postMessage( { type: 'input-end' } );
+      }
+    };
+    window.addEventListener( 'click', endInput, true );
+    window.addEventListener( 'keyup', endInput, true );
   };
   window.addEventListener( 'message', connect );
   // The ready message contains no state. All data travels on the private port.

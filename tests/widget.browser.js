@@ -8,25 +8,36 @@ function same(actual, expected, message) {
   check(JSON.stringify(actual) === JSON.stringify(expected), `${message}: ${JSON.stringify(actual)}`)
 }
 
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
+
 async function waitFor(read) {
-  for (let attempt = 0; attempt < 250; attempt++) {
+  for (let attempt = 0; attempt < 325; attempt++) {
     const value = await read()
     if (value) return value
-    await new Promise(resolve => setTimeout(resolve, 40))
+    await delay(40)
   }
   throw new Error("The simulation did not reach the expected state.")
+}
+
+async function click(frame, x, y) {
+  const bounds = frame.getBoundingClientRect()
+  const response = await fetch("/test-click", {
+    method: "POST", body: JSON.stringify([bounds.x + x * bounds.width, bounds.y + y * bounds.height]),
+  })
+  check(response.ok, await response.text())
 }
 
 async function run() {
   const widget = document.createElement("webwriter-phet-simulation")
   widget.setAttribute("contenteditable", "")
   document.body.append(widget)
-  await waitFor(() => !widget.actions.captureSnapshot.disabled)
+  await waitFor(() => !widget.options.locale.disabled)
   const initial = await widget.getSimulationState()
   same(initial.preferences.enabledScreens, ["first-law", "second-law", "third-law", "all-laws"], "Default screens")
   check(widget.options.locale.options.some(({value}) => value === "de"), "Missing bundled German translation")
   const frame = widget.shadowRoot.querySelector("iframe")
   check(frame.clientWidth >= 600 && frame.clientHeight >= 350, "Incorrect iframe dimensions")
+  check(!widget.hasAttribute("snapshot"), "Initial load created an unnecessary checkpoint")
 
   const snapshot = structuredClone(initial.snapshot)
   snapshot.activeScreen = "second-law"
@@ -72,8 +83,29 @@ async function run() {
   same(configured.snapshot.activeScreen, "third-law", "Disabled-screen fallback")
   same(configured.snapshot.screens["second-law"].controls.divisions, 6, "Hidden screen retained")
   check(frame === widget.shadowRoot.querySelector("iframe"), "Preference changes reloaded the simulation")
-  await widget.captureSnapshot()
-  const checkpoint = widget.getAttribute("snapshot")
+  const previous = widget.getAttribute("snapshot")
+  await click(frame, 0.46, 0.86) // Play on the Third Law screen.
+  const started = await waitFor(() => {
+    const value = widget.getAttribute("snapshot")
+    return value && value !== previous && JSON.parse(value).screens["third-law"].timing.playing && value
+  })
+  const periodic = await waitFor(() => {
+    const value = widget.getAttribute("snapshot")
+    return value !== started && value
+  })
+  check(JSON.parse(periodic).screens["third-law"].timing.time > JSON.parse(started).screens["third-law"].timing.time,
+    "Continuous playback did not advance the saved checkpoint")
+
+  // WebWriter undo/redo restores the authored attribute. Applying a running
+  // checkpoint must not start a new save loop or destroy the redo entry.
+  widget.setAttribute("snapshot", started)
+  await delay(10500)
+  same(widget.getAttribute("snapshot"), started, "Playback overwrote a checkpoint applied by history")
+  await click(frame, 0.46, 0.86) // Pause, which also re-arms automatic saving.
+  const checkpoint = await waitFor(() => {
+    const value = widget.getAttribute("snapshot")
+    return value && value !== started && !JSON.parse(value).screens["third-law"].timing.playing && value
+  })
   same(JSON.parse(checkpoint).activeScreen, "third-law", "Captured active screen")
 
   const incompatible = {...JSON.parse(checkpoint), schemaVersion: 2}
@@ -95,8 +127,12 @@ async function run() {
     try { return (await reopened.getSimulationState()).preferences.locale === "de" }
     catch { return false }
   })
-  check(reopened.actions.captureSnapshot.disabled, "Read mode exposed the authoring action")
+  check(reopened.actions.restoreSnapshot.disabled, "Read mode exposed the authoring action")
   same((await reopened.getSimulationState()).snapshot.screens["second-law"].controls.divisions, 6, "Reopened checkpoint")
+  await click(reopened.shadowRoot.querySelector("iframe"), 0.46, 0.86)
+  await waitFor(async () => (await reopened.getSimulationState()).snapshot.screens["third-law"].timing.playing)
+  await delay(850)
+  same(reopened.getAttribute("snapshot"), checkpoint, "Learner interaction edited the authored checkpoint")
 
   reopened.setAttribute("enabled-screens", '["first-law","second-law","third-law","all-laws"]')
   reopened.removeAttribute("snapshot")
