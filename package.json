@@ -1,6 +1,6 @@
 {
     "name": "@webwriter/phet-simulation",
-    "version": "1.0.7",
+    "version": "2.0.0",
     "description": "Collection of web templates for interactive animations from PhET that visualise a variety of topics from the fields of physics, chemistry and mathematics.",
     "keywords": [
         "webwriter-widget",
@@ -19,9 +19,11 @@
         "animations",
         "PhET"
     ],
-    "license": "MIT",
+    "license": "MIT AND GPL-3.0-only AND CC-BY-NC-4.0",
     "author": "Frederic Salmen <frederic@fsalmen.de>",
     "exports": {
+        "./widgets/webwriter-phet-simulation.js": "./widgets/webwriter-phet-simulation.js",
+        "./sims/keplers-laws.js": "./sims/keplers-laws.js",
         "./snippets/center-and-variability.html": "./snippets/center-and-variability.html",
         "./snippets/build-a-nucleus.html": "./snippets/build-a-nucleus.html",
         "./snippets/keplers-laws.html": "./snippets/keplers-laws.html",
@@ -133,6 +135,10 @@
         "./icon": "./icon.svg"
     },
     "editingConfig": {
+        "./widgets/webwriter-phet-simulation": {
+            "label": "PhET Simulation",
+            "uninsertable": true
+        },
         ".": {
             "label": {
                 "_": "PhET Simulation"
@@ -681,5 +687,10 @@
                 "_": "Build an Atom"
             }
         }
+    },
+    "type": "module",
+    "scripts": {
+        "build:keplers-laws": "node tools/build-keplers-laws.mjs",
+        "test": "node --test tests/*.test.mjs"
     }
 }
