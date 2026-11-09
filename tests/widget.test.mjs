@@ -45,12 +45,12 @@ async function browserInput(profile, pageURL) {
   }
 }
 
-test("Kepler’s Laws saves author interactions and restores authored state in a sandboxed browser frame", {timeout: 50000}, async () => {
+test("PhET adapters save and restore state in sandboxed browser frames", {timeout: 70000}, async () => {
   assert.ok(browser && existsSync(browser), "Set CHROME_BIN to a Chrome or Chromium executable.")
   const profile = await mkdtemp(join(tmpdir(), "webwriter-phet-test-"))
   const paths = new Set([
     "/tests/widget.browser.js", "/widgets/webwriter-phet-simulation.js", "/sims/keplers-laws.js",
-    "/sims/adapters.js", "/sims/hosted.js", "/simulations.json",
+    "/sims/ohms-law.js", "/sims/pendulum-lab.js", "/sims/adapters.js", "/sims/hosted.js", "/simulations.json",
   ])
   let resolve, reject
   const result = new Promise((onResult, onError) => { resolve = onResult; reject = onError })
@@ -100,7 +100,7 @@ test("Kepler’s Laws saves author interactions and restores authored state in a
   chrome.stderr.on("data", data => { diagnostics = (diagnostics + data).slice(-3000) })
   chrome.once("error", reject)
   chrome.once("exit", code => reject(new Error(`Chrome exited early (${code}).\n${diagnostics}`)))
-  const timer = setTimeout(() => reject(new Error(`Browser test did not report a result.\n${diagnostics}`)), 45000)
+  const timer = setTimeout(() => reject(new Error(`Browser test did not report a result.\n${diagnostics}`)), 65000)
   try {
     const {error} = await result
     if (error) assert.fail(`${error}\n${diagnostics}`)

@@ -153,10 +153,10 @@ async function run() {
   check(!widget.options.enabledScreens && !widget.options.moreOrbitalData, "Kepler settings leaked into another simulation")
   same(savedText.data, checkpoint, "Switching simulations overwrote the Kepler checkpoint")
 
-  widget.type = "pendulum-lab"
-  await waitFor(() => widget.shadowRoot.querySelector("iframe")?.src.includes("/pendulum-lab/"))
+  widget.type = "friction"
+  await waitFor(() => widget.shadowRoot.querySelector("iframe")?.src.includes("/friction/"))
   check(!new URL(widget.shadowRoot.querySelector("iframe").src).searchParams.has("colorProfile"),
-    "An unsupported projector profile was sent to Pendulum Lab")
+    "An unsupported projector profile was sent to Friction")
   same(widget.colorProfile, "projector", "Switching to a sim without projector mode lost the general setting")
 
   widget.removeAttribute("type")
@@ -221,10 +221,88 @@ async function run() {
   await click(legacy.shadowRoot.querySelector("iframe"), 0.46, 0.86)
   await waitFor(() => dataBlock(legacy))
   same(legacy.getAttribute("snapshot"), checkpoint, "An automatic save modified the obsolete attribute")
+  legacy.remove()
+}
+
+async function runPilots() {
+  const widget = document.createElement("webwriter-phet-simulation")
+  widget.contentEditable = "true"
+  widget.type = "ohms-law"
+  widget.lang = "de"
+  widget.setAttribute("audio", "muted")
+  widget.setAttribute("color-profile", "projector")
+  document.body.append(widget)
+
+  const read = element => waitFor(async () => {
+    try {
+      const state = await element.getSimulationState()
+      return state.snapshot.build.startsWith(element.type + "@") && state
+    }
+    catch {
+      return false
+    }
+  })
+  const checkpoint = type => widget.querySelector(`script[data-simulation="${type}"]`)
+
+  const ohm = await read(widget)
+  same(ohm.preferences, {enabledScreens: ["circuit"], locale: "de", colorProfile: "default", audio: "muted"},
+    "Ohm's Law applied supported shared settings")
+  check(!widget.options.enabledScreens && widget.options.colorProfile.disabled, "Unsupported controls were available")
+  const ohmState = structuredClone(ohm.snapshot)
+  ohmState.screens.circuit = {voltage: 7, resistance: 250, currentUnit: "amps"}
+  widget.insertAdjacentHTML("beforeend", '<script type="application/json" slot="data" data-simulation="ohms-law"></script>')
+  const ohmBlock = checkpoint("ohms-law")
+  ohmBlock.textContent = JSON.stringify(ohmState)
+  same((await widget.getSimulationState()).snapshot, ohmState, "Ohm's Law restored all controls")
+  ohmBlock.textContent = "null"
+  same((await widget.getSimulationState()).snapshot, ohm.snapshot, "Removing the Ohm's Law checkpoint restored defaults")
+  ohmBlock.textContent = JSON.stringify(ohmState)
+
+  widget.type = "pendulum-lab"
+  const pendulum = await read(widget)
+  same(pendulum.preferences.enabledScreens, ["intro", "energy", "lab"], "Pendulum Lab screens")
+  same(pendulum.preferences.locale, "de", "Language survived switching to Pendulum Lab")
+  const pendulumState = structuredClone(pendulum.snapshot)
+  pendulumState.activeScreen = "lab"
+  const lab = pendulumState.screens.lab
+  lab.playing = false
+  Object.assign(lab.controls, {
+    body: "custom", customGravity: 11, friction: 0.1, numberOfPendula: 2, timeSpeed: 0.125,
+    velocityVisible: true, accelerationVisible: true, periodTraceVisible: true,
+  })
+  Object.assign(lab.pendula[0], {length: 0.8, mass: 1.2, angle: 0.5, angularVelocity: -0.8, thermalEnergy: 0.12})
+  Object.assign(lab.pendula[0].trace, {
+    visible: true, counterClockwise: true, firstAngle: 0.7, secondAngle: null, time: 0.6, points: 2,
+  })
+  Object.assign(lab.periodTimer, {running: true, time: 0.6})
+  Object.assign(lab.stopwatch, {visible: true, time: 3.5, running: true})
+  Object.assign(pendulumState.screens.energy.controls, {energyExpanded: true, energyZoom: 1.3})
+  widget.insertAdjacentHTML("beforeend", '<script type="application/json" slot="data" data-simulation="pendulum-lab"></script>')
+  const pendulumBlock = checkpoint("pendulum-lab")
+  pendulumBlock.textContent = JSON.stringify(pendulumState)
+  same((await widget.getSimulationState()).snapshot, pendulumState, "Pendulum Lab restored motion, tools, and display")
+
+  widget.setAttribute("pendulum-lab-screens", '["intro"]')
+  const hidden = await widget.getSimulationState()
+  same(hidden.snapshot.activeScreen, "intro", "Hiding Lab selected a visible screen")
+  same(hidden.snapshot.screens.lab, lab, "Hiding Lab preserved its experiment")
+  widget.removeAttribute("pendulum-lab-screens")
+  widget.type = "ohms-law"
+  same((await read(widget)).snapshot, ohmState, "Returning to Ohm's Law restored its own checkpoint")
+  same(checkpoint("pendulum-lab").textContent, JSON.stringify(pendulumState), "Switching preserved the other checkpoint")
+
+  const markup = widget.outerHTML.replace('contenteditable="true"', 'type-test=""')
+  widget.remove()
+  document.body.insertAdjacentHTML("beforeend", markup)
+  const reopened = document.querySelector("[type-test]")
+  same((await read(reopened)).snapshot, ohmState, "Reader restored Ohm's Law from document HTML")
+  reopened.type = "pendulum-lab"
+  same((await read(reopened)).snapshot, pendulumState, "Reader restored Pendulum Lab from document HTML")
 }
 
 try {
   await run()
+  await runPilots()
   await fetch("/test-result", {method: "POST", body: "{}"})
 }
 catch (error) {

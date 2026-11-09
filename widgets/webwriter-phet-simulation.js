@@ -6,8 +6,8 @@ const playbackSaveInterval = 10000
 
 const snapshotSelector = ':scope > script[type="application/json"][slot="data"]:not([src])'
 const preferenceAttributes = ["lang", "color-profile", "audio", ...[...adapters.values()].flatMap(adapter => [
-  adapter.screenAttribute, ...Object.values(adapter.preferences).map(option => option.attribute),
-])]
+  adapter.screenAttribute, ...Object.values(adapter.preferences ?? {}).map(option => option.attribute),
+].filter(Boolean))]
 const choices = (values) => values.map(([value, label]) => ({value, label}))
 const simulations = choices(Object.entries(catalog).map(([id, entry]) => [id, entry.title])
   .sort((a, b) => a[1].localeCompare(b[1], "en")))
@@ -16,13 +16,17 @@ function readJSON(value) {
   return value === null ? null : JSON.parse(value)
 }
 
-function frameSource(document, simulation) {
+function frameSource(document, simulation, locale) {
+  // Some upstream controls read their strings only during construction.
+  const initialLocale = JSON.stringify(locale).replaceAll("<", "\\u003c")
+  const source = simulation.replace("window.phet.chipper.locale = 'en';",
+    () => `window.phet.chipper.locale = ${initialLocale};`)
   const nonce = document.querySelector("script[nonce]")?.nonce
-  if (!nonce) return simulation
+  if (!nonce) return source
 
   // The sandboxed document inherits WebWriter's CSP. Its bundled scripts use
   // the same nonce as the widget modules authorized by the document.
-  const parsed = new DOMParser().parseFromString(simulation, "text/html")
+  const parsed = new DOMParser().parseFromString(source, "text/html")
   for (const script of parsed.scripts) script.setAttribute("nonce", nonce)
   return "<!doctype html>" + parsed.documentElement.outerHTML
 }
@@ -127,6 +131,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     const adapter = this.#adapter
     if (!adapter) return []
     const screenIds = adapter.screens.map(screen => screen.value)
+    if (!adapter.screenAttribute) return screenIds
     let values
     try {
       values = readJSON(this.getAttribute(adapter.screenAttribute))
@@ -154,6 +159,11 @@ export class WebWriterPhetSimulation extends HTMLElement {
     return fallback
   }
 
+  #catalogLocale() {
+    const {translations} = catalog[this.type]
+    return this.#simulationLocale(translations && Object.keys(translations))
+  }
+
   get colorProfile() {
     return this.getAttribute("color-profile") === "projector" ? "projector" : "default"
   }
@@ -165,6 +175,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
   get options() {
     const disabled = !this.isContentEditable
     const adapter = this.#adapter
+    const projector = adapter ? this.#capabilities?.colorProfiles.includes("projector") : supportsProjector(this.type)
     const options = {
       type: {
         label: "Simulation", attribute: "type", group: "simulation",
@@ -172,7 +183,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
       },
       colorProfile: {
         label: "Color profile", attribute: "color-profile", group: "preferences",
-        type: "select", disabled: disabled || !(adapter || supportsProjector(this.type)),
+        type: "select", disabled: disabled || !projector,
         options: choices([["default", "Default"], ["projector", "Projector"]]),
       },
       audio: {
@@ -180,16 +191,16 @@ export class WebWriterPhetSimulation extends HTMLElement {
         options: choices([["enabled", "Enabled"], ["muted", "Muted"]]),
       },
     }
-    if (adapter) {
-      const loading = disabled || !this.#capabilities
+    const loading = disabled || !this.#capabilities
+    if (adapter?.screenAttribute) {
       options.enabledScreens = {
         label: "Enabled screens", attribute: adapter.screenAttribute, group: "screens",
         type: "select", control: "tree", multiple: true, options: adapter.screens, disabled: loading,
         description: "Choose the screens learners can open. Clearing the selection enables all screens.",
       }
-      for (const [name, option] of Object.entries(adapter.preferences)) {
-        options[name] = {...option, group: "preferences", disabled: loading}
-      }
+    }
+    for (const [name, option] of Object.entries(adapter?.preferences ?? {})) {
+      options[name] = {...option, group: "preferences", disabled: loading}
     }
     return options
   }
@@ -226,7 +237,9 @@ export class WebWriterPhetSimulation extends HTMLElement {
       this.#setStatus(`${iframe.title} did not start. Reload the document to try again.`)
     }, 20000)
     adapter.load().then(({default: simulation}) => {
-      if (iframe === this.#frame) iframe.srcdoc = frameSource(this.ownerDocument, simulation)
+      if (iframe === this.#frame && type === this.type) {
+        iframe.srcdoc = frameSource(this.ownerDocument, simulation, this.#catalogLocale())
+      }
     }).catch(() => {
       if (iframe !== this.#frame) return
       this.#window.clearTimeout(this.#readyTimer)
@@ -337,7 +350,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
         this.#lastSnapshot = serialized
         this.#writeSnapshot(serialized)
       }
-      const playing = this.#adapter.isPlaying(snapshot)
+      const playing = this.#adapter.isPlaying?.(snapshot)
       this.#scheduleSave(playing ? playbackSaveInterval : undefined)
     }
     catch {
@@ -374,9 +387,10 @@ export class WebWriterPhetSimulation extends HTMLElement {
     return JSON.stringify({
       enabledScreens: this.enabledScreens,
       locale: this.#simulationLocale(this.#capabilities.locales, this.#capabilities.defaults.locale),
-      colorProfile: this.colorProfile,
+      colorProfile: this.#capabilities.colorProfiles.includes(this.colorProfile) ?
+        this.colorProfile : this.#capabilities.defaults.colorProfile,
       audio: this.audio,
-      ...Object.fromEntries(Object.entries(this.#adapter.preferences).map(([name, option]) =>
+      ...Object.fromEntries(Object.entries(this.#adapter.preferences ?? {}).map(([name, option]) =>
         [name, this.hasAttribute(option.attribute)])),
     })
   }
@@ -389,9 +403,8 @@ export class WebWriterPhetSimulation extends HTMLElement {
       if (!this.isConnected) return
       if (this.#frameType !== this.type) this.#mountSimulation()
       if (!this.#adapter && this.#frame) {
-        const {translations} = catalog[this.type]
         const source = hostedSource(this.type, {
-          locale: this.#simulationLocale(translations && Object.keys(translations)),
+          locale: this.#catalogLocale(),
           audio: this.audio, colorProfile: this.colorProfile,
         })
         if (this.#frame.src !== source) this.#frame.src = source

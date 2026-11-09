@@ -1,7 +1,4 @@
 // Kepler's Laws WebWriter adapter. Distributed with the adapted simulation under GPL-3.0.
-import NumberProperty from '../../../axon/js/NumberProperty.js';
-import Property from '../../../axon/js/Property.js';
-import Vector2 from '../../../dot/js/Vector2.js';
 import Screen from '../../../joist/js/Screen.js';
 import Sim from '../../../joist/js/Sim.js';
 import KeplersLawsModel from '../common/model/KeplersLawsModel.js';
@@ -9,74 +6,12 @@ import KeplersLawsPreferences from '../common/model/KeplersLawsPreferences.js';
 import KeplersLawsScreenView from '../common/view/KeplersLawsScreenView.js';
 
 import installSimulationBridge from './installSimulationBridge.js';
+import { boolean, enumeration, number, object, prepareFields, readFields, vector } from './stateFields.js';
 
 const bridge = 'webwriter-keplers-laws/v1';
 const build = 'keplers-laws@1.2.11-webwriter.1';
 const screenIds = [ 'first-law', 'second-law', 'third-law', 'all-laws' ];
 type KeplerScreen = Screen<KeplersLawsModel, KeplersLawsScreenView>;
-type Value = boolean | number | string | [ number, number ];
-type Field = {
-  read: () => Value;
-  prepare: ( value: unknown, name: string ) => () => void;
-};
-type Fields = Record<string, Field>;
-
-function object( value: unknown ): Record<string, unknown> {
-  if ( !value || typeof value !== 'object' || Array.isArray( value ) ) {
-    throw new Error( 'Expected a simulation state object.' );
-  }
-  return value as Record<string, unknown>;
-}
-
-function field<T>(
-  property: { value: T },
-  encode: ( value: T ) => Value,
-  decode: ( value: unknown ) => T | undefined
-): Field {
-  return {
-    read: () => encode( property.value ),
-    prepare: ( input, name ) => {
-      const value = decode( input );
-      if ( value === undefined ) {
-        throw new Error( `Invalid simulation state field: ${name}.` );
-      }
-      return () => { property.value = value; };
-    }
-  };
-}
-
-function boolean( property: { value: boolean } ): Field {
-  return field( property, value => value, value => typeof value === 'boolean' ? value : undefined );
-}
-
-function number( property: NumberProperty, integer = false ): Field {
-  return field( property, value => value, value =>
-    typeof value === 'number' && Number.isFinite( value ) &&
-    ( !integer || Number.isInteger( value ) ) && property.range.contains( value ) ? value : undefined
-  );
-}
-
-function vector( property: Property<Vector2> ): Field {
-  return field( property, value => [ value.x, value.y ], value =>
-    Array.isArray( value ) && value.length === 2 && value.every( Number.isFinite ) ?
-    new Vector2( value[ 0 ], value[ 1 ] ) : undefined
-  );
-}
-
-function enumeration<T>( property: Property<T> ): Field {
-  return field( property, value => String( value ), value => property.validValues?.find( item => String( item ) === value ) );
-}
-
-function readFields( fields: Fields ): Record<string, Value> {
-  return Object.fromEntries( Object.entries( fields ).map( ( [ key, binding ] ) => [ key, binding.read() ] ) );
-}
-
-function prepareFields( fields: Fields, state: unknown ): () => void {
-  const values = object( state );
-  const changes = Object.entries( fields ).map( ( [ key, binding ] ) => binding.prepare( values[ key ], key ) );
-  return () => changes.forEach( change => change() );
-}
-
 function screenState( screen: KeplerScreen ) {
   const model = screen.model;
   const visible = screen.view.visibleProperties;
@@ -179,11 +114,13 @@ function screenState( screen: KeplerScreen ) {
   };
 }
 
-export default function installWebWriter( sim: Sim, screens: KeplerScreen[] ): void {
+export default function installWebWriter( sim: Sim ): void {
   installSimulationBridge( sim, () => ( {
     bridge,
     build,
-    screens: screens.map( ( screen, index ) => ( { id: screenIds[ index ], screen, ...screenState( screen ) } ) ),
+    screens: ( sim.simScreens as KeplerScreen[] ).map( ( screen, index ) => ( {
+      id: screenIds[ index ], screen, ...screenState( screen )
+    } ) ),
     readPreferences: () => ( { moreOrbitalData: KeplersLawsPreferences.moreOrbitalDataVisibleProperty.value } ),
     preparePreferences: settings => {
       const { moreOrbitalData } = settings;
