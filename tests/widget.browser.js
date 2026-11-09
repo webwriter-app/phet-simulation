@@ -62,6 +62,10 @@ async function run() {
   widget.style.height = "240px"
   same(dimensions(widget), [360, 300], "Widget minimum height")
   same(dimensions(frame), [360, 300], "Iframe fills the widget at its minimum height")
+  widget.style.maxWidth = "240px"
+  same(dimensions(widget), [300, 300], "Widget minimum width")
+  same(dimensions(frame), [300, 300], "Iframe fills the widget at its minimum width")
+  widget.style.removeProperty("max-width")
   widget.style.removeProperty("height")
   container.style.removeProperty("width")
   const block = dataBlock(widget)

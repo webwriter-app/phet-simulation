@@ -62,7 +62,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     const shadow = this.attachShadow({mode: "open"})
     shadow.innerHTML = `
       <style>
-        :host { display: block; min-inline-size: 0; height: 420px; min-height: 300px; }
+        :host { display: block; min-width: 300px; height: 420px; min-height: 300px; }
         div { display: flex; flex-direction: column; height: 100%; }
         iframe { flex: 1 1 0; min-height: 0; border: 0; width: 100%; }
         output { display: block; padding: .4em .65em; font: inherit; }
