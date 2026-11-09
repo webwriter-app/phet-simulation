@@ -11,7 +11,8 @@ const screens = [
   {value: "all-laws", label: "All Laws"},
 ]
 const screenIds = screens.map(screen => screen.value)
-const preferenceAttributes = ["enabled-screens", "locale", "color-profile", "audio", "more-orbital-data"]
+const snapshotSelector = ':scope > script[type="application/json"][slot="data"]:not([src])'
+const preferenceAttributes = ["enabled-screens", "lang", "color-profile", "audio", "more-orbital-data"]
 const choices = (values) => values.map(([value, label]) => ({value, label}))
 
 function readJSON(value) {
@@ -30,10 +31,9 @@ function frameSource(document) {
 }
 
 export class WebWriterPhetSimulation extends HTMLElement {
-  static observedAttributes = ["snapshot", "contenteditable", ...preferenceAttributes]
+  static observedAttributes = ["snapshot", "locale", "contenteditable", ...preferenceAttributes]
 
   static optionGroups = {
-    state: {label: "Simulation state"},
     screens: {label: "Screens"},
     preferences: {label: "Preferences"},
   }
@@ -50,6 +50,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
   #applyRevision = 0
   #lastSnapshot = null
   #lastPreferences
+  #authoredObserver = new MutationObserver(() => this.#scheduleApply())
   #visibilityObserver
   #visible = false
   #saveDelay
@@ -79,6 +80,13 @@ export class WebWriterPhetSimulation extends HTMLElement {
   connectedCallback() {
     this.#window = this.ownerDocument.defaultView
     this.#window.addEventListener("message", this.#onFrameReady)
+    this.#authoredObserver.observe(this, {
+      subtree: true, childList: true, characterData: true, attributes: true,
+      attributeFilter: ["slot", "type", "src"],
+    })
+    for (let ancestor = this.parentElement; ancestor; ancestor = ancestor.parentElement) {
+      this.#authoredObserver.observe(ancestor, {attributes: true, attributeFilter: ["lang"]})
+    }
     const iframe = this.ownerDocument.createElement("iframe")
     iframe.title = "Kepler’s Laws · Adapted from PhET"
     iframe.sandbox.add("allow-scripts", "allow-popups", "allow-popups-to-escape-sandbox")
@@ -100,6 +108,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
 
   disconnectedCallback() {
     this.#scheduleSave()
+    this.#authoredObserver.disconnect()
     this.#visibilityObserver.disconnect()
     this.#visible = false
     this.ownerDocument.removeEventListener("visibilitychange", this.#onVisibilityChange)
@@ -113,11 +122,11 @@ export class WebWriterPhetSimulation extends HTMLElement {
 
   attributeChangedCallback(name, oldValue, value) {
     if (oldValue === value || !this.isConnected) return
-    if (name !== "snapshot" || value !== this.#lastSnapshot) this.#scheduleSave()
-    if (name === "contenteditable" || (name === "snapshot" && (oldValue === null || value === null))) {
+    if (name === "contenteditable") {
+      this.#scheduleSave()
       this.#refreshOptions()
     }
-    if (name !== "contenteditable") this.#scheduleApply()
+    else this.#scheduleApply()
   }
 
   get enabledScreens() {
@@ -132,9 +141,18 @@ export class WebWriterPhetSimulation extends HTMLElement {
     return valid.length ? valid : [...screenIds]
   }
 
-  get locale() {
-    const value = this.getAttribute("locale")
-    return this.#capabilities?.locales.includes(value) ? value : this.#capabilities?.defaults.locale ?? "en"
+  #simulationLocale() {
+    const language = this.getAttribute("lang") ?? this.getAttribute("locale") ??
+      this.parentElement?.closest("[lang]")?.getAttribute("lang") ?? ""
+    const parts = language.toLowerCase().replaceAll("_", "-").split("-")
+    const locales = this.#capabilities.locales
+    while (parts.length) {
+      const tag = parts.join("-")
+      const locale = locales.find(candidate => candidate.toLowerCase().replaceAll("_", "-") === tag)
+      if (locale) return locale
+      parts.pop()
+    }
+    return this.#capabilities.defaults.locale
   }
 
   get colorProfile() {
@@ -151,8 +169,6 @@ export class WebWriterPhetSimulation extends HTMLElement {
 
   get options() {
     const disabled = !this.isContentEditable || !this.#capabilities
-    const locales = this.#capabilities?.locales ?? ["en"]
-    const names = new Intl.DisplayNames(["en"], {type: "language"})
     return {
       enabledScreens: {
         label: "Enabled screens", attribute: "enabled-screens", group: "screens",
@@ -170,34 +186,15 @@ export class WebWriterPhetSimulation extends HTMLElement {
         label: "Audio", attribute: "audio", group: "preferences", type: "select", disabled,
         options: choices([["enabled", "Enabled"], ["muted", "Muted"]]),
       },
-      locale: {
-        label: "Language", group: "preferences", type: "select", disabled,
-        options: choices(locales.map(value => [value, names.of(value.replaceAll("_", "-")) ?? value])),
-      },
-    }
-  }
-
-  get actions() {
-    const disabled = !this.isContentEditable || !this.#capabilities
-    return {
-      restoreSnapshot: {
-        label: "Restore saved state", group: "state", disabled: disabled || !this.hasAttribute("snapshot"),
-        description: "Return the experiment to the last automatically saved state.",
-      },
     }
   }
 
   /** Reads the live model and preferences without editing the document. */
   async getSimulationState() {
-    // Let a pending authored attribute update reach the port first.
+    // Queue authored changes even if their mutation observer has not run yet.
+    this.#scheduleApply()
     await Promise.resolve()
     return this.#request("read")
-  }
-
-  async restoreSnapshot() {
-    if (!this.isContentEditable || !this.hasAttribute("snapshot")) return
-    this.#scheduleSave()
-    await this.#request("apply", {snapshot: readJSON(this.getAttribute("snapshot"))})
   }
 
   #onFrameReady = event => {
@@ -278,15 +275,15 @@ export class WebWriterPhetSimulation extends HTMLElement {
 
   async #saveSnapshot(revision) {
     if (revision !== this.#saveRevision || !this.#canSave()) return
+    const authored = this.#readSnapshot()
     try {
       const {snapshot} = await this.getSimulationState()
       // Undo, redo, remote edits and newer input invalidate a pending read.
-      if (revision !== this.#saveRevision || !this.#canSave()) return
-      const serialized = JSON.stringify(snapshot)
-      const authored = this.getAttribute("snapshot") ?? this.#capabilities.initialSnapshot
-      if (serialized !== authored) {
+      if (revision !== this.#saveRevision || !this.#canSave() || authored !== this.#readSnapshot()) return
+      const serialized = JSON.stringify(snapshot).replaceAll("<", "\\u003c")
+      if (serialized !== (authored ?? this.#capabilities.initialSnapshot)) {
         this.#lastSnapshot = serialized
-        this.setAttribute("snapshot", serialized)
+        this.#writeSnapshot(serialized)
       }
       const playing = snapshot.screens[snapshot.activeScreen]?.timing.playing
       this.#scheduleSave(playing ? playbackSaveInterval : undefined)
@@ -296,10 +293,31 @@ export class WebWriterPhetSimulation extends HTMLElement {
     }
   }
 
+  #readSnapshot() {
+    const block = this.querySelector(snapshotSelector)
+    const value = (block ? block.textContent : this.getAttribute("snapshot"))?.trim()
+    return !value || value === "null" ? null : value
+  }
+
+  #writeSnapshot(snapshot) {
+    const existing = this.querySelector(snapshotSelector)
+    const block = existing ?? this.ownerDocument.createElement("script")
+    if (block.childNodes.length === 1 && block.firstChild.nodeType === Node.TEXT_NODE) {
+      block.firstChild.data = snapshot
+    }
+    else block.textContent = snapshot
+    if (!existing) {
+      block.type = "application/json"
+      block.slot = "data"
+      this.append(block)
+    }
+    this.removeAttribute("snapshot")
+  }
+
   #readPreferences() {
     return JSON.stringify({
       enabledScreens: this.enabledScreens,
-      locale: this.locale,
+      locale: this.#simulationLocale(),
       colorProfile: this.colorProfile,
       audio: this.audio,
       moreOrbitalData: this.moreOrbitalData,
@@ -312,8 +330,10 @@ export class WebWriterPhetSimulation extends HTMLElement {
     queueMicrotask(() => {
       this.#scheduled = false
       if (!this.#capabilities) return
-      const snapshot = this.getAttribute("snapshot")
+      const snapshot = this.#readSnapshot()
       const preferences = this.#readPreferences()
+      if (snapshot === this.#lastSnapshot && preferences === this.#lastPreferences) return
+      this.#scheduleSave()
       const port = this.#port
       const changes = []
       if (preferences !== this.#lastPreferences) {
@@ -329,7 +349,6 @@ export class WebWriterPhetSimulation extends HTMLElement {
           changes.push(Promise.reject(new Error("The saved simulation snapshot is invalid.")))
         }
       }
-      if (!changes.length) return
       const revision = ++this.#applyRevision
       Promise.allSettled(changes).then(results => {
         if (port !== this.#port || revision !== this.#applyRevision) return
