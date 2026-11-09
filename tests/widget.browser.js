@@ -52,7 +52,18 @@ async function run() {
   same((await widget.getSimulationState()).preferences.locale, initial.preferences.locale, "Empty lang did not use the default")
   document.documentElement.lang = "en"
   const frame = widget.shadowRoot.querySelector("iframe")
-  check(frame.clientWidth >= 600 && frame.clientHeight >= 350, "Incorrect iframe dimensions")
+  const dimensions = element => [element.clientWidth, element.clientHeight]
+  same(dimensions(frame), dimensions(widget), "Iframe fills the widget")
+  const defaultHeight = widget.clientHeight
+  container.style.width = "360px"
+  same(dimensions(widget), [360, defaultHeight], "Narrowing the widget leaves its height unchanged")
+  widget.style.height = "480px"
+  same(dimensions(frame), [360, 480], "Iframe follows authored height independently of width")
+  widget.style.height = "240px"
+  same(dimensions(widget), [360, 300], "Widget minimum height")
+  same(dimensions(frame), [360, 300], "Iframe fills the widget at its minimum height")
+  widget.style.removeProperty("height")
+  container.style.removeProperty("width")
   const block = dataBlock(widget)
   const savedText = block.firstChild
   same(savedText.data, "null", "Initial load created an unnecessary checkpoint")
@@ -134,6 +145,10 @@ async function run() {
   const unaffected = await widget.getSimulationState()
   same(unaffected.snapshot.screens["second-law"].controls.divisions, 6, "An incompatible snapshot changed the model")
   same(unaffected.preferences.audio, "enabled", "An incompatible snapshot blocked a preference update")
+  const status = widget.shadowRoot.querySelector("output")
+  await waitFor(() => !status.hidden)
+  check(Math.abs(frame.clientHeight + status.clientHeight - widget.clientHeight) <= 1,
+    "The status and iframe fit inside the widget")
   savedText.data = checkpoint
   widget.setAttribute("audio", "muted")
 
