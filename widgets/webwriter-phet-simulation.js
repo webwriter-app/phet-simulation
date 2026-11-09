@@ -66,10 +66,8 @@ export class WebWriterPhetSimulation extends HTMLElement {
         iframe { display: block; border: 0; width: 100%; height: auto; aspect-ratio: 8 / 5; }
         output { display: block; padding: .4em .65em; font: inherit; }
         output[hidden] { display: none; }
-        small { display: block; margin-block-start: .35em; line-height: 1.4; }
       </style>
       <output role="status">Loading Kepler’s Laws…</output>
-      <small>Adapted from PhET Interactive Simulations, University of Colorado Boulder.</small>
     `
     this.#status = shadow.querySelector("output")
   }
