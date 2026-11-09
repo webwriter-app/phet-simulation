@@ -210,6 +210,9 @@ export class WebWriterPhetSimulation extends HTMLElement {
         this.#scheduleSave()
       }
       else if (data?.type === "input-end" && this.isContentEditable) {
+        // Focusing the frame lets WebWriter capture the widget through shadow
+        // focus. Wait until the gesture ends since capture can scroll it into view.
+        if (this.shadowRoot.activeElement !== this.#frame) this.#frame.focus({preventScroll: true})
         this.#scheduleSave(interactionSaveDelay)
       }
       else {

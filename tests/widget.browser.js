@@ -100,8 +100,11 @@ async function run() {
   same(configured.snapshot.activeScreen, "third-law", "Disabled-screen fallback")
   same(configured.snapshot.screens["second-law"].controls.divisions, 6, "Hidden screen retained")
   check(frame === widget.shadowRoot.querySelector("iframe"), "Preference changes reloaded the simulation")
+  document.getSelection().setPosition(container, 0)
   const previous = savedText.data
   await click(frame, 0.46, 0.86) // Play on the Third Law screen.
+  await waitFor(() => widget.shadowRoot.activeElement === frame)
+  check(document.getSelection().isCollapsed, "Simulation input created a document range selection")
   const started = await waitFor(() => {
     const value = savedText.data
     return value && value !== previous && JSON.parse(value).screens["third-law"].timing.playing && value
