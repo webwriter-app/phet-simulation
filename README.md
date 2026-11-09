@@ -3,6 +3,8 @@
 
 Explore physics, chemistry, mathematics, and biology with interactive PhET simulations.
 
+The original simulations are by PhET Interactive Simulations at the University of Colorado Boulder. Frederic Salmen adapted them for WebWriter. [PhET Interactive Simulations](https://phet.colorado.edu/)
+
 ## Snippets
 [Snippets](https://webwriter.app/docs/snippets/snippets/) are examples and templates using the package's widgets.
 

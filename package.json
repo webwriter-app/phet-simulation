@@ -2,6 +2,10 @@
     "name": "@webwriter/phet-simulation",
     "version": "2.0.0",
     "description": "Explore physics, chemistry, mathematics, and biology with interactive PhET simulations.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/webwriter-app/phet-simulation.git"
+    },
     "keywords": [
         "webwriter-widget",
         "widget-simulational",
@@ -148,7 +152,13 @@
         "PhET"
     ],
     "license": "MIT AND GPL-3.0-only AND CC-BY-NC-4.0",
-    "author": "Frederic Salmen <frederic@fsalmen.de>",
+    "author": {
+        "name": "PhET Interactive Simulations, University of Colorado Boulder",
+        "url": "https://phet.colorado.edu/"
+    },
+    "contributors": [
+        "Frederic Salmen <frederic@fsalmen.de>"
+    ],
     "exports": {
         "./widgets/webwriter-phet-simulation.js": "./widgets/webwriter-phet-simulation.js",
         "./sims/acid-base-solutions.js": "./sims/acid-base-solutions.js",
