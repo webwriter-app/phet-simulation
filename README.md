@@ -12,7 +12,7 @@ WebWriter’s Undo and Redo step through automatic checkpoints and authored sett
 
 A checkpoint records the selected screen and each screen’s orbit, time, playback controls, tool positions, and display settings. Hidden screens keep their model state. This proof of concept recomputes derived orbital elements and starts a new simulation rewind point at the captured orbit. In-progress period traces, swept-area history, and partially completed gestures are transient. The build bundles translations from the pinned PhET locale data, including English and German.
 
-The widget stores preferences in reflected attributes and the versioned checkpoint in a direct `<script type="application/json" slot="data">` block. The next automatic checkpoint moves any legacy `snapshot` attribute into that block. Changes made during learner interaction remain local to the simulation. The adapted simulation runs in a sandboxed frame bundled with the widget so a saved document can restore the same model version.
+The widget stores preferences in reflected attributes and the versioned checkpoint in a direct `<script type="application/json" slot="data">` block. Changes made during learner interaction remain local to the simulation. The adapted simulation runs in a sandboxed frame bundled with the widget so a saved document can restore the same model version.
 
 ## Build and test
 

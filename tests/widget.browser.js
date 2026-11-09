@@ -168,12 +168,14 @@ async function run() {
   await waitFor(() => !legacy.options.enabledScreens.disabled)
   const legacyState = await legacy.getSimulationState()
   same(legacyState.preferences.locale, "de", "Legacy authored language")
-  same(legacyState.snapshot.activeScreen, "third-law", "Legacy authored checkpoint")
+  same(legacyState.snapshot.activeScreen, initial.snapshot.activeScreen, "Obsolete snapshot attribute affected the simulation")
   legacy.lang = "fr"
   same((await legacy.getSimulationState()).preferences.locale, "fr", "Standard lang overrides the legacy setting")
+  legacy.setAttribute("enabled-screens", '["third-law"]')
+  await legacy.getSimulationState()
   await click(legacy.shadowRoot.querySelector("iframe"), 0.46, 0.86)
   await waitFor(() => dataBlock(legacy))
-  check(!legacy.hasAttribute("snapshot"), "An automatic save did not move the legacy checkpoint into a data block")
+  same(legacy.getAttribute("snapshot"), checkpoint, "An automatic save modified the obsolete attribute")
 }
 
 try {

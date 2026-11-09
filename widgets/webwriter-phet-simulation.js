@@ -31,7 +31,7 @@ function frameSource(document) {
 }
 
 export class WebWriterPhetSimulation extends HTMLElement {
-  static observedAttributes = ["snapshot", "locale", "contenteditable", ...preferenceAttributes]
+  static observedAttributes = ["locale", "contenteditable", ...preferenceAttributes]
 
   static optionGroups = {
     screens: {label: "Screens"},
@@ -294,8 +294,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
   }
 
   #readSnapshot() {
-    const block = this.querySelector(snapshotSelector)
-    const value = (block ? block.textContent : this.getAttribute("snapshot"))?.trim()
+    const value = this.querySelector(snapshotSelector)?.textContent.trim()
     return !value || value === "null" ? null : value
   }
 
@@ -311,7 +310,6 @@ export class WebWriterPhetSimulation extends HTMLElement {
       block.slot = "data"
       this.append(block)
     }
-    this.removeAttribute("snapshot")
   }
 
   #readPreferences() {
