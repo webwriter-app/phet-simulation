@@ -28,6 +28,16 @@ async function click(frame, x, y) {
   check(response.ok, await response.text())
 }
 
+const readSimulation = widget => waitFor(async () => {
+  try {
+    const state = await widget.getSimulationState()
+    return state.snapshot.build.startsWith(widget.type + "@") && state
+  }
+  catch {
+    return false
+  }
+})
+
 async function run() {
   const widget = document.createElement("webwriter-phet-simulation")
   widget.setAttribute("contenteditable", "")
@@ -35,7 +45,7 @@ async function run() {
   const container = document.createElement("section")
   container.append(widget)
   document.body.append(container)
-  await waitFor(() => !widget.options.enabledScreens.disabled)
+  await waitFor(() => widget.options.enabledScreens?.disabled === false)
   const initial = await widget.getSimulationState()
   same(initial.preferences.enabledScreens, ["first-law", "second-law", "third-law", "all-laws"], "Default screens")
   check(!widget.actions && !widget.options.locale && !widget.constructor.optionGroups.state, "Unexpected state or language controls")
@@ -91,6 +101,9 @@ async function run() {
   same(applied.snapshot.screens["second-law"].orbit.velocity, [-2, 14], "Planet velocity")
   same(applied.snapshot.screens["third-law"].orbit.sunMass, 250, "Inactive screen orbit")
 
+  savedText.data = JSON.stringify({...snapshot, build: "keplers-laws@1.2.11-webwriter.1"})
+  same((await widget.getSimulationState()).snapshot, snapshot, "The original Kepler build's checkpoint still restores")
+
   const running = structuredClone(snapshot)
   running.screens["second-law"].timing.playing = true
   savedText.data = JSON.stringify(running)
@@ -143,24 +156,20 @@ async function run() {
   })
   same(JSON.parse(checkpoint).activeScreen, "third-law", "Captured active screen")
 
-  widget.type = "diffusion"
-  await waitFor(() => widget.shadowRoot.querySelector("iframe")?.src.includes("/diffusion/"))
-  const hosted = widget.shadowRoot.querySelector("iframe")
-  const url = new URL(hosted.src)
-  same(url.origin, "https://phet.colorado.edu", "Hosted simulation origin")
-  same(Object.fromEntries(url.searchParams), {locale: "de", audio: "muted", colorProfile: "projector"},
+  widget.type = "blackbody-spectrum"
+  const spectrum = await readSimulation(widget)
+  same(spectrum.preferences, {enabledScreens: ["spectrum"], locale: "de", colorProfile: "projector", audio: "muted"},
     "General settings followed the type change")
   check(!widget.options.enabledScreens && !widget.options.moreOrbitalData, "Kepler settings leaked into another simulation")
   same(savedText.data, checkpoint, "Switching simulations overwrote the Kepler checkpoint")
 
-  widget.type = "friction"
-  await waitFor(() => widget.shadowRoot.querySelector("iframe")?.src.includes("/friction/"))
-  check(!new URL(widget.shadowRoot.querySelector("iframe").src).searchParams.has("colorProfile"),
-    "An unsupported projector profile was sent to Friction")
+  widget.type = "ohms-law"
+  same((await readSimulation(widget)).preferences.colorProfile, "default",
+    "Ohm's Law uses its default when projector mode is unavailable")
   same(widget.colorProfile, "projector", "Switching to a sim without projector mode lost the general setting")
 
   widget.removeAttribute("type")
-  await waitFor(() => !widget.options.enabledScreens.disabled)
+  await waitFor(() => widget.options.enabledScreens?.disabled === false)
   frame = widget.shadowRoot.querySelector("iframe")
   const switchedBack = await widget.getSimulationState()
   same(switchedBack.snapshot, JSON.parse(checkpoint), "Switching back restored the Kepler checkpoint")
@@ -210,7 +219,7 @@ async function run() {
   legacy.setAttribute("locale", "de")
   legacy.setAttribute("contenteditable", "")
   document.body.append(legacy)
-  await waitFor(() => !legacy.options.enabledScreens.disabled)
+  await waitFor(() => legacy.options.enabledScreens?.disabled === false)
   const legacyState = await legacy.getSimulationState()
   same(legacyState.preferences.locale, "de", "Legacy authored language")
   same(legacyState.snapshot.activeScreen, initial.snapshot.activeScreen, "Obsolete snapshot attribute affected the simulation")
@@ -233,18 +242,13 @@ async function runPilots() {
   widget.setAttribute("color-profile", "projector")
   document.body.append(widget)
 
-  const read = element => waitFor(async () => {
-    try {
-      const state = await element.getSimulationState()
-      return state.snapshot.build.startsWith(element.type + "@") && state
-    }
-    catch {
-      return false
-    }
-  })
   const checkpoint = type => widget.querySelector(`script[data-simulation="${type}"]`)
 
-  const ohm = await read(widget)
+  const ohm = await readSimulation(widget)
+  const resourceLoads = file => performance.getEntriesByType("resource")
+    .filter(entry => new URL(entry.name).pathname === "/sims/" + file).length
+  same(resourceLoads("runtime.js"), 1, "Shared runtime is loaded once")
+  same(resourceLoads("pendulum-lab.js"), 0, "Unselected simulation was not loaded")
   same(ohm.preferences, {enabledScreens: ["circuit"], locale: "de", colorProfile: "default", audio: "muted"},
     "Ohm's Law applied supported shared settings")
   check(!widget.options.enabledScreens && widget.options.colorProfile.disabled, "Unsupported controls were available")
@@ -259,7 +263,9 @@ async function runPilots() {
   ohmBlock.textContent = JSON.stringify(ohmState)
 
   widget.type = "pendulum-lab"
-  const pendulum = await read(widget)
+  const pendulum = await readSimulation(widget)
+  same(resourceLoads("runtime.js"), 1, "Switching reuses the shared runtime")
+  same(resourceLoads("pendulum-lab.js"), 1, "Selection loaded the Pendulum Lab module")
   same(pendulum.preferences.enabledScreens, ["intro", "energy", "lab"], "Pendulum Lab screens")
   same(pendulum.preferences.locale, "de", "Language survived switching to Pendulum Lab")
   const pendulumState = structuredClone(pendulum.snapshot)
@@ -288,16 +294,16 @@ async function runPilots() {
   same(hidden.snapshot.screens.lab, lab, "Hiding Lab preserved its experiment")
   widget.removeAttribute("pendulum-lab-screens")
   widget.type = "ohms-law"
-  same((await read(widget)).snapshot, ohmState, "Returning to Ohm's Law restored its own checkpoint")
+  same((await readSimulation(widget)).snapshot, ohmState, "Returning to Ohm's Law restored its own checkpoint")
   same(checkpoint("pendulum-lab").textContent, JSON.stringify(pendulumState), "Switching preserved the other checkpoint")
 
   const markup = widget.outerHTML.replace('contenteditable="true"', 'type-test=""')
   widget.remove()
   document.body.insertAdjacentHTML("beforeend", markup)
   const reopened = document.querySelector("[type-test]")
-  same((await read(reopened)).snapshot, ohmState, "Reader restored Ohm's Law from document HTML")
+  same((await readSimulation(reopened)).snapshot, ohmState, "Reader restored Ohm's Law from document HTML")
   reopened.type = "pendulum-lab"
-  same((await read(reopened)).snapshot, pendulumState, "Reader restored Pendulum Lab from document HTML")
+  same((await readSimulation(reopened)).snapshot, pendulumState, "Reader restored Pendulum Lab from document HTML")
 }
 
 try {

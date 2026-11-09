@@ -9,7 +9,7 @@ import installSimulationBridge from './installSimulationBridge.js';
 import { boolean, enumeration, number, object, prepareFields, readFields, vector } from './stateFields.js';
 
 const bridge = 'webwriter-keplers-laws/v1';
-const build = 'keplers-laws@1.2.11-webwriter.1';
+const build = 'keplers-laws@1.3.0-dev.0-webwriter.1';
 const screenIds = [ 'first-law', 'second-law', 'third-law', 'all-laws' ];
 type KeplerScreen = Screen<KeplersLawsModel, KeplersLawsScreenView>;
 function screenState( screen: KeplerScreen ) {
@@ -66,6 +66,7 @@ function screenState( screen: KeplerScreen ) {
   const lawViews = [ ...visible.lawVisibilitiesMap ];
 
   return {
+    isPlaying: () => model.isPlayingProperty.value,
     read: () => ( {
       orbit: readFields( orbit ),
       controls: readFields( controls ),
@@ -118,6 +119,7 @@ export default function installWebWriter( sim: Sim ): void {
   installSimulationBridge( sim, () => ( {
     bridge,
     build,
+    compatibleBuilds: [ 'keplers-laws@1.2.11-webwriter.1' ],
     screens: ( sim.simScreens as KeplerScreen[] ).map( ( screen, index ) => ( {
       id: screenIds[ index ], screen, ...screenState( screen )
     } ) ),

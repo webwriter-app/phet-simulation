@@ -1,4 +1,5 @@
 // Shared WebWriter bridge for adapted simulations. Distributed under GPL-3.0.
+import regionAndCultureProperty, { supportedRegionAndCultureValues } from '../../../joist/js/i18n/regionAndCultureProperty.js';
 import type { AnyScreen } from '../../../joist/js/Screen.js';
 import Sim from '../../../joist/js/Sim.js';
 import { object } from './stateFields.js';
@@ -8,11 +9,13 @@ type ScreenAdapter = {
   screen: AnyScreen;
   read: () => unknown;
   prepare: ( input: unknown ) => () => void;
+  isPlaying?: () => boolean;
 };
 
 type Adapter = {
   bridge: string;
   build: string;
+  compatibleBuilds?: readonly string[];
   screens: ScreenAdapter[];
   readPreferences?: () => Record<string, unknown>;
   preparePreferences?: ( input: Record<string, unknown> ) => () => void;
@@ -21,9 +24,14 @@ type Adapter = {
 function installBridge( sim: Sim, adapter: Adapter ): void {
   const { bridge, build, screens } = adapter;
   const screenIds = screens.map( screen => screen.id );
+  if ( screens.length !== sim.simScreens.length || new Set( screenIds ).size !== screens.length ||
+       screens.some( ( entry, index ) => entry.screen !== sim.simScreens[ index ] || entry.id === 'home' || !entry.id ) ) {
+    throw new Error( 'The state adapter must identify each simulation screen in navigation order.' );
+  }
   const { visualModel, audioModel, localizationModel } = sim.preferencesModel;
   const locale = localizationModel.localeProperty;
   const locales = locale.availableRuntimeLocales;
+  const regions = supportedRegionAndCultureValues;
   const colorProfiles = visualModel.colorProfileProperty.validValues ?? [ visualModel.colorProfileProperty.value ];
 
   const readSnapshot = () => ( {
@@ -38,6 +46,7 @@ function installBridge( sim: Sim, adapter: Adapter ): void {
     locale: locale.value,
     colorProfile: visualModel.colorProfileProperty.value,
     audio: audioModel.audioEnabledProperty.value ? 'enabled' : 'muted',
+    ...( regions.length > 1 ? { regionAndCulture: regionAndCultureProperty.value } : {} ),
     ...adapter.readPreferences?.()
   } );
 
@@ -45,7 +54,8 @@ function installBridge( sim: Sim, adapter: Adapter ): void {
 
   const prepareSnapshot = ( input: unknown ) => {
     const snapshot = input === null ? initialSnapshot : object( input );
-    if ( snapshot.schemaVersion !== 1 || snapshot.build !== build ) {
+    if ( snapshot.schemaVersion !== 1 ||
+         ( snapshot.build !== build && !adapter.compatibleBuilds?.some( compatible => compatible === snapshot.build ) ) ) {
       throw new Error( 'This snapshot belongs to a different simulation build or schema.' );
     }
     const index = screenIds.findIndex( id => id === snapshot.activeScreen );
@@ -67,10 +77,13 @@ function installBridge( sim: Sim, adapter: Adapter ): void {
   const preparePreferences = ( input: unknown ) => {
     const settings = object( input );
     const { enabledScreens, locale: language, colorProfile, audio } = settings;
+    const selectedLocale = locales.find( candidate => candidate === language );
+    const region = regions.find( candidate => candidate === settings.regionAndCulture );
     if ( !Array.isArray( enabledScreens ) || !enabledScreens.length ||
          new Set( enabledScreens ).size !== enabledScreens.length ||
          !enabledScreens.every( id => screenIds.includes( id ) ) ||
-         typeof language !== 'string' || !locales.includes( language ) ||
+         selectedLocale === undefined ||
+         ( regions.length > 1 && !region ) ||
          typeof colorProfile !== 'string' || !colorProfiles.includes( colorProfile ) ||
          ( audio !== 'enabled' && audio !== 'muted' ) ) {
       throw new Error( 'The simulation preferences are invalid.' );
@@ -78,7 +91,10 @@ function installBridge( sim: Sim, adapter: Adapter ): void {
     const applySpecific = adapter.preparePreferences?.( settings );
     return () => {
       sim.availableScreensProperty.value = enabledScreens.map( id => screenIds.indexOf( id ) + 1 );
-      locale.value = language;
+      locale.value = selectedLocale;
+      if ( region ) {
+        regionAndCultureProperty.value = region;
+      }
       visualModel.colorProfileProperty.value = colorProfile;
       audioModel.audioEnabledProperty.value = audio === 'enabled';
       applySpecific?.();
@@ -98,7 +114,12 @@ function installBridge( sim: Sim, adapter: Adapter ): void {
       }
       try {
         if ( data.type === 'read' ) {
-          port.postMessage( { id: data.id, value: { snapshot: readSnapshot(), preferences: readPreferences() } } );
+          const active = screens.find( screen => screen.screen === sim.selectedScreenProperty.value );
+          port.postMessage( { id: data.id, value: {
+            snapshot: readSnapshot(),
+            preferences: readPreferences(),
+            playing: active?.isPlaying?.() ?? false
+          } } );
         }
         else if ( data.type === 'apply' ) {
           const value = object( data.value );
@@ -118,7 +139,14 @@ function installBridge( sim: Sim, adapter: Adapter ): void {
     };
     port.postMessage( {
       type: 'connected',
-      capabilities: { locales, colorProfiles, defaults: readPreferences(), initialSnapshot: JSON.stringify( initialSnapshot ) }
+      capabilities: {
+        locales,
+        regions,
+        colorProfiles,
+        screens: screens.map( ( { id, screen } ) => ( { value: id, label: screen.nameProperty.value || id } ) ),
+        defaults: readPreferences(),
+        initialSnapshot: JSON.stringify( initialSnapshot ).replaceAll( '<', '\\u003c' )
+      }
     } );
 
     // Signal completed interactions, not animation frames or each drag update.

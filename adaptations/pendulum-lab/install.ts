@@ -115,6 +115,10 @@ function screenState( screen: AnyScreen ) {
   const playback = { playing: boolean( model.isPlayingProperty ) };
 
   return {
+    isPlaying: () => model.isPlayingProperty.value &&
+                     ( model.stopwatch.isRunningProperty.value ||
+                       model.pendula.slice( 0, model.numberOfPendulaProperty.value ).some( pendulum =>
+                         pendulum.angleProperty.value !== 0 || pendulum.angularVelocityProperty.value !== 0 ) ),
     read: () => ( {
       ...readFields( playback ),
       controls: readFields( controls ),

@@ -1,19 +1,39 @@
 import {adapters, defaultType} from "../sims/adapters.js"
-import {hostedSource, supportsProjector} from "../sims/hosted.js"
-import catalog from "../simulations.json" with {type: "json"}
+import catalog from "../sims/catalog.js"
 const interactionSaveDelay = 650
 const playbackSaveInterval = 10000
+const playbackCheckpointBudget = 64 * 1024 // characters per second
 
 const snapshotSelector = ':scope > script[type="application/json"][slot="data"]:not([src])'
-const preferenceAttributes = ["lang", "color-profile", "audio", ...[...adapters.values()].flatMap(adapter => [
+const preferenceAttributes = ["lang", "color-profile", "audio", "region-and-culture", ...[...adapters.values()].flatMap(adapter => [
   adapter.screenAttribute, ...Object.values(adapter.preferences ?? {}).map(option => option.attribute),
 ].filter(Boolean))]
 const choices = (values) => values.map(([value, label]) => ({value, label}))
-const simulations = choices(Object.entries(catalog).map(([id, entry]) => [id, entry.title])
-  .sort((a, b) => a[1].localeCompare(b[1], "en")))
+const regionNames = {
+  usa: "United States", africa: "Africa", africaModest: "Africa (modest dress)", asia: "Asia",
+  latinAmerica: "Latin America", oceania: "Oceania", random: "Random",
+}
+const simulations = choices(Object.entries(catalog).sort((a, b) => a[1].localeCompare(b[1], "en")))
 
 function readJSON(value) {
   return value === null ? null : JSON.parse(value)
+}
+
+function languageChoices(locales) {
+  const labels = new Intl.DisplayNames(["en"], {type: "language"})
+  return locales.map(value => {
+    let label = value
+    try { label = labels.of(value.replaceAll("_", "-")) ?? value }
+    catch { /* Keep the original label for a nonstandard locale code. */ }
+    return {value, label}
+  })
+}
+
+function frameLocales(html) {
+  // Use the locales actually bundled with this build, including any PhET
+  // fallback translations. The catalog can list different release locales.
+  const metadata = html.match(/^window\.phet\.chipper\.localeData = (\{[^\r\n]*\});/m)
+  return metadata ? Object.keys(JSON.parse(metadata[1])) : ["en"]
 }
 
 function frameSource(document, simulation, locale) {
@@ -38,6 +58,13 @@ export class WebWriterPhetSimulation extends HTMLElement {
     simulation: {label: "Simulation"},
     screens: {label: "Screens"},
     preferences: {label: "Preferences"},
+  }
+
+  static {
+    const names = new Set([...adapters.values()].flatMap(adapter => Object.keys(adapter.preferences ?? {})))
+    for (const name of names) {
+      Object.defineProperty(this.prototype, name, {get() { return this.#preferenceOptionValue(name) }})
+    }
   }
 
   #frame
@@ -128,13 +155,12 @@ export class WebWriterPhetSimulation extends HTMLElement {
   }
 
   get enabledScreens() {
-    const adapter = this.#adapter
-    if (!adapter) return []
-    const screenIds = adapter.screens.map(screen => screen.value)
-    if (!adapter.screenAttribute) return screenIds
+    const screenIds = this.#capabilities?.screens.map(screen => screen.value) ?? []
+    const attribute = this.#adapter?.screenAttribute
+    if (screenIds.length < 2 || !attribute) return screenIds
     let values
     try {
-      values = readJSON(this.getAttribute(adapter.screenAttribute))
+      values = readJSON(this.getAttribute(attribute))
     }
     catch {
       // Treat an unreadable screen list as the default.
@@ -147,9 +173,6 @@ export class WebWriterPhetSimulation extends HTMLElement {
     const language = this.getAttribute("lang") ?? this.getAttribute("locale") ??
       this.parentElement?.closest("[lang]")?.getAttribute("lang") ?? ""
     const parts = language.toLowerCase().replaceAll("_", "-").split("-")
-    // New catalog entries may only have a title. Let the public build fall
-    // back to English if it does not ship the requested language.
-    if (!locales) return /^[a-z]{2,3}$/.test(parts[0]) ? parts[0] : fallback
     while (parts.length) {
       const tag = parts.join("-")
       const locale = locales.find(candidate => candidate.toLowerCase().replaceAll("_", "-") === tag)
@@ -157,11 +180,6 @@ export class WebWriterPhetSimulation extends HTMLElement {
       parts.pop()
     }
     return fallback
-  }
-
-  #catalogLocale() {
-    const {translations} = catalog[this.type]
-    return this.#simulationLocale(translations && Object.keys(translations))
   }
 
   get colorProfile() {
@@ -172,10 +190,15 @@ export class WebWriterPhetSimulation extends HTMLElement {
     return this.getAttribute("audio") === "muted" ? "muted" : "enabled"
   }
 
+  get regionAndCulture() {
+    const region = this.getAttribute("region-and-culture")
+    return this.#capabilities?.regions?.includes(region) ? region : this.#capabilities?.defaults.regionAndCulture
+  }
+
   get options() {
     const disabled = !this.isContentEditable
     const adapter = this.#adapter
-    const projector = adapter ? this.#capabilities?.colorProfiles.includes("projector") : supportsProjector(this.type)
+    const projector = this.#capabilities?.colorProfiles.includes("projector")
     const options = {
       type: {
         label: "Simulation", attribute: "type", group: "simulation",
@@ -192,15 +215,26 @@ export class WebWriterPhetSimulation extends HTMLElement {
       },
     }
     const loading = disabled || !this.#capabilities
-    if (adapter?.screenAttribute) {
+    const regions = this.#capabilities?.regions ?? []
+    if (regions.length > 1) {
+      options.regionAndCulture = {
+        label: "Region and culture", attribute: "region-and-culture", group: "preferences", type: "select", disabled,
+        options: choices(regions.map(region => [region, regionNames[region] ?? region])),
+      }
+    }
+    const screens = this.#capabilities?.screens ?? []
+    if (adapter?.screenAttribute && screens.length > 1) {
       options.enabledScreens = {
         label: "Enabled screens", attribute: adapter.screenAttribute, group: "screens",
-        type: "select", control: "tree", multiple: true, options: adapter.screens, disabled: loading,
+        type: "select", control: "tree", multiple: true, options: screens, disabled: loading,
         description: "Choose the screens learners can open. Clearing the selection enables all screens.",
       }
     }
     for (const [name, option] of Object.entries(adapter?.preferences ?? {})) {
-      options[name] = {...option, group: "preferences", disabled: loading}
+      const optionsForLocale = option.runtimeLocales && languageChoices(this.#capabilities?.locales ?? [])
+      options[name] = {
+        ...option, ...(optionsForLocale ? {options: optionsForLocale} : {}), group: "preferences", disabled: loading,
+      }
     }
     return options
   }
@@ -223,22 +257,25 @@ export class WebWriterPhetSimulation extends HTMLElement {
       this.#setStatus("Choose a PhET simulation from the Simulation setting.")
       return
     }
+    const adapter = this.#adapter
+    if (!adapter) {
+      this.#setStatus(`${catalog[type]} is not included in this build.`)
+      return
+    }
 
     const iframe = this.ownerDocument.createElement("iframe")
-    iframe.title = catalog[type].title
+    iframe.title = catalog[type]
     iframe.sandbox.add("allow-scripts", "allow-popups", "allow-popups-to-escape-sandbox")
-    const adapter = this.#adapter
-    if (!adapter) iframe.sandbox.add("allow-same-origin")
     this.#frame = iframe
     this.#status.after(iframe)
-    if (!adapter) return
 
     this.#readyTimer = this.#window.setTimeout(() => {
       this.#setStatus(`${iframe.title} did not start. Reload the document to try again.`)
     }, 20000)
     adapter.load().then(({default: simulation}) => {
       if (iframe === this.#frame && type === this.type) {
-        iframe.srcdoc = frameSource(this.ownerDocument, simulation, this.#catalogLocale())
+        const html = typeof simulation === "function" ? simulation() : simulation
+        iframe.srcdoc = frameSource(this.ownerDocument, html, this.#simulationLocale(frameLocales(html)))
       }
     }).catch(() => {
       if (iframe !== this.#frame) return
@@ -342,7 +379,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     if (revision !== this.#saveRevision || !this.#canSave()) return
     const authored = this.#readSnapshot()
     try {
-      const {snapshot} = await this.getSimulationState()
+      const {snapshot, playing} = await this.getSimulationState()
       // Undo, redo, remote edits and newer input invalidate a pending read.
       if (revision !== this.#saveRevision || !this.#canSave() || authored !== this.#readSnapshot()) return
       const serialized = JSON.stringify(snapshot).replaceAll("<", "\\u003c")
@@ -350,8 +387,10 @@ export class WebWriterPhetSimulation extends HTMLElement {
         this.#lastSnapshot = serialized
         this.#writeSnapshot(serialized)
       }
-      const playing = this.#adapter.isPlaying?.(snapshot)
-      this.#scheduleSave(playing ? playbackSaveInterval : undefined)
+      // Large experiments (for example, accumulated detector hits) should not
+      // fill undo history with several megabytes every ten seconds.
+      const interval = Math.max(playbackSaveInterval, 1000 * serialized.length / playbackCheckpointBudget)
+      this.#scheduleSave(playing ? interval : undefined)
     }
     catch {
       if (revision === this.#saveRevision) this.#scheduleSave()
@@ -383,15 +422,36 @@ export class WebWriterPhetSimulation extends HTMLElement {
     }
   }
 
+  #preferenceOptionValue(name) {
+    const option = this.#adapter?.preferences?.[name]
+    if (!option) return undefined
+    if (option.type === Boolean) return this.hasAttribute(option.attribute)
+    const attribute = this.getAttribute(option.attribute)
+    const fallback = this.#capabilities?.defaults[name]
+    if (option.type === "number") {
+      const value = attribute?.trim() ? Number(attribute) : NaN
+      return Number.isFinite(value) && value >= option.min && value <= option.max ? value : fallback ?? null
+    }
+    if (option.runtimeLocales ? this.#capabilities?.locales.includes(attribute) :
+      option.options.some(choice => choice.value === attribute)) return attribute
+    return fallback == null ? null : String(fallback)
+  }
+
   #readPreferences() {
+    const defaults = this.#capabilities.defaults
     return JSON.stringify({
+      ...defaults,
       enabledScreens: this.enabledScreens,
-      locale: this.#simulationLocale(this.#capabilities.locales, this.#capabilities.defaults.locale),
+      locale: this.#simulationLocale(this.#capabilities.locales, defaults.locale),
       colorProfile: this.#capabilities.colorProfiles.includes(this.colorProfile) ?
-        this.colorProfile : this.#capabilities.defaults.colorProfile,
+        this.colorProfile : defaults.colorProfile,
       audio: this.audio,
-      ...Object.fromEntries(Object.entries(this.#adapter.preferences ?? {}).map(([name, option]) =>
-        [name, this.hasAttribute(option.attribute)])),
+      ...(this.#capabilities.regions?.length > 1 ? {regionAndCulture: this.regionAndCulture} : {}),
+      ...Object.fromEntries(Object.keys(this.#adapter.preferences ?? {}).map(name => {
+        const value = this.#preferenceOptionValue(name)
+        return [name, typeof defaults[name] === "number" ? Number(value) :
+          typeof defaults[name] === "boolean" ? value === true || value === "true" : value]
+      })),
     })
   }
 
@@ -402,13 +462,6 @@ export class WebWriterPhetSimulation extends HTMLElement {
       this.#scheduled = false
       if (!this.isConnected) return
       if (this.#frameType !== this.type) this.#mountSimulation()
-      if (!this.#adapter && this.#frame) {
-        const source = hostedSource(this.type, {
-          locale: this.#catalogLocale(),
-          audio: this.audio, colorProfile: this.colorProfile,
-        })
-        if (this.#frame.src !== source) this.#frame.src = source
-      }
       if (!this.#capabilities) return
       const snapshot = this.#readSnapshot()
       const preferences = this.#readPreferences()
