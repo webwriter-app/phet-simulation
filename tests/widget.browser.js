@@ -55,16 +55,16 @@ async function run() {
   const dimensions = element => [element.clientWidth, element.clientHeight]
   same(dimensions(frame), dimensions(widget), "Iframe fills the widget")
   const defaultHeight = widget.clientHeight
-  container.style.width = "360px"
-  same(dimensions(widget), [360, defaultHeight], "Narrowing the widget leaves its height unchanged")
+  container.style.width = "520px"
+  same(dimensions(widget), [520, defaultHeight], "Narrowing the widget leaves its height unchanged")
   widget.style.height = "480px"
-  same(dimensions(frame), [360, 480], "Iframe follows authored height independently of width")
+  same(dimensions(frame), [520, 480], "Iframe follows authored height independently of width")
   widget.style.height = "240px"
-  same(dimensions(widget), [360, 300], "Widget minimum height")
-  same(dimensions(frame), [360, 300], "Iframe fills the widget at its minimum height")
-  widget.style.maxWidth = "240px"
-  same(dimensions(widget), [300, 300], "Widget minimum width")
-  same(dimensions(frame), [300, 300], "Iframe fills the widget at its minimum width")
+  same(dimensions(widget), [520, 300], "Widget minimum height")
+  same(dimensions(frame), [520, 300], "Iframe fills the widget at its minimum height")
+  widget.style.maxWidth = "440px"
+  same(dimensions(widget), [460, 300], "Widget minimum width")
+  same(dimensions(frame), [460, 300], "Iframe fills the widget at its minimum width")
   widget.style.removeProperty("max-width")
   widget.style.removeProperty("height")
   container.style.removeProperty("width")
