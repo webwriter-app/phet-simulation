@@ -39,6 +39,15 @@ const readSimulation = widget => waitFor(async () => {
 })
 
 async function run() {
+  const widgetClass = customElements.get("webwriter-phet-simulation")
+  const savedWidget = document.createElement("template")
+  savedWidget.innerHTML = "<webwriter-phet-simulation></webwriter-phet-simulation>"
+  const savedElement = savedWidget.content.firstElementChild
+  const offlineImports = keep => [{importer: "../sims/bundled.js", keep}]
+  same(widgetClass.offlineImports(savedElement), offlineImports(["./keplers-laws.js"]), "Default offline simulation")
+  savedElement.setAttribute("type", "build-a-molecule")
+  same(widgetClass.offlineImports(savedElement), offlineImports(["./build-a-molecule.js"]), "Selected offline simulation")
+
   const widget = document.createElement("webwriter-phet-simulation")
   widget.setAttribute("contenteditable", "")
   widget.innerHTML = '<script type="application/json" slot="data">null</script>'

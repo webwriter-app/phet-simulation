@@ -5,6 +5,7 @@ const playbackSaveInterval = 10000
 const playbackCheckpointBudget = 64 * 1024 // characters per second
 
 const snapshotSelector = ':scope > script[type="application/json"][slot="data"]:not([src])'
+const simulationType = element => element.getAttribute("type") ?? defaultType
 const preferenceAttributes = ["lang", "color-profile", "audio", "region-and-culture", ...[...adapters.values()].flatMap(adapter => [
   adapter.screenAttribute, ...Object.values(adapter.preferences ?? {}).map(option => option.attribute),
 ].filter(Boolean))]
@@ -152,8 +153,16 @@ export class WebWriterPhetSimulation extends HTMLElement {
     else this.#scheduleApply()
   }
 
+  static offlineImports(element) {
+    const type = simulationType(element)
+    return [{
+      importer: "../sims/bundled.js",
+      keep: adapters.has(type) ? [`./${type}.js`] : [],
+    }]
+  }
+
   get type() {
-    return this.getAttribute("type") ?? defaultType
+    return simulationType(this)
   }
 
   set type(value) {
@@ -287,10 +296,12 @@ export class WebWriterPhetSimulation extends HTMLElement {
         const html = typeof simulation === "function" ? simulation() : simulation
         iframe.srcdoc = frameSource(this.ownerDocument, html, this.#simulationLocale(frameLocales(html)))
       }
-    }).catch(() => {
+    }).catch(error => {
       if (iframe !== this.#frame) return
       this.#window.clearTimeout(this.#readyTimer)
-      this.#setStatus(`${iframe.title} could not be loaded.`)
+      this.#setStatus(error?.name === "OfflineImportError"
+        ? `${iframe.title} is not included in this offline document.`
+        : `${iframe.title} could not be loaded.`)
     })
   }
 
