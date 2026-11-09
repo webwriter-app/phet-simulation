@@ -1,5 +1,6 @@
 import {adapters, defaultType} from "../sims/adapters.js"
 import catalog from "../sims/catalog.js"
+import {canonicalLocale, drawerText, matchSimulationLocale, simulationTitle} from "../localization/drawer.js"
 const interactionSaveDelay = 650
 const playbackSaveInterval = 10000
 const playbackCheckpointBudget = 64 * 1024 // characters per second
@@ -14,17 +15,16 @@ const regionNames = {
   usa: "United States", africa: "Africa", africaModest: "Africa (modest dress)", asia: "Asia",
   latinAmerica: "Latin America", oceania: "Oceania", random: "Random",
 }
-const simulations = choices(Object.entries(catalog).sort((a, b) => a[1].localeCompare(b[1], "en")))
 
 function readJSON(value) {
   return value === null ? null : JSON.parse(value)
 }
 
-function languageChoices(locales) {
-  const labels = new Intl.DisplayNames(["en"], {type: "language"})
+function languageChoices(locales, language) {
+  const labels = new Intl.DisplayNames([language], {type: "language"})
   return locales.map(value => {
     let label = value
-    try { label = labels.of(value.replaceAll("_", "-")) ?? value }
+    try { label = labels.of(canonicalLocale(value)) ?? value }
     catch { /* Keep the original label for a nonstandard locale code. */ }
     return {value, label}
   })
@@ -97,6 +97,9 @@ export class WebWriterPhetSimulation extends HTMLElement {
   #saveDelay
   #saveTimer
   #saveRevision = 0
+  #switchingPort
+  #drawerLocale
+  #simulationChoices
 
   constructor() {
     super()
@@ -188,17 +191,15 @@ export class WebWriterPhetSimulation extends HTMLElement {
     return valid.length ? valid : [...screenIds]
   }
 
-  #simulationLocale(locales, fallback = "en") {
-    const language = this.getAttribute("lang") ?? this.getAttribute("locale") ??
-      this.parentElement?.closest("[lang]")?.getAttribute("lang") ?? ""
-    const parts = language.toLowerCase().replaceAll("_", "-").split("-")
-    while (parts.length) {
-      const tag = parts.join("-")
-      const locale = locales.find(candidate => candidate.toLowerCase().replaceAll("_", "-") === tag)
-      if (locale) return locale
-      parts.pop()
-    }
-    return fallback
+  get #language() {
+    return this.getAttribute("lang") ?? this.getAttribute("locale") ??
+      this.parentElement?.closest("[lang]")?.getAttribute("lang") ?? "en"
+  }
+
+  get optionGroups() {
+    const locale = canonicalLocale(this.#language)
+    return Object.fromEntries(Object.entries(WebWriterPhetSimulation.optionGroups).map(([key, {label}]) =>
+      [key, {label: drawerText(label, locale)}]))
   }
 
   get colorProfile() {
@@ -215,44 +216,53 @@ export class WebWriterPhetSimulation extends HTMLElement {
   }
 
   get options() {
+    const locale = canonicalLocale(this.#language)
+    const translate = text => drawerText(text, locale, this.type)
+    if (this.#simulationChoices?.locale !== locale) {
+      const titles = Object.entries(catalog).map(([type, title]) => [type, simulationTitle(type, locale, title)])
+      const collator = new Intl.Collator(locale)
+      this.#simulationChoices = {locale, options: choices(titles.sort((a, b) => collator.compare(a[1], b[1])))}
+    }
     const disabled = !this.isContentEditable
     const adapter = this.#adapter
     const projector = this.#capabilities?.colorProfiles.includes("projector")
     const options = {
       type: {
-        label: "Simulation", attribute: "type", group: "simulation",
-        type: "select", options: simulations, disabled,
+        label: translate("Simulation"), attribute: "type", group: "simulation",
+        type: "select", options: this.#simulationChoices.options, disabled,
       },
       colorProfile: {
-        label: "Color profile", attribute: "color-profile", group: "preferences",
+        label: translate("Color profile"), attribute: "color-profile", group: "preferences",
         type: "select", disabled: disabled || !projector,
-        options: choices([["default", "Default"], ["projector", "Projector"]]),
+        options: choices([["default", translate("Default")], ["projector", translate("Projector")]]),
       },
       audio: {
-        label: "Audio", attribute: "audio", group: "preferences", type: "select", disabled,
-        options: choices([["enabled", "Enabled"], ["muted", "Muted"]]),
+        label: translate("Audio"), attribute: "audio", group: "preferences", type: "select", disabled,
+        options: choices([["enabled", translate("Enabled")], ["muted", translate("Muted")]]),
       },
     }
     const loading = disabled || !this.#capabilities
     const regions = this.#capabilities?.regions ?? []
     if (regions.length > 1) {
       options.regionAndCulture = {
-        label: "Region and culture", attribute: "region-and-culture", group: "preferences", type: "select", disabled,
-        options: choices(regions.map(region => [region, regionNames[region] ?? region])),
+        label: translate("Region and culture"), attribute: "region-and-culture", group: "preferences", type: "select", disabled,
+        options: choices(regions.map(region => [region, translate(regionNames[region] ?? region)])),
       }
     }
     const screens = this.#capabilities?.screens ?? []
     if (adapter?.screenAttribute && screens.length > 1) {
       options.enabledScreens = {
-        label: "Enabled screens", attribute: adapter.screenAttribute, group: "screens",
+        label: translate("Enabled screens"), attribute: adapter.screenAttribute, group: "screens",
         type: "select", control: "tree", multiple: true, options: screens, disabled: loading,
-        description: "Choose the screens learners can open. Clearing the selection enables all screens.",
+        description: translate("Choose the screens learners can open. Clearing the selection enables all screens."),
       }
     }
     for (const [name, option] of Object.entries(adapter?.preferences ?? {})) {
-      const optionsForLocale = option.runtimeLocales && languageChoices(this.#capabilities?.locales ?? [])
+      const optionChoices = option.runtimeLocales ? languageChoices(this.#capabilities?.locales ?? [], locale) :
+        option.options?.map(choice => ({...choice, label: translate(choice.label)}))
       options[name] = {
-        ...option, ...(optionsForLocale ? {options: optionsForLocale} : {}), group: "preferences", disabled: loading,
+        ...option, label: translate(option.label), ...(optionChoices ? {options: optionChoices} : {}),
+        group: "preferences", disabled: loading,
       }
     }
     return options
@@ -264,6 +274,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     this.#scheduleApply()
     await Promise.resolve()
     if (!this.#adapter) throw new Error("This simulation does not provide checkpoints.")
+    if (this.#frameType !== this.type) throw new Error("The simulation is still loading.")
     return this.#request("read")
   }
 
@@ -283,7 +294,8 @@ export class WebWriterPhetSimulation extends HTMLElement {
     }
 
     const iframe = this.ownerDocument.createElement("iframe")
-    iframe.title = catalog[type]
+    iframe.title = simulationTitle(type, this.#drawerLocale, catalog[type])
+    iframe.allowFullscreen = true
     iframe.sandbox.add("allow-scripts", "allow-popups", "allow-popups-to-escape-sandbox")
     this.#frame = iframe
     this.#status.after(iframe)
@@ -294,7 +306,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     adapter.load().then(({default: simulation}) => {
       if (iframe === this.#frame && type === this.type) {
         const html = typeof simulation === "function" ? simulation() : simulation
-        iframe.srcdoc = frameSource(this.ownerDocument, html, this.#simulationLocale(frameLocales(html)))
+        iframe.srcdoc = frameSource(this.ownerDocument, html, matchSimulationLocale(this.#language, frameLocales(html)))
       }
     }).catch(error => {
       if (iframe !== this.#frame) return
@@ -323,7 +335,8 @@ export class WebWriterPhetSimulation extends HTMLElement {
     const channel = new MessageChannel()
     this.#port = channel.port1
     channel.port1.onmessage = ({data}) => {
-      if (this.#port !== channel.port1 || this.#frameType !== this.type) return
+      if (this.#port !== channel.port1) return
+      if (this.#switchingPort && !this.#requests.has(data?.id)) return
       if (data?.type === "connected") {
         this.#window.clearTimeout(this.#readyTimer)
         this.#capabilities = data.capabilities
@@ -339,6 +352,10 @@ export class WebWriterPhetSimulation extends HTMLElement {
         // focus. Wait until the gesture ends since capture can scroll it into view.
         if (this.shadowRoot.activeElement !== this.#frame) this.#frame.focus({preventScroll: true})
         this.#scheduleSave(interactionSaveDelay)
+      }
+      else if (data?.type === "screens") {
+        this.#capabilities.screens = data.screens
+        this.#refreshOptions()
       }
       else {
         const pending = this.#requests.get(data?.id)
@@ -357,6 +374,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
   #closePort() {
     this.#port?.close()
     this.#port = undefined
+    this.#switchingPort = undefined
     this.#capabilities = undefined
     this.#lastPreferences = undefined
     this.#lastSnapshot = null
@@ -380,7 +398,9 @@ export class WebWriterPhetSimulation extends HTMLElement {
     })
   }
 
-  #onVisibilityChange = () => this.#scheduleSave(this.#saveDelay)
+  #onVisibilityChange = () => {
+    if (!this.#switchingPort) this.#scheduleSave(this.#saveDelay)
+  }
 
   #canSave() {
     return this.isConnected && this.isContentEditable && this.#capabilities &&
@@ -396,40 +416,56 @@ export class WebWriterPhetSimulation extends HTMLElement {
     }
   }
 
-  async #saveSnapshot(revision) {
-    if (revision !== this.#saveRevision || !this.#canSave()) return
-    const authored = this.#readSnapshot()
+  async #saveSnapshot(revision, switching = false) {
+    const type = this.#frameType
+    const canSave = () => revision === this.#saveRevision && this.#frameType === type &&
+      (switching ? this.isConnected && this.isContentEditable && this.#capabilities : this.#canSave())
+    if (!canSave()) return
+    const authored = this.#readSnapshot(type)
+    if (switching && authored !== this.#lastSnapshot) return
     try {
-      const {snapshot, playing} = await this.getSimulationState()
+      const {snapshot, playing} = await (switching ? this.#request("read") : this.getSimulationState())
       // Undo, redo, remote edits and newer input invalidate a pending read.
-      if (revision !== this.#saveRevision || !this.#canSave() || authored !== this.#readSnapshot()) return
+      if (!canSave() || authored !== this.#readSnapshot(type)) return
       const serialized = JSON.stringify(snapshot).replaceAll("<", "\\u003c")
       if (serialized !== (authored ?? this.#capabilities.initialSnapshot)) {
         this.#lastSnapshot = serialized
-        this.#writeSnapshot(serialized)
+        this.#writeSnapshot(serialized, type)
       }
       // Large experiments (for example, accumulated detector hits) should not
       // fill undo history with several megabytes every ten seconds.
       const interval = Math.max(playbackSaveInterval, 1000 * serialized.length / playbackCheckpointBudget)
-      this.#scheduleSave(playing ? interval : undefined)
+      if (type === this.type) this.#scheduleSave(playing ? interval : undefined)
     }
     catch {
-      if (revision === this.#saveRevision) this.#scheduleSave()
+      if (revision === this.#saveRevision && type === this.type) this.#scheduleSave()
     }
   }
 
-  #readSnapshot() {
-    const value = this.#snapshotBlock()?.textContent.trim()
+  #flushBeforeSwitch() {
+    if (this.#saveDelay !== interactionSaveDelay || !this.isContentEditable || !this.#capabilities) return false
+    const port = this.#switchingPort = this.#port
+    this.#scheduleSave()
+    void this.#saveSnapshot(this.#saveRevision, true).finally(() => {
+      if (this.#switchingPort !== port) return
+      this.#switchingPort = undefined
+      this.#scheduleApply()
+    })
+    return true
+  }
+
+  #readSnapshot(type) {
+    const value = this.#snapshotBlock(type)?.textContent.trim()
     return !value || value === "null" ? null : value
   }
 
-  #snapshotBlock() {
+  #snapshotBlock(type = this.type) {
     return [...this.querySelectorAll(snapshotSelector)]
-      .find(block => (block.getAttribute("data-simulation") ?? defaultType) === this.type)
+      .find(block => (block.getAttribute("data-simulation") ?? defaultType) === type)
   }
 
-  #writeSnapshot(snapshot) {
-    const existing = this.#snapshotBlock()
+  #writeSnapshot(snapshot, type) {
+    const existing = this.#snapshotBlock(type)
     const block = existing ?? this.ownerDocument.createElement("script")
     if (block.childNodes.length === 1 && block.firstChild.nodeType === Node.TEXT_NODE) {
       block.firstChild.data = snapshot
@@ -438,7 +474,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     if (!existing) {
       block.type = "application/json"
       block.slot = "data"
-      if (this.type !== defaultType) block.setAttribute("data-simulation", this.type)
+      if (type !== defaultType) block.setAttribute("data-simulation", type)
       this.append(block)
     }
   }
@@ -463,7 +499,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     return JSON.stringify({
       ...defaults,
       enabledScreens: this.enabledScreens,
-      locale: this.#simulationLocale(this.#capabilities.locales, defaults.locale),
+      locale: matchSimulationLocale(this.#language, this.#capabilities.locales),
       colorProfile: this.#capabilities.colorProfiles.includes(this.colorProfile) ?
         this.colorProfile : defaults.colorProfile,
       audio: this.audio,
@@ -481,8 +517,19 @@ export class WebWriterPhetSimulation extends HTMLElement {
     this.#scheduled = true
     queueMicrotask(() => {
       this.#scheduled = false
-      if (!this.isConnected) return
-      if (this.#frameType !== this.type) this.#mountSimulation()
+      if (!this.isConnected || this.#switchingPort) return
+      const locale = canonicalLocale(this.#language)
+      if (locale !== this.#drawerLocale) {
+        this.#drawerLocale = locale
+        if (this.#frame && this.#frameType === this.type) {
+          this.#frame.title = simulationTitle(this.type, locale, catalog[this.type])
+        }
+        this.#refreshOptions()
+      }
+      if (this.#frameType !== this.type) {
+        if (this.#flushBeforeSwitch()) return
+        this.#mountSimulation()
+      }
       if (!this.#capabilities) return
       const snapshot = this.#readSnapshot()
       const preferences = this.#readPreferences()

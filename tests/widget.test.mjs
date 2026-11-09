@@ -55,7 +55,7 @@ async function runBrowser(script, {ids = [], timeout = 65000} = {}) {
   const paths = new Set([
     "/tests/widget.browser.js", "/tests/catalog.browser.js", "/widgets/webwriter-phet-simulation.js",
     "/sims/adapters.js", "/sims/catalog.js",
-    "/simulations.json",
+    "/simulations.json", "/editing-config.json", "/localization/drawer.js", "/localization/drawer.json",
   ])
   let resolve, reject
   const result = new Promise((onResult, onError) => { resolve = onResult; reject = onError })

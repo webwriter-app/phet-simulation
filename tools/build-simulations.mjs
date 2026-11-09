@@ -79,6 +79,20 @@ function stageSharedBridge() {
   }
   writeFileSync( path, source.replace( declaration, line => line.replace( 'private', 'public' ) ) );
 
+  const toolbarPath = join( workspace, 'joist/js/A11yButtonsHBox.ts' );
+  const toolbar = readFileSync( toolbarPath, 'utf8' );
+  const preferencesButton = '    if ( sim.preferencesModel.shouldShowDialog() ) {';
+  if ( !toolbar.includes( preferencesButton ) ) {
+    throw new Error( 'Pinned Joist toolbar changed; expected the preferences button.' );
+  }
+  writeFileSync( toolbarPath, "import createFullscreenButton from './webwriter/createFullscreenButton.js';\n" +
+    toolbar.replace( preferencesButton, `    const fullscreenButton = createFullscreenButton( sim, backgroundColorProperty );
+    if ( fullscreenButton ) {
+      a11yButtons.push( fullscreenButton );
+    }
+
+${preferencesButton}` ) );
+
   const from = join( packageRoot, 'adaptations/shared' );
   const to = join( workspace, 'joist/js/webwriter' );
   mkdirSync( to, { recursive: true } );

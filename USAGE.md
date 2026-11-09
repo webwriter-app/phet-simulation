@@ -4,10 +4,11 @@ Insert a PhET snippet, then select the widget and use **Simulation** in the draw
 
 The widget keeps its authored size, audio, color profile, and language when switching. Each simulation follows the nearest HTML `lang` value where supported. A package language keyword means at least one bundled simulation has a translation for that language.
 
-Bundled simulations save a separate checkpoint for each simulation type. Their checkpoints and settings stay in the document when you switch away.
+Bundled simulations save a separate checkpoint for each simulation type. Switching saves any completed interaction that is still waiting for autosave.
 
 - Use **Enabled screens** to choose which screens learners can open in simulations with more than one screen. An empty selection enables all screens.
 - Use **Preferences** to edit general settings and the selected simulation’s own preferences, when available.
+- Use **Full Screen** beside the simulation’s settings cog to expand the simulation. Press Escape or use the same button to return to the document.
 - Interact with the simulation in edit mode and WebWriter saves the experiment shortly after the interaction ends. During visible playback it saves changes every ten seconds, with longer intervals for large experiments.
 
 WebWriter’s Undo and Redo step through automatic checkpoints and authored settings. Applying an authored change such as undo, redo, or a collaborator’s edit suspends automatic saving until the next simulation interaction. Unchanged samples are skipped, and saving pauses offscreen or in a hidden tab.

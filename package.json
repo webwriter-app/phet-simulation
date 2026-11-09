@@ -548,6 +548,8 @@
         "./snippets/quantum-measurement.html": "./snippets/quantum-measurement.html",
         "./snippets/quantum-wave-interference.html": "./snippets/quantum-wave-interference.html",
         "./editing-config.json": "./editing-config.json",
+        "./localization/drawer.js": "./localization/drawer.js",
+        "./localization/drawer.json": "./localization/drawer.json",
         "./custom-elements.json": "./custom-elements.json"
     },
     "editingConfig": {
@@ -1195,6 +1197,7 @@
     "scripts": {
         "build:keplers-laws": "node tools/build-simulations.mjs keplers-laws",
         "build:simulations": "node tools/build-simulations.mjs",
+        "localize:drawer": "node tools/localize-drawer.mjs",
         "test": "node --test tests/*.test.mjs"
     },
     "customElements": "custom-elements.json"

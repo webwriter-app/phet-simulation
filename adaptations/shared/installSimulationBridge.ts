@@ -33,6 +33,7 @@ function installBridge( sim: Sim, adapter: Adapter ): void {
   const locales = locale.availableRuntimeLocales;
   const regions = supportedRegionAndCultureValues;
   const colorProfiles = visualModel.colorProfileProperty.validValues ?? [ visualModel.colorProfileProperty.value ];
+  const screenChoices = () => screens.map( ( { id, screen } ) => ( { value: id, label: screen.nameProperty.value || id } ) );
 
   const readSnapshot = () => ( {
     schemaVersion: 1,
@@ -143,11 +144,12 @@ function installBridge( sim: Sim, adapter: Adapter ): void {
         locales,
         regions,
         colorProfiles,
-        screens: screens.map( ( { id, screen } ) => ( { value: id, label: screen.nameProperty.value || id } ) ),
+        screens: screenChoices(),
         defaults: readPreferences(),
         initialSnapshot: JSON.stringify( initialSnapshot ).replaceAll( '<', '\\u003c' )
       }
     } );
+    locale.lazyLink( () => queueMicrotask( () => port.postMessage( { type: 'screens', screens: screenChoices() } ) ) );
 
     // Signal completed interactions, not animation frames or each drag update.
     const pointers = new Set<number>();

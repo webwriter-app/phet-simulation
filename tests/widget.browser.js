@@ -60,8 +60,24 @@ async function run() {
   check(!widget.actions && !widget.options.locale && !widget.constructor.optionGroups.state, "Unexpected state or language controls")
   container.lang = "de-Latn-AT"
   same((await widget.getSimulationState()).preferences.locale, "de", "Inherited language fallback")
+  same(widget.optionGroups.preferences.label, "Einstellungen", "Inherited language in the drawer")
+  same(widget.options.moreOrbitalData.label, "Mehr Orbitaldaten", "Localized simulation preference")
+  same(widget.options.type.options.find(choice => choice.value === "keplers-laws").label, "Keplersche Gesetze", "Localized simulation title")
+  const english = document.createElement("webwriter-phet-simulation")
+  english.lang = "en"
+  container.append(english)
+  await readSimulation(english)
+  same(english.optionGroups.preferences.label, "Preferences", "Independent English drawer")
+  check(english.options.enabledScreens.options[2].label.includes("Third Law"), "Independent English screen name")
+  english.remove()
   widget.lang = "fr"
   same((await widget.getSimulationState()).preferences.locale, "fr", "Widget language override")
+  await waitFor(() => widget.options.enabledScreens.options[2].label.includes("Troisième loi"))
+  same(widget.options.enabledScreens.label, "Écrans activés", "Localized screen selection")
+  widget.lang = "zh-Hant"
+  same((await widget.getSimulationState()).preferences.locale, "zh_TW", "Traditional Chinese locale alias")
+  widget.lang = "he"
+  same((await widget.getSimulationState()).preferences.locale, "iw", "Hebrew locale alias")
   widget.removeAttribute("lang")
   same((await widget.getSimulationState()).preferences.locale, "de", "Removing lang restored inheritance")
   container.removeAttribute("lang")
@@ -164,6 +180,19 @@ async function run() {
     return value && value !== started && !JSON.parse(value).screens["third-law"].timing.playing && value
   })
   same(JSON.parse(checkpoint).activeScreen, "third-law", "Captured active screen")
+
+  await click(frame, 0.46, 0.86)
+  const pending = await widget.getSimulationState()
+  check(pending.snapshot.screens["third-law"].timing.playing, "The final interaction started playback")
+  same(savedText.data, checkpoint, "The interaction is still waiting for autosave")
+  widget.type = "ohms-law"
+  await readSimulation(widget)
+  check(JSON.parse(savedText.data).screens["third-law"].timing.playing, "Switching saved the outgoing simulation")
+  widget.removeAttribute("type")
+  await readSimulation(widget)
+  check((await widget.getSimulationState()).snapshot.screens["third-law"].timing.playing, "Switching back restored the final interaction")
+  savedText.data = checkpoint
+  await widget.getSimulationState()
 
   widget.type = "blackbody-spectrum"
   const spectrum = await readSimulation(widget)
