@@ -149,7 +149,10 @@
         "isced2011-3",
         "flash",
         "animations",
-        "PhET"
+        "PhET",
+        "widget-lang-en-US",
+        "widget-lang-en-AU",
+        "widget-lang-en-IN"
     ],
     "license": "MIT AND GPL-3.0-only AND CC-BY-NC-4.0",
     "author": {
