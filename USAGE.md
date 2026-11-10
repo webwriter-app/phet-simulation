@@ -2,7 +2,7 @@
 
 Insert a PhET snippet, then select the widget and use **Simulation** in the drawer to switch to another simulation. The selection is stored as a `type` attribute, such as `type="pendulum-lab"`. Widgets authored before this attribute was added still open Kepler’s Laws. Existing plain iframe embeds still open as authored.
 
-The widget keeps its authored size, audio, color profile, and language when switching. Each simulation follows the nearest HTML `lang` value where supported. A package language keyword means at least one bundled simulation has a translation for that language.
+The widget keeps its authored size, audio, color profile, and language when switching. The WebWriter controls follow the nearest HTML `lang` value. The embedded simulation uses the closest locale in its own bundled PhET translations and falls back to English when it has no match. A package language keyword means at least one bundled simulation has a translation for that language. Availability varies by simulation.
 
 Bundled simulations save a separate checkpoint for each simulation type. Switching saves any completed interaction that is still waiting for autosave.
 

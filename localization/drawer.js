@@ -2,7 +2,7 @@ import metadata from "../editing-config.json" with {type: "json"}
 import messages from "./drawer.json" with {type: "json"}
 
 // PhET uses a few locale IDs that are different from the corresponding HTML tags.
-const aliases = {ef: "efi", "fa-da": "fa-AF", prs: "fa-AF", pr: "tsz", sp: "nso", ua: "nah"}
+const aliases = {ef: "efi", "fa-da": "fa-AF", prs: "fa-AF", pr: "tsz", sp: "nso", ua: "nah", no: "nb"}
 
 export function canonicalLocale(value) {
   const tag = value?.trim().replaceAll("_", "-")
@@ -12,10 +12,13 @@ export function canonicalLocale(value) {
 }
 
 function* localeCandidates(locale) {
-  const parts = locale.split("-")
+  const requested = locale?.trim().replaceAll("_", "-")
+  if (requested) yield requested
+  const normalized = canonicalLocale(requested)
+  const parts = normalized.split("-")
   while (parts.length) {
     const tag = parts.join("-")
-    yield tag
+    if (tag !== requested) yield tag
     // PhET uses regional Chinese codes. WebWriter also accepts script tags.
     if (/^zh(?:-|$)/.test(tag)) {
       const chinese = new Intl.Locale(tag).maximize()

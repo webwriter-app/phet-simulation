@@ -52,7 +52,61 @@
       "en-AU": "PhET Simulations",
       "en-IN": "PhET Simulations",
       "no": "PhET-simuleringer",
-      "sr-Cyrl": "PhET симулације"
+      "sr-Cyrl": "PhET симулације",
+      "lb": "PhET-Simulatiounen",
+      "pa": "PhET ਸਿਮੂਲੇਸ਼ਨਾਂ",
+      "ne": "PhET सिमुलेसनहरू",
+      "jv": "Simulasi PhET",
+      "kk": "PhET симуляциялары",
+      "ky": "PhET симуляциялары",
+      "mn": "PhET симуляциуд",
+      "uz": "PhET simulyatsiyalari",
+      "tg": "Симулятсияҳои PhET",
+      "tk": "PhET simulýasiýalary",
+      "dv": "PhET ސިމިއުލޭޝަންތައް",
+      "be": "Сімуляцыі PhET",
+      "la": "Simulationes PhET",
+      "tpi": "Ol PhET traim",
+      "am": "የPhET አስመስሎ ማሳያዎች",
+      "om": "Fakkeessituuwwan PhET",
+      "so": "Jilitaannada PhET",
+      "ti": "ኣምሳሊ ምርኢታት PhET",
+      "sw": "Uigaji wa PhET",
+      "ha": "Kwaikwayon PhET",
+      "ga": "Insamhaltaí PhET",
+      "mt": "Simulazzjonijiet PhET",
+      "nn": "PhET-simuleringar",
+      "sq": "Simulimet PhET",
+      "mk": "PhET симулации",
+      "is": "PhET-hermanir",
+      "eu": "PhET simulazioak",
+      "pt-PT": "Simulações PhET",
+      "sr-Latn": "PhET simulacije",
+      "sr-ijekavsk": "PhET simulacije",
+      "cnr": "PhET simulacije",
+      "bs": "PhET simulacije",
+      "ca-ES-valencia": "Simulacions de PhET",
+      "gl": "Simulacións de PhET",
+      "cy": "Efelychiadau PhET",
+      "ka": "PhET-ის სიმულაციები",
+      "hy": "PhET-ի մոդելավորումներ",
+      "az": "PhET simulyasiyaları",
+      "bn": "PhET সিমুলেশনসমূহ",
+      "gu": "PhET સિમ્યુલેશન્સ",
+      "mr": "PhET सिम्युलेशन्स",
+      "te": "PhET సిమ్యులేషన్లు",
+      "ur": "PhET سمیولیشنز",
+      "kn": "PhET ಸಿಮ್ಯುಲೇಶನ್‌ಗಳು",
+      "or": "PhET ସିମ୍ୟୁଲେସନ୍",
+      "si": "PhET අනුකරණ",
+      "ta": "PhET உருவகப்படுத்தல்கள்",
+      "ml": "PhET സിമുലേഷനുകൾ",
+      "ps": "PhET سمیولېشنونه",
+      "ms": "Simulasi PhET",
+      "tl": "Mga PhET Simulation",
+      "my": "PhET စီမူလေးရှင်းများ",
+      "lo": "ການຈຳລອງ PhET",
+      "km": "ការក្លែងធ្វើ PhET"
     },
     "description": {
       "_": "Explore physics, chemistry, mathematics, and biology with interactive PhET simulations.",
@@ -106,7 +160,61 @@
       "en-AU": "Explore physics, chemistry, mathematics, and biology with interactive PhET simulations.",
       "en-IN": "Explore physics, chemistry, mathematics, and biology with interactive PhET simulations.",
       "no": "Utforsk fysikk, kjemi, matematikk og biologi med interaktive PhET-simuleringer.",
-      "sr-Cyrl": "Истражите физику, хемију, математику и биологију уз интерактивне PhET симулације."
+      "sr-Cyrl": "Истражите физику, хемију, математику и биологију уз интерактивне PhET симулације.",
+      "lb": "Entdeckt Physik, Chimie, Mathematik a Biologie mat interaktive PhET-Simulatiounen.",
+      "pa": "PhET ਦੀਆਂ ਪਰਸਪਰ ਸਿਮੂਲੇਸ਼ਨਾਂ ਨਾਲ ਭੌਤਿਕ ਵਿਗਿਆਨ, ਰਸਾਇਣ ਵਿਗਿਆਨ, ਗਣਿਤ ਅਤੇ ਜੀਵ ਵਿਗਿਆਨ ਦੀ ਪੜਚੋਲ ਕਰੋ।",
+      "ne": "अन्तरक्रियात्मक PhET सिमुलेसनसँग भौतिकशास्त्र, रसायनशास्त्र, गणित र जीवविज्ञान अन्वेषण गर्नुहोस्।",
+      "jv": "Jelajahi fisika, kimia, matematika lan biologi nganggo simulasi PhET interaktif.",
+      "kk": "Интерактивті PhET симуляциялары арқылы физика, химия, математика және биологияны зерттеңіз.",
+      "ky": "PhET интерактивдүү симуляциялары менен физика, химия, математика жана биологияны изилдеңиз.",
+      "mn": "Интерактив PhET симуляциар физик, хими, математик, биологийг судлаарай.",
+      "uz": "Interaktiv PhET simulyatsiyalari bilan fizika, kimyo, matematika va biologiyani o‘rganing.",
+      "tg": "Бо симулятсияҳои интерактивии PhET физика, кимиё, математика ва биологияро омӯзед.",
+      "tk": "Interaktiw PhET simulýasiýalary bilen fizikany, himiýany, matematikany we biologiýany öwreniň.",
+      "dv": "PhET ގެ އިންޓެރެކްޓިވް ސިމިއުލޭޝަންތަކާއެކު ފިޒިކްސް، ކެމިސްޓްރީ، ހިސާބު އަދި ބަޔޮލޮޖީ ބަލާލާ.",
+      "be": "Даследуйце фізіку, хімію, матэматыку і біялогію з інтэрактыўнымі сімуляцыямі PhET.",
+      "la": "Physicam, chemiam, mathematicam et biologiam per simulationes interactivas PhET explora.",
+      "tpi": "Yusim ol PhET traim long kompiuta bilong painim save long fisiks, kemistri, matematiks na baioloji.",
+      "am": "በPhET በይነተገናኝ አስመስሎ ማሳያዎች ፊዚክስን፣ ኬሚስትሪን፣ ሒሳብንና ሥነ ሕይወትን ያስሱ።",
+      "om": "Fakkeessituuwwan PhET waliin fiiziksii, keemistirii, herregaa fi baayoloojii qoradhu.",
+      "so": "Ku sahami fiisigiska, kimistariga, xisaabta iyo bayoolajiga jilitaannada is-dhexgalka ee PhET.",
+      "ti": "ብመስተጋብራዊ ኣምሳሊ ምርኢታት PhET ፊዚክስ፣ ኬሚስትሪ፣ ሒሳብን ስነ ህይወትን መርምሩ።",
+      "sw": "Chunguza fizikia, kemia, hisabati na biolojia kwa uigaji shirikishi wa PhET.",
+      "ha": "Binciki kimiyyar lissafi, ilmin sinadarai, lissafi da ilmin halittu da kwaikwayon PhET masu hulɗa.",
+      "ga": "Déan iniúchadh ar an bhfisic, ar an gceimic, ar an matamaitic agus ar an mbitheolaíocht le hionsamhaltaí idirghníomhacha PhET.",
+      "mt": "Esplora l-fiżika, il-kimika, il-matematika u l-bijoloġija permezz ta’ simulazzjonijiet interattivi ta’ PhET.",
+      "nn": "Utforsk fysikk, kjemi, matematikk og biologi med interaktive PhET-simuleringar.",
+      "sq": "Eksploroni fizikën, kiminë, matematikën dhe biologjinë përmes simulimeve ndërvepruese PhET.",
+      "mk": "Истражете ги физиката, хемијата, математиката и биологијата со интерактивните PhET симулации.",
+      "is": "Kannaðu eðlisfræði, efnafræði, stærðfræði og líffræði með gagnvirkum PhET-hermunum.",
+      "eu": "Arakatu fisika, kimika, matematika eta biologia PhET simulazio interaktiboekin.",
+      "pt-PT": "Explore a física, a química, a matemática e a biologia com simulações interativas PhET.",
+      "sr-Latn": "Istražujte fiziku, hemiju, matematiku i biologiju pomoću interaktivnih PhET simulacija.",
+      "sr-ijekavsk": "Istražujte fiziku, hemiju, matematiku i biologiju pomoću interaktivnih PhET simulacija.",
+      "cnr": "Istražujte fiziku, hemiju, matematiku i biologiju pomoću interaktivnih PhET simulacija.",
+      "bs": "Istražujte fiziku, hemiju, matematiku i biologiju pomoću interaktivnih PhET simulacija.",
+      "ca-ES-valencia": "Explora la física, la química, les matemàtiques i la biologia amb les simulacions interactives de PhET.",
+      "gl": "Explora a física, a química, as matemáticas e a bioloxía con simulacións interactivas de PhET.",
+      "cy": "Archwiliwch ffiseg, cemeg, mathemateg a bioleg gydag efelychiadau rhyngweithiol PhET.",
+      "ka": "შეისწავლეთ ფიზიკა, ქიმია, მათემატიკა და ბიოლოგია PhET-ის ინტერაქტიული სიმულაციებით.",
+      "hy": "Ուսումնասիրեք ֆիզիկա, քիմիա, մաթեմատիկա և կենսաբանություն PhET-ի ինտերակտիվ մոդելավորումներով։",
+      "az": "İnteraktiv PhET simulyasiyaları ilə fizika, kimya, riyaziyyat və biologiyanı araşdırın.",
+      "bn": "ইন্টারেক্টিভ PhET সিমুলেশনের মাধ্যমে পদার্থবিদ্যা, রসায়ন, গণিত ও জীববিদ্যা অন্বেষণ করুন।",
+      "gu": "ઇન્ટરેક્ટિવ PhET સિમ્યુલેશન્સ વડે ભૌતિકશાસ્ત્ર, રસાયણશાસ્ત્ર, ગણિત અને જીવવિજ્ઞાનનું અન્વેષણ કરો.",
+      "mr": "परस्परसंवादी PhET सिम्युलेशन्सद्वारे भौतिकशास्त्र, रसायनशास्त्र, गणित आणि जीवशास्त्राचा शोध घ्या.",
+      "te": "ఇంటరాక్టివ్ PhET సిమ్యులేషన్లతో భౌతికశాస్త్రం, రసాయనశాస్త్రం, గణితం, జీవశాస్త్రాన్ని అన్వేషించండి.",
+      "ur": "انٹرایکٹو PhET سمیولیشنز کے ذریعے طبیعیات، کیمیا، ریاضی اور حیاتیات دریافت کریں۔",
+      "kn": "ಸಂವಾದಾತ್ಮಕ PhET ಸಿಮ್ಯುಲೇಶನ್‌ಗಳ ಮೂಲಕ ಭೌತಶಾಸ್ತ್ರ, ರಸಾಯನಶಾಸ್ತ್ರ, ಗಣಿತ ಮತ್ತು ಜೀವಶಾಸ್ತ್ರವನ್ನು ಅನ್ವೇಷಿಸಿ.",
+      "or": "ଇଣ୍ଟରାକ୍ଟିଭ୍ PhET ସିମ୍ୟୁଲେସନ୍‌ରେ ପଦାର୍ଥ ବିଜ୍ଞାନ, ରସାୟନ ବିଜ୍ଞାନ, ଗଣିତ ଓ ଜୀବ ବିଜ୍ଞାନ ଅନୁସନ୍ଧାନ କରନ୍ତୁ।",
+      "si": "අන්තර්ක්‍රියාකාරී PhET අනුකරණ මඟින් භෞතික විද්‍යාව, රසායන විද්‍යාව, ගණිතය සහ ජීව විද්‍යාව ගවේෂණය කරන්න.",
+      "ta": "ஊடாடும் PhET உருவகப்படுத்தல்கள் மூலம் இயற்பியல், வேதியியல், கணிதம் மற்றும் உயிரியல் ஆகியவற்றை ஆராயுங்கள்.",
+      "ml": "സംവേദനാത്മക PhET സിമുലേഷനുകളിലൂടെ ഭൗതികശാസ്ത്രം, രസതന്ത്രം, ഗണിതം, ജീവശാസ്ത്രം എന്നിവ പര്യവേക്ഷണം ചെയ്യുക.",
+      "ps": "د PhET په متقابلو سمیولېشنونو کې فزیک، کیمیا، ریاضي او بیولوژي وپلټئ.",
+      "ms": "Terokai fizik, kimia, matematik dan biologi melalui simulasi PhET interaktif.",
+      "tl": "Tuklasin ang pisika, kimika, matematika, at biyolohiya gamit ang mga interactive na PhET simulation.",
+      "my": "အပြန်အလှန်လုပ်ဆောင်နိုင်သော PhET စီမူလေးရှင်းများဖြင့် ရူပဗေဒ၊ ဓာတုဗေဒ၊ သင်္ချာနှင့် ဇီဝဗေဒကို လေ့လာပါ။",
+      "lo": "ສຳຫຼວດຟີຊິກ, ເຄມີສາດ, ຄະນິດສາດ ແລະ ຊີວະວິທະຍາດ້ວຍການຈຳລອງ PhET ແບບໂຕ້ຕອບ.",
+      "km": "ស្វែងយល់អំពីរូបវិទ្យា គីមីវិទ្យា គណិតវិទ្យា និងជីវវិទ្យា តាមរយៈការក្លែងធ្វើ PhET អន្តរកម្ម។"
     }
   },
   "./widgets/webwriter-phet-simulation": {
@@ -162,7 +270,61 @@
       "en-AU": "PhET Simulation",
       "en-IN": "PhET Simulation",
       "no": "PhET-simulering",
-      "sr-Cyrl": "PhET симулација"
+      "sr-Cyrl": "PhET симулација",
+      "lb": "PhET-Simulatioun",
+      "pa": "PhET ਸਿਮੂਲੇਸ਼ਨ",
+      "ne": "PhET सिमुलेसन",
+      "jv": "Simulasi PhET",
+      "kk": "PhET симуляциясы",
+      "ky": "PhET симуляциясы",
+      "mn": "PhET симуляци",
+      "uz": "PhET simulyatsiyasi",
+      "tg": "Симулятсияи PhET",
+      "tk": "PhET simulýasiýasy",
+      "dv": "PhET ސިމިއުލޭޝަން",
+      "be": "Сімуляцыя PhET",
+      "la": "Simulatio PhET",
+      "tpi": "PhET traim",
+      "am": "የPhET አስመስሎ ማሳያ",
+      "om": "Fakkeessituu PhET",
+      "so": "Jilitaanka PhET",
+      "ti": "ኣምሳሊ ምርኢት PhET",
+      "sw": "Uigaji wa PhET",
+      "ha": "Kwaikwayon PhET",
+      "ga": "Insamhlú PhET",
+      "mt": "Simulazzjoni PhET",
+      "nn": "PhET-simulering",
+      "sq": "Simulim PhET",
+      "mk": "PhET симулација",
+      "is": "PhET-hermun",
+      "eu": "PhET simulazioa",
+      "pt-PT": "Simulação PhET",
+      "sr-Latn": "PhET simulacija",
+      "sr-ijekavsk": "PhET simulacija",
+      "cnr": "PhET simulacija",
+      "bs": "PhET simulacija",
+      "ca-ES-valencia": "Simulació de PhET",
+      "gl": "Simulación de PhET",
+      "cy": "Efelychiad PhET",
+      "ka": "PhET-ის სიმულაცია",
+      "hy": "PhET-ի մոդելավորում",
+      "az": "PhET simulyasiyası",
+      "bn": "PhET সিমুলেশন",
+      "gu": "PhET સિમ્યુલેશન",
+      "mr": "PhET सिम्युलेशन",
+      "te": "PhET సిమ్యులేషన్",
+      "ur": "PhET سمیولیشن",
+      "kn": "PhET ಸಿಮ್ಯುಲೇಶನ್",
+      "or": "PhET ସିମ୍ୟୁଲେସନ୍",
+      "si": "PhET අනුකරණය",
+      "ta": "PhET உருவகப்படுத்தல்",
+      "ml": "PhET സിമുലേഷൻ",
+      "ps": "PhET سمیولېشن",
+      "ms": "Simulasi PhET",
+      "tl": "PhET Simulation",
+      "my": "PhET စီမူလေးရှင်း",
+      "lo": "ການຈຳລອງ PhET",
+      "km": "ការក្លែងធ្វើ PhET"
     }
   },
   "./snippets/acid-base-solutions": {
@@ -280,7 +442,14 @@
       "en-AU": "Acid-Base Solutions",
       "en-IN": "Acid-Base Solutions",
       "no": "Syre/base-løsning",
-      "sr-Cyrl": "КИСЕЛО-БАЗНИ РАСТВОРИ"
+      "sr-Cyrl": "КИСЕЛО-БАЗНИ РАСТВОРИ",
+      "pt-PT": "‪Solução ácido-base‬",
+      "sr-Latn": "‪КИСЕЛО-БАЗНИ РАСТВОРИ‬",
+      "sr-ijekavsk": "‪КИСЕЛО-БАЗНИ РАСТВОРИ‬",
+      "cnr": "‪КИСЕЛО-БАЗНИ РАСТВОРИ‬",
+      "ca-ES-valencia": "‪Solucions àcid-base‬",
+      "la": "Solutiones acidae et basicae",
+      "tpi": "Ol solusen asit na bes"
     }
   },
   "./snippets/alpha-decay": {
@@ -310,7 +479,44 @@
       "en-AU": "Alpha Decay",
       "en-IN": "Alpha Decay",
       "fr": "Désintégration alpha",
-      "sr-Cyrl": "Алфа распад"
+      "sr-Cyrl": "Алфа распад",
+      "sr-Latn": "‪Алфа распад‬",
+      "sr-ijekavsk": "‪Алфа распад‬",
+      "cnr": "‪Алфа распад‬",
+      "la": "Dissolutio alpha",
+      "tpi": "Alfa i bruk daun",
+      "ca": "Desintegració alfa",
+      "is": "Alfa-hrörnun",
+      "sv": "Alfasönderfall",
+      "sl": "Alfa razpad",
+      "sk": "Alfa rozpad",
+      "hr": "Alfa raspad",
+      "eu": "Alfa desintegrazioa",
+      "zh": "α衰变",
+      "zh-Hans": "α衰变",
+      "zh-Hant": "α衰變",
+      "pt": "Decaimento alfa",
+      "pt-PT": "Decaimento alfa",
+      "bn": "আলফা ক্ষয়",
+      "ms": "Pereputan alfa",
+      "sw": "Muozo wa alfa",
+      "ha": "Ruɓewar alfa",
+      "om": "Diigama alfaa",
+      "am": "የአልፋ መበስበስ",
+      "fa": "واپاشی آلفا",
+      "hi": "अल्फ़ा क्षय",
+      "ar": "اضمحلال ألفا",
+      "ko": "알파 붕괴",
+      "mn": "Альфа задрал",
+      "bg": "Алфа разпад",
+      "hu": "Alfa-bomlás",
+      "tr": "Alfa bozunumu",
+      "uk": "Альфа-розпад",
+      "ru": "Альфа-распад",
+      "fi": "Alfahajoaminen",
+      "el": "Διάσπαση άλφα",
+      "ca-ES-valencia": "Desintegració alfa",
+      "gu": "આલ્ફા ક્ષય"
     }
   },
   "./snippets/area-builder": {
@@ -421,7 +627,14 @@
       "en-CA": "Area Builder",
       "en-AU": "Area Builder",
       "en-IN": "Area Builder",
-      "sr-Cyrl": "\"Мајстор\" за површине"
+      "sr-Cyrl": "\"Мајстор\" за површине",
+      "pt-PT": "‪Construtor de Áreas‬",
+      "sr-Latn": "‪\"Мајстор\" за површине‬",
+      "sr-ijekavsk": "‪\"Мајстор\" за површине‬",
+      "cnr": "‪\"Мајстор\" за површине‬",
+      "ca-ES-valencia": "‪Constructor d'àrees‬",
+      "la": "Constructor arearum",
+      "tpi": "Wokim eria"
     }
   },
   "./snippets/area-model-algebra": {
@@ -522,7 +735,14 @@
       "en-CA": "Area Model Algebra",
       "en-AU": "Area Model Algebra",
       "en-IN": "Area Model Algebra",
-      "sr-Cyrl": "Математика преко површина - Алгебра"
+      "sr-Cyrl": "Математика преко површина - Алгебра",
+      "pt-PT": "‪Modelo de Área: Álgebra‬",
+      "sr-Latn": "‪Математика преко површина - Алгебра‬",
+      "sr-ijekavsk": "‪Математика преко површина - Алгебра‬",
+      "cnr": "‪Математика преко површина - Алгебра‬",
+      "ca-ES-valencia": "‪Model d'àrea: àlgebra‬",
+      "la": "Algebra per exemplar areae",
+      "tpi": "Aljebra wantaim model bilong eria"
     }
   },
   "./snippets/area-model-decimals": {
@@ -624,7 +844,14 @@
       "en-CA": "Area Model Decimals",
       "en-AU": "Area Model Decimals",
       "en-IN": "Area Model Decimals",
-      "sr-Cyrl": "Математика преко површина-Децимални бројеви"
+      "sr-Cyrl": "Математика преко површина-Децимални бројеви",
+      "pt-PT": "‪Decimais da Áreas do Modelo‬",
+      "sr-Latn": "‪Математика преко површина-Децимални бројеви‬",
+      "sr-ijekavsk": "‪Математика преко површина-Децимални бројеви‬",
+      "cnr": "‪Математика преко површина-Децимални бројеви‬",
+      "ca-ES-valencia": "‪Model d'àrea: decimals‬",
+      "la": "Decimales per exemplar areae",
+      "tpi": "Ol desimal wantaim model bilong eria"
     }
   },
   "./snippets/area-model-introduction": {
@@ -721,7 +948,14 @@
       "en-CA": "Area Model Introduction",
       "en-AU": "Area Model Introduction",
       "en-IN": "Area Model Introduction",
-      "sr-Cyrl": "Математика преко површина-Увод"
+      "sr-Cyrl": "Математика преко површина-Увод",
+      "pt-PT": "‪Modelo de Área: Introdução‬",
+      "sr-Latn": "‪Математика преко површина-Увод‬",
+      "sr-ijekavsk": "‪Математика преко површина-Увод‬",
+      "cnr": "‪Математика преко површина-Увод‬",
+      "ca-ES-valencia": "‪Model d'àrea: introducció‬",
+      "la": "Introductio ad exemplar areae",
+      "tpi": "Ol as tingting bilong model bilong eria"
     }
   },
   "./snippets/area-model-multiplication": {
@@ -819,7 +1053,14 @@
       "en-CA": "Area Model Multiplication",
       "en-AU": "Area Model Multiplication",
       "en-IN": "Area Model Multiplication",
-      "sr-Cyrl": "Математика преко површина-Множење"
+      "sr-Cyrl": "Математика преко површина-Множење",
+      "pt-PT": "‪Modelo de Área: Multiplicação‬",
+      "sr-Latn": "‪Математика преко површина-Множење‬",
+      "sr-ijekavsk": "‪Математика преко површина-Множење‬",
+      "cnr": "‪Математика преко површина-Множење‬",
+      "ca-ES-valencia": "‪Model d'àrea: multiplicació‬",
+      "la": "Multiplicatio per exemplar areae",
+      "tpi": "Maltiaplai wantaim model bilong eria"
     }
   },
   "./snippets/arithmetic": {
@@ -927,7 +1168,14 @@
       "en-CA": "Arithmetic",
       "en-AU": "Arithmetic",
       "en-IN": "Arithmetic",
-      "sr-Cyrl": "Аритметика"
+      "sr-Cyrl": "Аритметика",
+      "pt-PT": "‪Aritmética‬",
+      "sr-Latn": "‪Аритметика‬",
+      "sr-ijekavsk": "‪Аритметика‬",
+      "cnr": "‪Аритметика‬",
+      "ca-ES-valencia": "‪Aritmètica‬",
+      "la": "Arithmetica",
+      "tpi": "Ol as wok bilong namba"
     }
   },
   "./snippets/atomic-interactions": {
@@ -1031,7 +1279,14 @@
       "en-AU": "Atomic Interactions",
       "en-IN": "Atomic Interactions",
       "no": "Atomære vekselvirkninger",
-      "sr-Cyrl": "Атомске интеракције"
+      "sr-Cyrl": "Атомске интеракције",
+      "pt-PT": "‪Interações Atómicas‬",
+      "sr-Latn": "‪Атомске интеракције‬",
+      "sr-ijekavsk": "‪Атомске интеракције‬",
+      "cnr": "‪Атомске интеракције‬",
+      "ca-ES-valencia": "‪Interaccions atòmiques‬",
+      "la": "Interactiones atomorum",
+      "tpi": "Ol atom i mekim wanem taim ol i bung"
     }
   },
   "./snippets/balancing-act": {
@@ -1144,7 +1399,14 @@
       "en-CA": "Balancing Act",
       "en-AU": "Balancing Act",
       "en-IN": "Balancing Act",
-      "sr-Cyrl": "Равнотежа"
+      "sr-Cyrl": "Равнотежа",
+      "sr-Latn": "‪Равнотежа‬",
+      "sr-ijekavsk": "‪Равнотежа‬",
+      "cnr": "‪Равнотежа‬",
+      "ca-ES-valencia": "‪Llei de l'equilibri‬",
+      "la": "Ludus aequilibrii",
+      "tpi": "Pilai balens",
+      "pt-PT": "Equilíbrio"
     }
   },
   "./snippets/balancing-chemical-equations": {
@@ -1259,7 +1521,14 @@
       "en-AU": "Balancing Chemical Equations",
       "en-IN": "Balancing Chemical Equations",
       "no": "Balanser kjemiske ligninger",
-      "sr-Cyrl": "Изједначавање хемијских једначина"
+      "sr-Cyrl": "Изједначавање хемијских једначина",
+      "pt-PT": "‪Acerto de Equações Químicas‬",
+      "sr-Latn": "‪Изједначавање хемијских једначина‬",
+      "sr-ijekavsk": "‪Изједначавање хемијских једначина‬",
+      "cnr": "‪Изједначавање хемијских једначина‬",
+      "ca-ES-valencia": "‪Ajust d'equacions químiques‬",
+      "la": "Aequationes chemicas aequa",
+      "tpi": "Balensim ol ikwesen bilong kemistri"
     }
   },
   "./snippets/balloons-and-static-electricity": {
@@ -1373,7 +1642,14 @@
       "en-AU": "Balloons and Static Electricity",
       "en-IN": "Balloons and Static Electricity",
       "no": "Ballonger og statisk elektrisitet",
-      "sr-Cyrl": "Балони и статички електрицитет"
+      "sr-Cyrl": "Балони и статички електрицитет",
+      "pt-PT": "‪Balões e Eletricidade Estática‬",
+      "sr-Latn": "‪Балони и статички електрицитет‬",
+      "sr-ijekavsk": "‪Балони и статички електрицитет‬",
+      "cnr": "‪Балони и статички електрицитет‬",
+      "ca-ES-valencia": "‪Globus i electricitat estàtica‬",
+      "la": "Globuli inflati et electricitas statica",
+      "tpi": "Ol balun na elektrik i stap tasol"
     }
   },
   "./snippets/beers-law-lab": {
@@ -1479,7 +1755,13 @@
       "en-AU": "Beer's Law Lab",
       "en-IN": "Beer's Law Lab",
       "no": "Beers lov laboratorium",
-      "sr-Cyrl": "Ламбер-Беров закон (Lambert-Beer)"
+      "sr-Cyrl": "Ламбер-Беров закон (Lambert-Beer)",
+      "pt-PT": "‪Laboratório da Lei de Beer‬",
+      "sr-ijekavsk": "‪Ламбер-Беров закон (Lambert-Beer)‬",
+      "cnr": "‪Ламбер-Беров закон (Lambert-Beer)‬",
+      "ca-ES-valencia": "‪Laboratori de la llei de Beer‬",
+      "la": "Laboratorium legis Beer",
+      "tpi": "Leb bilong lo bilong Beer"
     }
   },
   "./snippets/bending-light": {
@@ -1594,7 +1876,14 @@
       "en-AU": "Bending Light",
       "en-IN": "Bending Light",
       "no": "Avbøyning av lys",
-      "sr-Cyrl": "Преламање светлости"
+      "sr-Cyrl": "Преламање светлости",
+      "pt-PT": "‪Curvatura da Luz‬",
+      "sr-Latn": "‪Преламање светлости‬",
+      "sr-ijekavsk": "‪Преламање светлости‬",
+      "cnr": "‪Преламање светлости‬",
+      "ca-ES-valencia": "‪Reflexió i refracció de la llum‬",
+      "la": "Refractio luminis",
+      "tpi": "Lait i tanim"
     }
   },
   "./snippets/beta-decay": {
@@ -1622,7 +1911,46 @@
       "en-CA": "Beta Decay",
       "en-AU": "Beta Decay",
       "en-IN": "Beta Decay",
-      "sr-Cyrl": "Бета распад"
+      "sr-Cyrl": "Бета распад",
+      "sr-Latn": "‪Бета распад‬",
+      "sr-ijekavsk": "‪Бета распад‬",
+      "cnr": "‪Бета распад‬",
+      "la": "Dissolutio beta",
+      "tpi": "Beta i bruk daun",
+      "nl": "Bètaverval",
+      "ca": "Desintegració beta",
+      "is": "Beta-hrörnun",
+      "sv": "Betasönderfall",
+      "sl": "Beta razpad",
+      "sk": "Beta rozpad",
+      "hr": "Beta raspad",
+      "eu": "Beta desintegrazioa",
+      "zh": "β衰变",
+      "zh-Hans": "β衰变",
+      "zh-Hant": "β衰變",
+      "pt": "Decaimento beta",
+      "pt-PT": "Decaimento beta",
+      "bn": "বিটা ক্ষয়",
+      "ms": "Pereputan beta",
+      "sw": "Muozo wa beta",
+      "ha": "Ruɓewar beta",
+      "om": "Diigama beetaa",
+      "am": "የቤታ መበስበስ",
+      "fa": "واپاشی بتا",
+      "hi": "बीटा क्षय",
+      "he": "דעיכת בטא",
+      "ar": "اضمحلال بيتا",
+      "ko": "베타 붕괴",
+      "mn": "Бета задрал",
+      "bg": "Бета разпад",
+      "hu": "Béta-bomlás",
+      "tr": "Beta bozunumu",
+      "uk": "Бета-розпад",
+      "ru": "Бета-распад",
+      "fi": "Beetahajoaminen",
+      "el": "Διάσπαση βήτα",
+      "ca-ES-valencia": "Desintegració beta",
+      "gu": "બીટા ક્ષય"
     }
   },
   "./snippets/blackbody-spectrum": {
@@ -1720,7 +2048,14 @@
       "en-AU": "Blackbody Spectrum",
       "en-IN": "Blackbody Spectrum",
       "no": "Sortlegemespekter",
-      "sr-Cyrl": "Зрачење црног тела"
+      "sr-Cyrl": "Зрачење црног тела",
+      "pt-PT": "‪Espectro do Corpo Negro‬",
+      "sr-Latn": "‪Зрачење црног тела‬",
+      "sr-ijekavsk": "‪Зрачење црног тела‬",
+      "cnr": "‪Зрачење црног тела‬",
+      "ca-ES-valencia": "‪Espectre del cos negre‬",
+      "la": "Spectrum corporis nigri",
+      "tpi": "Ol kala bilong lait bilong blakpela samting"
     }
   },
   "./snippets/build-a-fraction": {
@@ -1824,7 +2159,14 @@
       "en-CA": "Build a Fraction",
       "en-AU": "Build a Fraction",
       "en-IN": "Build a Fraction",
-      "sr-Cyrl": "Направи разломак"
+      "sr-Cyrl": "Направи разломак",
+      "pt-PT": "‪Constrói uma Fração‬",
+      "sr-Latn": "‪Направи разломак‬",
+      "sr-ijekavsk": "‪Направи разломак‬",
+      "cnr": "‪Направи разломак‬",
+      "ca-ES-valencia": "‪Construeix una fracció‬",
+      "la": "Fractionem construe",
+      "tpi": "Wokim fraksen"
     }
   },
   "./snippets/build-a-molecule": {
@@ -1921,7 +2263,15 @@
       "en-AU": "Build a Molecule",
       "en-IN": "Build a Molecule",
       "no": "Bygg et molekyl",
-      "sr-Cyrl": "Направи молекул"
+      "sr-Cyrl": "Направи молекул",
+      "pt-PT": "‪Constrói Moléculas‬",
+      "sr-Latn": "‪Направи молекул‬",
+      "sr-ijekavsk": "‪Направи молекул‬",
+      "cnr": "‪Направи молекул‬",
+      "ca-ES-valencia": "‪Construeix una molècula‬",
+      "la": "Moleculam construe",
+      "tpi": "Wokim molekul",
+      "ru": "Собери молекулу"
     }
   },
   "./snippets/build-a-nucleus": {
@@ -2011,7 +2361,16 @@
       "en-AU": "Build a Nucleus",
       "en-IN": "Build a Nucleus",
       "no": "Bygg en atomkjerne",
-      "sr-Cyrl": "Направи језгро"
+      "sr-Cyrl": "Направи језгро",
+      "pt-PT": "‪Constrói um Núcleo‬",
+      "sr-Latn": "‪Направи језгро‬",
+      "sr-ijekavsk": "‪Направи језгро‬",
+      "cnr": "‪Направи језгро‬",
+      "ca-ES-valencia": "‪Construïm un nucli‬",
+      "la": "Nucleum construe",
+      "tpi": "Wokim nuklius",
+      "zh": "构建原子核",
+      "zh-Hans": "构建原子核"
     }
   },
   "./snippets/build-an-atom": {
@@ -2129,7 +2488,14 @@
       "en-AU": "Build an Atom",
       "en-IN": "Build an Atom",
       "no": "Bygg et atom",
-      "sr-Cyrl": "Направи атом"
+      "sr-Cyrl": "Направи атом",
+      "pt-PT": "‪Constrói um átomo‬",
+      "sr-Latn": "‪Направи атом‬",
+      "sr-ijekavsk": "‪Направи атом‬",
+      "cnr": "‪Направи атом‬",
+      "ca-ES-valencia": "‪Construeix un àtom‬",
+      "la": "Atomum construe",
+      "tpi": "Wokim atom"
     }
   },
   "./snippets/buoyancy": {
@@ -2200,7 +2566,16 @@
       "en-CA": "Upthrust",
       "en-AU": "Upthrust",
       "en-IN": "Upthrust",
-      "sr-Cyrl": "Потисак"
+      "sr-Cyrl": "Потисак",
+      "ca-ES-valencia": "‪Flotabilitat‬",
+      "la": "Vis natandi",
+      "tpi": "Fos i strongim samting i flot",
+      "eu": "Flotagarritasuna",
+      "zh": "浮力",
+      "zh-Hans": "浮力",
+      "pt-PT": "Impulsão",
+      "bg": "Плаваемост",
+      "ru": "Плавучесть"
     }
   },
   "./snippets/buoyancy-basics": {
@@ -2265,7 +2640,23 @@
       "en-CA": "Upthrust: Basics",
       "en-AU": "Upthrust: Basics",
       "en-IN": "Upthrust: Basics",
-      "sr-Cyrl": "Потисак: основе"
+      "sr-Cyrl": "Потисак: основе",
+      "pt-PT": "‪Flutuabilidade: Noções básicas‬",
+      "sr-Latn": "‪Потисак: основе‬",
+      "sr-ijekavsk": "‪Потисак: основе‬",
+      "cnr": "‪Потисак: основе‬",
+      "ca-ES-valencia": "‪Flotabilitat: fonaments‬",
+      "la": "Vis natandi: fundamenta",
+      "tpi": "Fos i strongim samting i flot: ol as tingting",
+      "eu": "Flotagarritasuna: oinarriak",
+      "zh": "浮力：基础",
+      "zh-Hans": "浮力：基础",
+      "am": "የተንሳፋፊነት መሠረታዊ ነገሮች",
+      "ja": "浮力：基礎",
+      "bg": "Основи на плаваемостта",
+      "uk": "Основи плавучості",
+      "ru": "Основы плавучести",
+      "fi": "Noste: perusteet"
     }
   },
   "./snippets/calculus-grapher": {
@@ -2335,7 +2726,21 @@
       "en-CA": "Calculus Grapher",
       "en-AU": "Calculus Grapher",
       "en-IN": "Calculus Grapher",
-      "sr-Cyrl": "Изводи и интеграли - графички (Calculus Grapher)"
+      "sr-Cyrl": "Изводи и интеграли - графички (Calculus Grapher)",
+      "pt-PT": "‪Gráfico de Cálculo‬",
+      "sr-Latn": "‪Изводи и интеграли - графички (Calculus Grapher)‬",
+      "sr-ijekavsk": "‪Изводи и интеграли - графички (Calculus Grapher)‬",
+      "cnr": "‪Изводи и интеграли - графички (Calculus Grapher)‬",
+      "ca-ES-valencia": "‪Càlcul per funcions‬",
+      "la": "Delineator calculi",
+      "tpi": "Droim ol graf bilong kalkulas",
+      "sk": "Graf funkcií",
+      "zh": "微积分图像绘制",
+      "zh-Hans": "微积分图像绘制",
+      "am": "የካልኩለስ ግራፍ መሳያ",
+      "ja": "微積分グラフ作成",
+      "uk": "Графік функцій",
+      "ru": "График функций"
     }
   },
   "./snippets/capacitor-lab-basics": {
@@ -2434,7 +2839,14 @@
       "en-AU": "Capacitor Lab: Basics",
       "en-IN": "Capacitor Lab: Basics",
       "no": "Kondensatorer - grunnleggende",
-      "sr-Cyrl": "Кондензатор: основе"
+      "sr-Cyrl": "Кондензатор: основе",
+      "pt-PT": "‪Laboratório do Capacitor: Básico‬",
+      "sr-Latn": "‪Кондензатор: основе‬",
+      "sr-ijekavsk": "‪Кондензатор: основе‬",
+      "cnr": "‪Кондензатор: основе‬",
+      "ca-ES-valencia": "‪Laboratori de condensador elèctric: fonaments‬",
+      "la": "Laboratorium condensatoris: fundamenta",
+      "tpi": "Leb bilong kapasita: ol as tingting"
     }
   },
   "./snippets/center-and-variability": {
@@ -2510,7 +2922,22 @@
       "en-CA": "Center and Variability",
       "en-AU": "Center and Variability",
       "en-IN": "Center and Variability",
-      "sr-Cyrl": "Средина и расподела"
+      "sr-Cyrl": "Средина и расподела",
+      "sr-Latn": "‪Средина и расподела‬",
+      "sr-ijekavsk": "‪Средина и расподела‬",
+      "cnr": "‪Средина и расподела‬",
+      "ca-ES-valencia": "‪Centre i variabilitat‬",
+      "la": "Centrum et variabilitas",
+      "tpi": "Namel na senis bilong ol namba",
+      "sl": "Središčna vrednost in variabilnost",
+      "hr": "Središnja vrijednost i varijabilnost",
+      "zh": "集中趋势与变异性",
+      "zh-Hans": "集中趋势与变异性",
+      "pt": "Tendência central e variabilidade",
+      "pt-PT": "Tendência central e variabilidade",
+      "uk": "Центр і мінливість",
+      "ru": "Центральная тенденция и изменчивость",
+      "fi": "Keskiluku ja vaihtelu"
     }
   },
   "./snippets/charges-and-fields": {
@@ -2613,7 +3040,14 @@
       "en-AU": "Charges and Fields",
       "en-IN": "Charges and Fields",
       "no": "Ladninger og Felt",
-      "sr-Cyrl": "Наелектрисања и поља"
+      "sr-Cyrl": "Наелектрисања и поља",
+      "pt-PT": "‪Cargas e Campos‬",
+      "sr-Latn": "‪Наелектрисања и поља‬",
+      "sr-ijekavsk": "‪Наелектрисања и поља‬",
+      "cnr": "‪Наелектрисања и поља‬",
+      "ca-ES-valencia": "‪Càrregues i camps‬",
+      "la": "Onera et campi electrici",
+      "tpi": "Ol saks na fil elektrik"
     }
   },
   "./snippets/circuit-construction-kit-ac": {
@@ -2705,7 +3139,15 @@
       "en-CA": "Circuit Construction Kit: AC",
       "en-AU": "Circuit Construction Kit: AC",
       "en-IN": "Circuit Construction Kit: AC",
-      "sr-Cyrl": "Комплет за наизменичну (AC)  струју"
+      "sr-Cyrl": "Комплет за наизменичну (AC)  струју",
+      "pt-PT": "‪Kit de Construção de Circuitos: AC‬",
+      "sr-Latn": "‪Комплет за наизменичну (AC)  струју‬",
+      "sr-ijekavsk": "‪Комплет за наизменичну (AC)  струју‬",
+      "cnr": "‪Комплет за наизменичну (AC)  струју‬",
+      "ca-ES-valencia": "‪Joc de construcció de circuit: CA‬",
+      "la": "Instrumenta ad circuitus construendos: cursus alternus",
+      "tpi": "Wokim sekit: karen AC",
+      "hu": "Váltakozó áramú áramkörépítő készlet"
     }
   },
   "./snippets/circuit-construction-kit-ac-virtual-lab": {
@@ -2796,7 +3238,15 @@
       "en-CA": "Circuit Construction Kit: AC - Virtual Lab",
       "en-AU": "Circuit Construction Kit: AC - Virtual Lab",
       "en-IN": "Circuit Construction Kit: AC - Virtual Lab",
-      "sr-Cyrl": "Комплет за наизменичну струју: AC - виртуелна лабораторија"
+      "sr-Cyrl": "Комплет за наизменичну струју: AC - виртуелна лабораторија",
+      "pt-PT": "‪Kit de Construção de Circuitos: AC Lab Virtual‬",
+      "sr-Latn": "‪Комплет за наизменичну струју: AC - виртуелна лабораторија‬",
+      "sr-ijekavsk": "‪Комплет за наизменичну струју: AC - виртуелна лабораторија‬",
+      "cnr": "‪Комплет за наизменичну струју: AC - виртуелна лабораторија‬",
+      "ca-ES-valencia": "‪Joc de construcció de circuit: CA - Laboratori virtual‬",
+      "la": "Instrumenta ad circuitus construendos: cursus alternus – laboratorium virtuale",
+      "tpi": "Wokim sekit: karen AC long leb long kompiuta",
+      "hu": "Váltakozó áramú áramkörépítő készlet – virtuális labor"
     }
   },
   "./snippets/circuit-construction-kit-dc": {
@@ -2901,7 +3351,14 @@
       "en-AU": "Circuit Construction Kit: DC",
       "en-IN": "Circuit Construction Kit: DC",
       "no": "DC-Kretskonstruksjon",
-      "sr-Cyrl": "Струјно коло - једносмерна струја (DC)"
+      "sr-Cyrl": "Струјно коло - једносмерна струја (DC)",
+      "pt-PT": "‪Kit de Construção de Circuitos: DC‬",
+      "sr-Latn": "‪Струјно коло - једносмерна струја (DC)‬",
+      "sr-ijekavsk": "‪Струјно коло - једносмерна струја (DC)‬",
+      "cnr": "‪Струјно коло - једносмерна струја (DC)‬",
+      "ca-ES-valencia": "‪Kit de construcció de circuit: corrent continu (CC)‬",
+      "la": "Instrumenta ad circuitus construendos: cursus continuus",
+      "tpi": "Wokim sekit: karen DC"
     }
   },
   "./snippets/circuit-construction-kit-dc-virtual-lab": {
@@ -3005,7 +3462,14 @@
       "en-AU": "Circuit Construction Kit: DC - Virtual Lab",
       "en-IN": "Circuit Construction Kit: DC - Virtual Lab",
       "no": "DC kretslaboratorium",
-      "sr-Cyrl": "Комплет за једносмерну струју (DC) -Виртуелна лаб"
+      "sr-Cyrl": "Комплет за једносмерну струју (DC) -Виртуелна лаб",
+      "pt-PT": "‪Kit de Construção de Circuitos: DC - Virtual Lab‬",
+      "sr-Latn": "‪Комплет за једносмерну струју (DC) -Виртуелна лаб‬",
+      "sr-ijekavsk": "‪Комплет за једносмерну струју (DC) -Виртуелна лаб‬",
+      "cnr": "‪Комплет за једносмерну струју (DC) -Виртуелна лаб‬",
+      "ca-ES-valencia": "‪Kit de construcció de Circuit: Corrent Continu (CC) - Laboratori Virtual‬",
+      "la": "Instrumenta ad circuitus construendos: cursus continuus – laboratorium virtuale",
+      "tpi": "Wokim sekit: karen DC long leb long kompiuta"
     }
   },
   "./snippets/collision-lab": {
@@ -3096,7 +3560,14 @@
       "en-CA": "Collision Lab",
       "en-AU": "Collision Lab",
       "en-IN": "Collision Lab",
-      "sr-Cyrl": "Судари"
+      "sr-Cyrl": "Судари",
+      "pt-PT": "‪Laboratório de Colisões‬",
+      "sr-Latn": "‪Судари‬",
+      "sr-ijekavsk": "‪Судари‬",
+      "cnr": "‪Судари‬",
+      "ca-ES-valencia": "‪Laboratori de col·lisions‬",
+      "la": "Laboratorium collisionum",
+      "tpi": "Leb bilong ol samting i bam"
     }
   },
   "./snippets/color-vision": {
@@ -3210,7 +3681,14 @@
       "en-AU": "Color Vision",
       "en-IN": "Color Vision",
       "no": "Fargesyn",
-      "sr-Cyrl": "Како видимо боје"
+      "sr-Cyrl": "Како видимо боје",
+      "pt-PT": "‪Perceção da cor‬",
+      "sr-Latn": "‪Како видимо боје‬",
+      "sr-ijekavsk": "‪Како видимо боје‬",
+      "cnr": "‪Како видимо боје‬",
+      "ca-ES-valencia": "‪Visió del color‬",
+      "la": "Visio colorum",
+      "tpi": "Olsem wanem yumi lukim kala"
     }
   },
   "./snippets/concentration": {
@@ -3309,7 +3787,14 @@
       "en-CA": "Concentration",
       "en-AU": "Concentration",
       "en-IN": "Concentration",
-      "sr-Cyrl": "Концентрација"
+      "sr-Cyrl": "Концентрација",
+      "pt-PT": "‪Concentração‬",
+      "ca-ES-valencia": "‪Concentració‬",
+      "sr-Latn": "Концентрација",
+      "sr-ijekavsk": "Концентрација",
+      "cnr": "Концентрација",
+      "la": "Concentratio",
+      "tpi": "Strong bilong solusen"
     }
   },
   "./snippets/coulombs-law": {
@@ -3405,7 +3890,14 @@
       "en-AU": "Coulomb's Law",
       "en-IN": "Coulomb's Law",
       "no": "Coulombs Lov",
-      "sr-Cyrl": "Кулонов закон"
+      "sr-Cyrl": "Кулонов закон",
+      "pt-PT": "‪Lei de Coulomb‬",
+      "sr-Latn": "‪Кулонов закон‬",
+      "sr-ijekavsk": "‪Кулонов закон‬",
+      "cnr": "‪Кулонов закон‬",
+      "ca-ES-valencia": "‪Llei de Coulomb‬",
+      "la": "Lex Coulombi",
+      "tpi": "Lo bilong Coulomb"
     }
   },
   "./snippets/curve-fitting": {
@@ -3487,7 +3979,15 @@
       "en-CA": "Curve Fitting",
       "en-AU": "Curve Fitting",
       "en-IN": "Curve Fitting",
-      "sr-Cyrl": "Фитовање података"
+      "sr-Cyrl": "Фитовање података",
+      "pt-PT": "‪Ajuste da Curva‬",
+      "sr-Latn": "‪Фитовање података‬",
+      "sr-ijekavsk": "‪Фитовање података‬",
+      "cnr": "‪Фитовање података‬",
+      "ca-ES-valencia": "‪Ajust amb corbes‬",
+      "la": "Accommodatio curvae",
+      "tpi": "Stretim kava long ol mak",
+      "uk": "Підгонка кривої"
     }
   },
   "./snippets/density": {
@@ -3584,7 +4084,15 @@
       "en-CA": "Density",
       "en-AU": "Density",
       "en-IN": "Density",
-      "sr-Cyrl": "Густина"
+      "sr-Cyrl": "Густина",
+      "pt-PT": "‪Densidade‬",
+      "ca-ES-valencia": "‪Densitat‬",
+      "tl": "‪Timbang‬",
+      "sr-Latn": "Густина",
+      "sr-ijekavsk": "Густина",
+      "cnr": "Густина",
+      "la": "Densitas",
+      "tpi": "Densiti"
     }
   },
   "./snippets/diffusion": {
@@ -3684,7 +4192,14 @@
       "en-AU": "Diffusion",
       "en-IN": "Diffusion",
       "no": "Diffusjon",
-      "sr-Cyrl": "Дифузија"
+      "sr-Cyrl": "Дифузија",
+      "pt-PT": "‪Difusão‬",
+      "sr-Latn": "‪Дифузија‬",
+      "sr-ijekavsk": "‪Дифузија‬",
+      "cnr": "‪Дифузија‬",
+      "ca-ES-valencia": "‪Difusió‬",
+      "la": "Diffusio",
+      "tpi": "Ol patikel i go nabaut"
     }
   },
   "./snippets/energy-forms-and-changes": {
@@ -3787,7 +4302,14 @@
       "en-AU": "Energy Forms and Changes",
       "en-IN": "Energy Forms and Changes",
       "no": "Energiformer og overganger",
-      "sr-Cyrl": "Енергија, врсте и промене"
+      "sr-Cyrl": "Енергија, врсте и промене",
+      "pt-PT": "‪Formas e transformações de energia‬",
+      "sr-Latn": "‪Енергија, врсте и промене‬",
+      "sr-ijekavsk": "‪Енергија, врсте и промене‬",
+      "cnr": "‪Енергија, врсте и промене‬",
+      "ca-ES-valencia": "‪Formes d'energia i canvis‬",
+      "la": "Formae et mutationes energiae",
+      "tpi": "Ol kain enesi na senis bilong en"
     }
   },
   "./snippets/energy-skate-park": {
@@ -3880,7 +4402,14 @@
       "en-CA": "Energy Skate Park",
       "en-AU": "Energy Skate Park",
       "en-IN": "Energy Skate Park",
-      "sr-Cyrl": "Енергија у скејт парку"
+      "sr-Cyrl": "Енергија у скејт парку",
+      "pt-PT": "‪Energia do Parque de Skate‬",
+      "sr-Latn": "‪Енергија у скејт парку‬",
+      "sr-ijekavsk": "‪Енергија у скејт парку‬",
+      "cnr": "‪Енергија у скејт парку‬",
+      "ca-ES-valencia": "‪Energia a la pista de patinatge‬",
+      "la": "Parcus patinandi et energia",
+      "tpi": "Ples sket na enesi"
     }
   },
   "./snippets/energy-skate-park-basics": {
@@ -3989,7 +4518,14 @@
       "en-AU": "Energy Skate Park: Basics",
       "en-IN": "Energy Skate Park: Basics",
       "no": "Energi i skateparken - Grunnleggende",
-      "sr-Cyrl": "Енергија у скејт-парку: Основна верзија"
+      "sr-Cyrl": "Енергија у скејт-парку: Основна верзија",
+      "pt-PT": "‪Energia do Parque de Skate: Básico‬",
+      "sr-Latn": "‪Енергија у скејт-парку: Основна верзија‬",
+      "sr-ijekavsk": "‪Енергија у скејт-парку: Основна верзија‬",
+      "cnr": "‪Енергија у скејт-парку: Основна верзија‬",
+      "ca-ES-valencia": "‪Energia a la Pista de Patinatge: Fonaments‬",
+      "la": "Parcus patinandi et energia: fundamenta",
+      "tpi": "Ples sket na enesi: ol as tingting"
     }
   },
   "./snippets/equality-explorer": {
@@ -4082,7 +4618,14 @@
       "en-CA": "Equality Explorer",
       "en-AU": "Equality Explorer",
       "en-IN": "Equality Explorer",
-      "sr-Cyrl": "Истраживач једначина"
+      "sr-Cyrl": "Истраживач једначина",
+      "pt-PT": "‪Explorador de Igualdades‬",
+      "sr-Latn": "‪Истраживач једначина‬",
+      "sr-ijekavsk": "‪Истраживач једначина‬",
+      "cnr": "‪Истраживач једначина‬",
+      "ca-ES-valencia": "‪Explorador d'Igualtat‬",
+      "la": "Exploratio aequalitatis",
+      "tpi": "Skelim ol samting i wankain"
     }
   },
   "./snippets/equality-explorer-basics": {
@@ -4172,7 +4715,14 @@
       "en-CA": "Equality Explorer: Basics",
       "en-AU": "Equality Explorer: Basics",
       "en-IN": "Equality Explorer: Basics",
-      "sr-Cyrl": "Истраживач једначина: Основе"
+      "sr-Cyrl": "Истраживач једначина: Основе",
+      "pt-PT": "‪Explorador de Igualdades: Noções Básicas‬",
+      "sr-Latn": "‪Истраживач једначина: Основе‬",
+      "sr-ijekavsk": "‪Истраживач једначина: Основе‬",
+      "cnr": "‪Истраживач једначина: Основе‬",
+      "ca-ES-valencia": "‪Explorador d'igualtat: fonaments‬",
+      "la": "Exploratio aequalitatis: fundamenta",
+      "tpi": "Skelim ol samting i wankain: ol as tingting"
     }
   },
   "./snippets/equality-explorer-two-variables": {
@@ -4262,7 +4812,15 @@
       "en-CA": "Equality Explorer: Two Variables",
       "en-AU": "Equality Explorer: Two Variables",
       "en-IN": "Equality Explorer: Two Variables",
-      "sr-Cyrl": "Истраживач једначина: Две променљиве"
+      "sr-Cyrl": "Истраживач једначина: Две променљиве",
+      "pt-PT": "‪Explorador de Igualdades. Duas Variáveis‬",
+      "sr-Latn": "‪Истраживач једначина: Две променљиве‬",
+      "sr-ijekavsk": "‪Истраживач једначина: Две променљиве‬",
+      "cnr": "‪Истраживач једначина: Две променљиве‬",
+      "ca-ES-valencia": "‪Explorador d'igualtat: dues variables‬",
+      "la": "Exploratio aequalitatis: duae variabiles",
+      "tpi": "Skelim ol samting i wankain: tupela variabel",
+      "hr": "Istraživanje jednakosti: dvije varijable"
     }
   },
   "./snippets/expression-exchange": {
@@ -4354,7 +4912,14 @@
       "en-AU": "Expression Exchange",
       "en-IN": "Expression Exchange",
       "no": "Veksle utttrykk",
-      "sr-Cyrl": "Новчићи (Алгебарски изрази)"
+      "sr-Cyrl": "Новчићи (Алгебарски изрази)",
+      "pt-PT": "‪Troca de Expressão‬",
+      "sr-Latn": "‪Новчићи (Алгебарски изрази)‬",
+      "sr-ijekavsk": "‪Новчићи (Алгебарски изрази)‬",
+      "cnr": "‪Новчићи (Алгебарски изрази)‬",
+      "ca-ES-valencia": "‪Intercanvi d'expressions‬",
+      "la": "Permutatio expressionum",
+      "tpi": "Senisim ol ekspresen"
     }
   },
   "./snippets/faradays-electromagnetic-lab": {
@@ -4424,7 +4989,19 @@
       "en-CA": "Faraday's Electromagnetic Lab",
       "en-AU": "Faraday's Electromagnetic Lab",
       "en-IN": "Faraday's Electromagnetic Lab",
-      "sr-Cyrl": "Фарадејева електромагнетна лабораторија"
+      "sr-Cyrl": "Фарадејева електромагнетна лабораторија",
+      "pt-PT": "‪Laboratório Eletromagnético de Faraday‬",
+      "sr-Latn": "‪Фарадејева електромагнетна лабораторија‬",
+      "sr-ijekavsk": "‪Фарадејева електромагнетна лабораторија‬",
+      "cnr": "‪Фарадејева електромагнетна лабораторија‬",
+      "ca-ES-valencia": "‪Laboratori electromagnètic de Faraday‬",
+      "la": "Laboratorium electromagneticum Faraday",
+      "tpi": "Leb bilong elektrik na magnet bilong Faraday",
+      "eu": "Faradayren laborategi elektromagnetikoa",
+      "bn": "ফ্যারাডের তড়িৎচুম্বকীয় গবেষণাগার",
+      "ja": "ファラデーの電磁気学ラボ",
+      "bg": "Електромагнитната лаборатория на Фарадей",
+      "ru": "Электромагнитная лаборатория Фарадея"
     }
   },
   "./snippets/faradays-law": {
@@ -4530,7 +5107,14 @@
       "en-AU": "Faraday's Law",
       "en-IN": "Faraday's Law",
       "no": "Faradays lov",
-      "sr-Cyrl": "Фарадејев закон"
+      "sr-Cyrl": "Фарадејев закон",
+      "pt-PT": "‪Lei de Faraday‬",
+      "sr-Latn": "‪Фарадејев закон‬",
+      "sr-ijekavsk": "‪Фарадејев закон‬",
+      "cnr": "‪Фарадејев закон‬",
+      "ca-ES-valencia": "‪Llei de Faraday‬",
+      "la": "Lex Faraday",
+      "tpi": "Lo bilong Faraday"
     }
   },
   "./snippets/forces-and-motion-basics": {
@@ -4640,7 +5224,14 @@
       "en-AU": "Forces and Motion: Basics",
       "en-IN": "Forces and Motion: Basics",
       "no": "Krefter og bevegelse: Grunnleggende",
-      "sr-Cyrl": "Силе и кретање - Основе"
+      "sr-Cyrl": "Силе и кретање - Основе",
+      "pt-PT": "‪Forças e Movimento: Noções Básicas‬",
+      "sr-Latn": "‪Силе и кретање - Основе‬",
+      "sr-ijekavsk": "‪Силе и кретање - Основе‬",
+      "cnr": "‪Силе и кретање - Основе‬",
+      "ca-ES-valencia": "‪Les forces i el moviment. Nivell bàsic‬",
+      "la": "Vires et motus: fundamenta",
+      "tpi": "Ol fos na muv: ol as tingting"
     }
   },
   "./snippets/fourier-making-waves": {
@@ -4713,7 +5304,20 @@
       "en-CA": "Fourier: Making Waves",
       "en-AU": "Fourier: Making Waves",
       "en-IN": "Fourier: Making Waves",
-      "sr-Cyrl": "Фурије: Направи таласе"
+      "sr-Cyrl": "Фурије: Направи таласе",
+      "pt-PT": "‪Fourier: Gerar Ondas‬",
+      "sr-Latn": "‪Фурије: Направи таласе‬",
+      "sr-ijekavsk": "‪Фурије: Направи таласе‬",
+      "cnr": "‪Фурије: Направи таласе‬",
+      "ca-ES-valencia": "‪Fourier: creant ones‬",
+      "la": "Fourier: undas facere",
+      "tpi": "Fourier: wokim ol wev",
+      "sl": "Fourier: ustvarjanje valov",
+      "zh": "傅里叶：合成波",
+      "zh-Hans": "傅里叶：合成波",
+      "ja": "フーリエ：波を作る",
+      "hu": "Fourier: hullámok létrehozása",
+      "fi": "Fourier: aaltojen luominen"
     }
   },
   "./snippets/fraction-matcher": {
@@ -4820,7 +5424,15 @@
       "en-CA": "Fraction Matcher",
       "en-AU": "Fraction Matcher",
       "en-IN": "Fraction Matcher",
-      "sr-Cyrl": "Правимо разломке"
+      "sr-Cyrl": "Правимо разломке",
+      "pt-PT": "‪Comparador de Frações‬",
+      "sr-Latn": "‪Правимо разломке‬",
+      "sr-ijekavsk": "‪Правимо разломке‬",
+      "cnr": "‪Правимо разломке‬",
+      "ca-ES-valencia": "‪Aparellament de fraccions‬",
+      "be": "fraction-matcher",
+      "la": "Fractiones pares coniunge",
+      "tpi": "Painim ol fraksen i wankain"
     }
   },
   "./snippets/fractions-equality": {
@@ -4919,7 +5531,14 @@
       "en-CA": "Fractions: Equality",
       "en-AU": "Fractions: Equality",
       "en-IN": "Fractions: Equality",
-      "sr-Cyrl": "Разломци: Једнакости"
+      "sr-Cyrl": "Разломци: Једнакости",
+      "pt-PT": "‪Frações: Igualdade‬",
+      "sr-Latn": "‪Разломци: Једнакости‬",
+      "sr-ijekavsk": "‪Разломци: Једнакости‬",
+      "cnr": "‪Разломци: Једнакости‬",
+      "ca-ES-valencia": "‪Fraccions. Igualtats‬",
+      "la": "Fractiones: aequalitas",
+      "tpi": "Fraksen: ol fraksen i wankain"
     }
   },
   "./snippets/fractions-intro": {
@@ -5022,7 +5641,14 @@
       "en-CA": "Fractions: Intro",
       "en-AU": "Fractions: Intro",
       "en-IN": "Fractions: Intro",
-      "sr-Cyrl": "Разломци: Увод"
+      "sr-Cyrl": "Разломци: Увод",
+      "pt-PT": "‪Frações: Introdução‬",
+      "sr-Latn": "‪Разломци: Увод‬",
+      "sr-ijekavsk": "‪Разломци: Увод‬",
+      "cnr": "‪Разломци: Увод‬",
+      "ca-ES-valencia": "‪Fraccions: introducció‬",
+      "la": "Fractiones: introductio",
+      "tpi": "Fraksen: ol as tingting"
     }
   },
   "./snippets/fractions-mixed-numbers": {
@@ -5119,7 +5745,15 @@
       "en-CA": "Fractions: Mixed Numbers",
       "en-AU": "Fractions: Mixed Numbers",
       "en-IN": "Fractions: Mixed Numbers",
-      "sr-Cyrl": "Разломци: Мешовити бројеви"
+      "sr-Cyrl": "Разломци: Мешовити бројеви",
+      "sr-Latn": "‪Разломци: Мешовити бројеви‬",
+      "sr-ijekavsk": "‪Разломци: Мешовити бројеви‬",
+      "cnr": "‪Разломци: Мешовити бројеви‬",
+      "ca-ES-valencia": "‪Fraccions: nombres mixtos‬",
+      "la": "Fractiones: numeri mixti",
+      "tpi": "Fraksen: ol namba wantaim fraksen",
+      "pt": "Frações: números mistos",
+      "pt-PT": "Frações: números mistos"
     }
   },
   "./snippets/friction": {
@@ -5226,7 +5860,14 @@
       "en-AU": "Friction",
       "en-IN": "Friction",
       "no": "Friksjon",
-      "sr-Cyrl": "Трење (концепт)"
+      "sr-Cyrl": "Трење (концепт)",
+      "pt-PT": "‪Atrito‬",
+      "sr-Latn": "‪Трење (концепт)‬",
+      "sr-ijekavsk": "‪Трење (концепт)‬",
+      "cnr": "‪Трење (концепт)‬",
+      "ca-ES-valencia": "‪Fricció‬",
+      "la": "Frictio",
+      "tpi": "Frixen"
     }
   },
   "./snippets/function-builder": {
@@ -5323,7 +5964,14 @@
       "en-AU": "Function Builder",
       "en-IN": "Function Builder",
       "no": "Funksjonsbygger",
-      "sr-Cyrl": "Градитељ једначина"
+      "sr-Cyrl": "Градитељ једначина",
+      "pt-PT": "‪Construtor de Frações‬",
+      "sr-Latn": "‪Градитељ једначина‬",
+      "sr-ijekavsk": "‪Градитељ једначина‬",
+      "cnr": "‪Градитељ једначина‬",
+      "ca-ES-valencia": "‪Generador de funcions‬",
+      "la": "Constructor functionum",
+      "tpi": "Wokim fanksen"
     }
   },
   "./snippets/function-builder-basics": {
@@ -5409,7 +6057,16 @@
       "en-CA": "Function Builder: Basics",
       "en-AU": "Function Builder: Basics",
       "en-IN": "Function Builder: Basics",
-      "sr-Cyrl": "Градитељ једначина: основе"
+      "sr-Cyrl": "Градитељ једначина: основе",
+      "sr-Latn": "‪Градитељ једначина: основе‬",
+      "sr-ijekavsk": "‪Градитељ једначина: основе‬",
+      "cnr": "‪Градитељ једначина: основе‬",
+      "ca-ES-valencia": "‪Generador de funcions (simplificat)‬",
+      "la": "Constructor functionum: fundamenta",
+      "tpi": "Wokim fanksen: ol as tingting",
+      "pt": "Construtor de funções: noções básicas",
+      "pt-PT": "Construtor de funções: noções básicas",
+      "fi": "Funktioiden rakentaminen: perusteet"
     }
   },
   "./snippets/gas-properties": {
@@ -5517,7 +6174,14 @@
       "en-AU": "Gas Properties",
       "en-IN": "Gas Properties",
       "no": "Gas Properties",
-      "sr-Cyrl": "Особине гаса"
+      "sr-Cyrl": "Особине гаса",
+      "pt-PT": "‪Propriedades dos Gases‬",
+      "sr-Latn": "‪Особине гаса‬",
+      "sr-ijekavsk": "‪Особине гаса‬",
+      "cnr": "‪Особине гаса‬",
+      "ca-ES-valencia": "‪Propietats dels gasos‬",
+      "la": "Proprietates gasorum",
+      "tpi": "Ol pasin bilong ges"
     }
   },
   "./snippets/gases-intro": {
@@ -5617,7 +6281,15 @@
       "en-AU": "Gases Intro",
       "en-IN": "Gases Intro",
       "no": "Introduksjon til gasslover",
-      "sr-Cyrl": "Гас - увод"
+      "sr-Cyrl": "Гас - увод",
+      "pt-PT": "‪Introdução aos Gases‬",
+      "sr-Latn": "‪Гас - увод‬",
+      "sr-ijekavsk": "‪Гас - увод‬",
+      "cnr": "‪Гас - увод‬",
+      "ca-ES-valencia": "‪Introducció als gasos‬",
+      "tl": "‪Introduksyon sa Gas‬",
+      "la": "Introductio ad gasa",
+      "tpi": "Ol as tingting bilong ges"
     }
   },
   "./snippets/gene-expression-essentials": {
@@ -5703,7 +6375,19 @@
       "en-AU": "Gene Expression Essentials",
       "en-IN": "Gene Expression Essentials",
       "no": "Genuttrykk",
-      "sr-Cyrl": "Особине гена - Основе"
+      "sr-Cyrl": "Особине гена - Основе",
+      "sr-Latn": "‪Особине гена - Основе‬",
+      "sr-ijekavsk": "‪Особине гена - Основе‬",
+      "cnr": "‪Особине гена - Основе‬",
+      "ca-ES-valencia": "‪Fonaments de l'expressió gènica‬",
+      "la": "Fundamenta expressionis genorum",
+      "tpi": "Ol as tingting bilong wok bilong ol jin",
+      "sl": "Osnove izražanja genov",
+      "sk": "Základy génovej expresie",
+      "hr": "Osnove ekspresije gena",
+      "pt": "Fundamentos da expressão génica",
+      "pt-PT": "Fundamentos da expressão génica",
+      "fi": "Geenien ilmentymisen perusteet"
     }
   },
   "./snippets/generator": {
@@ -5769,7 +6453,21 @@
       "en-CA": "Generator",
       "en-AU": "Generator",
       "en-IN": "Generator",
-      "sr-Cyrl": "Генератор"
+      "sr-Cyrl": "Генератор",
+      "sr-Latn": "‪Генератор‬",
+      "sr-ijekavsk": "‪Генератор‬",
+      "cnr": "‪Генератор‬",
+      "ca-ES-valencia": "‪Generador‬",
+      "la": "Generator",
+      "tpi": "Jenareta",
+      "eu": "Sorgailua",
+      "pt": "Gerador",
+      "pt-PT": "Gerador",
+      "bn": "জেনারেটর",
+      "ja": "発電機",
+      "bg": "Генератор",
+      "hu": "Generátor",
+      "ru": "Генератор"
     }
   },
   "./snippets/geometric-optics": {
@@ -5861,7 +6559,14 @@
       "en-CA": "Geometric Optics",
       "en-AU": "Geometric Optics",
       "en-IN": "Geometric Optics",
-      "sr-Cyrl": "Геометријска оптика"
+      "sr-Cyrl": "Геометријска оптика",
+      "pt-PT": "‪Ótica Geométrica‬",
+      "sr-Latn": "‪Геометријска оптика‬",
+      "sr-ijekavsk": "‪Геометријска оптика‬",
+      "cnr": "‪Геометријска оптика‬",
+      "ca-ES-valencia": "‪Òptica geomètrica‬",
+      "la": "Optica geometrica",
+      "tpi": "Jometri bilong lait"
     }
   },
   "./snippets/geometric-optics-basics": {
@@ -5941,7 +6646,16 @@
       "en-CA": "Geometric Optics: Basics",
       "en-AU": "Geometric Optics: Basics",
       "en-IN": "Geometric Optics: Basics",
-      "sr-Cyrl": "Геометријска оптика: Основе"
+      "sr-Cyrl": "Геометријска оптика: Основе",
+      "pt-PT": "‪Óptica Geométrica: Noções Básicas‬",
+      "sr-Latn": "‪Геометријска оптика: Основе‬",
+      "sr-ijekavsk": "‪Геометријска оптика: Основе‬",
+      "cnr": "‪Геометријска оптика: Основе‬",
+      "ca-ES-valencia": "‪Òptica geomètrica: fonaments‬",
+      "la": "Optica geometrica: fundamenta",
+      "tpi": "Jometri bilong lait: ol as tingting",
+      "am": "የጂኦሜትሪ ኦፕቲክስ መሠረታዊ ነገሮች",
+      "ru": "Основы геометрической оптики"
     }
   },
   "./snippets/graphing-lines": {
@@ -6038,7 +6752,14 @@
       "en-AU": "Graphing Lines",
       "en-IN": "Graphing Lines",
       "no": "Tegne Linjer",
-      "sr-Cyrl": "Цртање правих"
+      "sr-Cyrl": "Цртање правих",
+      "pt-PT": "‪Traçando Retas‬",
+      "sr-Latn": "‪Цртање правих‬",
+      "sr-ijekavsk": "‪Цртање правих‬",
+      "cnr": "‪Цртање правих‬",
+      "ca-ES-valencia": "‪Fer una gràfica: rectes‬",
+      "la": "Delineatio linearum",
+      "tpi": "Droim ol graf lain"
     }
   },
   "./snippets/graphing-quadratics": {
@@ -6125,7 +6846,15 @@
       "en-CA": "Graphing Quadratics",
       "en-AU": "Graphing Quadratics",
       "en-IN": "Graphing Quadratics",
-      "sr-Cyrl": "График квадратне функције"
+      "sr-Cyrl": "График квадратне функције",
+      "sr-Latn": "‪График квадратне функције‬",
+      "sr-ijekavsk": "‪График квадратне функције‬",
+      "cnr": "‪График квадратне функције‬",
+      "ca-ES-valencia": "‪Fer una gràfica: equacions quadràtiques‬",
+      "la": "Delineatio functionum quadraticarum",
+      "tpi": "Droim ol graf kwadratik",
+      "pt": "Representação gráfica de funções quadráticas",
+      "pt-PT": "Representação gráfica de funções quadráticas"
     }
   },
   "./snippets/graphing-slope-intercept": {
@@ -6214,7 +6943,15 @@
       "en-CA": "Graphing Slope-Intercept",
       "en-AU": "Graphing Slope-Intercept",
       "en-IN": "Graphing Slope-Intercept",
-      "sr-Cyrl": "Права-нагиб-одсечак"
+      "sr-Cyrl": "Права-нагиб-одсечак",
+      "pt-PT": "‪Representação Gráfica do Declive-Interceção‬",
+      "sr-Latn": "‪Права-нагиб-одсечак‬",
+      "sr-ijekavsk": "‪Права-нагиб-одсечак‬",
+      "cnr": "‪Права-нагиб-одсечак‬",
+      "ca-ES-valencia": "‪Fer una gràfica: pendent-intersecció‬",
+      "la": "Delineatio inclinationis et intersectionis",
+      "tpi": "Droim graf long slip na hap em i katim lain",
+      "hr": "Grafiranje nagiba i odsječka na osi"
     }
   },
   "./snippets/gravity-and-orbits": {
@@ -6318,7 +7055,14 @@
       "en-AU": "Gravity and Orbits",
       "en-IN": "Gravity and Orbits",
       "no": "Gravitasjon og baner",
-      "sr-Cyrl": "Гравитација и орбите"
+      "sr-Cyrl": "Гравитација и орбите",
+      "pt-PT": "‪Gravidade e Órbitas‬",
+      "sr-Latn": "‪Гравитација и орбите‬",
+      "sr-ijekavsk": "‪Гравитација и орбите‬",
+      "cnr": "‪Гравитација и орбите‬",
+      "ca-ES-valencia": "‪Gravetat i òrbites‬",
+      "la": "Gravitas et orbitae",
+      "tpi": "Graviti na ol obit"
     }
   },
   "./snippets/gravity-force-lab": {
@@ -6423,7 +7167,14 @@
       "en-AU": "Gravity Force Lab",
       "en-IN": "Gravity Force Lab",
       "no": "Gravitasjonskraftlab",
-      "sr-Cyrl": "Сила гравитације- лабораторија"
+      "sr-Cyrl": "Сила гравитације- лабораторија",
+      "pt-PT": "‪Laboratório de Força Gravítica‬",
+      "sr-Latn": "‪Сила гравитације- лабораторија‬",
+      "sr-ijekavsk": "‪Сила гравитације- лабораторија‬",
+      "cnr": "‪Сила гравитације- лабораторија‬",
+      "ca-ES-valencia": "‪Laboratori de gravitació‬",
+      "la": "Laboratorium vis gravitatis",
+      "tpi": "Leb bilong pul bilong graviti"
     }
   },
   "./snippets/gravity-force-lab-basics": {
@@ -6514,7 +7265,14 @@
       "en-CA": "Gravity Force Lab: Basics",
       "en-AU": "Gravity Force Lab: Basics",
       "en-IN": "Gravity Force Lab: Basics",
-      "sr-Cyrl": "Гравитациона сила : Основе"
+      "sr-Cyrl": "Гравитациона сила : Основе",
+      "pt-PT": "‪Força da Gravidade Lab: Básico‬",
+      "sr-Latn": "‪Гравитациона сила : Основе‬",
+      "sr-ijekavsk": "‪Гравитациона сила : Основе‬",
+      "cnr": "‪Гравитациона сила : Основе‬",
+      "ca-ES-valencia": "‪Laboratori de gravitació. Introducció‬",
+      "la": "Laboratorium vis gravitatis: fundamenta",
+      "tpi": "Leb bilong pul bilong graviti: ol as tingting"
     }
   },
   "./snippets/greenhouse-effect": {
@@ -6600,7 +7358,17 @@
       "en-CA": "Greenhouse Effect",
       "en-AU": "Greenhouse Effect",
       "en-IN": "Greenhouse Effect",
-      "sr-Cyrl": "Ефекат стаклене баште"
+      "sr-Cyrl": "Ефекат стаклене баште",
+      "sr-Latn": "‪Ефекат стаклене баште‬",
+      "sr-ijekavsk": "‪Ефекат стаклене баште‬",
+      "cnr": "‪Ефекат стаклене баште‬",
+      "ca-ES-valencia": "‪Efecte hivernacle‬",
+      "la": "Effectus thermocopii",
+      "tpi": "Greenhaus efekt",
+      "pt": "Efeito de estufa",
+      "pt-PT": "Efeito de estufa",
+      "uk": "Парниковий ефект",
+      "ru": "Парниковый эффект"
     }
   },
   "./snippets/hookes-law": {
@@ -6703,7 +7471,14 @@
       "en-AU": "Hooke's Law",
       "en-IN": "Hooke's Law",
       "no": "Hooks lov",
-      "sr-Cyrl": "Хуков закон"
+      "sr-Cyrl": "Хуков закон",
+      "pt-PT": "‪Lei de Hooke‬",
+      "sr-Latn": "‪Хуков закон‬",
+      "sr-ijekavsk": "‪Хуков закон‬",
+      "cnr": "‪Хуков закон‬",
+      "ca-ES-valencia": "‪Llei de Hooke‬",
+      "la": "Lex Hookii",
+      "tpi": "Lo bilong Hooke"
     }
   },
   "./snippets/isotopes-and-atomic-mass": {
@@ -6804,7 +7579,14 @@
       "en-AU": "Isotopes and Atomic Mass",
       "en-IN": "Isotopes and Atomic Mass",
       "no": "Isotoper og Atommasse",
-      "sr-Cyrl": "Изотопи и атомска маса"
+      "sr-Cyrl": "Изотопи и атомска маса",
+      "pt-PT": "‪Isótopos e Massa Atómica‬",
+      "sr-Latn": "‪Изотопи и атомска маса‬",
+      "sr-ijekavsk": "‪Изотопи и атомска маса‬",
+      "cnr": "‪Изотопи и атомска маса‬",
+      "ca-ES-valencia": "‪Isòtops i Massa Atòmica‬",
+      "la": "Isotopi et massa atomica",
+      "tpi": "Ol aisotop na hevi bilong atom"
     }
   },
   "./snippets/john-travoltage": {
@@ -6906,7 +7688,14 @@
       "en-CA": "John Travoltage",
       "en-AU": "John Travoltage",
       "en-IN": "John Travoltage",
-      "sr-Cyrl": "ЏОНТРА, ЗНАЧИ, ВОЛТА"
+      "sr-Cyrl": "ЏОНТРА, ЗНАЧИ, ВОЛТА",
+      "pt-PT": "‪Travoltagem‬",
+      "sr-Latn": "‪ЏОНТРА, ЗНАЧИ, ВОЛТА‬",
+      "sr-ijekavsk": "‪ЏОНТРА, ЗНАЧИ, ВОЛТА‬",
+      "cnr": "‪ЏОНТРА, ЗНАЧИ, ВОЛТА‬",
+      "ca-ES-valencia": "‪John Travoltatge‬",
+      "la": "John Travoltage",
+      "tpi": "John Travoltage"
     }
   },
   "./snippets/keplers-laws": {
@@ -6973,7 +7762,22 @@
       "en-AU": "Kepler's Laws",
       "en-IN": "Kepler's Laws",
       "no": "Keplers lover",
-      "sr-Cyrl": "Кеплерови закони"
+      "sr-Cyrl": "Кеплерови закони",
+      "sr-Latn": "‪Кеплерови закони‬",
+      "sr-ijekavsk": "‪Кеплерови закони‬",
+      "cnr": "‪Кеплерови закони‬",
+      "ca-ES-valencia": "‪Lleis de Kepler‬",
+      "la": "Leges Kepleri",
+      "tpi": "Ol lo bilong Kepler",
+      "eu": "Keplerren legeak",
+      "pt": "Leis de Kepler",
+      "pt-PT": "Leis de Kepler",
+      "am": "የኬፕለር ሕጎች",
+      "ja": "ケプラーの法則",
+      "bg": "Законите на Кеплер",
+      "uk": "Закони Кеплера",
+      "ru": "Законы Кеплера",
+      "fi": "Keplerin lait"
     }
   },
   "./snippets/least-squares-regression": {
@@ -7052,7 +7856,19 @@
       "en-CA": "Least-Squares Regression",
       "en-AU": "Least-Squares Regression",
       "en-IN": "Least-Squares Regression",
-      "sr-Cyrl": "Регресија најмањих квадрата"
+      "sr-Cyrl": "Регресија најмањих квадрата",
+      "sr-Latn": "‪Регресија најмањих квадрата‬",
+      "sr-ijekavsk": "‪Регресија најмањих квадрата‬",
+      "cnr": "‪Регресија најмањих квадрата‬",
+      "ca-ES-valencia": "‪Regressió de mínims quadrats‬",
+      "la": "Regressio minimorum quadratorum",
+      "tpi": "Painim lain we ol skwea bilong ol hap namel i liklik moa",
+      "sl": "Regresija najmanjših kvadratov",
+      "sk": "Regresia metódou najmenších štvorcov",
+      "hr": "Regresija najmanjih kvadrata",
+      "pt": "Regressão por mínimos quadrados",
+      "pt-PT": "Regressão por mínimos quadrados",
+      "uk": "Регресія методом найменших квадратів"
     }
   },
   "./snippets/magnet-and-compass": {
@@ -7117,7 +7933,23 @@
       "en-CA": "Magnet and Compass",
       "en-AU": "Magnet and Compass",
       "en-IN": "Magnet and Compass",
-      "sr-Cyrl": "Магнет и компас"
+      "sr-Cyrl": "Магнет и компас",
+      "sr-Latn": "‪Магнет и компас‬",
+      "sr-ijekavsk": "‪Магнет и компас‬",
+      "cnr": "‪Магнет и компас‬",
+      "ca-ES-valencia": "‪Imant i brúixola‬",
+      "la": "Magnes et pyxis nautica",
+      "tpi": "Magnet na kompas",
+      "eu": "Imana eta iparrorratza",
+      "pt": "Íman e bússola",
+      "pt-PT": "Íman e bússola",
+      "bn": "চুম্বক ও দিক্‌নির্ণায়ক",
+      "am": "ማግኔትና ኮምፓስ",
+      "ja": "磁石とコンパス",
+      "bg": "Магнит и компас",
+      "uk": "Магніт і компас",
+      "ru": "Магнит и компас",
+      "fi": "Magneetti ja kompassi"
     }
   },
   "./snippets/magnets-and-electromagnets": {
@@ -7179,7 +8011,25 @@
       "en-CA": "Magnets and Electromagnets",
       "en-AU": "Magnets and Electromagnets",
       "en-IN": "Magnets and Electromagnets",
-      "sr-Cyrl": "Магнети и електромагнети"
+      "sr-Cyrl": "Магнети и електромагнети",
+      "sr-Latn": "‪Магнети и електромагнети‬",
+      "sr-ijekavsk": "‪Магнети и електромагнети‬",
+      "cnr": "‪Магнети и електромагнети‬",
+      "ca-ES-valencia": "‪Imants i electroimants‬",
+      "la": "Magnetes et electromagnetes",
+      "tpi": "Ol magnet na ol magnet elektrik",
+      "eu": "Imanak eta elektroimanak",
+      "pt": "Ímanes e eletroímanes",
+      "pt-PT": "Ímanes e eletroímanes",
+      "bn": "চুম্বক ও তড়িৎচুম্বক",
+      "am": "ማግኔቶችና ኤሌክትሮማግኔቶች",
+      "ja": "磁石と電磁石",
+      "bg": "Магнити и електромагнити",
+      "hu": "Mágnesek és elektromágnesek",
+      "uk": "Магніти та електромагніти",
+      "ru": "Магниты и электромагниты",
+      "fi": "Magneetit ja sähkömagneetit",
+      "gu": "ચુંબકો અને વિદ્યુતચુંબકો"
     }
   },
   "./snippets/make-a-ten": {
@@ -7272,7 +8122,14 @@
       "en-CA": "Make a Ten",
       "en-AU": "Make a Ten",
       "en-IN": "Make a Ten",
-      "sr-Cyrl": "Допуни до 10"
+      "sr-Cyrl": "Допуни до 10",
+      "pt-PT": "‪Faz uma Dezena‬",
+      "sr-Latn": "‪Допуни до 10‬",
+      "sr-ijekavsk": "‪Допуни до 10‬",
+      "cnr": "‪Допуни до 10‬",
+      "ca-ES-valencia": "‪Fes una desena‬",
+      "la": "Decem compone",
+      "tpi": "Wokim namba ten"
     }
   },
   "./snippets/masses-and-springs": {
@@ -7369,7 +8226,14 @@
       "en-AU": "Masses and Springs",
       "en-IN": "Masses and Springs",
       "no": "Lodd og fjær",
-      "sr-Cyrl": "Масе и опруге"
+      "sr-Cyrl": "Масе и опруге",
+      "pt-PT": "‪Massas e Molas‬",
+      "sr-Latn": "‪Масе и опруге‬",
+      "sr-ijekavsk": "‪Масе и опруге‬",
+      "cnr": "‪Масе и опруге‬",
+      "ca-ES-valencia": "‪Masses i molles‬",
+      "la": "Massae et fontes elastici",
+      "tpi": "Hevi na spring"
     }
   },
   "./snippets/masses-and-springs-basics": {
@@ -7460,7 +8324,15 @@
       "en-CA": "Masses and Springs: Basics",
       "en-AU": "Masses and Springs: Basics",
       "en-IN": "Masses and Springs: Basics",
-      "sr-Cyrl": "Масе и опруге: Основе"
+      "sr-Cyrl": "Масе и опруге: Основе",
+      "pt-PT": "‪Massas e Molas: Básico‬",
+      "sr-Latn": "‪Масе и опруге: Основе‬",
+      "sr-ijekavsk": "‪Масе и опруге: Основе‬",
+      "cnr": "‪Масе и опруге: Основе‬",
+      "ca-ES-valencia": "‪Masses i molles: fonaments‬",
+      "la": "Massae et fontes elastici: fundamenta",
+      "tpi": "Hevi na spring: ol as tingting",
+      "fi": "Massat ja jouset: perusteet"
     }
   },
   "./snippets/mean-share-and-balance": {
@@ -7529,7 +8401,24 @@
       "en-CA": "Mean: Share and Balance",
       "en-AU": "Mean: Share and Balance",
       "en-IN": "Mean: Share and Balance",
-      "sr-Cyrl": "Средња вредност: Подели и уравнотежи"
+      "sr-Cyrl": "Средња вредност: Подели и уравнотежи",
+      "sr-Latn": "‪Средња вредност: Подели и уравнотежи‬",
+      "sr-ijekavsk": "‪Средња вредност: Подели и уравнотежи‬",
+      "cnr": "‪Средња вредност: Подели и уравнотежи‬",
+      "ca-ES-valencia": "‪Mitjana: distribució i equilibri‬",
+      "la": "Medium arithmeticum: divide et aequa",
+      "tpi": "Averes: skelim na balensim",
+      "sv": "Medelvärde: dela och balansera",
+      "zh": "平均数：均分与平衡",
+      "zh-Hans": "平均数：均分与平衡",
+      "pt": "Média: partilha e equilíbrio",
+      "pt-PT": "Média: partilha e equilíbrio",
+      "bn": "গড়: ভাগ ও ভারসাম্য",
+      "ja": "平均：分けてバランス",
+      "hu": "Átlag: megosztás és egyensúly",
+      "uk": "Середнє: поділ і баланс",
+      "ru": "Среднее: разделение и равновесие",
+      "fi": "Keskiarvo: jaa ja tasapainota"
     }
   },
   "./snippets/membrane-transport": {
@@ -7576,7 +8465,36 @@
       "en-AU": "Membrane Transport",
       "en-IN": "Membrane Transport",
       "no": "Transport gjennom cellemembranen",
-      "sr-Cyrl": "Мембрански транспорт"
+      "sr-Cyrl": "Мембрански транспорт",
+      "zh-Hant": "‪膜转运‬",
+      "sr-Latn": "‪Мембрански транспорт‬",
+      "sr-ijekavsk": "‪Мембрански транспорт‬",
+      "cnr": "‪Мембрански транспорт‬",
+      "ca-ES-valencia": "‪Transport de membrana‬",
+      "la": "Transportus per membranam",
+      "tpi": "Ol samting i go namel long membren",
+      "sl": "Prenos skozi membrano",
+      "sk": "Transport cez membránu",
+      "hr": "Prijenos kroz membranu",
+      "eu": "Mintz-garraioa",
+      "pt": "Transporte membranar",
+      "pt-PT": "Transporte membranar",
+      "bn": "ঝিল্লির মধ্য দিয়ে পরিবহন",
+      "ms": "Pengangkutan merentas membran",
+      "sw": "Usafirishaji kupitia utando",
+      "ha": "Sufuri ta cikin matattara",
+      "om": "Geengoo keessa geejjibuu",
+      "am": "በሽፋን በኩል ማጓጓዝ",
+      "fa": "انتقال از غشا",
+      "ko": "막 수송",
+      "mn": "Мембранаар тээвэрлэх",
+      "ja": "膜輸送",
+      "bg": "Мембранен транспорт",
+      "tr": "Zar taşınımı",
+      "uk": "Мембранний транспорт",
+      "ru": "Мембранный транспорт",
+      "fi": "Kuljetus solukalvon läpi",
+      "gu": "પટલ પરિવહન"
     }
   },
   "./snippets/models-of-the-hydrogen-atom": {
@@ -7631,7 +8549,30 @@
       "en-CA": "Models of the Hydrogen Atom",
       "en-AU": "Models of the Hydrogen Atom",
       "en-IN": "Models of the Hydrogen Atom",
-      "sr-Cyrl": "Модели атома водоника"
+      "sr-Cyrl": "Модели атома водоника",
+      "zh-Hant": "‪氢原子模型‬",
+      "pt-PT": "‪Modelos do Átomo de Hidrogénio‬",
+      "sr-Latn": "‪Модели атома водоника‬",
+      "sr-ijekavsk": "‪Модели атома водоника‬",
+      "cnr": "‪Модели атома водоника‬",
+      "ca-ES-valencia": "‪Models de l'àtom d'hidrogen‬",
+      "la": "Exemplaria atomi hydrogenii",
+      "tpi": "Ol model bilong atom bilong haidrosen",
+      "sv": "Väteatomens modeller",
+      "sl": "Modeli vodikovega atoma",
+      "sk": "Modely atómu vodíka",
+      "eu": "Hidrogeno-atomoaren ereduak",
+      "bn": "হাইড্রোজেন পরমাণুর মডেল",
+      "ha": "Samfuran zarra na hydrogen",
+      "om": "Moodeelota atoomii haayidiroojiinii",
+      "am": "የሃይድሮጂን አቶም ሞዴሎች",
+      "ja": "水素原子のモデル",
+      "bg": "Модели на водородния атом",
+      "hu": "A hidrogénatom modelljei",
+      "uk": "Моделі атома водню",
+      "ru": "Модели атома водорода",
+      "fi": "Vetyatomin mallit",
+      "gu": "હાઇડ્રોજન પરમાણુના મોડેલો"
     }
   },
   "./snippets/molarity": {
@@ -7733,7 +8674,14 @@
       "en-AU": "Molarity",
       "en-IN": "Molarity",
       "no": "Molaritet",
-      "sr-Cyrl": "Моларност"
+      "sr-Cyrl": "Моларност",
+      "pt-PT": "‪Molaridade‬",
+      "ca-ES-valencia": "‪Molaritat‬",
+      "sr-Latn": "Моларност",
+      "sr-ijekavsk": "Моларност",
+      "cnr": "Моларност",
+      "la": "Molaritas",
+      "tpi": "Molariti"
     }
   },
   "./snippets/molecule-polarity": {
@@ -7827,7 +8775,14 @@
       "en-AU": "Molecule Polarity",
       "en-IN": "Molecule Polarity",
       "no": "Molekylpolaritet",
-      "sr-Cyrl": "Поларност молекула"
+      "sr-Cyrl": "Поларност молекула",
+      "pt-PT": "‪Polaridade da molécula‬",
+      "sr-Latn": "‪Поларност молекула‬",
+      "sr-ijekavsk": "‪Поларност молекула‬",
+      "cnr": "‪Поларност молекула‬",
+      "ca-ES-valencia": "‪Polaritat de la molècula‬",
+      "la": "Polaritas molecularum",
+      "tpi": "Ol sait bilong molekul i gat saks narakain"
     }
   },
   "./snippets/molecule-shapes": {
@@ -7926,7 +8881,15 @@
       "en-AU": "Molecule Shapes",
       "en-IN": "Molecule Shapes",
       "no": "Molekylform",
-      "sr-Cyrl": "Облици молекула"
+      "sr-Cyrl": "Облици молекула",
+      "pt-PT": "‪Formas das Moléculas‬",
+      "sr-Latn": "‪Облици молекула‬",
+      "sr-ijekavsk": "‪Облици молекула‬",
+      "cnr": "‪Облици молекула‬",
+      "ca-ES-valencia": "‪Geometries moleculars‬",
+      "la": "Figurae molecularum",
+      "tpi": "Ol sep bilong molekul",
+      "hr": "Oblici molekula"
     }
   },
   "./snippets/molecule-shapes-basics": {
@@ -8017,7 +8980,15 @@
       "en-CA": "Molecule Shapes: Basics",
       "en-AU": "Molecule Shapes: Basics",
       "en-IN": "Molecule Shapes: Basics",
-      "sr-Cyrl": "Облици молекула: основе"
+      "sr-Cyrl": "Облици молекула: основе",
+      "pt-PT": "‪Formas das Moléculas: Fundamentos‬",
+      "sr-Latn": "‪Облици молекула: основе‬",
+      "sr-ijekavsk": "‪Облици молекула: основе‬",
+      "cnr": "‪Облици молекула: основе‬",
+      "ca-ES-valencia": "‪Geometries moleculars bàsiques‬",
+      "la": "Figurae molecularum: fundamenta",
+      "tpi": "Ol sep bilong molekul: ol as tingting",
+      "hr": "Oblici molekula: osnove"
     }
   },
   "./snippets/molecules-and-light": {
@@ -8116,7 +9087,14 @@
       "en-AU": "Molecules and Light",
       "en-IN": "Molecules and Light",
       "no": "Molekyler og lys",
-      "sr-Cyrl": "Молекули и светлост"
+      "sr-Cyrl": "Молекули и светлост",
+      "pt-PT": "‪Moléculas e Luz‬",
+      "sr-Latn": "‪Молекули и светлост‬",
+      "sr-ijekavsk": "‪Молекули и светлост‬",
+      "cnr": "‪Молекули и светлост‬",
+      "ca-ES-valencia": "‪Molècules i llum‬",
+      "la": "Moleculae et lumen",
+      "tpi": "Ol molekul na lait"
     }
   },
   "./snippets/my-solar-system": {
@@ -8194,7 +9172,18 @@
       "en-CA": "My Solar System",
       "en-AU": "My Solar System",
       "en-IN": "My Solar System",
-      "sr-Cyrl": "Мој Соларни систем"
+      "sr-Cyrl": "Мој Соларни систем",
+      "pt-PT": "‪O Meu Sistema Solar‬",
+      "sr-Latn": "‪Мој Соларни систем‬",
+      "sr-ijekavsk": "‪Мој Соларни систем‬",
+      "cnr": "‪Мој Соларни систем‬",
+      "ca-ES-valencia": "‪El meu sistema solar‬",
+      "la": "Systema solare meum",
+      "tpi": "Sola sistem bilong mi",
+      "bn": "আমার সৌরজগৎ",
+      "om": "Sirna aduu koo",
+      "ru": "Моя Солнечная система",
+      "fi": "Aurinkokuntani"
     }
   },
   "./snippets/natural-selection": {
@@ -8279,7 +9268,16 @@
       "en-CA": "Natural Selection",
       "en-AU": "Natural Selection",
       "en-IN": "Natural Selection",
-      "sr-Cyrl": "Природна селекција"
+      "sr-Cyrl": "Природна селекција",
+      "pt-PT": "‪Seleção Natural‬",
+      "sr-Latn": "‪Природна селекција‬",
+      "sr-ijekavsk": "‪Природна селекција‬",
+      "cnr": "‪Природна селекција‬",
+      "ca-ES-valencia": "‪Selecció natural‬",
+      "la": "Selectio naturalis",
+      "tpi": "Natur i makim husat bai stap",
+      "ru": "Естественный отбор",
+      "fi": "Luonnonvalinta"
     }
   },
   "./snippets/neuron": {
@@ -8383,7 +9381,13 @@
       "pt-PT": "Neurónio",
       "no": "Nevron",
       "sr-Cyrl": "Неурон",
-      "id": "Neuron"
+      "id": "Neuron",
+      "sr-Latn": "‪Неурон‬",
+      "sr-ijekavsk": "‪Неурон‬",
+      "cnr": "‪Неурон‬",
+      "ca-ES-valencia": "‪Neurona‬",
+      "la": "Neuron",
+      "tpi": "Neron"
     }
   },
   "./snippets/normal-modes": {
@@ -8455,7 +9459,19 @@
       "en-CA": "Normal Modes",
       "en-AU": "Normal Modes",
       "en-IN": "Normal Modes",
-      "sr-Cyrl": "Нормални модови"
+      "sr-Cyrl": "Нормални модови",
+      "pt-PT": "‪Modos Normais‬",
+      "sr-Latn": "‪Нормални модови‬",
+      "sr-ijekavsk": "‪Нормални модови‬",
+      "cnr": "‪Нормални модови‬",
+      "ca-ES-valencia": "‪Modes normals‬",
+      "la": "Modi normales",
+      "tpi": "Ol pasin bilong guria",
+      "zh": "简正模式",
+      "zh-Hans": "简正模式",
+      "ja": "固有振動モード",
+      "hu": "Normálmódusok",
+      "fi": "Normaalimuodot"
     }
   },
   "./snippets/number-compare": {
@@ -8540,7 +9556,18 @@
       "en-CA": "Number Compare",
       "en-AU": "Number Compare",
       "en-IN": "Number Compare",
-      "sr-Cyrl": "Упореди бројеве"
+      "sr-Cyrl": "Упореди бројеве",
+      "sr-Latn": "‪Упореди бројеве‬",
+      "sr-ijekavsk": "‪Упореди бројеве‬",
+      "cnr": "‪Упореди бројеве‬",
+      "ca-ES-valencia": "‪Comparació de números‬",
+      "la": "Comparatio numerorum",
+      "tpi": "Skelim ol namba",
+      "pt": "Comparação de números",
+      "pt-PT": "Comparação de números",
+      "hu": "Számok összehasonlítása",
+      "uk": "Порівняння чисел",
+      "ru": "Сравнение чисел"
     }
   },
   "./snippets/number-line-distance": {
@@ -8621,7 +9648,18 @@
       "en-CA": "Number Line: Distance",
       "en-AU": "Number Line: Distance",
       "en-IN": "Number Line: Distance",
-      "sr-Cyrl": "Бројевна права: Удаљеност"
+      "sr-Cyrl": "Бројевна права: Удаљеност",
+      "sr-Latn": "‪Бројевна права: Удаљеност‬",
+      "sr-ijekavsk": "‪Бројевна права: Удаљеност‬",
+      "cnr": "‪Бројевна права: Удаљеност‬",
+      "ca-ES-valencia": "‪Recta numèrica. Distància‬",
+      "la": "Linea numerorum: distantia",
+      "tpi": "Lain namba: longwe",
+      "pt": "Reta numérica: distância",
+      "pt-PT": "Reta numérica: distância",
+      "hu": "Távolság a számegyenesen",
+      "uk": "Відстань на числовій прямій",
+      "ru": "Расстояние на числовой прямой"
     }
   },
   "./snippets/number-line-integers": {
@@ -8707,7 +9745,16 @@
       "en-CA": "Number Line: Integers",
       "en-AU": "Number Line: Integers",
       "en-IN": "Number Line: Integers",
-      "sr-Cyrl": "Бројевна права: Цели бројеви"
+      "sr-Cyrl": "Бројевна права: Цели бројеви",
+      "sr-Latn": "‪Бројевна права: Цели бројеви‬",
+      "sr-ijekavsk": "‪Бројевна права: Цели бројеви‬",
+      "cnr": "‪Бројевна права: Цели бројеви‬",
+      "ca-ES-valencia": "‪La recta numèrica. Enters‬",
+      "la": "Linea numerorum: integri",
+      "tpi": "Lain namba: ol namba i no bruk",
+      "pt": "Reta numérica: números inteiros",
+      "pt-PT": "Reta numérica: números inteiros",
+      "ru": "Целые числа на числовой прямой"
     }
   },
   "./snippets/number-line-operations": {
@@ -8789,7 +9836,17 @@
       "en-CA": "Number Line: Operations",
       "en-AU": "Number Line: Operations",
       "en-IN": "Number Line: Operations",
-      "sr-Cyrl": "Бројевна права: Операције"
+      "sr-Cyrl": "Бројевна права: Операције",
+      "sr-Latn": "‪Бројевна права: Операције‬",
+      "sr-ijekavsk": "‪Бројевна права: Операције‬",
+      "cnr": "‪Бројевна права: Операције‬",
+      "ca-ES-valencia": "‪Recta numèrica: operacions‬",
+      "la": "Linea numerorum: operationes",
+      "tpi": "Lain namba: ol wok bilong namba",
+      "pt": "Reta numérica: operações",
+      "pt-PT": "Reta numérica: operações",
+      "uk": "Дії на числовій прямій",
+      "ru": "Действия на числовой прямой"
     }
   },
   "./snippets/number-pairs": {
@@ -8830,7 +9887,35 @@
       "en-CA": "Number Pairs",
       "en-AU": "Number Pairs",
       "en-IN": "Number Pairs",
-      "sr-Cyrl": "Парови бројева"
+      "sr-Cyrl": "Парови бројева",
+      "sr-Latn": "‪Парови бројева‬",
+      "sr-ijekavsk": "‪Парови бројева‬",
+      "cnr": "‪Парови бројева‬",
+      "ca-ES-valencia": "‪Parells de nombres‬",
+      "la": "Paria numerorum",
+      "tpi": "Ol tupela namba i bung",
+      "sv": "Talpar",
+      "sl": "Pari števil",
+      "sk": "Číselné dvojice",
+      "hr": "Parovi brojeva",
+      "eu": "Zenbaki-bikoteak",
+      "zh": "数对",
+      "zh-Hans": "数对",
+      "zh-Hant": "數對",
+      "pt": "Pares de números",
+      "pt-PT": "Pares de números",
+      "bn": "সংখ্যার জোড়া",
+      "ms": "Pasangan nombor",
+      "sw": "Jozi za nambari",
+      "ha": "Nau’i biyu na lambobi",
+      "om": "Cimdiilee lakkoofsotaa",
+      "am": "የቁጥር ጥንዶች",
+      "ja": "数のペア",
+      "bg": "Числови двойки",
+      "hu": "Számpárok",
+      "uk": "Пари чисел",
+      "ru": "Пары чисел",
+      "fi": "Lukuparit"
     }
   },
   "./snippets/number-play": {
@@ -8910,7 +9995,19 @@
       "en-CA": "Number Play",
       "en-AU": "Number Play",
       "en-IN": "Number Play",
-      "sr-Cyrl": "Игре са бројевима"
+      "sr-Cyrl": "Игре са бројевима",
+      "sr-Latn": "‪Игре са бројевима‬",
+      "sr-ijekavsk": "‪Игре са бројевима‬",
+      "cnr": "‪Игре са бројевима‬",
+      "ca-ES-valencia": "‪Joc de números‬",
+      "la": "Ludus numerorum",
+      "tpi": "Pilai long ol namba",
+      "sv": "Talspel",
+      "pt": "Brincar com os números",
+      "pt-PT": "Brincar com os números",
+      "hu": "Játék a számokkal",
+      "uk": "Гра з числами",
+      "ru": "Игра с числами"
     }
   },
   "./snippets/ohms-law": {
@@ -9020,7 +10117,15 @@
       "en-AU": "Ohm's Law",
       "en-IN": "Ohm's Law",
       "no": "Ohms lov",
-      "sr-Cyrl": "Омов закон"
+      "sr-Cyrl": "Омов закон",
+      "pt-PT": "‪Lei de Ohm‬",
+      "sr-Latn": "‪Омов закон‬",
+      "sr-ijekavsk": "‪Омов закон‬",
+      "cnr": "‪Омов закон‬",
+      "ca-ES-valencia": "‪Llei d'Ohm‬",
+      "la": "Lex Ohmii",
+      "tpi": "Lo bilong Ohm",
+      "am": "የኦም ሕግ"
     }
   },
   "./snippets/pendulum-lab": {
@@ -9120,7 +10225,14 @@
       "en-AU": "Pendulum Lab",
       "en-IN": "Pendulum Lab",
       "no": "Pendellaboratorium",
-      "sr-Cyrl": "Математичко клатно"
+      "sr-Cyrl": "Математичко клатно",
+      "pt-PT": "‪Laboratório do Pêndulo‬",
+      "sr-Latn": "‪Математичко клатно‬",
+      "sr-ijekavsk": "‪Математичко клатно‬",
+      "cnr": "‪Математичко клатно‬",
+      "ca-ES-valencia": "‪Laboratori del pèndull‬",
+      "la": "Laboratorium penduli",
+      "tpi": "Leb bilong pendulum"
     }
   },
   "./snippets/ph-scale": {
@@ -9228,7 +10340,14 @@
       "en-AU": "pH Scale",
       "en-IN": "pH Scale",
       "no": "pH-skala",
-      "sr-Cyrl": "pH  Скала"
+      "sr-Cyrl": "pH  Скала",
+      "pt-PT": "‪Escala de pH‬",
+      "sr-Latn": "‪pH  Скала‬",
+      "sr-ijekavsk": "‪pH  Скала‬",
+      "cnr": "‪pH  Скала‬",
+      "ca-ES-valencia": "‪escala de pH‬",
+      "la": "Scala pH",
+      "tpi": "Skel bilong pH"
     }
   },
   "./snippets/ph-scale-basics": {
@@ -9329,7 +10448,14 @@
       "en-AU": "pH Scale: Basics",
       "en-IN": "pH Scale: Basics",
       "no": "pH-skala – grunnleggende",
-      "sr-Cyrl": "pH скала: основе"
+      "sr-Cyrl": "pH скала: основе",
+      "pt-PT": "‪Escala pH: Básico‬",
+      "sr-Latn": "‪pH скала: основе‬",
+      "sr-ijekavsk": "‪pH скала: основе‬",
+      "cnr": "‪pH скала: основе‬",
+      "ca-ES-valencia": "‪Escala de pH: bàsics‬",
+      "la": "Scala pH: fundamenta",
+      "tpi": "Skel bilong pH: ol as tingting"
     }
   },
   "./snippets/plinko-probability": {
@@ -9415,7 +10541,17 @@
       "en-AU": "Plinko Probability",
       "en-IN": "Plinko Probability",
       "no": "Plinko sannsynlighet",
-      "sr-Cyrl": "Расподела вероватноће (Галтонова кутија)"
+      "sr-Cyrl": "Расподела вероватноће (Галтонова кутија)",
+      "sr-Latn": "‪Расподела вероватноће (Галтонова кутија)‬",
+      "sr-ijekavsk": "‪Расподела вероватноће (Галтонова кутија)‬",
+      "cnr": "‪Расподела вероватноће (Галтонова кутија)‬",
+      "ca-ES-valencia": "‪Probabilitat Plinko‬",
+      "la": "Probabilitas in ludo Plinko",
+      "tpi": "Sans long pilai Plinko",
+      "sl": "Verjetnost igre Plinko",
+      "pt": "Probabilidade no Plinko",
+      "pt-PT": "Probabilidade no Plinko",
+      "fi": "Plinko-todennäköisyys"
     }
   },
   "./snippets/projectile-data-lab": {
@@ -9467,7 +10603,28 @@
       "en-CA": "Projectile Data Lab",
       "en-AU": "Projectile Data Lab",
       "en-IN": "Projectile Data Lab",
-      "sr-Cyrl": "Пројектили-обрада података"
+      "sr-Cyrl": "Пројектили-обрада података",
+      "pt-PT": "‪Laboratório de Projéteis‬",
+      "sr-Latn": "‪Пројектили-обрада података‬",
+      "sr-ijekavsk": "‪Пројектили-обрада података‬",
+      "cnr": "‪Пројектили-обрада података‬",
+      "ca-ES-valencia": "‪Laboratori de dades de projectils‬",
+      "la": "Laboratorium datorum proiectilium",
+      "tpi": "Leb bilong data bilong ol samting i flai taim yu sutim",
+      "sl": "Laboratorij podatkov o izstrelkih",
+      "sk": "Laboratórium údajov o projektiloch",
+      "eu": "Proiektilen datu-laborategia",
+      "zh": "抛体运动数据实验室",
+      "zh-Hans": "抛体运动数据实验室",
+      "bn": "প্রক্ষিপ্ত বস্তুর তথ্যের গবেষণাগার",
+      "om": "Laaboraatorii daataa wanta darbatamee",
+      "am": "የተወረወረ አካል መረጃ ላቦራቶሪ",
+      "ja": "投射体データラボ",
+      "bg": "Лаборатория за данни за снаряди",
+      "hu": "Lövedékadat-laboratórium",
+      "uk": "Лабораторія даних про снаряди",
+      "ru": "Лаборатория данных о снарядах",
+      "fi": "Ammustietojen laboratorio"
     }
   },
   "./snippets/projectile-motion": {
@@ -9562,7 +10719,15 @@
       "en-AU": "Projectile Motion",
       "en-IN": "Projectile Motion",
       "no": "Prosjektilbevegelse",
-      "sr-Cyrl": "Кретање пројектила"
+      "sr-Cyrl": "Кретање пројектила",
+      "pt-PT": "‪Movimento do Projétil‬",
+      "sr-Latn": "‪Кретање пројектила‬",
+      "sr-ijekavsk": "‪Кретање пројектила‬",
+      "cnr": "‪Кретање пројектила‬",
+      "ca-ES-valencia": "‪Moviment del projectil‬",
+      "la": "Motus proiectilis",
+      "tpi": "Olsem wanem samting yu sutim i flai",
+      "fi": "Ammuksen liike"
     }
   },
   "./snippets/projectile-sampling-distributions": {
@@ -9610,7 +10775,31 @@
       "en-CA": "Projectile Sampling Distributions",
       "en-AU": "Projectile Sampling Distributions",
       "en-IN": "Projectile Sampling Distributions",
-      "sr-Cyrl": "Пројектили- основе обраде података"
+      "sr-Cyrl": "Пројектили- основе обраде података",
+      "pt-PT": "‪Distribuições de Amostras de Projéteis‬",
+      "sr-Latn": "‪Пројектили- основе обраде података‬",
+      "sr-ijekavsk": "‪Пројектили- основе обраде података‬",
+      "cnr": "‪Пројектили- основе обраде података‬",
+      "ca-ES-valencia": "‪Distribucions de mostreig de projectils‬",
+      "la": "Distributiones exemplorum proiectilium",
+      "tpi": "Hau ol sampela data bilong ol samting i flai i bruk",
+      "sv": "Stickprovsfördelningar för projektiler",
+      "sl": "Vzorčne porazdelitve izstrelkov",
+      "sk": "Výberové rozdelenia projektilov",
+      "eu": "Proiektilen lagin-banaketa",
+      "zh": "抛体运动抽样分布",
+      "zh-Hans": "抛体运动抽样分布",
+      "bn": "প্রক্ষিপ্ত বস্তুর নমুনায়ন বণ্টন",
+      "om": "Raabsa iddattoo wanta darbatamee",
+      "am": "የተወረወረ አካል ናሙና ስርጭቶች",
+      "ja": "投射体の標本分布",
+      "bg": "Извадкови разпределения на снаряди",
+      "hu": "Lövedékminták eloszlása",
+      "tr": "Mermi örnekleme dağılımları",
+      "uk": "Вибіркові розподіли снарядів",
+      "ru": "Выборочные распределения снарядов",
+      "fi": "Ammusten otantajakaumat",
+      "gu": "પ્રક્ષેપ્ય નમૂનાના વિતરણો"
     }
   },
   "./snippets/proportion-playground": {
@@ -9700,7 +10889,16 @@
       "en-CA": "Proportion Playground",
       "en-AU": "Proportion Playground",
       "en-IN": "Proportion Playground",
-      "sr-Cyrl": "Игралиште пропорције"
+      "sr-Cyrl": "Игралиште пропорције",
+      "pt-PT": "‪Parque das Proporções‬",
+      "sr-Latn": "‪Игралиште пропорције‬",
+      "sr-ijekavsk": "‪Игралиште пропорције‬",
+      "cnr": "‪Игралиште пропорције‬",
+      "ca-ES-valencia": "‪Pati de jocs: proporció‬",
+      "la": "Ludus proportionum",
+      "tpi": "Ples pilai bilong proporsen",
+      "sl": "Igralnica sorazmerij",
+      "fi": "Suhteiden leikkikenttä"
     }
   },
   "./snippets/quadrilateral": {
@@ -9758,7 +10956,26 @@
       "en-CA": "Quadrilateral",
       "en-AU": "Quadrilateral",
       "en-IN": "Quadrilateral",
-      "sr-Cyrl": "Четвороугао"
+      "sr-Cyrl": "Четвороугао",
+      "sr-Latn": "‪Четвороугао‬",
+      "sr-ijekavsk": "‪Четвороугао‬",
+      "cnr": "‪Четвороугао‬",
+      "ca-ES-valencia": "‪Quadrilàter‬",
+      "la": "Quadrilaterum",
+      "tpi": "Piksa i gat foapela sait",
+      "sv": "Fyrhörning",
+      "hr": "Četverokut",
+      "zh": "四边形",
+      "zh-Hans": "四边形",
+      "pt": "Quadrilátero",
+      "pt-PT": "Quadrilátero",
+      "bn": "চতুর্ভুজ",
+      "om": "Rog-afur",
+      "ja": "四角形",
+      "bg": "Четириъгълник",
+      "uk": "Чотирикутник",
+      "ru": "Четырёхугольник",
+      "fi": "Nelikulmio"
     }
   },
   "./snippets/quantum-bound-states": {
@@ -9776,7 +10993,49 @@
       "en-AU": "Quantum Bound States",
       "en-IN": "Quantum Bound States",
       "fr": "États liés quantiques",
-      "es": "Estados ligados cuánticos"
+      "es": "Estados ligados cuánticos",
+      "la": "Status quantici ligati",
+      "tpi": "Ol kwantum i stap pas",
+      "nl": "Gebonden kwantumtoestanden",
+      "cs": "Vázané kvantové stavy",
+      "it": "Stati quantistici legati",
+      "ca": "Estats quàntics lligats",
+      "is": "Bundin skammtaástand",
+      "bs": "Vezana kvantna stanja",
+      "sv": "Bundna kvanttillstånd",
+      "sl": "Vezana kvantna stanja",
+      "sk": "Viazané kvantové stavy",
+      "hr": "Vezana kvantna stanja",
+      "eu": "Lotutako egoera kuantikoak",
+      "zh": "量子束缚态",
+      "zh-Hans": "量子束缚态",
+      "zh-Hant": "量子束縛態",
+      "pt": "Estados ligados quânticos",
+      "pt-PT": "Estados ligados quânticos",
+      "bn": "কোয়ান্টাম আবদ্ধ অবস্থা",
+      "ms": "Keadaan terikat kuantum",
+      "sw": "Hali funge za kwanta",
+      "ha": "Yanayi masu ɗaure na kwantam",
+      "om": "Haala kuwantamii hidhamaa",
+      "am": "የኳንተም የታሰሩ ሁኔታዎች",
+      "fa": "حالت‌های مقید کوانتومی",
+      "hi": "क्वांटम बद्ध अवस्थाएँ",
+      "he": "מצבים קוונטיים קשורים",
+      "ar": "الحالات الكمومية المقيدة",
+      "ko": "속박된 양자 상태",
+      "mn": "Холбоост квант төлөвүүд",
+      "ja": "束縛量子状態",
+      "bg": "Свързани квантови състояния",
+      "hu": "Kötött kvantumállapotok",
+      "tr": "Kuantum bağlı durumları",
+      "uk": "Зв’язані квантові стани",
+      "ru": "Связанные квантовые состояния",
+      "fi": "Sidotut kvanttitilat",
+      "el": "Δεσμευμένες κβαντικές καταστάσεις",
+      "ro": "Stări cuantice legate",
+      "te": "బంధిత క్వాంటం స్థితులు",
+      "ca-ES-valencia": "Estats quàntics lligats",
+      "gu": "બંધ ક્વોન્ટમ અવસ્થાઓ"
     }
   },
   "./snippets/quantum-coin-toss": {
@@ -9816,7 +11075,37 @@
       "en-CA": "Quantum Coin Toss",
       "en-AU": "Quantum Coin Toss",
       "en-IN": "Quantum Coin Toss",
-      "sr-Cyrl": "Квантно бацање новчића"
+      "sr-Cyrl": "Квантно бацање новчића",
+      "sr-Latn": "‪Квантно бацање новчића‬",
+      "sr-ijekavsk": "‪Квантно бацање новчића‬",
+      "cnr": "‪Квантно бацање новчића‬",
+      "ca-ES-valencia": "‪Llançament quàntic de monedes‬",
+      "la": "Iactus nummi quantici",
+      "tpi": "Tromoi koin kwantum",
+      "sv": "Kvantmyntkast",
+      "sl": "Kvantni met kovanca",
+      "sk": "Kvantový hod mincou",
+      "hr": "Kvantno bacanje novčića",
+      "eu": "Txanpon-jaurtiketa kuantikoa",
+      "zh": "量子掷硬币",
+      "zh-Hans": "量子掷硬币",
+      "zh-Hant": "量子擲硬幣",
+      "pt": "Lançamento quântico de uma moeda",
+      "pt-PT": "Lançamento quântico de uma moeda",
+      "bn": "কোয়ান্টাম মুদ্রা নিক্ষেপ",
+      "ms": "Lambungan syiling kuantum",
+      "sw": "Urushaji wa sarafu wa kwanta",
+      "ha": "Jifar kuɗin ƙarfe ta kwantam",
+      "om": "Saantima kuwantamii ol darbuu",
+      "am": "የኳንተም ሳንቲም ውርወራ",
+      "ko": "양자 동전 던지기",
+      "ja": "量子コイン投げ",
+      "bg": "Квантово хвърляне на монета",
+      "hu": "Kvantumos pénzfeldobás",
+      "tr": "Kuantum yazı tura",
+      "uk": "Квантове підкидання монети",
+      "ru": "Квантовое подбрасывание монеты",
+      "fi": "Kvanttikolikon heitto"
     }
   },
   "./snippets/quantum-measurement": {
@@ -9858,7 +11147,35 @@
       "en-CA": "Quantum Measurement",
       "en-AU": "Quantum Measurement",
       "en-IN": "Quantum Measurement",
-      "sr-Cyrl": "Квантно мерење"
+      "sr-Cyrl": "Квантно мерење",
+      "sr-Latn": "‪Квантно мерење‬",
+      "sr-ijekavsk": "‪Квантно мерење‬",
+      "cnr": "‪Квантно мерење‬",
+      "ca-ES-valencia": "‪Mesura quàntica‬",
+      "la": "Mensura quantica",
+      "tpi": "Skelim kwantum",
+      "sv": "Kvantmätning",
+      "sl": "Kvantna meritev",
+      "sk": "Kvantové meranie",
+      "eu": "Neurketa kuantikoa",
+      "zh": "量子测量",
+      "zh-Hans": "量子测量",
+      "zh-Hant": "量子測量",
+      "pt": "Medição quântica",
+      "pt-PT": "Medição quântica",
+      "bn": "কোয়ান্টাম পরিমাপ",
+      "ms": "Pengukuran kuantum",
+      "sw": "Upimaji wa kwanta",
+      "ha": "Aunin kwantam",
+      "om": "Safartuu kuwantamii",
+      "am": "የኳንተም መለኪያ",
+      "ja": "量子測定",
+      "bg": "Квантово измерване",
+      "hu": "Kvantummérés",
+      "tr": "Kuantum ölçümü",
+      "uk": "Квантове вимірювання",
+      "ru": "Квантовое измерение",
+      "fi": "Kvanttimittaus"
     }
   },
   "./snippets/quantum-wave-interference": {
@@ -9886,7 +11203,46 @@
       "en-CA": "Quantum Wave Interference",
       "en-AU": "Quantum Wave Interference",
       "en-IN": "Quantum Wave Interference",
-      "sr-Cyrl": "Интерференција квантних таласа"
+      "sr-Cyrl": "Интерференција квантних таласа",
+      "sr-Latn": "‪Интерференција квантних таласа‬",
+      "sr-ijekavsk": "‪Интерференција квантних таласа‬",
+      "cnr": "‪Интерференција квантних таласа‬",
+      "la": "Interferentia undarum quanticarum",
+      "tpi": "Ol wev kwantum i bung",
+      "nl": "Interferentie van kwantumgolven",
+      "ca": "Interferència d’ones quàntiques",
+      "is": "Truflun skammtabylgna",
+      "sv": "Kvantvågsinterferens",
+      "sl": "Interferenca kvantnih valov",
+      "sk": "Interferencia kvantových vĺn",
+      "hr": "Interferencija kvantnih valova",
+      "eu": "Uhin kuantikoen interferentzia",
+      "zh": "量子波干涉",
+      "zh-Hans": "量子波干涉",
+      "zh-Hant": "量子波干涉",
+      "pt": "Interferência de ondas quânticas",
+      "pt-PT": "Interferência de ondas quânticas",
+      "bn": "কোয়ান্টাম তরঙ্গের ব্যতিচার",
+      "ms": "Interferens gelombang kuantum",
+      "sw": "Muingiliano wa mawimbi ya kwanta",
+      "ha": "Cuɗanyar raƙuman kwantam",
+      "om": "Walirra bu’iinsa dambalii kuwantamii",
+      "am": "የኳንተም ሞገዶች መደራረብ",
+      "fa": "تداخل موج کوانتومی",
+      "hi": "क्वांटम तरंग व्यतिकरण",
+      "ar": "تداخل الموجات الكمومية",
+      "ko": "양자파 간섭",
+      "mn": "Квант долгионы интерференц",
+      "ja": "量子波の干渉",
+      "bg": "Интерференция на квантови вълни",
+      "hu": "Kvantumhullám-interferencia",
+      "tr": "Kuantum dalga girişimi",
+      "uk": "Інтерференція квантових хвиль",
+      "ru": "Интерференция квантовых волн",
+      "fi": "Kvanttiaallon interferenssi",
+      "el": "Συμβολή κβαντικών κυμάτων",
+      "ca-ES-valencia": "Interferència d’ones quàntiques",
+      "gu": "ક્વોન્ટમ તરંગોનું હસ્તક્ષેપ"
     }
   },
   "./snippets/ratio-and-proportion": {
@@ -9970,7 +11326,18 @@
       "en-CA": "Ratio and Proportion",
       "en-AU": "Ratio and Proportion",
       "en-IN": "Ratio and Proportion",
-      "sr-Cyrl": "Однос и размера"
+      "sr-Cyrl": "Однос и размера",
+      "sr-Latn": "‪Однос и размера‬",
+      "sr-ijekavsk": "‪Однос и размера‬",
+      "cnr": "‪Однос и размера‬",
+      "ca-ES-valencia": "‪Raó i proporció‬",
+      "la": "Ratio et proportio",
+      "tpi": "Resio na proporsen",
+      "pt": "Razão e proporção",
+      "pt-PT": "Razão e proporção",
+      "uk": "Відношення і пропорції",
+      "ru": "Отношения и пропорции",
+      "fi": "Suhde ja verranto"
     }
   },
   "./snippets/reactants-products-and-leftovers": {
@@ -10070,7 +11437,14 @@
       "en-AU": "Reactants, Products and Leftovers",
       "en-IN": "Reactants, Products and Leftovers",
       "no": "Reaktanter, produkter og overskudd",
-      "sr-Cyrl": "Реактанти, продуктти реакције и вишкови"
+      "sr-Cyrl": "Реактанти, продуктти реакције и вишкови",
+      "pt-PT": "‪Reagentes, Produtos e Reagentes em Excesso‬",
+      "sr-Latn": "‪Реактанти, продуктти реакције и вишкови‬",
+      "sr-ijekavsk": "‪Реактанти, продуктти реакције и вишкови‬",
+      "cnr": "‪Реактанти, продуктти реакције и вишкови‬",
+      "ca-ES-valencia": "‪Reactius, productes i sobralles‬",
+      "la": "Reactantia, producta et residua",
+      "tpi": "Ol samting bilong stat, ol samting i kamap na ol hap i stap yet"
     }
   },
   "./snippets/resistance-in-a-wire": {
@@ -10180,7 +11554,14 @@
       "en-AU": "Resistance in a Wire",
       "en-IN": "Resistance in a Wire",
       "no": "Motstand i lederen",
-      "sr-Cyrl": "Омов закон (отпор линијског проводника)"
+      "sr-Cyrl": "Омов закон (отпор линијског проводника)",
+      "pt-PT": "‪Resistência num condutor‬",
+      "sr-Latn": "‪Омов закон (отпор линијског проводника)‬",
+      "sr-ijekavsk": "‪Омов закон (отпор линијског проводника)‬",
+      "cnr": "‪Омов закон (отпор линијског проводника)‬",
+      "ca-ES-valencia": "‪Resistència en un cable‬",
+      "la": "Resistentia in filo",
+      "tpi": "Resistens long waia"
     }
   },
   "./snippets/rutherford-scattering": {
@@ -10283,7 +11664,14 @@
       "en-AU": "Rutherford Scattering",
       "en-IN": "Rutherford Scattering",
       "no": "Rutherfordavbøynig",
-      "sr-Cyrl": "Радерфордово (Rutherford) расејање"
+      "sr-Cyrl": "Радерфордово (Rutherford) расејање",
+      "pt-PT": "‪Experiência de Rutherford‬",
+      "sr-Latn": "‪Радерфордово (Rutherford) расејање‬",
+      "sr-ijekavsk": "‪Радерфордово (Rutherford) расејање‬",
+      "cnr": "‪Радерфордово (Rutherford) расејање‬",
+      "ca-ES-valencia": "‪Dispersió de Rutherford‬",
+      "la": "Dispersio Rutherfordi",
+      "tpi": "Ol patikel i go nabaut long traim bilong Rutherford"
     }
   },
   "./snippets/sound-waves": {
@@ -10352,7 +11740,22 @@
       "en-CA": "Sound Waves",
       "en-AU": "Sound Waves",
       "en-IN": "Sound Waves",
-      "sr-Cyrl": "Звучни таласи"
+      "sr-Cyrl": "Звучни таласи",
+      "sr-Latn": "‪Звучни таласи‬",
+      "sr-ijekavsk": "‪Звучни таласи‬",
+      "cnr": "‪Звучни таласи‬",
+      "ca-ES-valencia": "‪Ones sonores‬",
+      "la": "Undae soni",
+      "tpi": "Ol wev bilong saun",
+      "eu": "Soinu-uhinak",
+      "pt": "Ondas sonoras",
+      "pt-PT": "Ondas sonoras",
+      "bn": "শব্দতরঙ্গ",
+      "am": "የድምፅ ሞገዶች",
+      "ja": "音波",
+      "bg": "Звукови вълни",
+      "hu": "Hanghullámok",
+      "ru": "Звуковые волны"
     }
   },
   "./snippets/states-of-matter": {
@@ -10463,7 +11866,14 @@
       "en-AU": "States of Matter",
       "en-IN": "States of Matter",
       "no": "Aggregattilstander",
-      "sr-Cyrl": "Стања материје"
+      "sr-Cyrl": "Стања материје",
+      "pt-PT": "‪Estado da Matéria‬",
+      "sr-Latn": "‪Стања материје‬",
+      "sr-ijekavsk": "‪Стања материје‬",
+      "cnr": "‪Стања материје‬",
+      "ca-ES-valencia": "‪Estats de la matèria‬",
+      "la": "Status materiae",
+      "tpi": "Ol kain pasin bilong mater"
     }
   },
   "./snippets/states-of-matter-basics": {
@@ -10564,7 +11974,14 @@
       "en-CA": "States of Matter: Basics",
       "en-AU": "States of Matter: Basics",
       "en-IN": "States of Matter: Basics",
-      "sr-Cyrl": "Стања материје: основе"
+      "sr-Cyrl": "Стања материје: основе",
+      "pt-PT": "‪Estados da Matéria: Fundamentos‬",
+      "sr-Latn": "‪Стања материје: основе‬",
+      "sr-ijekavsk": "‪Стања материје: основе‬",
+      "cnr": "‪Стања материје: основе‬",
+      "ca-ES-valencia": "‪Estats de la matèria. Conceptes bàsics‬",
+      "la": "Status materiae: fundamenta",
+      "tpi": "Ol kain pasin bilong mater: ol as tingting"
     }
   },
   "./snippets/trig-tour": {
@@ -10661,7 +12078,15 @@
       "en-AU": "Trig Tour",
       "en-IN": "Trig Tour",
       "no": "TrigonometriTur",
-      "sr-Cyrl": "Тригонометријска кружница"
+      "sr-Cyrl": "Тригонометријска кружница",
+      "sr-Latn": "‪Тригонометријска кружница‬",
+      "sr-ijekavsk": "‪Тригонометријска кружница‬",
+      "cnr": "‪Тригонометријска кружница‬",
+      "ca-ES-valencia": "‪Tour de trigonometria‬",
+      "la": "Itinerarium trigonometriae",
+      "tpi": "Lainim trigonometri",
+      "pt": "Passeio pela trigonometria",
+      "pt-PT": "Passeio pela trigonometria"
     }
   },
   "./snippets/under-pressure": {
@@ -10762,7 +12187,14 @@
       "en-CA": "Under Pressure",
       "en-AU": "Under Pressure",
       "en-IN": "Under Pressure",
-      "sr-Cyrl": "Хидростатички притисак"
+      "sr-Cyrl": "Хидростатички притисак",
+      "pt-PT": "‪Sob Pressão‬",
+      "sr-Latn": "‪Хидростатички притисак‬",
+      "sr-ijekavsk": "‪Хидростатички притисак‬",
+      "cnr": "‪Хидростатички притисак‬",
+      "ca-ES-valencia": "‪Sota pressió‬",
+      "la": "Sub pressione",
+      "tpi": "Presa"
     }
   },
   "./snippets/unit-rates": {
@@ -10848,7 +12280,17 @@
       "en-GB": "Unit Rates",
       "en-AU": "Unit Rates",
       "en-IN": "Unit Rates",
-      "sr-Cyrl": "Пијаца, шопинг а и трка"
+      "sr-Cyrl": "Пијаца, шопинг а и трка",
+      "sr-Latn": "‪Пијаца, шопинг а и трка‬",
+      "sr-ijekavsk": "‪Пијаца, шопинг а и трка‬",
+      "cnr": "‪Пијаца, шопинг а и трка‬",
+      "ca-ES-valencia": "‪Taxes per unitat‬",
+      "la": "Rationes ad unitatem",
+      "tpi": "Skelim long wanpela yunit",
+      "pt": "Razões unitárias",
+      "pt-PT": "Razões unitárias",
+      "uk": "Одиничні норми",
+      "fi": "Yksikköhinnat"
     }
   },
   "./snippets/vector-addition": {
@@ -10948,7 +12390,14 @@
       "en-AU": "Vector Addition",
       "en-IN": "Vector Addition",
       "no": "Vektorsum",
-      "sr-Cyrl": "Сабирање вектора"
+      "sr-Cyrl": "Сабирање вектора",
+      "pt-PT": "‪Adição de Vetores‬",
+      "sr-Latn": "‪Сабирање вектора‬",
+      "sr-ijekavsk": "‪Сабирање вектора‬",
+      "cnr": "‪Сабирање вектора‬",
+      "ca-ES-valencia": "‪Suma de Vectors‬",
+      "la": "Additio vectorum",
+      "tpi": "Skruim ol vekta"
     }
   },
   "./snippets/vector-addition-equations": {
@@ -11040,7 +12489,16 @@
       "en-CA": "Vector Addition: Equations",
       "en-AU": "Vector Addition: Equations",
       "en-IN": "Vector Addition: Equations",
-      "sr-Cyrl": "Сабирање вектора: Једначине"
+      "sr-Cyrl": "Сабирање вектора: Једначине",
+      "sr-Latn": "‪Сабирање вектора: Једначине‬",
+      "sr-ijekavsk": "‪Сабирање вектора: Једначине‬",
+      "cnr": "‪Сабирање вектора: Једначине‬",
+      "ca-ES-valencia": "‪Suma de vectors: equacions‬",
+      "la": "Additio vectorum: aequationes",
+      "tpi": "Skruim ol vekta: ol ikwesen",
+      "pt": "Adição de vetores: equações",
+      "pt-PT": "Adição de vetores: equações",
+      "fi": "Vektorien yhteenlasku: yhtälöt"
     }
   },
   "./snippets/wave-interference": {
@@ -11145,7 +12603,14 @@
       "en-AU": "Wave Interference",
       "en-IN": "Wave Interference",
       "no": "Bølgeinterferens",
-      "sr-Cyrl": "Интерференција таласа"
+      "sr-Cyrl": "Интерференција таласа",
+      "pt-PT": "‪Interferência de Onda‬",
+      "sr-Latn": "‪Интерференција таласа‬",
+      "sr-ijekavsk": "‪Интерференција таласа‬",
+      "cnr": "‪Интерференција таласа‬",
+      "ca-ES-valencia": "‪Interferència d'ones‬",
+      "la": "Interferentia undarum",
+      "tpi": "Ol wev i bung"
     }
   },
   "./snippets/wave-on-a-string": {
@@ -11253,7 +12718,14 @@
       "en-AU": "Wave on a String",
       "en-IN": "Wave on a String",
       "no": "Bølge på en tråd",
-      "sr-Cyrl": "ТАЛАС НА ЖИЦИ"
+      "sr-Cyrl": "ТАЛАС НА ЖИЦИ",
+      "pt-PT": "‪Simulador de Onda numa Corda‬",
+      "sr-Latn": "‪ТАЛАС НА ЖИЦИ‬",
+      "sr-ijekavsk": "‪ТАЛАС НА ЖИЦИ‬",
+      "cnr": "‪ТАЛАС НА ЖИЦИ‬",
+      "ca-ES-valencia": "‪Ones en una corda‬",
+      "la": "Unda in chorda",
+      "tpi": "Wev long rop"
     }
   },
   "./snippets/waves-intro": {
@@ -11358,7 +12830,14 @@
       "en-AU": "Waves Intro",
       "en-IN": "Waves Intro",
       "no": "Bølger - innledning",
-      "sr-Cyrl": "Таласи - Увод"
+      "sr-Cyrl": "Таласи - Увод",
+      "pt-PT": "‪Intro das Ondas‬",
+      "sr-Latn": "‪Таласи - Увод‬",
+      "sr-ijekavsk": "‪Таласи - Увод‬",
+      "cnr": "‪Таласи - Увод‬",
+      "ca-ES-valencia": "‪Les ones. Introducció‬",
+      "la": "Introductio ad undas",
+      "tpi": "Ol as tingting bilong ol wev"
     }
   }
 }

@@ -152,7 +152,14 @@
         "PhET",
         "widget-lang-en-US",
         "widget-lang-en-AU",
-        "widget-lang-en-IN"
+        "widget-lang-en-IN",
+        "widget-lang-zh",
+        "widget-lang-zh-Hans",
+        "widget-lang-zh-Hant",
+        "widget-lang-pt-PT",
+        "widget-lang-no",
+        "widget-lang-sr-Cyrl",
+        "widget-lang-tl"
     ],
     "license": "MIT AND GPL-3.0-only AND CC-BY-NC-4.0",
     "author": {

@@ -8,6 +8,13 @@ import {join} from "node:path"
 import {once} from "node:events"
 import {pathToFileURL} from "node:url"
 import test from "node:test"
+import {drawerText, matchSimulationLocale} from "../localization/drawer.js"
+
+test("drawer localization checks exact locale IDs before Intl fallbacks", () => {
+  assert.match(drawerText("Preferences", "tl"), /Kagustuhan/)
+  assert.match(drawerText("Simulation", "cnr"), /Симулација/)
+  assert.equal(matchSimulationLocale("no", ["en", "nb"]), "nb")
+})
 
 const browser = process.env.CHROME_BIN ?? [
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",

@@ -197,9 +197,8 @@ export class WebWriterPhetSimulation extends HTMLElement {
   }
 
   get optionGroups() {
-    const locale = canonicalLocale(this.#language)
     return Object.fromEntries(Object.entries(WebWriterPhetSimulation.optionGroups).map(([key, {label}]) =>
-      [key, {label: drawerText(label, locale)}]))
+      [key, {label: drawerText(label, this.#language)}]))
   }
 
   get colorProfile() {
@@ -216,12 +215,13 @@ export class WebWriterPhetSimulation extends HTMLElement {
   }
 
   get options() {
-    const locale = canonicalLocale(this.#language)
-    const translate = text => drawerText(text, locale, this.type)
-    if (this.#simulationChoices?.locale !== locale) {
-      const titles = Object.entries(catalog).map(([type, title]) => [type, simulationTitle(type, locale, title)])
+    const language = this.#language
+    const locale = canonicalLocale(language)
+    const translate = text => drawerText(text, language, this.type)
+    if (this.#simulationChoices?.locale !== language) {
+      const titles = Object.entries(catalog).map(([type, title]) => [type, simulationTitle(type, language, title)])
       const collator = new Intl.Collator(locale)
-      this.#simulationChoices = {locale, options: choices(titles.sort((a, b) => collator.compare(a[1], b[1])))}
+      this.#simulationChoices = {locale: language, options: choices(titles.sort((a, b) => collator.compare(a[1], b[1])))}
     }
     const disabled = !this.isContentEditable
     const adapter = this.#adapter
@@ -284,12 +284,12 @@ export class WebWriterPhetSimulation extends HTMLElement {
     this.#setStatus("")
     this.#refreshOptions()
     if (!Object.hasOwn(catalog, type)) {
-      this.#setStatus("Choose a PhET simulation from the Simulation setting.")
+      this.#setStatus(this.#statusText("Choose a PhET simulation from the Simulation setting."))
       return
     }
     const adapter = this.#adapter
     if (!adapter) {
-      this.#setStatus(`${catalog[type]} is not included in this build.`)
+      this.#setStatus(this.#statusText("{0} is not included in this build.", simulationTitle(type, this.#language, catalog[type])))
       return
     }
 
@@ -301,7 +301,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
     this.#status.after(iframe)
 
     this.#readyTimer = this.#window.setTimeout(() => {
-      this.#setStatus(`${iframe.title} did not start. Reload the document to try again.`)
+      this.#setStatus(this.#statusText("{0} did not start. Reload the document to try again.", iframe.title))
     }, 20000)
     adapter.load().then(({default: simulation}) => {
       if (iframe === this.#frame && type === this.type) {
@@ -312,8 +312,8 @@ export class WebWriterPhetSimulation extends HTMLElement {
       if (iframe !== this.#frame) return
       this.#window.clearTimeout(this.#readyTimer)
       this.#setStatus(error?.name === "OfflineImportError"
-        ? `${iframe.title} is not included in this offline document.`
-        : `${iframe.title} could not be loaded.`)
+        ? this.#statusText("{0} is not included in this offline document.", iframe.title)
+        : this.#statusText("{0} could not be loaded.", iframe.title))
     })
   }
 
@@ -518,11 +518,11 @@ export class WebWriterPhetSimulation extends HTMLElement {
     queueMicrotask(() => {
       this.#scheduled = false
       if (!this.isConnected || this.#switchingPort) return
-      const locale = canonicalLocale(this.#language)
-      if (locale !== this.#drawerLocale) {
-        this.#drawerLocale = locale
+      const language = this.#language
+      if (language !== this.#drawerLocale) {
+        this.#drawerLocale = language
         if (this.#frame && this.#frameType === this.type) {
-          this.#frame.title = simulationTitle(this.type, locale, catalog[this.type])
+          this.#frame.title = simulationTitle(this.type, language, catalog[this.type])
         }
         this.#refreshOptions()
       }
@@ -547,7 +547,7 @@ export class WebWriterPhetSimulation extends HTMLElement {
           changes.push(this.#request("apply", {snapshot: readJSON(snapshot)}))
         }
         catch {
-          changes.push(Promise.reject(new Error("The saved simulation snapshot is invalid.")))
+          changes.push(Promise.reject(new Error(this.#statusText("The saved simulation snapshot is invalid."))))
         }
       }
       const revision = ++this.#applyRevision
@@ -562,6 +562,11 @@ export class WebWriterPhetSimulation extends HTMLElement {
   #setStatus(message) {
     this.#status.textContent = message
     this.#status.hidden = !message
+  }
+
+  #statusText(message, title) {
+    const text = drawerText(message, this.#language)
+    return title === undefined ? text : text.replace("{0}", () => title)
   }
 
   #refreshOptions() {
