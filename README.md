@@ -5,6 +5,10 @@ Explore physics, chemistry, mathematics, and biology with interactive PhET simul
 
 The original simulations are by PhET Interactive Simulations at the University of Colorado Boulder. Frederic Salmen adapted them for WebWriter. [PhET Interactive Simulations](https://phet.colorado.edu/)
 
+## Languages
+
+The WebWriter controls and snippet titles are available in Cantonese (Simplified and Traditional), Kurmanji (Latin and Arabic scripts), Sorani Kurdish, and Afrikaans (South Africa and Namibia). The embedded simulation uses the translations included in that PhET simulation. Among the 125 bundled simulations, 121 include Latin-script Kurmanji and 47 include Afrikaans. Cantonese, Arabic-script Kurmanji, and Sorani are available in the WebWriter controls and titles; the embedded simulations use their existing fallback languages.
+
 ## Snippets
 [Snippets](https://webwriter.app/docs/snippets/snippets/) are examples and templates using the package's widgets.
 

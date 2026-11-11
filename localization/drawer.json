@@ -132,7 +132,16 @@
       "my": "စမ်းသပ်မှု",
       "lo": "ການຈຳລອງ",
       "km": "ការក្លែងធ្វើ",
-      "en": "Simulation"
+      "en": "Simulation",
+      "yue-Hans": "模拟",
+      "yue-Hant": "模擬",
+      "kmr": "Simulasyon",
+      "kmr-Latn": "Simulasyon",
+      "kmr-Arab": "سمولاسیۆن",
+      "ckb": "هاوشێوەسازی",
+      "ckb-Arab": "هاوشێوەسازی",
+      "af-ZA": "Simulasie",
+      "af-NA": "Simulasie"
     },
     "Preferences": {
       "af": "Voorkeure",
@@ -273,7 +282,16 @@
       "my": "နှစ်သက်ရာများ",
       "lo": "ຄວາມມັກ",
       "km": "ចំណូលចិត្ត",
-      "en": "Preferences"
+      "en": "Preferences",
+      "yue-Hans": "偏好设定",
+      "yue-Hant": "偏好設定",
+      "kmr": "Vebijêrk",
+      "kmr-Latn": "Vebijêrk",
+      "kmr-Arab": "ڤەبژێرک",
+      "ckb": "هەڵبژاردەکان",
+      "ckb-Arab": "هەڵبژاردەکان",
+      "af-ZA": "Voorkeure",
+      "af-NA": "Voorkeure"
     },
     "Audio": {
       "af": "Oudio",
@@ -408,7 +426,16 @@
       "my": "အသံ",
       "lo": "ສຽງ",
       "km": "សំឡេង",
-      "en": "Audio"
+      "en": "Audio",
+      "yue-Hans": "音讯",
+      "yue-Hant": "音訊",
+      "kmr": "Deng",
+      "kmr-Latn": "Deng",
+      "kmr-Arab": "دەنگ",
+      "ckb": "دەنگ",
+      "ckb-Arab": "دەنگ",
+      "af-ZA": "Klank",
+      "af-NA": "Klank"
     },
     "Projector": {
       "af": "Projektormodus",
@@ -560,7 +587,16 @@
       "cnr": "Projektor",
       "ca-ES-valencia": "Mode de projector",
       "tl": "Projector",
-      "en": "Projector"
+      "en": "Projector",
+      "yue-Hans": "投影机",
+      "yue-Hant": "投影機",
+      "kmr": "Projeksiyon",
+      "kmr-Latn": "Projeksiyon",
+      "kmr-Arab": "پرۆژەکسیۆن",
+      "ckb": "پرۆژەکتەر",
+      "ckb-Arab": "پرۆژەکتەر",
+      "af-ZA": "Projektor",
+      "af-NA": "Projektor"
     },
     "Region and culture": {
       "af": "Streek en Kultuur",
@@ -712,7 +748,16 @@
       "sr-ijekavsk": "Regija i kultura",
       "cnr": "Regija i kultura",
       "tl": "Rehiyon at kultura",
-      "en": "Region and culture"
+      "en": "Region and culture",
+      "yue-Hans": "地区与文化",
+      "yue-Hant": "地區與文化",
+      "kmr": "Herêm û çand",
+      "kmr-Latn": "Herêm û çand",
+      "kmr-Arab": "هەرێم ئوو چاند",
+      "ckb": "ناوچە و کەلتوور",
+      "ckb-Arab": "ناوچە و کەلتوور",
+      "af-ZA": "Streek en kultuur",
+      "af-NA": "Streek en kultuur"
     },
     "United States": {
       "af": "Verenigde State van Amerika",
@@ -864,7 +909,16 @@
       "cnr": "Sjedinjene Američke Države",
       "ca-ES-valencia": "Estats Units d'Amèrica",
       "tl": "Estados Unidos",
-      "en": "United States"
+      "en": "United States",
+      "yue-Hans": "美国",
+      "yue-Hant": "美國",
+      "kmr": "Dewletên Yekbûyî",
+      "kmr-Latn": "Dewletên Yekbûyî",
+      "kmr-Arab": "دەولەتێن یەکبوویی",
+      "ckb": "ویلایەتە یەکگرتووەکان",
+      "ckb-Arab": "ویلایەتە یەکگرتووەکان",
+      "af-ZA": "Verenigde State",
+      "af-NA": "Verenigde State"
     },
     "Africa": {
       "af": "Afrika",
@@ -986,7 +1040,16 @@
       "lo": "ອາຟຣິກາ",
       "vi": "Châu Phi",
       "km": "អាហ្វ្រិក",
-      "en": "Africa"
+      "en": "Africa",
+      "yue-Hans": "非洲",
+      "yue-Hant": "非洲",
+      "kmr": "Afrîka",
+      "kmr-Latn": "Afrîka",
+      "kmr-Arab": "ئافریکا",
+      "ckb": "ئەفریقا",
+      "ckb-Arab": "ئەفریقا",
+      "af-ZA": "Afrika",
+      "af-NA": "Afrika"
     },
     "Africa (modest dress)": {
       "af": "Afrika (Modest)",
@@ -1138,7 +1201,16 @@
       "cnr": "Afrika (odjeća koja pokriva tijelo)",
       "ca-ES-valencia": "Àfrica (simple)",
       "tl": "Aprika (katamtamang pananamit)",
-      "en": "Africa (modest dress)"
+      "en": "Africa (modest dress)",
+      "yue-Hans": "非洲（端庄服饰）",
+      "yue-Hant": "非洲（端莊服飾）",
+      "kmr": "Afrîka (cilên nerm)",
+      "kmr-Latn": "Afrîka (cilên nerm)",
+      "kmr-Arab": "ئافریکا (جلێن نەرم)",
+      "ckb": "ئەفریقا (جلوبەرگی پارێزراو)",
+      "ckb-Arab": "ئەفریقا (جلوبەرگی پارێزراو)",
+      "af-ZA": "Afrika (beskeie kleredrag)",
+      "af-NA": "Afrika (beskeie kleredrag)"
     },
     "Asia": {
       "af": "Asië",
@@ -1254,7 +1326,16 @@
       "lo": "ອາຊີ",
       "vi": "Châu Á",
       "km": "អាស៊ី",
-      "en": "Asia"
+      "en": "Asia",
+      "yue-Hans": "亚洲",
+      "yue-Hant": "亞洲",
+      "kmr": "Asya",
+      "kmr-Latn": "Asya",
+      "kmr-Arab": "ئاسیا",
+      "ckb": "ئاسیا",
+      "ckb-Arab": "ئاسیا",
+      "af-ZA": "Asië",
+      "af-NA": "Asië"
     },
     "Latin America": {
       "af": "Latyns-Amerika",
@@ -1376,7 +1457,16 @@
       "lo": "ລາຕິນອາເມລິກາ",
       "vi": "Mỹ Latinh",
       "km": "អាមេរិកឡាទីន",
-      "en": "Latin America"
+      "en": "Latin America",
+      "yue-Hans": "拉丁美洲",
+      "yue-Hant": "拉丁美洲",
+      "kmr": "Amerîkaya Latîn",
+      "kmr-Latn": "Amerîkaya Latîn",
+      "kmr-Arab": "ئامەریکایا لاتین",
+      "ckb": "ئەرمریکای لاتین",
+      "ckb-Arab": "ئەرمریکای لاتین",
+      "af-ZA": "Latyns-Amerika",
+      "af-NA": "Latyns-Amerika"
     },
     "Oceania": {
       "af": "Oseanië",
@@ -1493,7 +1583,16 @@
       "lo": "ໂອເຊຍເນຍ",
       "vi": "Châu Đại Dương",
       "km": "អូសេអានី",
-      "en": "Oceania"
+      "en": "Oceania",
+      "yue-Hans": "大洋洲",
+      "yue-Hant": "大洋洲",
+      "kmr": "Okyanûsya",
+      "kmr-Latn": "Okyanûsya",
+      "kmr-Arab": "ئۆکیانووسیا",
+      "ckb": "ئۆقیانوسیا",
+      "ckb-Arab": "ئۆقیانوسیا",
+      "af-ZA": "Oseanië",
+      "af-NA": "Oseanië"
     },
     "Random": {
       "af": "Lukraak",
@@ -1615,7 +1714,16 @@
       "my": "ကျပန်း",
       "lo": "ສຸ່ມ",
       "km": "ចៃដន្យ",
-      "en": "Random"
+      "en": "Random",
+      "yue-Hans": "随机",
+      "yue-Hant": "隨機",
+      "kmr": "Bêserûber",
+      "kmr-Latn": "Bêserûber",
+      "kmr-Arab": "بێسەرووبەر",
+      "ckb": "هەڕەمەکی",
+      "ckb-Arab": "هەڕەمەکی",
+      "af-ZA": "Ewekansig",
+      "af-NA": "Ewekansig"
     },
     "Screens": {
       "ar": "الشاشات",
@@ -1719,7 +1827,16 @@
       "my": "မျက်နှာပြင်များ",
       "lo": "ໜ້າຈໍ",
       "km": "អេក្រង់",
-      "en": "Screens"
+      "en": "Screens",
+      "yue-Hans": "画面",
+      "yue-Hant": "畫面",
+      "kmr": "Dîmender",
+      "kmr-Latn": "Dîmender",
+      "kmr-Arab": "دیمەندەر",
+      "ckb": "شاشەکان",
+      "ckb-Arab": "شاشەکان",
+      "af-ZA": "Skerms",
+      "af-NA": "Skerms"
     },
     "Enabled screens": {
       "ar": "الشاشات المفعّلة",
@@ -1823,7 +1940,16 @@
       "my": "ဖွင့်ထားသော မျက်နှာပြင်များ",
       "lo": "ໜ້າຈໍທີ່ເປີດໃຊ້",
       "km": "អេក្រង់ដែលបានបើក",
-      "en": "Enabled screens"
+      "en": "Enabled screens",
+      "yue-Hans": "已启用嘅画面",
+      "yue-Hant": "已啟用嘅畫面",
+      "kmr": "Dîmenderên çalakkirî",
+      "kmr-Latn": "Dîmenderên çalakkirî",
+      "kmr-Arab": "دیمەندەرێن چالاککری",
+      "ckb": "شاشە چالاکەکان",
+      "ckb-Arab": "شاشە چالاکەکان",
+      "af-ZA": "Geaktiveerde skerms",
+      "af-NA": "Geaktiveerde skerms"
     },
     "Color profile": {
       "ar": "ملف الألوان",
@@ -1927,7 +2053,16 @@
       "my": "အရောင်ပရိုဖိုင်",
       "lo": "ໂປຣໄຟລ໌ສີ",
       "km": "ទម្រង់ពណ៌",
-      "en": "Color profile"
+      "en": "Color profile",
+      "yue-Hans": "色彩设定档",
+      "yue-Hant": "色彩設定檔",
+      "kmr": "Profîla rengê",
+      "kmr-Latn": "Profîla rengê",
+      "kmr-Arab": "پرۆفیلا رەنگێ",
+      "ckb": "پرۆفایلی ڕەنگ",
+      "ckb-Arab": "پرۆفایلی ڕەنگ",
+      "af-ZA": "Kleurprofiel",
+      "af-NA": "Kleurprofiel"
     },
     "Default": {
       "ar": "افتراضي",
@@ -2031,7 +2166,16 @@
       "my": "မူလ",
       "lo": "ຄ່າເລີ່ມຕົ້ນ",
       "km": "លំនាំដើម",
-      "en": "Default"
+      "en": "Default",
+      "yue-Hans": "预设",
+      "yue-Hant": "預設",
+      "kmr": "Berdest",
+      "kmr-Latn": "Berdest",
+      "kmr-Arab": "بەردەست",
+      "ckb": "بنەڕەت",
+      "ckb-Arab": "بنەڕەت",
+      "af-ZA": "Verstek",
+      "af-NA": "Verstek"
     },
     "Enabled": {
       "ar": "مفعّل",
@@ -2135,7 +2279,16 @@
       "my": "ဖွင့်ထားသည်",
       "lo": "ເປີດໃຊ້",
       "km": "បានបើក",
-      "en": "Enabled"
+      "en": "Enabled",
+      "yue-Hans": "已启用",
+      "yue-Hant": "已啟用",
+      "kmr": "Çalakkirî",
+      "kmr-Latn": "Çalakkirî",
+      "kmr-Arab": "چالاککری",
+      "ckb": "چالاک",
+      "ckb-Arab": "چالاک",
+      "af-ZA": "Geaktiveer",
+      "af-NA": "Geaktiveer"
     },
     "Disabled": {
       "ar": "معطّل",
@@ -2239,7 +2392,16 @@
       "my": "ပိတ်ထားသည်",
       "lo": "ປິດໃຊ້",
       "km": "បានបិទ",
-      "en": "Disabled"
+      "en": "Disabled",
+      "yue-Hans": "已停用",
+      "yue-Hant": "已停用",
+      "kmr": "Neçalak",
+      "kmr-Latn": "Neçalak",
+      "kmr-Arab": "نەچالاک",
+      "ckb": "ناچالاک",
+      "ckb-Arab": "ناچالاک",
+      "af-ZA": "Gedeaktiveer",
+      "af-NA": "Gedeaktiveer"
     },
     "Muted": {
       "ar": "صامت",
@@ -2343,7 +2505,16 @@
       "my": "အသံပိတ်ထားသည်",
       "lo": "ປິດສຽງ",
       "km": "បានបិទសំឡេង",
-      "en": "Muted"
+      "en": "Muted",
+      "yue-Hans": "静音",
+      "yue-Hant": "靜音",
+      "kmr": "Bêdengkirî",
+      "kmr-Latn": "Bêdengkirî",
+      "kmr-Arab": "بێدەنگکری",
+      "ckb": "بێدەنگ",
+      "ckb-Arab": "بێدەنگ",
+      "af-ZA": "Gedemp",
+      "af-NA": "Gedemp"
     },
     "Shown": {
       "ar": "ظاهر",
@@ -2447,7 +2618,16 @@
       "my": "ပြထားသည်",
       "lo": "ສະແດງ",
       "km": "បានបង្ហាញ",
-      "en": "Shown"
+      "en": "Shown",
+      "yue-Hans": "显示",
+      "yue-Hant": "顯示",
+      "kmr": "Nîşandayî",
+      "kmr-Latn": "Nîşandayî",
+      "kmr-Arab": "نیشاندایی",
+      "ckb": "پیشاندراو",
+      "ckb-Arab": "پیشاندراو",
+      "af-ZA": "Sigbaar",
+      "af-NA": "Sigbaar"
     },
     "Hidden": {
       "ar": "مخفي",
@@ -2551,7 +2731,16 @@
       "my": "ဝှက်ထားသည်",
       "lo": "ເຊື່ອງ",
       "km": "បានលាក់",
-      "en": "Hidden"
+      "en": "Hidden",
+      "yue-Hans": "隐藏",
+      "yue-Hant": "隱藏",
+      "kmr": "Veşartî",
+      "kmr-Latn": "Veşartî",
+      "kmr-Arab": "ڤەشارتی",
+      "ckb": "شاراوە",
+      "ckb-Arab": "شاراوە",
+      "af-ZA": "Versteek",
+      "af-NA": "Versteek"
     },
     "Choose the screens learners can open. Clearing the selection enables all screens.": {
       "ar": "اختر الشاشات التي يمكن للمتعلمين فتحها. يؤدي مسح التحديد إلى تفعيل جميع الشاشات.",
@@ -2655,7 +2844,16 @@
       "my": "သင်ယူသူများ ဖွင့်နိုင်သော မျက်နှာပြင်များကို ရွေးပါ။ ရွေးချယ်မှုကို ရှင်းလင်းပါက မျက်နှာပြင်အားလုံးကို ဖွင့်ပေးမည်။",
       "lo": "ເລືອກໜ້າຈໍທີ່ຜູ້ຮຽນສາມາດເປີດໄດ້. ລຶບການເລືອກເພື່ອເປີດໃຊ້ທຸກໜ້າຈໍ.",
       "km": "ជ្រើសរើសអេក្រង់ដែលអ្នកសិក្សាអាចបើកបាន។ ការសម្អាតជម្រើសនឹងបើកអេក្រង់ទាំងអស់។",
-      "en": "Choose the screens learners can open. Clearing the selection enables all screens."
+      "en": "Choose the screens learners can open. Clearing the selection enables all screens.",
+      "yue-Hans": "拣学习者可以开启嘅画面。清除选取项目即可启用所有画面。",
+      "yue-Hant": "揀學習者可以開啟嘅畫面。清除選取項目即可啟用所有畫面。",
+      "kmr": "Hilbijêre ka xwendekar dikarin kîjan dîmenderan vekin. Heke hilbijartinê paqij bikin, hemû dîmender tên çalakkirin.",
+      "kmr-Latn": "Hilbijêre ka xwendekar dikarin kîjan dîmenderan vekin. Heke hilbijartinê paqij bikin, hemû dîmender tên çalakkirin.",
+      "kmr-Arab": "هلبژێرە کا خوەندەکار دکارن کیژان دیمەندەران ڤەکن. هەکە هلبژارتنێ پاقژ بکن, هەموو دیمەندەر تێن چالاککرن.",
+      "ckb": "ئەو شاشانە هەڵبژێرە کە فێرخوازان دەتوانن بیکەنەوە. بەتاڵکردنەوەی هەڵبژاردەکان هەموو شاشەکان چالاک دەکات.",
+      "ckb-Arab": "ئەو شاشانە هەڵبژێرە کە فێرخوازان دەتوانن بیکەنەوە. بەتاڵکردنەوەی هەڵبژاردەکان هەموو شاشەکان چالاک دەکات.",
+      "af-ZA": "Kies die skerms wat leerders kan oopmaak. Maak die keuse skoon om alle skerms te aktiveer.",
+      "af-NA": "Kies die skerms wat leerders kan oopmaak. Maak die keuse skoon om alle skerms te aktiveer."
     },
     "Choose a PhET simulation from the Simulation setting.": {
       "en-US": "Choose a PhET simulation from the Simulation setting.",
@@ -2759,7 +2957,16 @@
       "lo": "ເລືອກການຈຳລອງ PhET ຈາກການຕັ້ງຄ່າການຈຳລອງ.",
       "vi": "Chọn mô phỏng PhET trong cài đặt Mô phỏng.",
       "km": "ជ្រើសរើសការក្លែងធ្វើ PhET នៅក្នុងការកំណត់ការក្លែងធ្វើ។",
-      "en": "Choose a PhET simulation from the Simulation setting."
+      "en": "Choose a PhET simulation from the Simulation setting.",
+      "yue-Hans": "请喺「模拟」设定中选择一个 PhET 模拟。",
+      "yue-Hant": "請喺「模擬」設定中選擇一個 PhET 模擬。",
+      "kmr": "Ji mîhenga Simulasyonê simulasyonek PhET hilbijêre.",
+      "kmr-Latn": "Ji mîhenga Simulasyonê simulasyonek PhET hilbijêre.",
+      "kmr-Arab": "ژ میهەنگا سمولاسیۆنێ سمولاسیۆنەک PhET هلبژێرە.",
+      "ckb": "لە ڕێکخستنی هاوشێوەسازییەوە هاوشێوەسازییەکی PhET هەڵبژێرە.",
+      "ckb-Arab": "لە ڕێکخستنی هاوشێوەسازییەوە هاوشێوەسازییەکی PhET هەڵبژێرە.",
+      "af-ZA": "Kies 'n PhET-simulasie met die instelling Simulasie.",
+      "af-NA": "Kies 'n PhET-simulasie met die instelling Simulasie."
     },
     "{0} is not included in this build.": {
       "en-US": "{0} is not included in this build.",
@@ -2863,7 +3070,16 @@
       "lo": "ບໍ່ມີ {0} ໃນບິວນີ້.",
       "vi": "{0} không có trong bản dựng này.",
       "km": "{0} មិនមាននៅក្នុងកំណែនេះទេ។",
-      "en": "{0} is not included in this build."
+      "en": "{0} is not included in this build.",
+      "yue-Hans": "此版本未包含 {0}。",
+      "yue-Hant": "此版本未包含 {0}。",
+      "kmr": "{0} di vê avakirinê de nehatîye daxilkirin.",
+      "kmr-Latn": "{0} di vê avakirinê de nehatîye daxilkirin.",
+      "kmr-Arab": "{0} د ڤێ ئاڤاکرنێ دە نەهاتییە داخلکرن.",
+      "ckb": "ئەم دروستکراوە {0}ی تێدا نییە.",
+      "ckb-Arab": "ئەم دروستکراوە {0}ی تێدا نییە.",
+      "af-ZA": "{0} is nie by hierdie weergawe ingesluit nie.",
+      "af-NA": "{0} is nie by hierdie weergawe ingesluit nie."
     },
     "{0} did not start. Reload the document to try again.": {
       "en-US": "{0} did not start. Reload the document to try again.",
@@ -2967,7 +3183,16 @@
       "lo": "{0} ບໍ່ໄດ້ເລີ່ມ. ໂຫຼດເອກະສານຄືນເພື່ອລອງອີກຄັ້ງ.",
       "vi": "{0} không khởi động. Tải lại tài liệu để thử lại.",
       "km": "{0} មិនបានចាប់ផ្ដើមទេ។ សូមផ្ទុកឯកសារឡើងវិញដើម្បីសាកល្បងម្ដងទៀត។",
-      "en": "{0} did not start. Reload the document to try again."
+      "en": "{0} did not start. Reload the document to try again.",
+      "yue-Hans": "{0} 无法启动。重新载入文件后再试。",
+      "yue-Hant": "{0} 無法啟動。重新載入文件後再試。",
+      "kmr": "{0} dest pê nekir. Ji bo dîsa ceribandinê belgeyê nû bike.",
+      "kmr-Latn": "{0} dest pê nekir. Ji bo dîsa ceribandinê belgeyê nû bike.",
+      "kmr-Arab": "{0} دەست پێ نەکر. ژ بۆ دیسا جەرباندنێ بەلگەیێ نوو بکە.",
+      "ckb": "{0} دەست پێ نەکرد. بەڵگەنامەکە نوێ بکەرەوە و دووبارە هەوڵ بدەرەوە.",
+      "ckb-Arab": "{0} دەست پێ نەکرد. بەڵگەنامەکە نوێ بکەرەوە و دووبارە هەوڵ بدەرەوە.",
+      "af-ZA": "{0} het nie begin nie. Herlaai die dokument en probeer weer.",
+      "af-NA": "{0} het nie begin nie. Herlaai die dokument en probeer weer."
     },
     "{0} is not included in this offline document.": {
       "en-US": "{0} is not included in this offline document.",
@@ -3071,7 +3296,16 @@
       "lo": "ບໍ່ມີ {0} ໃນເອກະສານອອບລາຍນີ້.",
       "vi": "{0} không có trong tài liệu ngoại tuyến này.",
       "km": "{0} មិនមាននៅក្នុងឯកសារក្រៅបណ្ដាញនេះទេ។",
-      "en": "{0} is not included in this offline document."
+      "en": "{0} is not included in this offline document.",
+      "yue-Hans": "此离线文件未包含 {0}。",
+      "yue-Hant": "此離線文件未包含 {0}。",
+      "kmr": "{0} di vê belgeya negirêdayî de nehatiye daxilkirin.",
+      "kmr-Latn": "{0} di vê belgeya negirêdayî de nehatiye daxilkirin.",
+      "kmr-Arab": "{0} د ڤێ بەلگەیا نەگرێدایی دە نەهاتیە داخلکرن.",
+      "ckb": "ئەم بەڵگەنامە ئۆفلاینە {0}ی تێدا نییە.",
+      "ckb-Arab": "ئەم بەڵگەنامە ئۆفلاینە {0}ی تێدا نییە.",
+      "af-ZA": "{0} is nie by hierdie vanlyn dokument ingesluit nie.",
+      "af-NA": "{0} is nie by hierdie vanlyn dokument ingesluit nie."
     },
     "{0} could not be loaded.": {
       "en-US": "{0} could not be loaded.",
@@ -3175,7 +3409,16 @@
       "lo": "ໂຫຼດ {0} ບໍ່ໄດ້.",
       "vi": "Không thể tải {0}.",
       "km": "មិនអាចផ្ទុក {0} បានទេ។",
-      "en": "{0} could not be loaded."
+      "en": "{0} could not be loaded.",
+      "yue-Hans": "无法载入 {0}。",
+      "yue-Hant": "無法載入 {0}。",
+      "kmr": "{0} nehate barkirin.",
+      "kmr-Latn": "{0} nehate barkirin.",
+      "kmr-Arab": "{0} نەهاتە بارکرن.",
+      "ckb": "نەتوانرا {0} بار بکرێت.",
+      "ckb-Arab": "نەتوانرا {0} بار بکرێت.",
+      "af-ZA": "{0} kon nie gelaai word nie.",
+      "af-NA": "{0} kon nie gelaai word nie."
     },
     "The saved simulation snapshot is invalid.": {
       "en-US": "The saved simulation snapshot is invalid.",
@@ -3279,7 +3522,16 @@
       "lo": "ພາບຖ່າຍການຈຳລອງທີ່ບັນທຶກໄວ້ບໍ່ຖືກຕ້ອງ.",
       "vi": "Ảnh chụp trạng thái mô phỏng đã lưu không hợp lệ.",
       "km": "រូបថតស្ថានភាពការក្លែងធ្វើដែលបានរក្សាទុកមិនត្រឹមត្រូវទេ។",
-      "en": "The saved simulation snapshot is invalid."
+      "en": "The saved simulation snapshot is invalid.",
+      "yue-Hans": "储存嘅模拟快照无效。",
+      "yue-Hant": "儲存嘅模擬快照無效。",
+      "kmr": "Wêneyê simulasyona tomarkirî nederbasdar e.",
+      "kmr-Latn": "Wêneyê simulasyona tomarkirî nederbasdar e.",
+      "kmr-Arab": "وێنەیێ سمولاسیۆنا تۆمارکری نەدەرباسدار ئە.",
+      "ckb": "وێنەی پاشەکەوتکراوی هاوشێوەسازییەکە دروست نییە.",
+      "ckb-Arab": "وێنەی پاشەکەوتکراوی هاوشێوەسازییەکە دروست نییە.",
+      "af-ZA": "Die gestoorde simulasie-momentopname is ongeldig.",
+      "af-NA": "Die gestoorde simulasie-momentopname is ongeldig."
     }
   },
   "simulations": {
@@ -3386,7 +3638,16 @@
         "tg": "Эритувчи молекулаларини кўрсатиш",
         "ka": "გამხსნელის მოლეკულების ჩვენება",
         "hy": "Ցույց տալ լուծիչի մոլեկուլները",
-        "tk": "Erediji molekulalaryny görkez"
+        "tk": "Erediji molekulalaryny görkez",
+        "yue-Hans": "显示溶剂分子",
+        "yue-Hant": "顯示溶劑分子",
+        "kmr": "Molekulên helkerê nîşan bide",
+        "kmr-Latn": "Molekulên helkerê nîşan bide",
+        "kmr-Arab": "مۆلەکولێن هەلکەرێ نیشان بدە",
+        "ckb": "مۆلیکولەکانی چارەسەر پیشان بدە",
+        "ckb-Arab": "مۆلیکولەکانی چارەسەر پیشان بدە",
+        "af-ZA": "Wys oplosmiddelmolekules",
+        "af-NA": "Wys oplosmiddelmolekules"
       }
     },
     "arithmetic": {
@@ -3492,7 +3753,16 @@
         "tg": "Ўйин таймери",
         "ka": "თამაშის ტაიმერი",
         "hy": "Խաղի ժամանակաչափ",
-        "tk": "Oýun taýmeri"
+        "tk": "Oýun taýmeri",
+        "yue-Hans": "游戏计时器",
+        "yue-Hant": "遊戲計時器",
+        "kmr": "Demjimêra lîstikê",
+        "kmr-Latn": "Demjimêra lîstikê",
+        "kmr-Arab": "دەمژمێرا لیستکێ",
+        "ckb": "کاتی یاری",
+        "ckb-Arab": "کاتی یاری",
+        "af-ZA": "Speeltydhouer",
+        "af-NA": "Speeltydhouer"
       }
     },
     "balancing-chemical-equations": {
@@ -3626,7 +3896,16 @@
         "lb": "Ufankskoeffizient",
         "my": "ကနဦး ကိန်းဂဏန်း",
         "ky": "Баштапкы коэффициент",
-        "zh": "初始系数"
+        "zh": "初始系数",
+        "yue-Hans": "初始系数",
+        "yue-Hant": "初始係數",
+        "kmr": "Hejmara destpêkê ya koefîsiyentê",
+        "kmr-Latn": "Hejmara destpêkê ya koefîsiyentê",
+        "kmr-Arab": "هەژمارا دەستپێکێ یا کۆەفیسیەنتێ",
+        "ckb": "هاوکێشەی سەرەتایی",
+        "ckb-Arab": "هاوکێشەی سەرەتایی",
+        "af-ZA": "Aanvanklike koëffisiënt",
+        "af-NA": "Aanvanklike koëffisiënt"
       }
     },
     "build-an-atom": {
@@ -3760,7 +4039,16 @@
         "lb": "Ladungsnotatioun",
         "my": "လျှပ်စစ်အား သင်္ကေတ",
         "ky": "Заряддын белгилениши",
-        "zh": "电荷表示法"
+        "zh": "电荷表示法",
+        "yue-Hans": "电荷表示法",
+        "yue-Hant": "電荷表示法",
+        "kmr": "Notasyona barkirinê",
+        "kmr-Latn": "Notasyona barkirinê",
+        "kmr-Arab": "نۆتاسیۆنا بارکرنێ",
+        "ckb": "نووسینی باری کارەبایی",
+        "ckb-Arab": "نووسینی باری کارەبایی",
+        "af-ZA": "Ladingnotasie",
+        "af-NA": "Ladingnotasie"
       },
       "Sign first": {
         "af": "Sign First",
@@ -3892,7 +4180,16 @@
         "lb": "Virzeechen als éischt",
         "my": "သင်္ကေတကို အရင်",
         "ky": "Белгини биринчи коюу",
-        "zh": "先写符号"
+        "zh": "先写符号",
+        "yue-Hans": "符号在前",
+        "yue-Hant": "符號在前",
+        "kmr": "Pêşî nîşana hejmarê",
+        "kmr-Latn": "Pêşî nîşana hejmarê",
+        "kmr-Arab": "پێشی نیشانا هەژمارێ",
+        "ckb": "نیشانەکە لە سەرەتا",
+        "ckb-Arab": "نیشانەکە لە سەرەتا",
+        "af-ZA": "Teken eerste",
+        "af-NA": "Teken eerste"
       },
       "Sign last": {
         "af": "Sign Last",
@@ -4024,7 +4321,16 @@
         "lb": "Virzeechen als lescht",
         "my": "သင်္ကေတကို နောက်ဆုံး",
         "ky": "Белгини акырында коюу",
-        "zh": "最后写符号"
+        "zh": "最后写符号",
+        "yue-Hans": "符号在后",
+        "yue-Hant": "符號在後",
+        "kmr": "Dawiyê nîşana hejmarê",
+        "kmr-Latn": "Dawiyê nîşana hejmarê",
+        "kmr-Arab": "داویێ نیشانا هەژمارێ",
+        "ckb": "نیشانەکە لە کۆتایی",
+        "ckb-Arab": "نیشانەکە لە کۆتایی",
+        "af-ZA": "Teken laaste",
+        "af-NA": "Teken laaste"
       }
     },
     "buoyancy": {
@@ -4138,7 +4444,16 @@
         "kk": "Көлем бірліктері",
         "ky": "Көлөм бирдиктери",
         "zh": "体积单位",
-        "hy": "Ծավալի միավորներ"
+        "hy": "Ծավալի միավորներ",
+        "yue-Hans": "体积单位",
+        "yue-Hant": "體積單位",
+        "kmr": "Yekeyên qebareyê",
+        "kmr-Latn": "Yekeyên qebareyê",
+        "kmr-Arab": "یەکەیێن قەبارەیێ",
+        "ckb": "یەکەکانی قەبارە",
+        "ckb-Arab": "یەکەکانی قەبارە",
+        "af-ZA": "Volume-eenhede",
+        "af-NA": "Volume-eenhede"
       },
       "Liters": {
         "de": "Liter",
@@ -4242,7 +4557,16 @@
         "tg": "Литр",
         "ka": "ლიტრი",
         "hy": "Լիտր",
-        "tk": "Litr"
+        "tk": "Litr",
+        "yue-Hans": "公升",
+        "yue-Hant": "公升",
+        "kmr": "Lître",
+        "kmr-Latn": "Lître",
+        "kmr-Arab": "لیترە",
+        "ckb": "لیتر",
+        "ckb-Arab": "لیتر",
+        "af-ZA": "Liter",
+        "af-NA": "Liter"
       },
       "Cubic decimeters": {
         "de": "Kubikdezimeter",
@@ -4346,7 +4670,16 @@
         "tg": "Куб дециметр",
         "ka": "კუბური დეციმეტრი",
         "hy": "Խորանարդ դեցիմետր",
-        "tk": "Kub desimetr"
+        "tk": "Kub desimetr",
+        "yue-Hans": "立方分米",
+        "yue-Hant": "立方分米",
+        "kmr": "Desîmetreyên kubîk",
+        "kmr-Latn": "Desîmetreyên kubîk",
+        "kmr-Arab": "دەسیمەترەیێن کوبیک",
+        "ckb": "دەسی‌مەتری سێجا",
+        "ckb-Arab": "دەسی‌مەتری سێجا",
+        "af-ZA": "Kubieke desimeter",
+        "af-NA": "Kubieke desimeter"
       },
       "Percent submerged": {
         "af": "Persentasie Onderdompel",
@@ -4458,7 +4791,16 @@
         "tg": "Сувга ботган фоизи",
         "ka": "ჩაძირული პროცენტი",
         "hy": "Ընկղմված տոկոսը",
-        "tk": "Suw astynda galan göterim"
+        "tk": "Suw astynda galan göterim",
+        "yue-Hans": "浸入百分比",
+        "yue-Hant": "浸入百分比",
+        "kmr": "Rêjeya binavkirinê ya di avê de",
+        "kmr-Latn": "Rêjeya binavkirinê ya di avê de",
+        "kmr-Arab": "رێژەیا بناڤکرنێ یا د ئاڤێ دە",
+        "ckb": "ڕێژەی ژێر ئاوی",
+        "ckb-Arab": "ڕێژەی ژێر ئاوی",
+        "af-ZA": "Persentasie onder water",
+        "af-NA": "Persentasie onder water"
       }
     },
     "buoyancy-basics": {
@@ -4571,7 +4913,16 @@
         "kk": "Көлем бірліктері",
         "ky": "Көлөм бирдиктери",
         "zh": "体积单位",
-        "hy": "Ծավալի միավորներ"
+        "hy": "Ծավալի միավորներ",
+        "yue-Hans": "体积单位",
+        "yue-Hant": "體積單位",
+        "kmr": "Yekeyên qebareyê",
+        "kmr-Latn": "Yekeyên qebareyê",
+        "kmr-Arab": "یەکەیێن قەبارەیێ",
+        "ckb": "یەکەکانی قەبارە",
+        "ckb-Arab": "یەکەکانی قەبارە",
+        "af-ZA": "Volume-eenhede",
+        "af-NA": "Volume-eenhede"
       },
       "Liters": {
         "de": "Liter",
@@ -4675,7 +5026,16 @@
         "tg": "Литр",
         "ka": "ლიტრი",
         "hy": "Լիտր",
-        "tk": "Litr"
+        "tk": "Litr",
+        "yue-Hans": "公升",
+        "yue-Hant": "公升",
+        "kmr": "Lître",
+        "kmr-Latn": "Lître",
+        "kmr-Arab": "لیترە",
+        "ckb": "لیتر",
+        "ckb-Arab": "لیتر",
+        "af-ZA": "Liter",
+        "af-NA": "Liter"
       },
       "Cubic decimeters": {
         "de": "Kubikdezimeter",
@@ -4779,7 +5139,16 @@
         "tg": "Куб дециметр",
         "ka": "კუბური დეციმეტრი",
         "hy": "Խորանարդ դեցիմետր",
-        "tk": "Kub desimetr"
+        "tk": "Kub desimetr",
+        "yue-Hans": "立方分米",
+        "yue-Hant": "立方分米",
+        "kmr": "Desîmetreyên kubîk",
+        "kmr-Latn": "Desîmetreyên kubîk",
+        "kmr-Arab": "دەسیمەترەیێن کوبیک",
+        "ckb": "دەسی‌مەتری سێجا",
+        "ckb-Arab": "دەسی‌مەتری سێجا",
+        "af-ZA": "Kubieke desimeter",
+        "af-NA": "Kubieke desimeter"
       },
       "Percent submerged": {
         "ar": "نسبة المغمورة",
@@ -4890,7 +5259,16 @@
         "tg": "Сувга ботган фоизи",
         "ka": "ჩაძირული პროცენტი",
         "hy": "Ընկղմված տոկոսը",
-        "tk": "Suw astynda galan göterim"
+        "tk": "Suw astynda galan göterim",
+        "yue-Hans": "浸入百分比",
+        "yue-Hant": "浸入百分比",
+        "kmr": "Rêjeya binavkirinê ya di avê de",
+        "kmr-Latn": "Rêjeya binavkirinê ya di avê de",
+        "kmr-Arab": "رێژەیا بناڤکرنێ یا د ئاڤێ دە",
+        "ckb": "ڕێژەی ژێر ئاوی",
+        "ckb-Arab": "ڕێژەی ژێر ئاوی",
+        "af-ZA": "Persentasie onder water",
+        "af-NA": "Persentasie onder water"
       }
     },
     "calculus-grapher": {
@@ -4996,7 +5374,16 @@
         "tg": "Функция ўзгарувчиси",
         "ka": "ფუნქციის ცვლადი",
         "hy": "Ֆունկցիայի փոփոխական",
-        "tk": "Funksiýanyň üýtgeýäni"
+        "tk": "Funksiýanyň üýtgeýäni",
+        "yue-Hans": "函数变数",
+        "yue-Hant": "函數變數",
+        "kmr": "Guhêrbarê fonksiyonê",
+        "kmr-Latn": "Guhêrbarê fonksiyonê",
+        "kmr-Arab": "گوهێربارێ فۆنکسیۆنێ",
+        "ckb": "گۆڕاوی فەنکشن",
+        "ckb-Arab": "گۆڕاوی فەنکشن",
+        "af-ZA": "Funksieveranderlike",
+        "af-NA": "Funksieveranderlike"
       },
       "Derivative notation": {
         "de": "Schreibweise der Ableitung",
@@ -5100,7 +5487,16 @@
         "tg": "Ҳосила белгиси",
         "ka": "წარმოებულის აღნიშვნა",
         "hy": "Ածանցյալի նշագրում",
-        "tk": "Önümiň belgisi"
+        "tk": "Önümiň belgisi",
+        "yue-Hans": "导数表示法",
+        "yue-Hant": "導數表示法",
+        "kmr": "Notasyona derîvatîvê",
+        "kmr-Latn": "Notasyona derîvatîvê",
+        "kmr-Arab": "نۆتاسیۆنا دەریڤاتیڤێ",
+        "ckb": "نووسینی مشتەق",
+        "ckb-Arab": "نووسینی مشتەق",
+        "af-ZA": "Afgeleidenotasie",
+        "af-NA": "Afgeleidenotasie"
       },
       "Lagrange": {
         "af": "Lagrange:",
@@ -5216,7 +5612,16 @@
         "zh": "拉格朗日",
         "tg": "Лагранж",
         "ka": "ლაგრანჟი",
-        "tk": "Lagranž"
+        "tk": "Lagranž",
+        "yue-Hans": "拉格朗日",
+        "yue-Hant": "拉格朗日",
+        "kmr": "Lagrange",
+        "kmr-Latn": "Lagrange",
+        "kmr-Arab": "لاگرانگە",
+        "ckb": "لاگرانژ",
+        "ckb-Arab": "لاگرانژ",
+        "af-ZA": "Lagrange",
+        "af-NA": "Lagrange"
       },
       "Leibniz": {
         "af": "Leibniz:",
@@ -5332,7 +5737,16 @@
         "zh": "莱布尼茨",
         "tg": "Лейбниц",
         "ka": "ლაიბნიცი",
-        "tk": "Leýbniz"
+        "tk": "Leýbniz",
+        "yue-Hans": "莱布尼兹",
+        "yue-Hant": "萊布尼茲",
+        "kmr": "Leibniz",
+        "kmr-Latn": "Leibniz",
+        "kmr-Arab": "لەبنز",
+        "ckb": "لایبنیتز",
+        "ckb-Arab": "لایبنیتز",
+        "af-ZA": "Leibniz",
+        "af-NA": "Leibniz"
       },
       "Connect discontinuities": {
         "de": "Sprungstellen verbinden",
@@ -5436,7 +5850,16 @@
         "tg": "Узилишларни улаш",
         "ka": "წყვეტების დაკავშირება",
         "hy": "Միացնել ընդհատումները",
-        "tk": "Üzükleri birleşdir"
+        "tk": "Üzükleri birleşdir",
+        "yue-Hans": "连接不连续点",
+        "yue-Hant": "連接不連續點",
+        "kmr": "Nesekiniyan girêde",
+        "kmr-Latn": "Nesekiniyan girêde",
+        "kmr-Arab": "نەسەکنیان گرێدە",
+        "ckb": "نەپچڕاندنی هێڵەکان بەیەکەوە ببەستە",
+        "ckb-Arab": "نەپچڕاندنی هێڵەکان بەیەکەوە ببەستە",
+        "af-ZA": "Verbind diskontinuïteite",
+        "af-NA": "Verbind diskontinuïteite"
       },
       "No line": {
         "de": "Keine Linie",
@@ -5540,7 +5963,16 @@
         "tg": "Чизиқ йўқ",
         "ka": "ხაზის გარეშე",
         "hy": "Առանց գծի",
-        "tk": "Çyzyk ýok"
+        "tk": "Çyzyk ýok",
+        "yue-Hans": "冇线条",
+        "yue-Hant": "冇線條",
+        "kmr": "Tu xêz tune",
+        "kmr-Latn": "Tu xêz tune",
+        "kmr-Arab": "تو خێز تونە",
+        "ckb": "هیچ هێڵێک",
+        "ckb-Arab": "هیچ هێڵێک",
+        "af-ZA": "Geen lyn nie",
+        "af-NA": "Geen lyn nie"
       },
       "Dashed line": {
         "de": "Gestrichelte Linie",
@@ -5644,7 +6076,16 @@
         "tg": "Узуқ чизиқ",
         "ka": "წყვეტილი ხაზი",
         "hy": "Կետագծեր",
-        "tk": "Kesik çyzyk"
+        "tk": "Kesik çyzyk",
+        "yue-Hans": "虚线",
+        "yue-Hant": "虛線",
+        "kmr": "Xêza xêzkirî",
+        "kmr-Latn": "Xêza xêzkirî",
+        "kmr-Arab": "خێزا خێزکری",
+        "ckb": "هێڵی خاڵ‌خاڵ",
+        "ckb-Arab": "هێڵی خاڵ‌خاڵ",
+        "af-ZA": "Stippellyn",
+        "af-NA": "Stippellyn"
       },
       "Show values": {
         "de": "Werte anzeigen",
@@ -5748,7 +6189,16 @@
         "tg": "Қийматларни кўрсатиш",
         "ka": "მნიშვნელობების ჩვენება",
         "hy": "Ցույց տալ արժեքները",
-        "tk": "Bahalary görkez"
+        "tk": "Bahalary görkez",
+        "yue-Hans": "显示数值",
+        "yue-Hant": "顯示數值",
+        "kmr": "Nirxan nîşan bide",
+        "kmr-Latn": "Nirxan nîşan bide",
+        "kmr-Arab": "نرخان نیشان بدە",
+        "ckb": "بەهاکان پیشان بدە",
+        "ckb-Arab": "بەهاکان پیشان بدە",
+        "af-ZA": "Wys waardes",
+        "af-NA": "Wys waardes"
       },
       "Prediction tool": {
         "de": "Vorhersagewerkzeug",
@@ -5852,7 +6302,16 @@
         "tg": "Башорат воситаси",
         "ka": "პროგნოზირების ხელსაწყო",
         "hy": "Կանխատեսման գործիք",
-        "tk": "Çaklama guraly"
+        "tk": "Çaklama guraly",
+        "yue-Hans": "预测工具",
+        "yue-Hant": "預測工具",
+        "kmr": "Amûra pêşbînîkirinê",
+        "kmr-Latn": "Amûra pêşbînîkirinê",
+        "kmr-Arab": "ئاموورا پێشبینیکرنێ",
+        "ckb": "ئامرازی پێشبینی",
+        "ckb-Arab": "ئامرازی پێشبینی",
+        "af-ZA": "Voorspellingshulpmiddel",
+        "af-NA": "Voorspellingshulpmiddel"
       },
       "Original function checkbox": {
         "de": "Kontrollkästchen für die ursprüngliche Funktion",
@@ -5956,7 +6415,16 @@
         "tg": "Асл функцияни белгилаш",
         "ka": "საწყისი ფუნქციის მოსანიშნი ველი",
         "hy": "Սկզբնական ֆունկցիայի նշման վանդակ",
-        "tk": "Asyl funksiýa üçin bellik gutusy"
+        "tk": "Asyl funksiýa üçin bellik gutusy",
+        "yue-Hans": "原函数核取方块",
+        "yue-Hant": "原函數核取方塊",
+        "kmr": "Qutiya fonksiyona orîjînal",
+        "kmr-Latn": "Qutiya fonksiyona orîjînal",
+        "kmr-Arab": "قوتیا فۆنکسیۆنا ئۆریژینال",
+        "ckb": "خانەی فەنکشنی سەرەکی",
+        "ckb-Arab": "خانەی فەنکشنی سەرەکی",
+        "af-ZA": "Merkblokkie vir die oorspronklike funksie",
+        "af-NA": "Merkblokkie vir die oorspronklike funksie"
       }
     },
     "center-and-variability": {
@@ -6078,7 +6546,16 @@
         "kk": "Диаграмма түрі",
         "ky": "Графиктин түрү",
         "zh": "图表类型",
-        "tg": "График тури"
+        "tg": "График тури",
+        "yue-Hans": "绘图类型",
+        "yue-Hant": "繪圖類型",
+        "kmr": "Cureyê grafîkê",
+        "kmr-Latn": "Cureyê grafîkê",
+        "kmr-Arab": "جورەیێ گرافیکێ",
+        "ckb": "جۆری هێڵکاری",
+        "ckb-Arab": "جۆری هێڵکاری",
+        "af-ZA": "Tipe grafiek",
+        "af-NA": "Tipe grafiek"
       },
       "Line plot": {
         "am": "የመስመር አቀማመጥ",
@@ -6198,7 +6675,16 @@
         "kk": "Сызықтық диаграмма",
         "ky": "Сызыктуу график",
         "zh": "折线图",
-        "tg": "Чизиқли график"
+        "tg": "Чизиқли график",
+        "yue-Hans": "折线图",
+        "yue-Hant": "折線圖",
+        "kmr": "Grafîka xêzê",
+        "kmr-Latn": "Grafîka xêzê",
+        "kmr-Arab": "گرافیکا خێزێ",
+        "ckb": "هێڵکاریی هێڵ",
+        "ckb-Arab": "هێڵکاریی هێڵ",
+        "af-ZA": "Lyngrafiek",
+        "af-NA": "Lyngrafiek"
       },
       "Dot plot": {
         "am": "የነጥብ አቀማመጥ",
@@ -6318,7 +6804,16 @@
         "kk": "Нүктелік диаграмма",
         "ky": "Чекиттик график",
         "zh": "点图",
-        "tg": "Нуқтали график"
+        "tg": "Нуқтали график",
+        "yue-Hans": "点图",
+        "yue-Hant": "點圖",
+        "kmr": "Grafîka xalan",
+        "kmr-Latn": "Grafîka xalan",
+        "kmr-Arab": "گرافیکا خالان",
+        "ckb": "هێڵکاریی خاڵ",
+        "ckb-Arab": "هێڵکاریی خاڵ",
+        "af-ZA": "Puntgrafiek",
+        "af-NA": "Puntgrafiek"
       },
       "Maximum kicks": {
         "de": "Maximale Anzahl an Schüssen",
@@ -6422,7 +6917,16 @@
         "tg": "Максимал тепишлар",
         "ka": "დარტყმების მაქსიმუმი",
         "hy": "Հարվածների առավելագույն քանակ",
-        "tk": "Depmeleriň iň köp sany"
+        "tk": "Depmeleriň iň köp sany",
+        "yue-Hans": "最大踢球次数",
+        "yue-Hant": "最大踢球次數",
+        "kmr": "Herî zêde lêdan",
+        "kmr-Latn": "Herî zêde lêdan",
+        "kmr-Arab": "هەری زێدە لێدان",
+        "ckb": "زۆرترین ژمارەی لێدان",
+        "ckb-Arab": "زۆرترین ژمارەی لێدان",
+        "af-ZA": "Maksimum aantal skoppe",
+        "af-NA": "Maksimum aantal skoppe"
       },
       "Show outliers": {
         "de": "Ausreißer anzeigen",
@@ -6526,7 +7030,16 @@
         "tg": "Чет қийматларни кўрсатиш",
         "ka": "გამონაკლისი მნიშვნელობების ჩვენება",
         "hy": "Ցույց տալ արտառոց արժեքները",
-        "tk": "Aýratyn bahalary görkez"
+        "tk": "Aýratyn bahalary görkez",
+        "yue-Hans": "显示离群值",
+        "yue-Hant": "顯示離群值",
+        "kmr": "Derketiyên ji rêzê nîşan bide",
+        "kmr-Latn": "Derketiyên ji rêzê nîşan bide",
+        "kmr-Arab": "دەرکەتیێن ژ رێزێ نیشان بدە",
+        "ckb": "دەرکەوتەکان پیشان بدە",
+        "ckb-Arab": "دەرکەوتەکان پیشان بدە",
+        "af-ZA": "Wys uitskieters",
+        "af-NA": "Wys uitskieters"
       }
     },
     "circuit-construction-kit-ac": {
@@ -6648,7 +7161,16 @@
         "my": "ပုံကြမ်း စံနှုန်း",
         "lo": "ມາດຕະຖານແຜນຜັງ",
         "ky": "Схемалык стандарт",
-        "zh": "示意图标准"
+        "zh": "示意图标准",
+        "yue-Hans": "电路图标准",
+        "yue-Hant": "電路圖標準",
+        "kmr": "Sxema standard",
+        "kmr-Latn": "Sxema standard",
+        "kmr-Arab": "سخەما ستاندارد",
+        "ckb": "ستانداردی هێمای بازنە",
+        "ckb-Arab": "ستانداردی هێمای بازنە",
+        "af-ZA": "Skemastandaard",
+        "af-NA": "Skemastandaard"
       },
       "IEEE": {
         "ha": "Haruffan IEEE",
@@ -6752,7 +7274,16 @@
         "om": "IEEE",
         "so": "IEEE",
         "ti": "IEEE",
-        "sw": "IEEE"
+        "sw": "IEEE",
+        "yue-Hans": "IEEE",
+        "yue-Hant": "IEEE",
+        "kmr": "IEEE",
+        "kmr-Latn": "IEEE",
+        "kmr-Arab": "IEEE",
+        "ckb": "IEEE",
+        "ckb-Arab": "IEEE",
+        "af-ZA": "IEEE",
+        "af-NA": "IEEE"
       },
       "IEC": {
         "be": "МЭК (IEC)",
@@ -6856,7 +7387,16 @@
         "om": "IEC",
         "so": "IEC",
         "ti": "IEC",
-        "sw": "IEC"
+        "sw": "IEC",
+        "yue-Hans": "IEC",
+        "yue-Hant": "IEC",
+        "kmr": "IEC",
+        "kmr-Latn": "IEC",
+        "kmr-Arab": "IEC",
+        "ckb": "IEC",
+        "ckb-Arab": "IEC",
+        "af-ZA": "IEC",
+        "af-NA": "IEC"
       },
       "British": {
         "am": "ብሪትሽ",
@@ -6973,7 +7513,16 @@
         "lo": "ອັງກິດ",
         "km": "អង់គ្លេស",
         "ky": "Британдык",
-        "zh": "英制"
+        "zh": "英制",
+        "yue-Hans": "英国标准",
+        "yue-Hant": "英國標準",
+        "kmr": "Îngilîzî",
+        "kmr-Latn": "Îngilîzî",
+        "kmr-Arab": "ئینگلیزی",
+        "ckb": "بەریتانی",
+        "ckb-Arab": "بەریتانی",
+        "af-ZA": "Brits",
+        "af-NA": "Brits"
       },
       "Ammeter readout": {
         "am": "የአሜትር\r\n\n\nንባብ",
@@ -7093,7 +7642,16 @@
         "lb": "Ammeter-Anzeig",
         "my": "အမ်မီတာ ဖတ်ချက်",
         "lo": "ຄ່າອ່ານແອມມິເຕີ",
-        "ky": "Амперметр көрсөткүчү"
+        "ky": "Амперметр көрсөткүчү",
+        "yue-Hans": "电流表读数",
+        "yue-Hant": "電流表讀數",
+        "kmr": "Xwendina ampermêtirê",
+        "kmr-Latn": "Xwendina ampermêtirê",
+        "kmr-Arab": "خوەندنا ئامپەرمێترێ",
+        "ckb": "خوێندنەوەی ئەمیتەر",
+        "ckb-Arab": "خوێندنەوەی ئەمیتەر",
+        "af-ZA": "Ammeterlesing",
+        "af-NA": "Ammeterlesing"
       },
       "Magnitude": {
         "am": "መጠን",
@@ -7211,7 +7769,16 @@
         "lo": "ຂະໜາດ",
         "km": "ទំហំ",
         "ky": "Чоңдук",
-        "zh": "大小"
+        "zh": "大小",
+        "yue-Hans": "大小",
+        "yue-Hant": "大小",
+        "kmr": "Mezinahî",
+        "kmr-Latn": "Mezinahî",
+        "kmr-Arab": "مەزناهی",
+        "ckb": "قەبارە",
+        "ckb-Arab": "قەبارە",
+        "af-ZA": "Grootte",
+        "af-NA": "Grootte"
       },
       "Signed": {
         "am": "ተፈርሟል",
@@ -7330,7 +7897,16 @@
         "ky": "Белгилүү",
         "zh": "带符号",
         "ka": "ნიშნიანი",
-        "hy": "Նշանով"
+        "hy": "Նշանով",
+        "yue-Hans": "带正负号",
+        "yue-Hant": "帶正負號",
+        "kmr": "Bi nîşana algebraîk",
+        "kmr-Latn": "Bi nîşana algebraîk",
+        "kmr-Arab": "ب نیشانا ئالگەبرایک",
+        "ckb": "نیشانەدار",
+        "ckb-Arab": "نیشانەدار",
+        "af-ZA": "Met teken",
+        "af-NA": "Met teken"
       }
     },
     "circuit-construction-kit-ac-virtual-lab": {
@@ -7452,7 +8028,16 @@
         "my": "ပုံကြမ်း စံနှုန်း",
         "lo": "ມາດຕະຖານແຜນຜັງ",
         "ky": "Схемалык стандарт",
-        "zh": "示意图标准"
+        "zh": "示意图标准",
+        "yue-Hans": "电路图标准",
+        "yue-Hant": "電路圖標準",
+        "kmr": "Sxema standard",
+        "kmr-Latn": "Sxema standard",
+        "kmr-Arab": "سخەما ستاندارد",
+        "ckb": "ستانداردی هێمای بازنە",
+        "ckb-Arab": "ستانداردی هێمای بازنە",
+        "af-ZA": "Skemastandaard",
+        "af-NA": "Skemastandaard"
       },
       "IEEE": {
         "ha": "Haruffan IEEE",
@@ -7556,7 +8141,16 @@
         "om": "IEEE",
         "so": "IEEE",
         "ti": "IEEE",
-        "sw": "IEEE"
+        "sw": "IEEE",
+        "yue-Hans": "IEEE",
+        "yue-Hant": "IEEE",
+        "kmr": "IEEE",
+        "kmr-Latn": "IEEE",
+        "kmr-Arab": "IEEE",
+        "ckb": "IEEE",
+        "ckb-Arab": "IEEE",
+        "af-ZA": "IEEE",
+        "af-NA": "IEEE"
       },
       "IEC": {
         "be": "МЭК (IEC)",
@@ -7660,7 +8254,16 @@
         "om": "IEC",
         "so": "IEC",
         "ti": "IEC",
-        "sw": "IEC"
+        "sw": "IEC",
+        "yue-Hans": "IEC",
+        "yue-Hant": "IEC",
+        "kmr": "IEC",
+        "kmr-Latn": "IEC",
+        "kmr-Arab": "IEC",
+        "ckb": "IEC",
+        "ckb-Arab": "IEC",
+        "af-ZA": "IEC",
+        "af-NA": "IEC"
       },
       "British": {
         "am": "ብሪትሽ",
@@ -7777,7 +8380,16 @@
         "lo": "ອັງກິດ",
         "km": "អង់គ្លេស",
         "ky": "Британдык",
-        "zh": "英制"
+        "zh": "英制",
+        "yue-Hans": "英国标准",
+        "yue-Hant": "英國標準",
+        "kmr": "Îngilîzî",
+        "kmr-Latn": "Îngilîzî",
+        "kmr-Arab": "ئینگلیزی",
+        "ckb": "بەریتانی",
+        "ckb-Arab": "بەریتانی",
+        "af-ZA": "Brits",
+        "af-NA": "Brits"
       },
       "Ammeter readout": {
         "am": "የአሜትር\r\n\n\nንባብ",
@@ -7897,7 +8509,16 @@
         "lb": "Ammeter-Anzeig",
         "my": "အမ်မီတာ ဖတ်ချက်",
         "lo": "ຄ່າອ່ານແອມມິເຕີ",
-        "ky": "Амперметр көрсөткүчү"
+        "ky": "Амперметр көрсөткүчү",
+        "yue-Hans": "电流表读数",
+        "yue-Hant": "電流表讀數",
+        "kmr": "Xwendina ampermêtirê",
+        "kmr-Latn": "Xwendina ampermêtirê",
+        "kmr-Arab": "خوەندنا ئامپەرمێترێ",
+        "ckb": "خوێندنەوەی ئەمیتەر",
+        "ckb-Arab": "خوێندنەوەی ئەمیتەر",
+        "af-ZA": "Ammeterlesing",
+        "af-NA": "Ammeterlesing"
       },
       "Magnitude": {
         "am": "መጠን",
@@ -8015,7 +8636,16 @@
         "lo": "ຂະໜາດ",
         "km": "ទំហំ",
         "ky": "Чоңдук",
-        "zh": "大小"
+        "zh": "大小",
+        "yue-Hans": "大小",
+        "yue-Hant": "大小",
+        "kmr": "Mezinahî",
+        "kmr-Latn": "Mezinahî",
+        "kmr-Arab": "مەزناهی",
+        "ckb": "قەبارە",
+        "ckb-Arab": "قەبارە",
+        "af-ZA": "Grootte",
+        "af-NA": "Grootte"
       },
       "Signed": {
         "am": "ተፈርሟል",
@@ -8134,7 +8764,16 @@
         "ky": "Белгилүү",
         "zh": "带符号",
         "ka": "ნიშნიანი",
-        "hy": "Նշանով"
+        "hy": "Նշանով",
+        "yue-Hans": "带正负号",
+        "yue-Hant": "帶正負號",
+        "kmr": "Bi nîşana algebraîk",
+        "kmr-Latn": "Bi nîşana algebraîk",
+        "kmr-Arab": "ب نیشانا ئالگەبرایک",
+        "ckb": "نیشانەدار",
+        "ckb-Arab": "نیشانەدار",
+        "af-ZA": "Met teken",
+        "af-NA": "Met teken"
       }
     },
     "circuit-construction-kit-dc": {
@@ -8261,7 +8900,16 @@
         "my": "ပုံကြမ်း စံနှုန်း",
         "lo": "ມາດຕະຖານແຜນຜັງ",
         "ky": "Схемалык стандарт",
-        "zh": "示意图标准"
+        "zh": "示意图标准",
+        "yue-Hans": "电路图标准",
+        "yue-Hant": "電路圖標準",
+        "kmr": "Sxema standard",
+        "kmr-Latn": "Sxema standard",
+        "kmr-Arab": "سخەما ستاندارد",
+        "ckb": "ستانداردی هێمای بازنە",
+        "ckb-Arab": "ستانداردی هێمای بازنە",
+        "af-ZA": "Skemastandaard",
+        "af-NA": "Skemastandaard"
       },
       "IEEE": {
         "ha": "Haruffan IEEE",
@@ -8365,7 +9013,16 @@
         "om": "IEEE",
         "so": "IEEE",
         "ti": "IEEE",
-        "sw": "IEEE"
+        "sw": "IEEE",
+        "yue-Hans": "IEEE",
+        "yue-Hant": "IEEE",
+        "kmr": "IEEE",
+        "kmr-Latn": "IEEE",
+        "kmr-Arab": "IEEE",
+        "ckb": "IEEE",
+        "ckb-Arab": "IEEE",
+        "af-ZA": "IEEE",
+        "af-NA": "IEEE"
       },
       "IEC": {
         "be": "МЭК (IEC)",
@@ -8469,7 +9126,16 @@
         "om": "IEC",
         "so": "IEC",
         "ti": "IEC",
-        "sw": "IEC"
+        "sw": "IEC",
+        "yue-Hans": "IEC",
+        "yue-Hant": "IEC",
+        "kmr": "IEC",
+        "kmr-Latn": "IEC",
+        "kmr-Arab": "IEC",
+        "ckb": "IEC",
+        "ckb-Arab": "IEC",
+        "af-ZA": "IEC",
+        "af-NA": "IEC"
       },
       "British": {
         "am": "ብሪትሽ",
@@ -8589,7 +9255,16 @@
         "lo": "ອັງກິດ",
         "km": "អង់គ្លេស",
         "ky": "Британдык",
-        "zh": "英制"
+        "zh": "英制",
+        "yue-Hans": "英国标准",
+        "yue-Hant": "英國標準",
+        "kmr": "Îngilîzî",
+        "kmr-Latn": "Îngilîzî",
+        "kmr-Arab": "ئینگلیزی",
+        "ckb": "بەریتانی",
+        "ckb-Arab": "بەریتانی",
+        "af-ZA": "Brits",
+        "af-NA": "Brits"
       },
       "Ammeter readout": {
         "ak": "Ammeter Readout",
@@ -8714,7 +9389,16 @@
         "lb": "Ammeter-Anzeig",
         "my": "အမ်မီတာ ဖတ်ချက်",
         "lo": "ຄ່າອ່ານແອມມິເຕີ",
-        "ky": "Амперметр көрсөткүчү"
+        "ky": "Амперметр көрсөткүчү",
+        "yue-Hans": "电流表读数",
+        "yue-Hant": "電流表讀數",
+        "kmr": "Xwendina ampermêtirê",
+        "kmr-Latn": "Xwendina ampermêtirê",
+        "kmr-Arab": "خوەندنا ئامپەرمێترێ",
+        "ckb": "خوێندنەوەی ئەمیتەر",
+        "ckb-Arab": "خوێندنەوەی ئەمیتەر",
+        "af-ZA": "Ammeterlesing",
+        "af-NA": "Ammeterlesing"
       },
       "Magnitude": {
         "am": "መጠን",
@@ -8834,7 +9518,16 @@
         "lo": "ຂະໜາດ",
         "km": "ទំហំ",
         "ky": "Чоңдук",
-        "zh": "大小"
+        "zh": "大小",
+        "yue-Hans": "大小",
+        "yue-Hant": "大小",
+        "kmr": "Mezinahî",
+        "kmr-Latn": "Mezinahî",
+        "kmr-Arab": "مەزناهی",
+        "ckb": "قەبارە",
+        "ckb-Arab": "قەبارە",
+        "af-ZA": "Grootte",
+        "af-NA": "Grootte"
       },
       "Signed": {
         "am": "ተፈርሟል",
@@ -8955,7 +9648,16 @@
         "ky": "Белгилүү",
         "zh": "带符号",
         "ka": "ნიშნიანი",
-        "hy": "Նշանով"
+        "hy": "Նշանով",
+        "yue-Hans": "带正负号",
+        "yue-Hant": "帶正負號",
+        "kmr": "Bi nîşana algebraîk",
+        "kmr-Latn": "Bi nîşana algebraîk",
+        "kmr-Arab": "ب نیشانا ئالگەبرایک",
+        "ckb": "نیشانەدار",
+        "ckb-Arab": "نیشانەدار",
+        "af-ZA": "Met teken",
+        "af-NA": "Met teken"
       }
     },
     "circuit-construction-kit-dc-virtual-lab": {
@@ -9082,7 +9784,16 @@
         "my": "ပုံကြမ်း စံနှုန်း",
         "lo": "ມາດຕະຖານແຜນຜັງ",
         "ky": "Схемалык стандарт",
-        "zh": "示意图标准"
+        "zh": "示意图标准",
+        "yue-Hans": "电路图标准",
+        "yue-Hant": "電路圖標準",
+        "kmr": "Sxema standard",
+        "kmr-Latn": "Sxema standard",
+        "kmr-Arab": "سخەما ستاندارد",
+        "ckb": "ستانداردی هێمای بازنە",
+        "ckb-Arab": "ستانداردی هێمای بازنە",
+        "af-ZA": "Skemastandaard",
+        "af-NA": "Skemastandaard"
       },
       "IEEE": {
         "ha": "Haruffan IEEE",
@@ -9186,7 +9897,16 @@
         "om": "IEEE",
         "so": "IEEE",
         "ti": "IEEE",
-        "sw": "IEEE"
+        "sw": "IEEE",
+        "yue-Hans": "IEEE",
+        "yue-Hant": "IEEE",
+        "kmr": "IEEE",
+        "kmr-Latn": "IEEE",
+        "kmr-Arab": "IEEE",
+        "ckb": "IEEE",
+        "ckb-Arab": "IEEE",
+        "af-ZA": "IEEE",
+        "af-NA": "IEEE"
       },
       "IEC": {
         "be": "МЭК (IEC)",
@@ -9290,7 +10010,16 @@
         "om": "IEC",
         "so": "IEC",
         "ti": "IEC",
-        "sw": "IEC"
+        "sw": "IEC",
+        "yue-Hans": "IEC",
+        "yue-Hant": "IEC",
+        "kmr": "IEC",
+        "kmr-Latn": "IEC",
+        "kmr-Arab": "IEC",
+        "ckb": "IEC",
+        "ckb-Arab": "IEC",
+        "af-ZA": "IEC",
+        "af-NA": "IEC"
       },
       "British": {
         "am": "ብሪትሽ",
@@ -9410,7 +10139,16 @@
         "lo": "ອັງກິດ",
         "km": "អង់គ្លេស",
         "ky": "Британдык",
-        "zh": "英制"
+        "zh": "英制",
+        "yue-Hans": "英国标准",
+        "yue-Hant": "英國標準",
+        "kmr": "Îngilîzî",
+        "kmr-Latn": "Îngilîzî",
+        "kmr-Arab": "ئینگلیزی",
+        "ckb": "بەریتانی",
+        "ckb-Arab": "بەریتانی",
+        "af-ZA": "Brits",
+        "af-NA": "Brits"
       },
       "Ammeter readout": {
         "ak": "Ammeter Readout",
@@ -9535,7 +10273,16 @@
         "lb": "Ammeter-Anzeig",
         "my": "အမ်မီတာ ဖတ်ချက်",
         "lo": "ຄ່າອ່ານແອມມິເຕີ",
-        "ky": "Амперметр көрсөткүчү"
+        "ky": "Амперметр көрсөткүчү",
+        "yue-Hans": "电流表读数",
+        "yue-Hant": "電流表讀數",
+        "kmr": "Xwendina ampermêtirê",
+        "kmr-Latn": "Xwendina ampermêtirê",
+        "kmr-Arab": "خوەندنا ئامپەرمێترێ",
+        "ckb": "خوێندنەوەی ئەمیتەر",
+        "ckb-Arab": "خوێندنەوەی ئەمیتەر",
+        "af-ZA": "Ammeterlesing",
+        "af-NA": "Ammeterlesing"
       },
       "Magnitude": {
         "am": "መጠን",
@@ -9655,7 +10402,16 @@
         "lo": "ຂະໜາດ",
         "km": "ទំហំ",
         "ky": "Чоңдук",
-        "zh": "大小"
+        "zh": "大小",
+        "yue-Hans": "大小",
+        "yue-Hant": "大小",
+        "kmr": "Mezinahî",
+        "kmr-Latn": "Mezinahî",
+        "kmr-Arab": "مەزناهی",
+        "ckb": "قەبارە",
+        "ckb-Arab": "قەبارە",
+        "af-ZA": "Grootte",
+        "af-NA": "Grootte"
       },
       "Signed": {
         "am": "ተፈርሟል",
@@ -9776,7 +10532,16 @@
         "ky": "Белгилүү",
         "zh": "带符号",
         "ka": "ნიშნიანი",
-        "hy": "Նշանով"
+        "hy": "Նշանով",
+        "yue-Hans": "带正负号",
+        "yue-Hant": "帶正負號",
+        "kmr": "Bi nîşana algebraîk",
+        "kmr-Latn": "Bi nîşana algebraîk",
+        "kmr-Arab": "ب نیشانا ئالگەبرایک",
+        "ckb": "نیشانەدار",
+        "ckb-Arab": "نیشانەدار",
+        "af-ZA": "Met teken",
+        "af-NA": "Met teken"
       }
     },
     "density": {
@@ -9905,7 +10670,16 @@
         "kk": "Көлем бірліктері",
         "ky": "Көлөм бирдиктери",
         "zh": "体积单位",
-        "hy": "Ծավալի միավորներ"
+        "hy": "Ծավալի միավորներ",
+        "yue-Hans": "体积单位",
+        "yue-Hant": "體積單位",
+        "kmr": "Yekeyên qebareyê",
+        "kmr-Latn": "Yekeyên qebareyê",
+        "kmr-Arab": "یەکەیێن قەبارەیێ",
+        "ckb": "یەکەکانی قەبارە",
+        "ckb-Arab": "یەکەکانی قەبارە",
+        "af-ZA": "Volume-eenhede",
+        "af-NA": "Volume-eenhede"
       },
       "Liters": {
         "de": "Liter",
@@ -10009,7 +10783,16 @@
         "tg": "Литр",
         "ka": "ლიტრი",
         "hy": "Լիտր",
-        "tk": "Litr"
+        "tk": "Litr",
+        "yue-Hans": "公升",
+        "yue-Hant": "公升",
+        "kmr": "Lître",
+        "kmr-Latn": "Lître",
+        "kmr-Arab": "لیترە",
+        "ckb": "لیتر",
+        "ckb-Arab": "لیتر",
+        "af-ZA": "Liter",
+        "af-NA": "Liter"
       },
       "Cubic decimeters": {
         "de": "Kubikdezimeter",
@@ -10113,7 +10896,16 @@
         "tg": "Куб дециметр",
         "ka": "კუბური დეციმეტრი",
         "hy": "Խորանարդ դեցիմետր",
-        "tk": "Kub desimetr"
+        "tk": "Kub desimetr",
+        "yue-Hans": "立方分米",
+        "yue-Hant": "立方分米",
+        "kmr": "Desîmetreyên kubîk",
+        "kmr-Latn": "Desîmetreyên kubîk",
+        "kmr-Arab": "دەسیمەترەیێن کوبیک",
+        "ckb": "دەسی‌مەتری سێجا",
+        "ckb-Arab": "دەسی‌مەتری سێجا",
+        "af-ZA": "Kubieke desimeter",
+        "af-NA": "Kubieke desimeter"
       }
     },
     "energy-skate-park": {
@@ -10236,7 +11028,16 @@
         "km": "ឯកតាសំទុះ",
         "ky": "Ылдамдануу бирдиктери",
         "zh": "加速度单位",
-        "tg": "Тезланиш бирликлари"
+        "tg": "Тезланиш бирликлари",
+        "yue-Hans": "加速度单位",
+        "yue-Hant": "加速度單位",
+        "kmr": "Yekeyên lezbûnê",
+        "kmr-Latn": "Yekeyên lezbûnê",
+        "kmr-Arab": "یەکەیێن لەزبوونێ",
+        "ckb": "یەکەکانی خێرایی گۆڕان",
+        "ckb-Arab": "یەکەکانی خێرایی گۆڕان",
+        "af-ZA": "Versnellingseenhede",
+        "af-NA": "Versnellingseenhede"
       },
       "N/kg": {
         "az": "N/kq",
@@ -10342,7 +11143,16 @@
         "so": "N/kg",
         "ti": "N/kg",
         "sw": "N/kg",
-        "ha": "N/kg"
+        "ha": "N/kg",
+        "yue-Hans": "N/kg",
+        "yue-Hant": "N/kg",
+        "kmr": "N/kg",
+        "kmr-Latn": "N/kg",
+        "kmr-Arab": "ن/kg",
+        "ckb": "N/kg",
+        "ckb-Arab": "N/kg",
+        "af-ZA": "N/kg",
+        "af-NA": "N/kg"
       },
       "Show patterns": {
         "de": "Muster anzeigen",
@@ -10446,7 +11256,16 @@
         "tg": "Намуналарни кўрсатиш",
         "ka": "ნიმუშების ჩვენება",
         "hy": "Ցույց տալ օրինաչափությունները",
-        "tk": "Nagyşlary görkez"
+        "tk": "Nagyşlary görkez",
+        "yue-Hans": "显示模式",
+        "yue-Hant": "顯示模式",
+        "kmr": "Şêweyan nîşan bide",
+        "kmr-Latn": "Şêweyan nîşan bide",
+        "kmr-Arab": "شێوەیان نیشان بدە",
+        "ckb": "نەخشەکان پیشان بدە",
+        "ckb-Arab": "نەخشەکان پیشان بدە",
+        "af-ZA": "Wys patrone",
+        "af-NA": "Wys patrone"
       }
     },
     "energy-skate-park-basics": {
@@ -10552,7 +11371,16 @@
         "km": "ឯកតាសំទុះ",
         "ky": "Ылдамдануу бирдиктери",
         "zh": "加速度单位",
-        "tg": "Тезланиш бирликлари"
+        "tg": "Тезланиш бирликлари",
+        "yue-Hans": "加速度单位",
+        "yue-Hant": "加速度單位",
+        "kmr": "Yekeyên lezbûnê",
+        "kmr-Latn": "Yekeyên lezbûnê",
+        "kmr-Arab": "یەکەیێن لەزبوونێ",
+        "ckb": "یەکەکانی خێرایی گۆڕان",
+        "ckb-Arab": "یەکەکانی خێرایی گۆڕان",
+        "af-ZA": "Versnellingseenhede",
+        "af-NA": "Versnellingseenhede"
       },
       "Show patterns": {
         "de": "Muster anzeigen",
@@ -10656,7 +11484,16 @@
         "tg": "Намуналарни кўрсатиш",
         "ka": "ნიმუშების ჩვენება",
         "hy": "Ցույց տալ օրինաչափությունները",
-        "tk": "Nagyşlary görkez"
+        "tk": "Nagyşlary görkez",
+        "yue-Hans": "显示模式",
+        "yue-Hant": "顯示模式",
+        "kmr": "Şêweyan nîşan bide",
+        "kmr-Latn": "Şêweyan nîşan bide",
+        "kmr-Arab": "شێوەیان نیشان بدە",
+        "ckb": "نەخشەکان پیشان بدە",
+        "ckb-Arab": "نەخشەکان پیشان بدە",
+        "af-ZA": "Wys patrone",
+        "af-NA": "Wys patrone"
       }
     },
     "faradays-electromagnetic-lab": {
@@ -10762,7 +11599,16 @@
         "tg": "Магнит майдони бирликлари",
         "ka": "მაგნიტური ველის ერთეულები",
         "hy": "Մագնիսական դաշտի միավորներ",
-        "tk": "Magnit meýdanynyň birlikleri"
+        "tk": "Magnit meýdanynyň birlikleri",
+        "yue-Hans": "磁场单位",
+        "yue-Hant": "磁場單位",
+        "kmr": "Yekeyên qada mêgnatîk",
+        "kmr-Latn": "Yekeyên qada mêgnatîk",
+        "kmr-Arab": "یەکەیێن قادا مێگناتیک",
+        "ckb": "یەکەکانی مەیدانی مەگناتیسی",
+        "ckb-Arab": "یەکەکانی مەیدانی مەگناتیسی",
+        "af-ZA": "Magneetveldeenhede",
+        "af-NA": "Magneetveldeenhede"
       },
       "Current flow": {
         "am": "የከረንት ፍሰት",
@@ -10875,7 +11721,16 @@
         "tg": "Ток йўналиши",
         "ka": "დენის მიმართულება",
         "hy": "Հոսանքի ուղղություն",
-        "tk": "Togyň akymy"
+        "tk": "Togyň akymy",
+        "yue-Hans": "电流方向",
+        "yue-Hant": "電流方向",
+        "kmr": "Herikîna elektrîkê",
+        "kmr-Latn": "Herikîna elektrîkê",
+        "kmr-Arab": "هەرکینا ئەلەکتریکێ",
+        "ckb": "ئاراستەی جەریان",
+        "ckb-Arab": "ئاراستەی جەریان",
+        "af-ZA": "Stroomrigting",
+        "af-NA": "Stroomrigting"
       },
       "Electron": {
         "am": "ኤሌክትሮን",
@@ -10988,7 +11843,16 @@
         "tg": "Электрон",
         "ka": "ელექტრონი",
         "hy": "Էլեկտրոն",
-        "tk": "Elektron"
+        "tk": "Elektron",
+        "yue-Hans": "电子",
+        "yue-Hant": "電子",
+        "kmr": "Elektron",
+        "kmr-Latn": "Elektron",
+        "kmr-Arab": "ئەلەکترۆن",
+        "ckb": "ئەلیکترۆن",
+        "ckb-Arab": "ئەلیکترۆن",
+        "af-ZA": "Elektronvloei",
+        "af-NA": "Elektronvloei"
       },
       "Conventional": {
         "am": "የተለመደ",
@@ -11101,7 +11965,16 @@
         "tg": "Анъанавий",
         "ka": "ჩვეულებრივი",
         "hy": "Ավանդական",
-        "tk": "Adaty"
+        "tk": "Adaty",
+        "yue-Hans": "传统电流方向",
+        "yue-Hant": "傳統電流方向",
+        "kmr": "Kevneşopî",
+        "kmr-Latn": "Kevneşopî",
+        "kmr-Arab": "کەڤنەشۆپی",
+        "ckb": "ئاراستەی ئاسایی",
+        "ckb-Arab": "ئاراستەی ئاسایی",
+        "af-ZA": "Konvensioneel",
+        "af-NA": "Konvensioneel"
       },
       "Earth checkbox": {
         "de": "Kontrollkästchen für die Erde",
@@ -11205,7 +12078,16 @@
         "tg": "Ерни белгилаш",
         "ka": "დედამიწის მოსანიშნი ველი",
         "hy": "Երկրի նշման վանդակ",
-        "tk": "Ýer üçin bellik gutusy"
+        "tk": "Ýer üçin bellik gutusy",
+        "yue-Hans": "地球核取方块",
+        "yue-Hant": "地球核取方塊",
+        "kmr": "Qutiya Erdê",
+        "kmr-Latn": "Qutiya Erdê",
+        "kmr-Arab": "قوتیا ئەردێ",
+        "ckb": "خانەی هەڵبژاردەی زەوی",
+        "ckb-Arab": "خانەی هەڵبژاردەی زەوی",
+        "af-ZA": "Aardemerkblokkie",
+        "af-NA": "Aardemerkblokkie"
       },
       "Earth hemisphere": {
         "am": "የምድር ንፍቀ ክበብ",
@@ -11318,7 +12200,16 @@
         "tg": "Ер яримшари",
         "ka": "დედამიწის ნახევარსფერო",
         "hy": "Երկրի կիսագունդ",
-        "tk": "Ýer ýarymşary"
+        "tk": "Ýer ýarymşary",
+        "yue-Hans": "地球半球",
+        "yue-Hant": "地球半球",
+        "kmr": "Nîvkûreyê Erdê",
+        "kmr-Latn": "Nîvkûreyê Erdê",
+        "kmr-Arab": "نیڤکوورەیێ ئەردێ",
+        "ckb": "نیوەکۆرەی زەوی",
+        "ckb-Arab": "نیوەکۆرەی زەوی",
+        "af-ZA": "Halfrond van die aarde",
+        "af-NA": "Halfrond van die aarde"
       },
       "Western": {
         "de": "Westlich",
@@ -11422,7 +12313,16 @@
         "tg": "Ғарбий",
         "ka": "დასავლეთი",
         "hy": "Արևմտյան",
-        "tk": "Günbatar"
+        "tk": "Günbatar",
+        "yue-Hans": "西半球",
+        "yue-Hant": "西半球",
+        "kmr": "Rojava",
+        "kmr-Latn": "Rojava",
+        "kmr-Arab": "رۆژاڤا",
+        "ckb": "ڕۆژئاوا",
+        "ckb-Arab": "ڕۆژئاوا",
+        "af-ZA": "Westelik",
+        "af-NA": "Westelik"
       },
       "Eastern": {
         "de": "Östlich",
@@ -11526,7 +12426,16 @@
         "tg": "Шарқий",
         "ka": "აღმოსავლეთი",
         "hy": "Արևելյան",
-        "tk": "Gündogar"
+        "tk": "Gündogar",
+        "yue-Hans": "东半球",
+        "yue-Hant": "東半球",
+        "kmr": "Rojhilat",
+        "kmr-Latn": "Rojhilat",
+        "kmr-Arab": "رۆژهلات",
+        "ckb": "ڕۆژهەڵات",
+        "ckb-Arab": "ڕۆژهەڵات",
+        "af-ZA": "Oostelik",
+        "af-NA": "Oostelik"
       }
     },
     "forces-and-motion-basics": {
@@ -11632,7 +12541,16 @@
         "tg": "Тортгич ранглари",
         "ka": "გამწევის ფერები",
         "hy": "Քաշիչի գույները",
-        "tk": "Çekijiniň reňkleri"
+        "tk": "Çekijiniň reňkleri",
+        "yue-Hans": "施力者颜色",
+        "yue-Hant": "施力者顏色",
+        "kmr": "Rengên kişînerê",
+        "kmr-Latn": "Rengên kişînerê",
+        "kmr-Arab": "رەنگێن کشینەرێ",
+        "ckb": "ڕەنگەکانی ڕاکێشەر",
+        "ckb-Arab": "ڕەنگەکانی ڕاکێشەر",
+        "af-ZA": "Kleure van trekkers",
+        "af-NA": "Kleure van trekkers"
       },
       "Blue and red": {
         "am": "Blue and Red",
@@ -11757,7 +12675,16 @@
         "km": "ខៀវ និងក្រហម",
         "ky": "Көк жана кызыл",
         "zh": "蓝队和红队",
-        "tg": "Кўк ва қизил"
+        "tg": "Кўк ва қизил",
+        "yue-Hans": "蓝色同红色",
+        "yue-Hant": "藍色同紅色",
+        "kmr": "Şîn û sor",
+        "kmr-Latn": "Şîn û sor",
+        "kmr-Arab": "شین ئوو سۆر",
+        "ckb": "شین و سوور",
+        "ckb-Arab": "شین و سوور",
+        "af-ZA": "Blou en rooi",
+        "af-NA": "Blou en rooi"
       },
       "Purple and orange": {
         "am": "Purple and Orange",
@@ -11882,7 +12809,16 @@
         "km": "ស្វាយ និងទឹកក្រូច",
         "ky": "Кызгылт көк жана кызгылт сары",
         "zh": "紫色和橙色",
-        "tg": "Бинафша ва тўқ сариқ"
+        "tg": "Бинафша ва тўқ сариқ",
+        "yue-Hans": "紫色同橙色",
+        "yue-Hant": "紫色同橙色",
+        "kmr": "Mor û porteqalî",
+        "kmr-Latn": "Mor û porteqalî",
+        "kmr-Arab": "مۆر ئوو پۆرتەقالی",
+        "ckb": "مۆر و پرتەقاڵی",
+        "ckb-Arab": "مۆر و پرتەقاڵی",
+        "af-ZA": "Pers en oranje",
+        "af-NA": "Pers en oranje"
       }
     },
     "gas-properties": {
@@ -12012,7 +12948,16 @@
         "gl": "Ruído de presión",
         "lb": "Drockgeräisch",
         "my": "ဖိအား ဆူညံသံ",
-        "ky": "Басымдын ызы-чуусу"
+        "ky": "Басымдын ызы-чуусу",
+        "yue-Hans": "压力杂音",
+        "yue-Hant": "壓力雜音",
+        "kmr": "Dengê zextê",
+        "kmr-Latn": "Dengê zextê",
+        "kmr-Arab": "دەنگێ زەختێ",
+        "ckb": "دەنگی فشار",
+        "ckb-Arab": "دەنگی فشار",
+        "af-ZA": "Drukgeraas",
+        "af-NA": "Drukgeraas"
       }
     },
     "gases-intro": {
@@ -12139,7 +13084,16 @@
         "gl": "Ruído de presión",
         "lb": "Drockgeräisch",
         "my": "ဖိအား ဆူညံသံ",
-        "ky": "Басымдын ызы-чуусу"
+        "ky": "Басымдын ызы-чуусу",
+        "yue-Hans": "压力杂音",
+        "yue-Hant": "壓力雜音",
+        "kmr": "Dengê zextê",
+        "kmr-Latn": "Dengê zextê",
+        "kmr-Arab": "دەنگێ زەختێ",
+        "ckb": "دەنگی فشار",
+        "ckb-Arab": "دەنگی فشار",
+        "af-ZA": "Drukgeraas",
+        "af-NA": "Drukgeraas"
       }
     },
     "generator": {
@@ -12245,7 +13199,16 @@
         "tg": "Магнит майдони бирликлари",
         "ka": "მაგნიტური ველის ერთეულები",
         "hy": "Մագնիսական դաշտի միավորներ",
-        "tk": "Magnit meýdanynyň birlikleri"
+        "tk": "Magnit meýdanynyň birlikleri",
+        "yue-Hans": "磁场单位",
+        "yue-Hant": "磁場單位",
+        "kmr": "Yekeyên qada mêgnatîk",
+        "kmr-Latn": "Yekeyên qada mêgnatîk",
+        "kmr-Arab": "یەکەیێن قادا مێگناتیک",
+        "ckb": "یەکەکانی مەیدانی مەگناتیسی",
+        "ckb-Arab": "یەکەکانی مەیدانی مەگناتیسی",
+        "af-ZA": "Magneetveldeenhede",
+        "af-NA": "Magneetveldeenhede"
       },
       "Current flow": {
         "am": "የከረንት ፍሰት",
@@ -12357,7 +13320,16 @@
         "tg": "Ток йўналиши",
         "ka": "დენის მიმართულება",
         "hy": "Հոսանքի ուղղություն",
-        "tk": "Togyň akymy"
+        "tk": "Togyň akymy",
+        "yue-Hans": "电流方向",
+        "yue-Hant": "電流方向",
+        "kmr": "Herikîna elektrîkê",
+        "kmr-Latn": "Herikîna elektrîkê",
+        "kmr-Arab": "هەرکینا ئەلەکتریکێ",
+        "ckb": "ئاراستەی جەریان",
+        "ckb-Arab": "ئاراستەی جەریان",
+        "af-ZA": "Stroomrigting",
+        "af-NA": "Stroomrigting"
       },
       "Electron": {
         "am": "ኤሌክትሮን",
@@ -12469,7 +13441,16 @@
         "tg": "Электрон",
         "ka": "ელექტრონი",
         "hy": "Էլեկտրոն",
-        "tk": "Elektron"
+        "tk": "Elektron",
+        "yue-Hans": "电子",
+        "yue-Hant": "電子",
+        "kmr": "Elektron",
+        "kmr-Latn": "Elektron",
+        "kmr-Arab": "ئەلەکترۆن",
+        "ckb": "ئەلیکترۆن",
+        "ckb-Arab": "ئەلیکترۆن",
+        "af-ZA": "Elektronvloei",
+        "af-NA": "Elektronvloei"
       },
       "Conventional": {
         "am": "የተለመደ",
@@ -12581,7 +13562,16 @@
         "tg": "Анъанавий",
         "ka": "ჩვეულებრივი",
         "hy": "Ավանդական",
-        "tk": "Adaty"
+        "tk": "Adaty",
+        "yue-Hans": "传统电流方向",
+        "yue-Hant": "傳統電流方向",
+        "kmr": "Kevneşopî",
+        "kmr-Latn": "Kevneşopî",
+        "kmr-Arab": "کەڤنەشۆپی",
+        "ckb": "ئاراستەی ئاسایی",
+        "ckb-Arab": "ئاراستەی ئاسایی",
+        "af-ZA": "Konvensioneel",
+        "af-NA": "Konvensioneel"
       }
     },
     "geometric-optics": {
@@ -12704,7 +13694,16 @@
         "lo": "ຄວບຄຸມຄວາມຍາວໂຟກັສ",
         "ky": "Фокустук аралыкты башкаруу",
         "zh": "焦距控件",
-        "tg": "Фокус масофасини бошқариш"
+        "tg": "Фокус масофасини бошқариш",
+        "yue-Hans": "焦距控制",
+        "yue-Hant": "焦距控制",
+        "kmr": "Kontrola dirêjahiya fokusê",
+        "kmr-Latn": "Kontrola dirêjahiya fokusê",
+        "kmr-Arab": "کۆنترۆلا درێژاهیا فۆکوسێ",
+        "ckb": "کۆنتڕۆڵی دووری کانونی",
+        "ckb-Arab": "کۆنتڕۆڵی دووری کانونی",
+        "af-ZA": "Brandpuntafstandbeheer",
+        "af-NA": "Brandpuntafstandbeheer"
       },
       "Direct": {
         "de": "Direkt",
@@ -12808,7 +13807,16 @@
         "tg": "Тўғридан-тўғри",
         "ka": "პირდაპირი",
         "hy": "Ուղղակի",
-        "tk": "Göni"
+        "tk": "Göni",
+        "yue-Hans": "直接",
+        "yue-Hant": "直接",
+        "kmr": "Rasterast",
+        "kmr-Latn": "Rasterast",
+        "kmr-Arab": "راستەراست",
+        "ckb": "ڕاستەوخۆ",
+        "ckb-Arab": "ڕاستەوخۆ",
+        "af-ZA": "Direk",
+        "af-NA": "Direk"
       },
       "Indirect": {
         "de": "Indirekt",
@@ -12912,7 +13920,16 @@
         "tg": "Билвосита",
         "ka": "არაპირდაპირი",
         "hy": "Անուղղակի",
-        "tk": "Gyýtaklaýyn"
+        "tk": "Gyýtaklaýyn",
+        "yue-Hans": "间接",
+        "yue-Hant": "間接",
+        "kmr": "Ne rasterast",
+        "kmr-Latn": "Ne rasterast",
+        "kmr-Arab": "نە راستەراست",
+        "ckb": "ناڕاستەوخۆ",
+        "ckb-Arab": "ناڕاستەوخۆ",
+        "af-ZA": "Indirek",
+        "af-NA": "Indirek"
       },
       "2F points checkbox": {
         "de": "Kontrollkästchen für die 2F-Punkte",
@@ -13016,7 +14033,16 @@
         "tg": "2F нуқталарини белгилаш",
         "ka": "2F წერტილების მოსანიშნი ველი",
         "hy": "2F կետերի նշման վանդակ",
-        "tk": "2F nokatlary üçin bellik gutusy"
+        "tk": "2F nokatlary üçin bellik gutusy",
+        "yue-Hans": "2F 点核取方块",
+        "yue-Hant": "2F 點核取方塊",
+        "kmr": "Qutiya xalan 2F",
+        "kmr-Latn": "Qutiya xalan 2F",
+        "kmr-Arab": "قوتیا خالان 2F",
+        "ckb": "خانەی خاڵەکانی 2F",
+        "ckb-Arab": "خانەی خاڵەکانی 2F",
+        "af-ZA": "Merkblokkie vir 2F-punte",
+        "af-NA": "Merkblokkie vir 2F-punte"
       },
       "Cueing arrows": {
         "de": "Hinweispfeile",
@@ -13120,7 +14146,16 @@
         "tg": "Йўналтирувчи стрелкалар",
         "ka": "მიმანიშნებელი ისრები",
         "hy": "Ուղղորդող սլաքներ",
-        "tk": "Görkeziji peýkamlar"
+        "tk": "Görkeziji peýkamlar",
+        "yue-Hans": "提示箭嘴",
+        "yue-Hant": "提示箭嘴",
+        "kmr": "Tîrên rêberî",
+        "kmr-Latn": "Tîrên rêberî",
+        "kmr-Arab": "تیرێن رێبەری",
+        "ckb": "تیرەکانی ڕێنیشاندەر",
+        "ckb-Arab": "تیرەکانی ڕێنیشاندەر",
+        "af-ZA": "Aanwysingspyle",
+        "af-NA": "Aanwysingspyle"
       }
     },
     "geometric-optics-basics": {
@@ -13239,7 +14274,16 @@
         "lo": "ຄວບຄຸມຄວາມຍາວໂຟກັສ",
         "ky": "Фокустук аралыкты башкаруу",
         "zh": "焦距控件",
-        "tg": "Фокус масофасини бошқариш"
+        "tg": "Фокус масофасини бошқариш",
+        "yue-Hans": "焦距控制",
+        "yue-Hant": "焦距控制",
+        "kmr": "Kontrola dirêjahiya fokusê",
+        "kmr-Latn": "Kontrola dirêjahiya fokusê",
+        "kmr-Arab": "کۆنترۆلا درێژاهیا فۆکوسێ",
+        "ckb": "کۆنتڕۆڵی دووری کانونی",
+        "ckb-Arab": "کۆنتڕۆڵی دووری کانونی",
+        "af-ZA": "Brandpuntafstandbeheer",
+        "af-NA": "Brandpuntafstandbeheer"
       },
       "Direct": {
         "de": "Direkt",
@@ -13343,7 +14387,16 @@
         "tg": "Тўғридан-тўғри",
         "ka": "პირდაპირი",
         "hy": "Ուղղակի",
-        "tk": "Göni"
+        "tk": "Göni",
+        "yue-Hans": "直接",
+        "yue-Hant": "直接",
+        "kmr": "Rasterast",
+        "kmr-Latn": "Rasterast",
+        "kmr-Arab": "راستەراست",
+        "ckb": "ڕاستەوخۆ",
+        "ckb-Arab": "ڕاستەوخۆ",
+        "af-ZA": "Direk",
+        "af-NA": "Direk"
       },
       "Indirect": {
         "de": "Indirekt",
@@ -13447,7 +14500,16 @@
         "tg": "Билвосита",
         "ka": "არაპირდაპირი",
         "hy": "Անուղղակի",
-        "tk": "Gyýtaklaýyn"
+        "tk": "Gyýtaklaýyn",
+        "yue-Hans": "间接",
+        "yue-Hant": "間接",
+        "kmr": "Ne rasterast",
+        "kmr-Latn": "Ne rasterast",
+        "kmr-Arab": "نە راستەراست",
+        "ckb": "ناڕاستەوخۆ",
+        "ckb-Arab": "ناڕاستەوخۆ",
+        "af-ZA": "Indirek",
+        "af-NA": "Indirek"
       },
       "2F points checkbox": {
         "de": "Kontrollkästchen für die 2F-Punkte",
@@ -13551,7 +14613,16 @@
         "tg": "2F нуқталарини белгилаш",
         "ka": "2F წერტილების მოსანიშნი ველი",
         "hy": "2F կետերի նշման վանդակ",
-        "tk": "2F nokatlary üçin bellik gutusy"
+        "tk": "2F nokatlary üçin bellik gutusy",
+        "yue-Hans": "2F 点核取方块",
+        "yue-Hant": "2F 點核取方塊",
+        "kmr": "Qutiya xalan 2F",
+        "kmr-Latn": "Qutiya xalan 2F",
+        "kmr-Arab": "قوتیا خالان 2F",
+        "ckb": "خانەی خاڵەکانی 2F",
+        "ckb-Arab": "خانەی خاڵەکانی 2F",
+        "af-ZA": "Merkblokkie vir 2F-punte",
+        "af-NA": "Merkblokkie vir 2F-punte"
       },
       "Cueing arrows": {
         "de": "Hinweispfeile",
@@ -13655,7 +14726,16 @@
         "tg": "Йўналтирувчи стрелкалар",
         "ka": "მიმანიშნებელი ისრები",
         "hy": "Ուղղորդող սլաքներ",
-        "tk": "Görkeziji peýkamlar"
+        "tk": "Görkeziji peýkamlar",
+        "yue-Hans": "提示箭嘴",
+        "yue-Hant": "提示箭嘴",
+        "kmr": "Tîrên rêberî",
+        "kmr-Latn": "Tîrên rêberî",
+        "kmr-Arab": "تیرێن رێبەری",
+        "ckb": "تیرەکانی ڕێنیشاندەر",
+        "ckb-Arab": "تیرەکانی ڕێنیشاندەر",
+        "af-ZA": "Aanwysingspyle",
+        "af-NA": "Aanwysingspyle"
       }
     },
     "greenhouse-effect": {
@@ -13779,7 +14859,16 @@
         "km": "ឯកតាសីតុណ្ហភាព",
         "ky": "Температура бирдиктери",
         "ka": "ტემპერატურის ერთეულები",
-        "hy": "Ջերմաստիճանի միավորներ"
+        "hy": "Ջերմաստիճանի միավորներ",
+        "yue-Hans": "温度单位",
+        "yue-Hant": "溫度單位",
+        "kmr": "Yekeyên germahiyê",
+        "kmr-Latn": "Yekeyên germahiyê",
+        "kmr-Arab": "یەکەیێن گەرماهیێ",
+        "ckb": "یەکەکانی پلەی گەرمی",
+        "ckb-Arab": "یەکەکانی پلەی گەرمی",
+        "af-ZA": "Temperatuureenhede",
+        "af-NA": "Temperatuureenhede"
       },
       "Cueing arrows": {
         "de": "Hinweispfeile",
@@ -13883,7 +14972,16 @@
         "tg": "Йўналтирувчи стрелкалар",
         "ka": "მიმანიშნებელი ისრები",
         "hy": "Ուղղորդող սլաքներ",
-        "tk": "Görkeziji peýkamlar"
+        "tk": "Görkeziji peýkamlar",
+        "yue-Hans": "提示箭嘴",
+        "yue-Hant": "提示箭嘴",
+        "kmr": "Tîrên rêberî",
+        "kmr-Latn": "Tîrên rêberî",
+        "kmr-Arab": "تیرێن رێبەری",
+        "ckb": "تیرەکانی ڕێنیشاندەر",
+        "ckb-Arab": "تیرەکانی ڕێنیشاندەر",
+        "af-ZA": "Aanwysingspyle",
+        "af-NA": "Aanwysingspyle"
       }
     },
     "keplers-laws": {
@@ -13996,7 +15094,16 @@
         "ky": "Кошумча орбиталык маалыматтар",
         "tg": "Қўшимча орбитал маълумотлар",
         "hy": "Լրացուցիչ ուղեծրային տվյալներ",
-        "tk": "Goşmaça orbital maglumatlar"
+        "tk": "Goşmaça orbital maglumatlar",
+        "yue-Hans": "更多轨道数据",
+        "yue-Hant": "更多軌道數據",
+        "kmr": "Daneyên zêdetir ên orbitê",
+        "kmr-Latn": "Daneyên zêdetir ên orbitê",
+        "kmr-Arab": "دانەیێن زێدەتر ئێن ئۆربتێ",
+        "ckb": "داتای زیاتر لە بازنە",
+        "ckb-Arab": "داتای زیاتر لە بازنە",
+        "af-ZA": "Meer wentelbaandata",
+        "af-NA": "Meer wentelbaandata"
       }
     },
     "magnet-and-compass": {
@@ -14102,7 +15209,16 @@
         "tg": "Магнит майдони бирликлари",
         "ka": "მაგნიტური ველის ერთეულები",
         "hy": "Մագնիսական դաշտի միավորներ",
-        "tk": "Magnit meýdanynyň birlikleri"
+        "tk": "Magnit meýdanynyň birlikleri",
+        "yue-Hans": "磁场单位",
+        "yue-Hant": "磁場單位",
+        "kmr": "Yekeyên qada mêgnatîk",
+        "kmr-Latn": "Yekeyên qada mêgnatîk",
+        "kmr-Arab": "یەکەیێن قادا مێگناتیک",
+        "ckb": "یەکەکانی مەیدانی مەگناتیسی",
+        "ckb-Arab": "یەکەکانی مەیدانی مەگناتیسی",
+        "af-ZA": "Magneetveldeenhede",
+        "af-NA": "Magneetveldeenhede"
       },
       "Earth checkbox": {
         "de": "Kontrollkästchen für die Erde",
@@ -14206,7 +15322,16 @@
         "tg": "Ерни белгилаш",
         "ka": "დედამიწის მოსანიშნი ველი",
         "hy": "Երկրի նշման վանդակ",
-        "tk": "Ýer üçin bellik gutusy"
+        "tk": "Ýer üçin bellik gutusy",
+        "yue-Hans": "地球核取方块",
+        "yue-Hant": "地球核取方塊",
+        "kmr": "Qutiya Erdê",
+        "kmr-Latn": "Qutiya Erdê",
+        "kmr-Arab": "قوتیا ئەردێ",
+        "ckb": "خانەی هەڵبژاردەی زەوی",
+        "ckb-Arab": "خانەی هەڵبژاردەی زەوی",
+        "af-ZA": "Aardemerkblokkie",
+        "af-NA": "Aardemerkblokkie"
       },
       "Earth hemisphere": {
         "ar": "نصف الكرة الأرضية",
@@ -14318,7 +15443,16 @@
         "tg": "Ер яримшари",
         "ka": "დედამიწის ნახევარსფერო",
         "hy": "Երկրի կիսագունդ",
-        "tk": "Ýer ýarymşary"
+        "tk": "Ýer ýarymşary",
+        "yue-Hans": "地球半球",
+        "yue-Hant": "地球半球",
+        "kmr": "Nîvkûreyê Erdê",
+        "kmr-Latn": "Nîvkûreyê Erdê",
+        "kmr-Arab": "نیڤکوورەیێ ئەردێ",
+        "ckb": "نیوەکۆرەی زەوی",
+        "ckb-Arab": "نیوەکۆرەی زەوی",
+        "af-ZA": "Halfrond van die aarde",
+        "af-NA": "Halfrond van die aarde"
       },
       "Western": {
         "de": "Westlich",
@@ -14422,7 +15556,16 @@
         "tg": "Ғарбий",
         "ka": "დასავლეთი",
         "hy": "Արևմտյան",
-        "tk": "Günbatar"
+        "tk": "Günbatar",
+        "yue-Hans": "西半球",
+        "yue-Hant": "西半球",
+        "kmr": "Rojava",
+        "kmr-Latn": "Rojava",
+        "kmr-Arab": "رۆژاڤا",
+        "ckb": "ڕۆژئاوا",
+        "ckb-Arab": "ڕۆژئاوا",
+        "af-ZA": "Westelik",
+        "af-NA": "Westelik"
       },
       "Eastern": {
         "de": "Östlich",
@@ -14526,7 +15669,16 @@
         "tg": "Шарқий",
         "ka": "აღმოსავლეთი",
         "hy": "Արևելյան",
-        "tk": "Gündogar"
+        "tk": "Gündogar",
+        "yue-Hans": "东半球",
+        "yue-Hant": "東半球",
+        "kmr": "Rojhilat",
+        "kmr-Latn": "Rojhilat",
+        "kmr-Arab": "رۆژهلات",
+        "ckb": "ڕۆژهەڵات",
+        "ckb-Arab": "ڕۆژهەڵات",
+        "af-ZA": "Oostelik",
+        "af-NA": "Oostelik"
       }
     },
     "magnets-and-electromagnets": {
@@ -14632,7 +15784,16 @@
         "tg": "Магнит майдони бирликлари",
         "ka": "მაგნიტური ველის ერთეულები",
         "hy": "Մագնիսական դաշտի միավորներ",
-        "tk": "Magnit meýdanynyň birlikleri"
+        "tk": "Magnit meýdanynyň birlikleri",
+        "yue-Hans": "磁场单位",
+        "yue-Hant": "磁場單位",
+        "kmr": "Yekeyên qada mêgnatîk",
+        "kmr-Latn": "Yekeyên qada mêgnatîk",
+        "kmr-Arab": "یەکەیێن قادا مێگناتیک",
+        "ckb": "یەکەکانی مەیدانی مەگناتیسی",
+        "ckb-Arab": "یەکەکانی مەیدانی مەگناتیسی",
+        "af-ZA": "Magneetveldeenhede",
+        "af-NA": "Magneetveldeenhede"
       },
       "Current flow": {
         "ar": "تدفق التيار",
@@ -14744,7 +15905,16 @@
         "tg": "Ток йўналиши",
         "ka": "დენის მიმართულება",
         "hy": "Հոսանքի ուղղություն",
-        "tk": "Togyň akymy"
+        "tk": "Togyň akymy",
+        "yue-Hans": "电流方向",
+        "yue-Hant": "電流方向",
+        "kmr": "Herikîna elektrîkê",
+        "kmr-Latn": "Herikîna elektrîkê",
+        "kmr-Arab": "هەرکینا ئەلەکتریکێ",
+        "ckb": "ئاراستەی جەریان",
+        "ckb-Arab": "ئاراستەی جەریان",
+        "af-ZA": "Stroomrigting",
+        "af-NA": "Stroomrigting"
       },
       "Electron": {
         "ar": "إلكترون",
@@ -14856,7 +16026,16 @@
         "tg": "Электрон",
         "ka": "ელექტრონი",
         "hy": "Էլեկտրոն",
-        "tk": "Elektron"
+        "tk": "Elektron",
+        "yue-Hans": "电子",
+        "yue-Hant": "電子",
+        "kmr": "Elektron",
+        "kmr-Latn": "Elektron",
+        "kmr-Arab": "ئەلەکترۆن",
+        "ckb": "ئەلیکترۆن",
+        "ckb-Arab": "ئەلیکترۆن",
+        "af-ZA": "Elektronvloei",
+        "af-NA": "Elektronvloei"
       },
       "Conventional": {
         "ar": "عادي",
@@ -14968,7 +16147,16 @@
         "tg": "Анъанавий",
         "ka": "ჩვეულებრივი",
         "hy": "Ավանդական",
-        "tk": "Adaty"
+        "tk": "Adaty",
+        "yue-Hans": "传统电流方向",
+        "yue-Hant": "傳統電流方向",
+        "kmr": "Kevneşopî",
+        "kmr-Latn": "Kevneşopî",
+        "kmr-Arab": "کەڤنەشۆپی",
+        "ckb": "ئاراستەی ئاسایی",
+        "ckb-Arab": "ئاراستەی ئاسایی",
+        "af-ZA": "Konvensioneel",
+        "af-NA": "Konvensioneel"
       },
       "Earth checkbox": {
         "de": "Kontrollkästchen für die Erde",
@@ -15072,7 +16260,16 @@
         "tg": "Ерни белгилаш",
         "ka": "დედამიწის მოსანიშნი ველი",
         "hy": "Երկրի նշման վանդակ",
-        "tk": "Ýer üçin bellik gutusy"
+        "tk": "Ýer üçin bellik gutusy",
+        "yue-Hans": "地球核取方块",
+        "yue-Hant": "地球核取方塊",
+        "kmr": "Qutiya Erdê",
+        "kmr-Latn": "Qutiya Erdê",
+        "kmr-Arab": "قوتیا ئەردێ",
+        "ckb": "خانەی هەڵبژاردەی زەوی",
+        "ckb-Arab": "خانەی هەڵبژاردەی زەوی",
+        "af-ZA": "Aardemerkblokkie",
+        "af-NA": "Aardemerkblokkie"
       },
       "Earth hemisphere": {
         "ar": "نصف الكرة الأرضية",
@@ -15184,7 +16381,16 @@
         "tg": "Ер яримшари",
         "ka": "დედამიწის ნახევარსფერო",
         "hy": "Երկրի կիսագունդ",
-        "tk": "Ýer ýarymşary"
+        "tk": "Ýer ýarymşary",
+        "yue-Hans": "地球半球",
+        "yue-Hant": "地球半球",
+        "kmr": "Nîvkûreyê Erdê",
+        "kmr-Latn": "Nîvkûreyê Erdê",
+        "kmr-Arab": "نیڤکوورەیێ ئەردێ",
+        "ckb": "نیوەکۆرەی زەوی",
+        "ckb-Arab": "نیوەکۆرەی زەوی",
+        "af-ZA": "Halfrond van die aarde",
+        "af-NA": "Halfrond van die aarde"
       },
       "Western": {
         "de": "Westlich",
@@ -15288,7 +16494,16 @@
         "tg": "Ғарбий",
         "ka": "დასავლეთი",
         "hy": "Արևմտյան",
-        "tk": "Günbatar"
+        "tk": "Günbatar",
+        "yue-Hans": "西半球",
+        "yue-Hant": "西半球",
+        "kmr": "Rojava",
+        "kmr-Latn": "Rojava",
+        "kmr-Arab": "رۆژاڤا",
+        "ckb": "ڕۆژئاوا",
+        "ckb-Arab": "ڕۆژئاوا",
+        "af-ZA": "Westelik",
+        "af-NA": "Westelik"
       },
       "Eastern": {
         "de": "Östlich",
@@ -15392,7 +16607,16 @@
         "tg": "Шарқий",
         "ka": "აღმოსავლეთი",
         "hy": "Արևելյան",
-        "tk": "Gündogar"
+        "tk": "Gündogar",
+        "yue-Hans": "东半球",
+        "yue-Hant": "東半球",
+        "kmr": "Rojhilat",
+        "kmr-Latn": "Rojhilat",
+        "kmr-Arab": "رۆژهلات",
+        "ckb": "ڕۆژهەڵات",
+        "ckb-Arab": "ڕۆژهەڵات",
+        "af-ZA": "Oostelik",
+        "af-NA": "Oostelik"
       }
     },
     "membrane-transport": {
@@ -15498,7 +16722,16 @@
         "tg": "Липидларни анимациялаш",
         "ka": "ლიპიდების ანიმაცია",
         "hy": "Շարժապատկերել լիպիդները",
-        "tk": "Lipidleri animasiýa et"
+        "tk": "Lipidleri animasiýa et",
+        "yue-Hans": "令脂质动画化",
+        "yue-Hant": "令脂質動畫化",
+        "kmr": "Lîpîdan anîme bike",
+        "kmr-Latn": "Lîpîdan anîme bike",
+        "kmr-Arab": "لیپیدان ئانیمە بکە",
+        "ckb": "چەپاندنی لیپیدەکان",
+        "ckb-Arab": "چەپاندنی لیپیدەکان",
+        "af-ZA": "Animeer lipiede",
+        "af-NA": "Animeer lipiede"
       },
       "Glucose metabolism": {
         "ar": "استقلاب الجلوكوز",
@@ -15607,7 +16840,16 @@
         "tg": "Глюкоза алмашинуви",
         "ka": "გლუკოზის მეტაბოლიზმი",
         "hy": "Գլյուկոզայի նյութափոխանակություն",
-        "tk": "Glýukozanyň alyş-çalşy"
+        "tk": "Glýukozanyň alyş-çalşy",
+        "yue-Hans": "葡萄糖代谢",
+        "yue-Hant": "葡萄糖代謝",
+        "kmr": "Metabolîzma glukozê",
+        "kmr-Latn": "Metabolîzma glukozê",
+        "kmr-Arab": "مەتابۆلیزما گلوکۆزێ",
+        "ckb": "میتابۆلیزمی گلوکۆز",
+        "ckb-Arab": "میتابۆلیزمی گلوکۆز",
+        "af-ZA": "Glukosemetabolisme",
+        "af-NA": "Glukosemetabolisme"
       },
       "Stereo crossing sounds": {
         "ar": "أصوات عبور ستيريو",
@@ -15716,7 +16958,16 @@
         "tg": "Стерео кесишув товушлари",
         "ka": "სტერეო გადაკვეთის ხმები",
         "hy": "Ստերեո հատվող հնչյուններ",
-        "tk": "Stereo kesişýän sesler"
+        "tk": "Stereo kesişýän sesler",
+        "yue-Hans": "立体声穿越音效",
+        "yue-Hant": "立體聲穿越音效",
+        "kmr": "Dengên stereo yên ku hev derbas dibin",
+        "kmr-Latn": "Dengên stereo yên ku hev derbas dibin",
+        "kmr-Arab": "دەنگێن ستەرەۆ یێن کو هەڤ دەرباس دبن",
+        "ckb": "دەنگی تێپەڕبوونی ستێریۆ",
+        "ckb-Arab": "دەنگی تێپەڕبوونی ستێریۆ",
+        "af-ZA": "Stereoklanke by kruisings",
+        "af-NA": "Stereoklanke by kruisings"
       }
     },
     "molecule-polarity": {
@@ -15840,7 +17091,16 @@
         "zh": "偶极方向",
         "tg": "Диполь йўналиши",
         "ka": "დიპოლის მიმართულება",
-        "hy": "Դիպոլի ուղղություն"
+        "hy": "Դիպոլի ուղղություն",
+        "yue-Hans": "偶极方向",
+        "yue-Hant": "偶極方向",
+        "kmr": "Arasteya dîpolê",
+        "kmr-Latn": "Arasteya dîpolê",
+        "kmr-Arab": "ئاراستەیا دیپۆلێ",
+        "ckb": "ئاراستەی دایپۆڵ",
+        "ckb-Arab": "ئاراستەی دایپۆڵ",
+        "af-ZA": "Dipoolrigting",
+        "af-NA": "Dipoolrigting"
       },
       "Positive to negative": {
         "de": "Positiv nach negativ",
@@ -15944,7 +17204,16 @@
         "tg": "Мусбатдан манфийга",
         "ka": "დადებითიდან უარყოფითისკენ",
         "hy": "Դրականից բացասականի",
-        "tk": "Oňyndan otrise"
+        "tk": "Oňyndan otrise",
+        "yue-Hans": "由正到负",
+        "yue-Hant": "由正到負",
+        "kmr": "Ji erênî ber bi neyînî",
+        "kmr-Latn": "Ji erênî ber bi neyînî",
+        "kmr-Arab": "ژ ئەرێنی بەر ب نەیینی",
+        "ckb": "لە ئەرێنی بۆ نەرێنی",
+        "ckb-Arab": "لە ئەرێنی بۆ نەرێنی",
+        "af-ZA": "Positief na negatief",
+        "af-NA": "Positief na negatief"
       },
       "Negative to positive": {
         "de": "Negativ nach positiv",
@@ -16048,7 +17317,16 @@
         "tg": "Манфийдан мусбатга",
         "ka": "უარყოფითიდან დადებითისკენ",
         "hy": "Բացասականից դրականի",
-        "tk": "Otrisden oňyna"
+        "tk": "Otrisden oňyna",
+        "yue-Hans": "由负到正",
+        "yue-Hant": "由負到正",
+        "kmr": "Ji neyînî ber bi erênî",
+        "kmr-Latn": "Ji neyînî ber bi erênî",
+        "kmr-Arab": "ژ نەیینی بەر ب ئەرێنی",
+        "ckb": "لە نەرێنی بۆ ئەرێنی",
+        "ckb-Arab": "لە نەرێنی بۆ ئەرێنی",
+        "af-ZA": "Negatief na positief",
+        "af-NA": "Negatief na positief"
       },
       "Surface colors": {
         "de": "Oberflächenfarben",
@@ -16152,7 +17430,16 @@
         "tg": "Сирт ранглари",
         "ka": "ზედაპირის ფერები",
         "hy": "Մակերեսի գույները",
-        "tk": "Üstki gatlagyň reňkleri"
+        "tk": "Üstki gatlagyň reňkleri",
+        "yue-Hans": "表面颜色",
+        "yue-Hant": "表面顏色",
+        "kmr": "Rengên rûberê",
+        "kmr-Latn": "Rengên rûberê",
+        "kmr-Arab": "رەنگێن رووبەرێ",
+        "ckb": "ڕەنگەکانی ڕوو",
+        "ckb-Arab": "ڕەنگەکانی ڕوو",
+        "af-ZA": "Oppervlakkleure",
+        "af-NA": "Oppervlakkleure"
       },
       "Blue, white and red": {
         "de": "Blau, Weiß und Rot",
@@ -16256,7 +17543,16 @@
         "tg": "Кўк, оқ ва қизил",
         "ka": "ლურჯი, თეთრი და წითელი",
         "hy": "Կապույտ, սպիտակ և կարմիր",
-        "tk": "Gök, ak we gyzyl"
+        "tk": "Gök, ak we gyzyl",
+        "yue-Hans": "蓝、白、红",
+        "yue-Hant": "藍、白、紅",
+        "kmr": "Şîn, spî û sor",
+        "kmr-Latn": "Şîn, spî û sor",
+        "kmr-Arab": "شین, سپی ئوو سۆر",
+        "ckb": "شین، سپی و سوور",
+        "ckb-Arab": "شین، سپی و سوور",
+        "af-ZA": "Blou, wit en rooi",
+        "af-NA": "Blou, wit en rooi"
       },
       "Rainbow": {
         "de": "Regenbogen",
@@ -16360,7 +17656,16 @@
         "tg": "Камалак",
         "ka": "ცისარტყელა",
         "hy": "Ծիածան",
-        "tk": "Älemgoşar"
+        "tk": "Älemgoşar",
+        "yue-Hans": "彩虹",
+        "yue-Hant": "彩虹",
+        "kmr": "Kembera rengîn",
+        "kmr-Latn": "Kembera rengîn",
+        "kmr-Arab": "کەمبەرا رەنگین",
+        "ckb": "کەوانەیی",
+        "ckb-Arab": "کەوانەیی",
+        "af-ZA": "Reënboog",
+        "af-NA": "Reënboog"
       }
     },
     "molecule-shapes": {
@@ -16486,7 +17791,16 @@
         "ky": "Сырткы жалгыз электрон жуптарын көрсөтүү",
         "tg": "Ташқи боғланмаган жуфтларни кўрсатиш",
         "ka": "გარე მარტოხელა წყვილების ჩვენება",
-        "hy": "Ցույց տալ արտաքին ազատ զույգերը"
+        "hy": "Ցույց տալ արտաքին ազատ զույգերը",
+        "yue-Hans": "显示外层孤电子对",
+        "yue-Hant": "顯示外層孤電子對",
+        "kmr": "Cotanên elektronên tenê yên derve nîşan bide",
+        "kmr-Latn": "Cotanên elektronên tenê yên derve nîşan bide",
+        "kmr-Arab": "جۆتانێن ئەلەکترۆنێن تەنێ یێن دەرڤە نیشان بدە",
+        "ckb": "جوتە ئەلیکترۆنە دەرەکییەکان پیشان بدە",
+        "ckb-Arab": "جوتە ئەلیکترۆنە دەرەکییەکان پیشان بدە",
+        "af-ZA": "Wys buitenste vrye elektronpare",
+        "af-NA": "Wys buitenste vrye elektronpare"
       }
     },
     "number-compare": {
@@ -16592,7 +17906,16 @@
         "tg": "Лаб экранидаги бирликлар",
         "ka": "ერთეულები ლაბორატორიის ეკრანზე",
         "hy": "Միավորները լաբորատորիայի էկրանին",
-        "tk": "Laboratoriýa ekranyndaky birlikler"
+        "tk": "Laboratoriýa ekranyndaky birlikler",
+        "yue-Hans": "实验室画面中嘅个位数",
+        "yue-Hant": "實驗室畫面中嘅個位數",
+        "kmr": "Yekên li ser dîmendera Laboratûarê",
+        "kmr-Latn": "Yekên li ser dîmendera Laboratûarê",
+        "kmr-Arab": "یەکێن ل سەر دیمەندەرا لابۆراتووارێ",
+        "ckb": "یەکان لە شاشەی تاقیگەدا",
+        "ckb-Arab": "یەکان لە شاشەی تاقیگەدا",
+        "af-ZA": "Ene op die laboratoriumskerm",
+        "af-NA": "Ene op die laboratoriumskerm"
       },
       "Read numbers aloud automatically": {
         "de": "Zahlen automatisch vorlesen",
@@ -16696,7 +18019,16 @@
         "tg": "Сонларни автоматик овоз чиқариб ўқиш",
         "ka": "რიცხვების ავტომატურად ხმამაღლა წაკითხვა",
         "hy": "Թվերն ինքնաշխատ բարձրաձայն կարդալ",
-        "tk": "Sanlary awtomatik sesli oka"
+        "tk": "Sanlary awtomatik sesli oka",
+        "yue-Hans": "自动读出数字",
+        "yue-Hant": "自動讀出數字",
+        "kmr": "Hejmaran bixweber bi deng bixwîne",
+        "kmr-Latn": "Hejmaran bixweber bi deng bixwîne",
+        "kmr-Arab": "هەژماران بخوەبەر ب دەنگ بخوینە",
+        "ckb": "ژمارەکان خۆکارانە بە دەنگ بخوێنەوە",
+        "ckb-Arab": "ژمارەکان خۆکارانە بە دەنگ بخوێنەوە",
+        "af-ZA": "Lees getalle outomaties hardop",
+        "af-NA": "Lees getalle outomaties hardop"
       },
       "Enable a second spoken language": {
         "de": "Zweite Ausgabesprache aktivieren",
@@ -16800,7 +18132,16 @@
         "tg": "Иккинчи сўзлашув тилини ёқиш",
         "ka": "მეორე სალაპარაკო ენის ჩართვა",
         "hy": "Միացնել երկրորդ խոսակցական լեզուն",
-        "tk": "Ikinji gepleşik dilini aç"
+        "tk": "Ikinji gepleşik dilini aç",
+        "yue-Hans": "启用第二种语音",
+        "yue-Hant": "啟用第二種語音",
+        "kmr": "Zimanekî axaftinê yê duyem çalak bike",
+        "kmr-Latn": "Zimanekî axaftinê yê duyem çalak bike",
+        "kmr-Arab": "زمانەکی ئاخافتنێ یێ دویەم چالاک بکە",
+        "ckb": "زمانێکی دووەمی خوێندنەوەی دەنگی چالاک بکە",
+        "ckb-Arab": "زمانێکی دووەمی خوێندنەوەی دەنگی چالاک بکە",
+        "af-ZA": "Aktiveer 'n tweede spreektaal",
+        "af-NA": "Aktiveer 'n tweede spreektaal"
       },
       "Second spoken language": {
         "de": "Zweite Ausgabesprache",
@@ -16904,7 +18245,16 @@
         "tg": "Иккинчи сўзлашув тили",
         "ka": "მეორე სალაპარაკო ენა",
         "hy": "Երկրորդ խոսակցական լեզու",
-        "tk": "Ikinji gepleşik dili"
+        "tk": "Ikinji gepleşik dili",
+        "yue-Hans": "第二语音",
+        "yue-Hant": "第二語音",
+        "kmr": "Zimanê axaftinê yê duyem",
+        "kmr-Latn": "Zimanê axaftinê yê duyem",
+        "kmr-Arab": "زمانێ ئاخافتنێ یێ دویەم",
+        "ckb": "زمانی دووەمی خوێندنەوەی دەنگی",
+        "ckb-Arab": "زمانی دووەمی خوێندنەوەی دەنگی",
+        "af-ZA": "Tweede spreektaal",
+        "af-NA": "Tweede spreektaal"
       }
     },
     "number-line-distance": {
@@ -17013,7 +18363,16 @@
         "tg": "Атамалар",
         "ka": "ტერმინოლოგია",
         "hy": "Տերմինաբանություն",
-        "tk": "Terminologiýa"
+        "tk": "Terminologiýa",
+        "yue-Hans": "术语",
+        "yue-Hant": "術語",
+        "kmr": "Termînolojî",
+        "kmr-Latn": "Termînolojî",
+        "kmr-Arab": "تەرمینۆلۆژی",
+        "ckb": "زاراوە",
+        "ckb-Arab": "زاراوە",
+        "af-ZA": "Terminologie",
+        "af-NA": "Terminologie"
       },
       "Directed distance": {
         "am": "አቅጣጫዊ ርቀት",
@@ -17135,7 +18494,16 @@
         "km": "ចម្ងាយមានទិស",
         "ky": "Багытталган аралык",
         "tg": "Йўналтирилган масофа",
-        "ka": "მიმართული მანძილი"
+        "ka": "მიმართული მანძილი",
+        "yue-Hans": "有向距离",
+        "yue-Hant": "有向距離",
+        "kmr": "Dûrahiya arastekirî",
+        "kmr-Latn": "Dûrahiya arastekirî",
+        "kmr-Arab": "دووراهیا ئاراستەکری",
+        "ckb": "دووریی ئاراستەدار",
+        "ckb-Arab": "دووریی ئاراستەدار",
+        "af-ZA": "Gerigte afstand",
+        "af-NA": "Gerigte afstand"
       },
       "Displacement": {
         "ca": "Desplaçament",
@@ -17242,7 +18610,16 @@
         "tg": "Кўчиш",
         "ka": "გადაადგილება",
         "hy": "Տեղաշարժ",
-        "tk": "Süýşme"
+        "tk": "Süýşme",
+        "yue-Hans": "位移",
+        "yue-Hant": "位移",
+        "kmr": "Guhastina cihê",
+        "kmr-Latn": "Guhastina cihê",
+        "kmr-Arab": "گوهاستنا جهێ",
+        "ckb": "گواستنەوە",
+        "ckb-Arab": "گواستنەوە",
+        "af-ZA": "Verplasing",
+        "af-NA": "Verplasing"
       }
     },
     "number-pairs": {
@@ -17348,7 +18725,16 @@
         "tg": "Сонларни автоматик овоз чиқариб ўқиш",
         "ka": "რიცხვების ავტომატურად ხმამაღლა წაკითხვა",
         "hy": "Թվերն ինքնաշխատ բարձրաձայն կարդալ",
-        "tk": "Sanlary awtomatik sesli oka"
+        "tk": "Sanlary awtomatik sesli oka",
+        "yue-Hans": "自动读出数字",
+        "yue-Hant": "自動讀出數字",
+        "kmr": "Hejmaran bixweber bi deng bixwîne",
+        "kmr-Latn": "Hejmaran bixweber bi deng bixwîne",
+        "kmr-Arab": "هەژماران بخوەبەر ب دەنگ بخوینە",
+        "ckb": "ژمارەکان خۆکارانە بە دەنگ بخوێنەوە",
+        "ckb-Arab": "ژمارەکان خۆکارانە بە دەنگ بخوێنەوە",
+        "af-ZA": "Lees getalle outomaties hardop",
+        "af-NA": "Lees getalle outomaties hardop"
       },
       "Enable a second spoken language": {
         "de": "Zweite Ausgabesprache aktivieren",
@@ -17452,7 +18838,16 @@
         "tg": "Иккинчи сўзлашув тилини ёқиш",
         "ka": "მეორე სალაპარაკო ენის ჩართვა",
         "hy": "Միացնել երկրորդ խոսակցական լեզուն",
-        "tk": "Ikinji gepleşik dilini aç"
+        "tk": "Ikinji gepleşik dilini aç",
+        "yue-Hans": "启用第二种语音",
+        "yue-Hant": "啟用第二種語音",
+        "kmr": "Zimanekî axaftinê yê duyem çalak bike",
+        "kmr-Latn": "Zimanekî axaftinê yê duyem çalak bike",
+        "kmr-Arab": "زمانەکی ئاخافتنێ یێ دویەم چالاک بکە",
+        "ckb": "زمانێکی دووەمی خوێندنەوەی دەنگی چالاک بکە",
+        "ckb-Arab": "زمانێکی دووەمی خوێندنەوەی دەنگی چالاک بکە",
+        "af-ZA": "Aktiveer 'n tweede spreektaal",
+        "af-NA": "Aktiveer 'n tweede spreektaal"
       },
       "Second spoken language": {
         "de": "Zweite Ausgabesprache",
@@ -17556,7 +18951,16 @@
         "tg": "Иккинчи сўзлашув тили",
         "ka": "მეორე სალაპარაკო ენა",
         "hy": "Երկրորդ խոսակցական լեզու",
-        "tk": "Ikinji gepleşik dili"
+        "tk": "Ikinji gepleşik dili",
+        "yue-Hans": "第二语音",
+        "yue-Hant": "第二語音",
+        "kmr": "Zimanê axaftinê yê duyem",
+        "kmr-Latn": "Zimanê axaftinê yê duyem",
+        "kmr-Arab": "زمانێ ئاخافتنێ یێ دویەم",
+        "ckb": "زمانی دووەمی خوێندنەوەی دەنگی",
+        "ckb-Arab": "زمانی دووەمی خوێندنەوەی دەنگی",
+        "af-ZA": "Tweede spreektaal",
+        "af-NA": "Tweede spreektaal"
       },
       "Use primary spoken language": {
         "de": "Erste Ausgabesprache verwenden",
@@ -17660,7 +19064,16 @@
         "tg": "Асосий сўзлашув тилидан фойдаланиш",
         "ka": "ძირითადი სალაპარაკო ენის გამოყენება",
         "hy": "Օգտագործել հիմնական խոսակցական լեզուն",
-        "tk": "Esasy gepleşik dilini ulan"
+        "tk": "Esasy gepleşik dilini ulan",
+        "yue-Hans": "使用主要语音",
+        "yue-Hant": "使用主要語音",
+        "kmr": "Zimanê axaftinê yê bingehîn bikar bîne",
+        "kmr-Latn": "Zimanê axaftinê yê bingehîn bikar bîne",
+        "kmr-Arab": "زمانێ ئاخافتنێ یێ بنگەهین بکار بینە",
+        "ckb": "زمانی سەرەکیی دەنگی بەکاربهێنە",
+        "ckb-Arab": "زمانی سەرەکیی دەنگی بەکاربهێنە",
+        "af-ZA": "Gebruik die hoofspreektaal",
+        "af-NA": "Gebruik die hoofspreektaal"
       },
       "Number model": {
         "de": "Zahlenmodell",
@@ -17764,7 +19177,16 @@
         "tg": "Сон модели",
         "ka": "რიცხვის მოდელი",
         "hy": "Թվի մոդել",
-        "tk": "San modeli"
+        "tk": "San modeli",
+        "yue-Hans": "数字模型",
+        "yue-Hant": "數字模型",
+        "kmr": "Modela hejmarê",
+        "kmr-Latn": "Modela hejmarê",
+        "kmr-Arab": "مۆدەلا هەژمارێ",
+        "ckb": "مۆدێلی ژمارە",
+        "ckb-Arab": "مۆدێلی ژمارە",
+        "af-ZA": "Getalmodel",
+        "af-NA": "Getalmodel"
       },
       "Number bond": {
         "ar": "ربط الأعداد",
@@ -17872,7 +19294,16 @@
         "tg": "Сон боғланиши",
         "ka": "რიცხვითი კავშირი",
         "hy": "Թվային կապ",
-        "tk": "San düzümi"
+        "tk": "San düzümi",
+        "yue-Hans": "数字连结",
+        "yue-Hant": "數字連結",
+        "kmr": "Girêdana hejmarê",
+        "kmr-Latn": "Girêdana hejmarê",
+        "kmr-Arab": "گرێدانا هەژمارێ",
+        "ckb": "بەستەری ژمارە",
+        "ckb-Arab": "بەستەری ژمارە",
+        "af-ZA": "Getalbinding",
+        "af-NA": "Getalbinding"
       },
       "Bar model": {
         "ar": "نموذج الشريط",
@@ -17980,7 +19411,16 @@
         "tg": "Тасма модели",
         "ka": "ზოლის მოდელი",
         "hy": "Շերտագծի մոդել",
-        "tk": "Zolak modeli"
+        "tk": "Zolak modeli",
+        "yue-Hans": "长条模型",
+        "yue-Hant": "長條模型",
+        "kmr": "Modela çîpikan",
+        "kmr-Latn": "Modela çîpikan",
+        "kmr-Arab": "مۆدەلا چیپکان",
+        "ckb": "مۆدێلی شریتی",
+        "ckb-Arab": "مۆدێلی شریتی",
+        "af-ZA": "Staafmodel",
+        "af-NA": "Staafmodel"
       },
       "Put the sum on top": {
         "de": "Summe oben anzeigen",
@@ -18084,7 +19524,16 @@
         "tg": "Йиғиндини юқорига қўйиш",
         "ka": "ჯამის ზემოთ მოთავსება",
         "hy": "Գումարը տեղադրել վերևում",
-        "tk": "Jemi ýokarda goý"
+        "tk": "Jemi ýokarda goý",
+        "yue-Hans": "将总和放喺上面",
+        "yue-Hant": "將總和放喺上面",
+        "kmr": "Komeyê li jor danê",
+        "kmr-Latn": "Komeyê li jor danê",
+        "kmr-Arab": "کۆمەیێ ل ژۆر دانێ",
+        "ckb": "کۆی ژمارەکان لە سەرەوە دابنێ",
+        "ckb-Arab": "کۆی ژمارەکان لە سەرەوە دابنێ",
+        "af-ZA": "Plaas die som bo",
+        "af-NA": "Plaas die som bo"
       }
     },
     "number-play": {
@@ -18190,7 +19639,16 @@
         "tg": "Сонларни автоматик овоз чиқариб ўқиш",
         "ka": "რიცხვების ავტომატურად ხმამაღლა წაკითხვა",
         "hy": "Թվերն ինքնաշխատ բարձրաձայն կարդալ",
-        "tk": "Sanlary awtomatik sesli oka"
+        "tk": "Sanlary awtomatik sesli oka",
+        "yue-Hans": "自动读出数字",
+        "yue-Hant": "自動讀出數字",
+        "kmr": "Hejmaran bixweber bi deng bixwîne",
+        "kmr-Latn": "Hejmaran bixweber bi deng bixwîne",
+        "kmr-Arab": "هەژماران بخوەبەر ب دەنگ بخوینە",
+        "ckb": "ژمارەکان خۆکارانە بە دەنگ بخوێنەوە",
+        "ckb-Arab": "ژمارەکان خۆکارانە بە دەنگ بخوێنەوە",
+        "af-ZA": "Lees getalle outomaties hardop",
+        "af-NA": "Lees getalle outomaties hardop"
       },
       "Enable a second spoken language": {
         "de": "Zweite Ausgabesprache aktivieren",
@@ -18294,7 +19752,16 @@
         "tg": "Иккинчи сўзлашув тилини ёқиш",
         "ka": "მეორე სალაპარაკო ენის ჩართვა",
         "hy": "Միացնել երկրորդ խոսակցական լեզուն",
-        "tk": "Ikinji gepleşik dilini aç"
+        "tk": "Ikinji gepleşik dilini aç",
+        "yue-Hans": "启用第二种语音",
+        "yue-Hant": "啟用第二種語音",
+        "kmr": "Zimanekî axaftinê yê duyem çalak bike",
+        "kmr-Latn": "Zimanekî axaftinê yê duyem çalak bike",
+        "kmr-Arab": "زمانەکی ئاخافتنێ یێ دویەم چالاک بکە",
+        "ckb": "زمانێکی دووەمی خوێندنەوەی دەنگی چالاک بکە",
+        "ckb-Arab": "زمانێکی دووەمی خوێندنەوەی دەنگی چالاک بکە",
+        "af-ZA": "Aktiveer 'n tweede spreektaal",
+        "af-NA": "Aktiveer 'n tweede spreektaal"
       },
       "Second spoken language": {
         "de": "Zweite Ausgabesprache",
@@ -18398,7 +19865,16 @@
         "tg": "Иккинчи сўзлашув тили",
         "ka": "მეორე სალაპარაკო ენა",
         "hy": "Երկրորդ խոսակցական լեզու",
-        "tk": "Ikinji gepleşik dili"
+        "tk": "Ikinji gepleşik dili",
+        "yue-Hans": "第二语音",
+        "yue-Hant": "第二語音",
+        "kmr": "Zimanê axaftinê yê duyem",
+        "kmr-Latn": "Zimanê axaftinê yê duyem",
+        "kmr-Arab": "زمانێ ئاخافتنێ یێ دویەم",
+        "ckb": "زمانی دووەمی خوێندنەوەی دەنگی",
+        "ckb-Arab": "زمانی دووەمی خوێندنەوەی دەنگی",
+        "af-ZA": "Tweede spreektaal",
+        "af-NA": "Tweede spreektaal"
       },
       "Use primary spoken language": {
         "de": "Erste Ausgabesprache verwenden",
@@ -18502,7 +19978,16 @@
         "tg": "Асосий сўзлашув тилидан фойдаланиш",
         "ka": "ძირითადი სალაპარაკო ენის გამოყენება",
         "hy": "Օգտագործել հիմնական խոսակցական լեզուն",
-        "tk": "Esasy gepleşik dilini ulan"
+        "tk": "Esasy gepleşik dilini ulan",
+        "yue-Hans": "使用主要语音",
+        "yue-Hant": "使用主要語音",
+        "kmr": "Zimanê axaftinê yê bingehîn bikar bîne",
+        "kmr-Latn": "Zimanê axaftinê yê bingehîn bikar bîne",
+        "kmr-Arab": "زمانێ ئاخافتنێ یێ بنگەهین بکار بینە",
+        "ckb": "زمانی سەرەکیی دەنگی بەکاربهێنە",
+        "ckb-Arab": "زمانی سەرەکیی دەنگی بەکاربهێنە",
+        "af-ZA": "Gebruik die hoofspreektaal",
+        "af-NA": "Gebruik die hoofspreektaal"
       },
       "Show ones on the Lab screen": {
         "de": "Einer auf dem Laborbildschirm anzeigen",
@@ -18606,7 +20091,16 @@
         "tg": "Лаб экранида бирликларни кўрсатиш",
         "ka": "ლაბორატორიის ეკრანზე ერთეულების ჩვენება",
         "hy": "Ցույց տալ միավորները լաբորատորիայի էկրանին",
-        "tk": "Laboratoriýa ekranynda birlikleri görkez"
+        "tk": "Laboratoriýa ekranynda birlikleri görkez",
+        "yue-Hans": "实验室画面中显示个位数",
+        "yue-Hant": "實驗室畫面中顯示個位數",
+        "kmr": "Yekên li ser dîmendera Laboratûarê nîşan bide",
+        "kmr-Latn": "Yekên li ser dîmendera Laboratûarê nîşan bide",
+        "kmr-Arab": "یەکێن ل سەر دیمەندەرا لابۆراتووارێ نیشان بدە",
+        "ckb": "یەکان لە شاشەی تاقیگە پیشان بدە",
+        "ckb-Arab": "یەکان لە شاشەی تاقیگە پیشان بدە",
+        "af-ZA": "Wys ene op die laboratoriumskerm",
+        "af-NA": "Wys ene op die laboratoriumskerm"
       },
       "Time to show each quantity": {
         "de": "Anzeigedauer pro Menge",
@@ -18710,7 +20204,16 @@
         "tg": "Ҳар бир миқдорни кўрсатиш вақти",
         "ka": "თითოეული სიდიდის ჩვენების დრო",
         "hy": "Յուրաքանչյուր մեծության ցուցադրման ժամանակը",
-        "tk": "Her mukdary görkezmegiň wagty"
+        "tk": "Her mukdary görkezmegiň wagty",
+        "yue-Hans": "每个数量嘅显示时间",
+        "yue-Hant": "每個數量嘅顯示時間",
+        "kmr": "Demê ku her hejmar tê nîşandan",
+        "kmr-Latn": "Demê ku her hejmar tê nîşandan",
+        "kmr-Arab": "دەمێ کو هەر هەژمار تێ نیشاندان",
+        "ckb": "ماوەی پیشاندانی هەر بڕێک",
+        "ckb-Arab": "ماوەی پیشاندانی هەر بڕێک",
+        "af-ZA": "Tyd om elke hoeveelheid te wys",
+        "af-NA": "Tyd om elke hoeveelheid te wys"
       }
     },
     "ph-scale": {
@@ -18816,7 +20319,16 @@
         "tg": "Эритмаларни автоматик тўлдириш",
         "ka": "ხსნარების ავტომატური შევსება",
         "hy": "Լուծույթներն ինքնալրացնել",
-        "tk": "Erginleri awtomatik doldur"
+        "tk": "Erginleri awtomatik doldur",
+        "yue-Hans": "自动填充溶液",
+        "yue-Hant": "自動填充溶液",
+        "kmr": "Çareseriyan bixweber tijî bike",
+        "kmr-Latn": "Çareseriyan bixweber tijî bike",
+        "kmr-Arab": "چارەسەریان بخوەبەر تژی بکە",
+        "ckb": "چارەسەرەکان خۆکارانە پڕ بکەرەوە",
+        "ckb-Arab": "چارەسەرەکان خۆکارانە پڕ بکەرەوە",
+        "af-ZA": "Vul oplossings outomaties in",
+        "af-NA": "Vul oplossings outomaties in"
       }
     },
     "ph-scale-basics": {
@@ -18922,7 +20434,16 @@
         "tg": "Эритмаларни автоматик тўлдириш",
         "ka": "ხსნარების ავტომატური შევსება",
         "hy": "Լուծույթներն ինքնալրացնել",
-        "tk": "Erginleri awtomatik doldur"
+        "tk": "Erginleri awtomatik doldur",
+        "yue-Hans": "自动填充溶液",
+        "yue-Hant": "自動填充溶液",
+        "kmr": "Çareseriyan bixweber tijî bike",
+        "kmr-Latn": "Çareseriyan bixweber tijî bike",
+        "kmr-Arab": "چارەسەریان بخوەبەر تژی بکە",
+        "ckb": "چارەسەرەکان خۆکارانە پڕ بکەرەوە",
+        "ckb-Arab": "چارەسەرەکان خۆکارانە پڕ بکەرەوە",
+        "af-ZA": "Vul oplossings outomaties in",
+        "af-NA": "Vul oplossings outomaties in"
       }
     },
     "projectile-data-lab": {
@@ -19028,7 +20549,16 @@
         "tg": "Маълумотларни автоматик яратиш",
         "ka": "მონაცემების ავტომატურად შექმნა",
         "hy": "Տվյալներն ինքնաշխատ ստեղծել",
-        "tk": "Maglumatlary awtomatik döret"
+        "tk": "Maglumatlary awtomatik döret",
+        "yue-Hans": "自动产生数据",
+        "yue-Hant": "自動產生數據",
+        "kmr": "Daneyan bixweber biafirîne",
+        "kmr-Latn": "Daneyan bixweber biafirîne",
+        "kmr-Arab": "دانەیان بخوەبەر بافرینە",
+        "ckb": "داتا خۆکارانە دروست بکە",
+        "ckb-Arab": "داتا خۆکارانە دروست بکە",
+        "af-ZA": "Genereer data outomaties",
+        "af-NA": "Genereer data outomaties"
       },
       "Launch sound": {
         "ar": "صوت الإطلاق",
@@ -19139,7 +20669,16 @@
         "tg": "Учириш овози",
         "ka": "გაშვების ხმა",
         "hy": "Մեկնարկի ձայն",
-        "tk": "Uçuş sesi"
+        "tk": "Uçuş sesi",
+        "yue-Hans": "发射音效",
+        "yue-Hant": "發射音效",
+        "kmr": "Dengê destpêkirinê",
+        "kmr-Latn": "Dengê destpêkirinê",
+        "kmr-Arab": "دەنگێ دەستپێکرنێ",
+        "ckb": "دەنگی فڕێدان",
+        "ckb-Arab": "دەنگی فڕێدان",
+        "af-ZA": "Lanseerklank",
+        "af-NA": "Lanseerklank"
       },
       "Speed": {
         "ar": "سرعة",
@@ -19249,7 +20788,16 @@
         "tg": "Тезлик",
         "ka": "სიჩქარე",
         "hy": "Արագություն",
-        "tk": "Tizlik"
+        "tk": "Tizlik",
+        "yue-Hans": "速度",
+        "yue-Hant": "速度",
+        "kmr": "Lez",
+        "kmr-Latn": "Lez",
+        "kmr-Arab": "لەز",
+        "ckb": "خێرایی",
+        "ckb-Arab": "خێرایی",
+        "af-ZA": "Spoed",
+        "af-NA": "Spoed"
       },
       "Angle": {
         "ar": "زاوية",
@@ -19359,7 +20907,16 @@
         "tg": "Бурчак",
         "ka": "კუთხე",
         "hy": "Անկյուն",
-        "tk": "Burç"
+        "tk": "Burç",
+        "yue-Hans": "角度",
+        "yue-Hant": "角度",
+        "kmr": "Kunc",
+        "kmr-Latn": "Kunc",
+        "kmr-Arab": "کونج",
+        "ckb": "گۆشە",
+        "ckb-Arab": "گۆشە",
+        "af-ZA": "Hoek",
+        "af-NA": "Hoek"
       },
       "None": {
         "ar": "لا شيء",
@@ -19469,7 +21026,16 @@
         "tg": "Йўқ",
         "ka": "არცერთი",
         "hy": "Չկա",
-        "tk": "Ýok"
+        "tk": "Ýok",
+        "yue-Hans": "无",
+        "yue-Hant": "無",
+        "kmr": "Tu yek",
+        "kmr-Latn": "Tu yek",
+        "kmr-Arab": "تو یەک",
+        "ckb": "هیچ",
+        "ckb-Arab": "هیچ",
+        "af-ZA": "Geen",
+        "af-NA": "Geen"
       },
       "Landing sound": {
         "de": "Landegeräusch",
@@ -19573,7 +21139,16 @@
         "tg": "Қўниш овози",
         "ka": "დაშვების ხმა",
         "hy": "Վայրէջքի ձայն",
-        "tk": "Gonuş sesi"
+        "tk": "Gonuş sesi",
+        "yue-Hans": "着陆音效",
+        "yue-Hant": "著陸音效",
+        "kmr": "Dengê daxistinê",
+        "kmr-Latn": "Dengê daxistinê",
+        "kmr-Arab": "دەنگێ داخستنێ",
+        "ckb": "دەنگی کەوتن",
+        "ckb-Arab": "دەنگی کەوتن",
+        "af-ZA": "Landingsklank",
+        "af-NA": "Landingsklank"
       },
       "Projectile type affects speed": {
         "ar": "نوع المقذوف يؤثر على السرعة",
@@ -19684,7 +21259,16 @@
         "tg": "Снаряд тури тезликка таъсир қилади",
         "ka": "ჭურვის ტიპი სიჩქარეზე მოქმედებს",
         "hy": "Արկի տեսակը ազդում է արագության վրա",
-        "tk": "Zyňylýan jisimiň görnüşi tizlige täsir edýär"
+        "tk": "Zyňylýan jisimiň görnüşi tizlige täsir edýär",
+        "yue-Hans": "抛射物类型会影响速度",
+        "yue-Hant": "拋射物類型會影響速度",
+        "kmr": "Cureyê fırlînê bandorê li lezê dike",
+        "kmr-Latn": "Cureyê fırlînê bandorê li lezê dike",
+        "kmr-Arab": "جورەیێ فرلینێ باندۆرێ ل لەزێ دکە",
+        "ckb": "جۆری شتی فڕێدراو کاریگەری لەسەر خێرایی هەیە",
+        "ckb-Arab": "جۆری شتی فڕێدراو کاریگەری لەسەر خێرایی هەیە",
+        "af-ZA": "Projektieltipe beïnvloed spoed",
+        "af-NA": "Projektieltipe beïnvloed spoed"
       },
       "Histogram bins": {
         "ar": "صناديق الهيستوغرام",
@@ -19795,7 +21379,16 @@
         "tg": "Гистограмма оралиқлари",
         "ka": "ჰისტოგრამის ინტერვალები",
         "hy": "Հիստոգրամի միջակայքեր",
-        "tk": "Gistogramma aralyklary"
+        "tk": "Gistogramma aralyklary",
+        "yue-Hans": "直方图组距数",
+        "yue-Hant": "直方圖組距數",
+        "kmr": "Binên histogramê",
+        "kmr-Latn": "Binên histogramê",
+        "kmr-Arab": "بنێن هستۆگرامێ",
+        "ckb": "خانەکانی هێستۆگرام",
+        "ckb-Arab": "خانەکانی هێستۆگرام",
+        "af-ZA": "Histogramklasse",
+        "af-NA": "Histogramklasse"
       },
       "Bin width": {
         "ar": "عرض الصندوق",
@@ -19906,7 +21499,16 @@
         "tg": "Оралиқ кенглиги",
         "ka": "ინტერვალის სიგანე",
         "hy": "Միջակայքի լայնություն",
-        "tk": "Aralygyň giňligi"
+        "tk": "Aralygyň giňligi",
+        "yue-Hans": "组距阔度",
+        "yue-Hant": "組距闊度",
+        "kmr": "Firehiya binê",
+        "kmr-Latn": "Firehiya binê",
+        "kmr-Arab": "فرەهیا بنێ",
+        "ckb": "پانی خانە",
+        "ckb-Arab": "پانی خانە",
+        "af-ZA": "Klaswydte",
+        "af-NA": "Klaswydte"
       },
       "Total bins": {
         "ar-LY": "مجموع الصناديق",
@@ -20017,7 +21619,16 @@
         "tg": "Жами оралиқлар",
         "ka": "ინტერვალების ჯამი",
         "hy": "Միջակայքերի ընդհանուր թիվը",
-        "tk": "Jemi aralyklar"
+        "tk": "Jemi aralyklar",
+        "yue-Hans": "组距总数",
+        "yue-Hant": "組距總數",
+        "kmr": "Hemû bin",
+        "kmr-Latn": "Hemû bin",
+        "kmr-Arab": "هەموو بن",
+        "ckb": "کۆی خانەکان",
+        "ckb-Arab": "کۆی خانەکان",
+        "af-ZA": "Totale aantal klasse",
+        "af-NA": "Totale aantal klasse"
       },
       "Show standard error": {
         "ar": "إظهار الخطأ القياسي",
@@ -20128,7 +21739,16 @@
         "tg": "Стандарт хатони кўрсатиш",
         "ka": "სტანდარტული შეცდომის ჩვენება",
         "hy": "Ցույց տալ ստանդարտ սխալը",
-        "tk": "Standart ýalňyşlygy görkez"
+        "tk": "Standart ýalňyşlygy görkez",
+        "yue-Hans": "显示标准误",
+        "yue-Hant": "顯示標準誤",
+        "kmr": "Çewtiya standard nîşan bide",
+        "kmr-Latn": "Çewtiya standard nîşan bide",
+        "kmr-Arab": "چەوتیا ستاندارد نیشان بدە",
+        "ckb": "هەڵەی ستاندارد پیشان بدە",
+        "ckb-Arab": "هەڵەی ستاندارد پیشان بدە",
+        "af-ZA": "Wys standaardfout",
+        "af-NA": "Wys standaardfout"
       }
     },
     "projectile-sampling-distributions": {
@@ -20234,7 +21854,16 @@
         "tg": "Маълумотларни автоматик яратиш",
         "ka": "მონაცემების ავტომატურად შექმნა",
         "hy": "Տվյալներն ինքնաշխատ ստեղծել",
-        "tk": "Maglumatlary awtomatik döret"
+        "tk": "Maglumatlary awtomatik döret",
+        "yue-Hans": "自动产生数据",
+        "yue-Hant": "自動產生數據",
+        "kmr": "Daneyan bixweber biafirîne",
+        "kmr-Latn": "Daneyan bixweber biafirîne",
+        "kmr-Arab": "دانەیان بخوەبەر بافرینە",
+        "ckb": "داتا خۆکارانە دروست بکە",
+        "ckb-Arab": "داتا خۆکارانە دروست بکە",
+        "af-ZA": "Genereer data outomaties",
+        "af-NA": "Genereer data outomaties"
       },
       "Launch sound": {
         "ar": "صوت الإطلاق",
@@ -20344,7 +21973,16 @@
         "tg": "Учириш овози",
         "ka": "გაშვების ხმა",
         "hy": "Մեկնարկի ձայն",
-        "tk": "Uçuş sesi"
+        "tk": "Uçuş sesi",
+        "yue-Hans": "发射音效",
+        "yue-Hant": "發射音效",
+        "kmr": "Dengê destpêkirinê",
+        "kmr-Latn": "Dengê destpêkirinê",
+        "kmr-Arab": "دەنگێ دەستپێکرنێ",
+        "ckb": "دەنگی فڕێدان",
+        "ckb-Arab": "دەنگی فڕێدان",
+        "af-ZA": "Lanseerklank",
+        "af-NA": "Lanseerklank"
       },
       "Speed": {
         "ar": "سرعة",
@@ -20453,7 +22091,16 @@
         "tg": "Тезлик",
         "ka": "სიჩქარე",
         "hy": "Արագություն",
-        "tk": "Tizlik"
+        "tk": "Tizlik",
+        "yue-Hans": "速度",
+        "yue-Hant": "速度",
+        "kmr": "Lez",
+        "kmr-Latn": "Lez",
+        "kmr-Arab": "لەز",
+        "ckb": "خێرایی",
+        "ckb-Arab": "خێرایی",
+        "af-ZA": "Spoed",
+        "af-NA": "Spoed"
       },
       "Angle": {
         "ar": "زاوية",
@@ -20562,7 +22209,16 @@
         "tg": "Бурчак",
         "ka": "კუთხე",
         "hy": "Անկյուն",
-        "tk": "Burç"
+        "tk": "Burç",
+        "yue-Hans": "角度",
+        "yue-Hant": "角度",
+        "kmr": "Kunc",
+        "kmr-Latn": "Kunc",
+        "kmr-Arab": "کونج",
+        "ckb": "گۆشە",
+        "ckb-Arab": "گۆشە",
+        "af-ZA": "Hoek",
+        "af-NA": "Hoek"
       },
       "None": {
         "ar": "لا شيء",
@@ -20671,7 +22327,16 @@
         "tg": "Йўқ",
         "ka": "არცერთი",
         "hy": "Չկա",
-        "tk": "Ýok"
+        "tk": "Ýok",
+        "yue-Hans": "无",
+        "yue-Hant": "無",
+        "kmr": "Tu yek",
+        "kmr-Latn": "Tu yek",
+        "kmr-Arab": "تو یەک",
+        "ckb": "هیچ",
+        "ckb-Arab": "هیچ",
+        "af-ZA": "Geen",
+        "af-NA": "Geen"
       },
       "Landing sound": {
         "de": "Landegeräusch",
@@ -20775,7 +22440,16 @@
         "tg": "Қўниш овози",
         "ka": "დაშვების ხმა",
         "hy": "Վայրէջքի ձայն",
-        "tk": "Gonuş sesi"
+        "tk": "Gonuş sesi",
+        "yue-Hans": "着陆音效",
+        "yue-Hant": "著陸音效",
+        "kmr": "Dengê daxistinê",
+        "kmr-Latn": "Dengê daxistinê",
+        "kmr-Arab": "دەنگێ داخستنێ",
+        "ckb": "دەنگی کەوتن",
+        "ckb-Arab": "دەنگی کەوتن",
+        "af-ZA": "Landingsklank",
+        "af-NA": "Landingsklank"
       }
     },
     "quadrilateral": {
@@ -20881,7 +22555,16 @@
         "tg": "Овоз дизайни",
         "ka": "ხმის დიზაინი",
         "hy": "Ձայնի ձևավորում",
-        "tk": "Ses dizaýny"
+        "tk": "Ses dizaýny",
+        "yue-Hans": "音效设计",
+        "yue-Hant": "音效設計",
+        "kmr": "Sêwirana dengê",
+        "kmr-Latn": "Sêwirana dengê",
+        "kmr-Arab": "سێورانا دەنگێ",
+        "ckb": "دیزاینی دەنگ",
+        "ckb-Arab": "دیزاینی دەنگ",
+        "af-ZA": "Klankontwerp",
+        "af-NA": "Klankontwerp"
       },
       "Layered": {
         "de": "Überlagert",
@@ -20985,7 +22668,16 @@
         "tg": "Қатламли",
         "ka": "ფენებად",
         "hy": "Շերտավորված",
-        "tk": "Gatlakly"
+        "tk": "Gatlakly",
+        "yue-Hans": "分层",
+        "yue-Hant": "分層",
+        "kmr": "Qatkirî",
+        "kmr-Latn": "Qatkirî",
+        "kmr-Arab": "قاتکری",
+        "ckb": "چین‌چین",
+        "ckb-Arab": "چین‌چین",
+        "af-ZA": "Gelaag",
+        "af-NA": "Gelaag"
       },
       "Unique per shape": {
         "de": "Für jede Form verschieden",
@@ -21089,7 +22781,16 @@
         "tg": "Ҳар бир шаклга алоҳида",
         "ka": "თითოეული ფორმისთვის უნიკალური",
         "hy": "Յուրաքանչյուր ձևի համար առանձին",
-        "tk": "Her şekil üçin aýratyn"
+        "tk": "Her şekil üçin aýratyn",
+        "yue-Hans": "每种形状使用独有音效",
+        "yue-Hant": "每種形狀使用獨有音效",
+        "kmr": "Ji bo her şêweyê yekta",
+        "kmr-Latn": "Ji bo her şêweyê yekta",
+        "kmr-Arab": "ژ بۆ هەر شێوەیێ یەکتا",
+        "ckb": "تایبەت بۆ هەر شێوەیەک",
+        "ckb-Arab": "تایبەت بۆ هەر شێوەیەک",
+        "af-ZA": "Uniek vir elke vorm",
+        "af-NA": "Uniek vir elke vorm"
       },
       "Keep sound tracks playing": {
         "de": "Tonspuren weiter abspielen",
@@ -21193,7 +22894,16 @@
         "tg": "Овоз йўлларини ижро этишда давом этиш",
         "ka": "ხმოვანი ბილიკების დაკვრის გაგრძელება",
         "hy": "Շարունակել ձայնային ուղիների նվագարկումը",
-        "tk": "Ses sazlaryny goýbermegi dowam etdir"
+        "tk": "Ses sazlaryny goýbermegi dowam etdir",
+        "yue-Hans": "保持音轨播放",
+        "yue-Hant": "保持音軌播放",
+        "kmr": "Rêçên dengê lêdanê bimînin",
+        "kmr-Latn": "Rêçên dengê lêdanê bimînin",
+        "kmr-Arab": "رێچێن دەنگێ لێدانێ بمینن",
+        "ckb": "ڕێگە بدە ڕێچکەکانی دەنگ بەردەوام بن",
+        "ckb-Arab": "ڕێگە بدە ڕێچکەکانی دەنگ بەردەوام بن",
+        "af-ZA": "Hou klankbane aan die speel",
+        "af-NA": "Hou klankbane aan die speel"
       }
     },
     "quantum-bound-states": {
@@ -21299,7 +23009,16 @@
         "tg": "Фазани белгилаш",
         "ka": "ფაზის მოსანიშნი ველი",
         "hy": "Փուլի նշման վանդակ",
-        "tk": "Faza üçin bellik gutusy"
+        "tk": "Faza üçin bellik gutusy",
+        "yue-Hans": "相位核取方块",
+        "yue-Hant": "相位核取方塊",
+        "kmr": "Qutiya fazê",
+        "kmr-Latn": "Qutiya fazê",
+        "kmr-Arab": "قوتیا فازێ",
+        "ckb": "خانەی قۆناغ",
+        "ckb-Arab": "خانەی قۆناغ",
+        "af-ZA": "Fasemerkblokkie",
+        "af-NA": "Fasemerkblokkie"
       }
     },
     "quantum-coin-toss": {
@@ -21405,7 +23124,16 @@
         "tg": "Бошида классик тангаларни яшириш",
         "ka": "დასაწყისში კლასიკური მონეტების დამალვა",
         "hy": "Սկզբում թաքցնել դասական մետաղադրամները",
-        "tk": "Başlangyçda nusgawy teňňeleri gizle"
+        "tk": "Başlangyçda nusgawy teňňeleri gizle",
+        "yue-Hans": "开始时隐藏经典硬币",
+        "yue-Hant": "開始時隱藏經典硬幣",
+        "kmr": "Di destpêkê de pereyên klasîk veşêre",
+        "kmr-Latn": "Di destpêkê de pereyên klasîk veşêre",
+        "kmr-Arab": "د دەستپێکێ دە پەرەیێن کلاسیک ڤەشێرە",
+        "ckb": "دراوە کلاسیکییەکان لە دەستپێکدا بشارەوە",
+        "ckb-Arab": "دراوە کلاسیکییەکان لە دەستپێکدا بشارەوە",
+        "af-ZA": "Versteek klassieke munte aan die begin",
+        "af-NA": "Versteek klassieke munte aan die begin"
       }
     },
     "quantum-measurement": {
@@ -21511,7 +23239,16 @@
         "tg": "Бошида классик тангаларни яшириш",
         "ka": "დასაწყისში კლასიკური მონეტების დამალვა",
         "hy": "Սկզբում թաքցնել դասական մետաղադրամները",
-        "tk": "Başlangyçda nusgawy teňňeleri gizle"
+        "tk": "Başlangyçda nusgawy teňňeleri gizle",
+        "yue-Hans": "开始时隐藏经典硬币",
+        "yue-Hant": "開始時隱藏經典硬幣",
+        "kmr": "Di destpêkê de pereyên klasîk veşêre",
+        "kmr-Latn": "Di destpêkê de pereyên klasîk veşêre",
+        "kmr-Arab": "د دەستپێکێ دە پەرەیێن کلاسیک ڤەشێرە",
+        "ckb": "دراوە کلاسیکییەکان لە دەستپێکدا بشارەوە",
+        "ckb-Arab": "دراوە کلاسیکییەکان لە دەستپێکدا بشارەوە",
+        "af-ZA": "Versteek klassieke munte aan die begin",
+        "af-NA": "Versteek klassieke munte aan die begin"
       },
       "Show global phase": {
         "ar": "عرض الطور العام",
@@ -21619,7 +23356,16 @@
         "tg": "Умумий фазани кўрсатиш",
         "ka": "გლობალური ფაზის ჩვენება",
         "hy": "Ցույց տալ ընդհանուր փուլը",
-        "tk": "Umumy fazany görkez"
+        "tk": "Umumy fazany görkez",
+        "yue-Hans": "显示全域相位",
+        "yue-Hant": "顯示全域相位",
+        "kmr": "Faza giştî nîşan bide",
+        "kmr-Latn": "Faza giştî nîşan bide",
+        "kmr-Arab": "فازا گشتی نیشان بدە",
+        "ckb": "قۆناغی گشتی پیشان بدە",
+        "ckb-Arab": "قۆناغی گشتی پیشان بدە",
+        "af-ZA": "Wys globale fase",
+        "af-NA": "Wys globale fase"
       }
     },
     "vector-addition": {
@@ -21749,7 +23495,16 @@
         "km": "អនុសញ្ញាមុំ",
         "ky": "Бурч конвенциясы",
         "zh": "角度约定",
-        "tg": "Бурчак келишуви"
+        "tg": "Бурчак келишуви",
+        "yue-Hans": "角度惯例",
+        "yue-Hant": "角度慣例",
+        "kmr": "Peymana kuncê",
+        "kmr-Latn": "Peymana kuncê",
+        "kmr-Arab": "پەیمانا کونجێ",
+        "ckb": "شێوازی پێوانەکردنی گۆشە",
+        "ckb-Arab": "شێوازی پێوانەکردنی گۆشە",
+        "af-ZA": "Hoekkonvensie",
+        "af-NA": "Hoekkonvensie"
       },
       "Signed": {
         "de": "Mit Vorzeichen",
@@ -21853,7 +23608,16 @@
         "ky": "Белгилүү",
         "zh": "带符号",
         "ka": "ნიშნიანი",
-        "hy": "Նշանով"
+        "hy": "Նշանով",
+        "yue-Hans": "带正负号",
+        "yue-Hant": "帶正負號",
+        "kmr": "Bi nîşana algebraîk",
+        "kmr-Latn": "Bi nîşana algebraîk",
+        "kmr-Arab": "ب نیشانا ئالگەبرایک",
+        "ckb": "نیشانەدار",
+        "ckb-Arab": "نیشانەدار",
+        "af-ZA": "Met teken",
+        "af-NA": "Met teken"
       },
       "Unsigned": {
         "de": "Ohne Vorzeichen",
@@ -21957,7 +23721,16 @@
         "tg": "Ишорасиз",
         "ka": "უნიშნო",
         "hy": "Առանց նշանի",
-        "tk": "Alamatsyz"
+        "tk": "Alamatsyz",
+        "yue-Hans": "不带正负号",
+        "yue-Hant": "不帶正負號",
+        "kmr": "Bê nîşana algebraîk",
+        "kmr-Latn": "Bê nîşana algebraîk",
+        "kmr-Arab": "بێ نیشانا ئالگەبرایک",
+        "ckb": "بێ نیشان",
+        "ckb-Arab": "بێ نیشان",
+        "af-ZA": "Sonder teken",
+        "af-NA": "Sonder teken"
       }
     },
     "vector-addition-equations": {
@@ -22086,7 +23859,16 @@
         "km": "អនុសញ្ញាមុំ",
         "ky": "Бурч конвенциясы",
         "zh": "角度约定",
-        "tg": "Бурчак келишуви"
+        "tg": "Бурчак келишуви",
+        "yue-Hans": "角度惯例",
+        "yue-Hant": "角度慣例",
+        "kmr": "Peymana kuncê",
+        "kmr-Latn": "Peymana kuncê",
+        "kmr-Arab": "پەیمانا کونجێ",
+        "ckb": "شێوازی پێوانەکردنی گۆشە",
+        "ckb-Arab": "شێوازی پێوانەکردنی گۆشە",
+        "af-ZA": "Hoekkonvensie",
+        "af-NA": "Hoekkonvensie"
       },
       "Signed": {
         "de": "Mit Vorzeichen",
@@ -22190,7 +23972,16 @@
         "ky": "Белгилүү",
         "zh": "带符号",
         "ka": "ნიშნიანი",
-        "hy": "Նշանով"
+        "hy": "Նշանով",
+        "yue-Hans": "带正负号",
+        "yue-Hant": "帶正負號",
+        "kmr": "Bi nîşana algebraîk",
+        "kmr-Latn": "Bi nîşana algebraîk",
+        "kmr-Arab": "ب نیشانا ئالگەبرایک",
+        "ckb": "نیشانەدار",
+        "ckb-Arab": "نیشانەدار",
+        "af-ZA": "Met teken",
+        "af-NA": "Met teken"
       },
       "Unsigned": {
         "de": "Ohne Vorzeichen",
@@ -22294,7 +24085,16 @@
         "tg": "Ишорасиз",
         "ka": "უნიშნო",
         "hy": "Առանց նշանի",
-        "tk": "Alamatsyz"
+        "tk": "Alamatsyz",
+        "yue-Hans": "不带正负号",
+        "yue-Hant": "不帶正負號",
+        "kmr": "Bê nîşana algebraîk",
+        "kmr-Latn": "Bê nîşana algebraîk",
+        "kmr-Arab": "بێ نیشانا ئالگەبرایک",
+        "ckb": "بێ نیشان",
+        "ckb-Arab": "بێ نیشان",
+        "af-ZA": "Sonder teken",
+        "af-NA": "Sonder teken"
       }
     }
   }

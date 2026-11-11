@@ -159,7 +159,11 @@
         "widget-lang-pt-PT",
         "widget-lang-no",
         "widget-lang-sr-Cyrl",
-        "widget-lang-tl"
+        "widget-lang-tl",
+        "widget-lang-kmr",
+        "widget-lang-kmr-Latn",
+        "widget-lang-af-ZA",
+        "widget-lang-af-NA"
     ],
     "license": "MIT AND GPL-3.0-only AND CC-BY-NC-4.0",
     "author": {
