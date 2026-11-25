@@ -1,5 +1,5 @@
-# PhET Simulations (`@webwriter/phet-simulation@2.0.0`)
-[License: MIT AND GPL-3.0-only AND CC-BY-NC-4.0](LICENSE) | Version: 2.0.0
+# PhET Simulations (`@webwriter/phet-simulation@2.1.0`)
+[License: MIT AND GPL-3.0-only AND CC-BY-NC-4.0](LICENSE) | Version: 2.1.0
 
 Explore physics, chemistry, mathematics, and biology with interactive PhET simulations.
 
@@ -150,7 +150,7 @@ See the [usage guide](USAGE.md) for authoring, preferences, and checkpoints.
 
 Use with a CDN (e.g. [jsdelivr](https://jsdelivr.com)):
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/@webwriter/phet-simulation@2.0.0/widgets/webwriter-phet-simulation.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@webwriter/phet-simulation@2.1.0/widgets/webwriter-phet-simulation.js"></script>
 <webwriter-phet-simulation></webwriter-phet-simulation>
 ```
 

@@ -1,6 +1,6 @@
 {
     "name": "@webwriter/phet-simulation",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "Explore physics, chemistry, mathematics, and biology with interactive PhET simulations.",
     "repository": {
         "type": "git",
@@ -591,626 +591,751 @@
             }
         },
         "./snippets/center-and-variability": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Center and Variability"
             }
         },
         "./snippets/build-a-nucleus": {
+            "category": "Physics",
             "label": {
                 "_": "Build a Nucleus"
             }
         },
         "./snippets/keplers-laws": {
+            "category": "Earth & Space",
             "label": {
                 "_": "Kepler's Laws"
             }
         },
         "./snippets/sound-waves": {
+            "category": "Physics",
             "label": {
                 "_": "Sound Waves"
             }
         },
         "./snippets/quadrilateral": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Quadrilateral"
             }
         },
         "./snippets/my-solar-system": {
+            "category": "Earth & Space",
             "label": {
                 "_": "My Solar System"
             }
         },
         "./snippets/calculus-grapher": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Calculus Grapher"
             }
         },
         "./snippets/number-compare": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Number Compare"
             }
         },
         "./snippets/number-play": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Number Play"
             }
         },
         "./snippets/greenhouse-effect": {
+            "category": "Earth & Space",
             "label": {
                 "_": "Greenhouse Effect"
             }
         },
         "./snippets/geometric-optics-basics": {
+            "category": "Physics",
             "label": {
                 "_": "Geometric Optics: Basics"
             }
         },
         "./snippets/mean-share-and-balance": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Mean: Share and Balance"
             }
         },
         "./snippets/geometric-optics": {
+            "category": "Physics",
             "label": {
                 "_": "Geometric Optics"
             }
         },
         "./snippets/density": {
+            "category": "Physics",
             "label": {
                 "_": "Density"
             }
         },
         "./snippets/circuit-construction-kit-ac": {
+            "category": "Physics",
             "label": {
                 "_": "Circuit Construction Kit: AC"
             }
         },
         "./snippets/circuit-construction-kit-ac-virtual-lab": {
+            "category": "Physics",
             "label": {
                 "_": "Circuit Construction Kit: AC - Virtual Lab"
             }
         },
         "./snippets/normal-modes": {
+            "category": "Physics",
             "label": {
                 "_": "Normal Modes"
             }
         },
         "./snippets/fourier-making-waves": {
+            "category": "Physics",
             "label": {
                 "_": "Fourier: Making Waves"
             }
         },
         "./snippets/number-line-distance": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Number Line: Distance"
             }
         },
         "./snippets/ratio-and-proportion": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Ratio and Proportion"
             }
         },
         "./snippets/collision-lab": {
+            "category": "Physics",
             "label": {
                 "_": "Collision Lab"
             }
         },
         "./snippets/number-line-operations": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Number Line: Operations"
             }
         },
         "./snippets/energy-skate-park": {
+            "category": "Physics",
             "label": {
                 "_": "Energy Skate Park"
             }
         },
         "./snippets/build-a-molecule": {
+            "category": "Chemistry",
             "label": {
                 "_": "Build a Molecule"
             }
         },
         "./snippets/natural-selection": {
+            "category": "Biology",
             "label": {
                 "_": "Natural Selection"
             }
         },
         "./snippets/number-line-integers": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Number Line: Integers"
             }
         },
         "./snippets/vector-addition-equations": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Vector Addition: Equations"
             }
         },
         "./snippets/vector-addition": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Vector Addition"
             }
         },
         "./snippets/curve-fitting": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Curve Fitting"
             }
         },
         "./snippets/gravity-force-lab-basics": {
+            "category": "Physics",
             "label": {
                 "_": "Gravity Force Lab: Basics"
             }
         },
         "./snippets/waves-intro": {
+            "category": "Physics",
             "label": {
                 "_": "Waves Intro"
             }
         },
         "./snippets/diffusion": {
+            "category": "Chemistry",
             "label": {
                 "_": "Diffusion"
             }
         },
         "./snippets/gases-intro": {
+            "category": "Physics",
             "label": {
                 "_": "Gases Intro"
             }
         },
         "./snippets/gas-properties": {
+            "category": "Physics",
             "label": {
                 "_": "Gas Properties"
             }
         },
         "./snippets/blackbody-spectrum": {
+            "category": "Physics",
             "label": {
                 "_": "Blackbody Spectrum"
             }
         },
         "./snippets/masses-and-springs-basics": {
+            "category": "Physics",
             "label": {
                 "_": "Masses and Springs: Basics"
             }
         },
         "./snippets/energy-forms-and-changes": {
+            "category": "Physics",
             "label": {
                 "_": "Energy Forms and Changes"
             }
         },
         "./snippets/wave-interference": {
+            "category": "Physics",
             "label": {
                 "_": "Wave Interference"
             }
         },
         "./snippets/fractions-mixed-numbers": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Fractions: Mixed Numbers"
             }
         },
         "./snippets/fractions-intro": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Fractions: Intro"
             }
         },
         "./snippets/build-a-fraction": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Build a Fraction"
             }
         },
         "./snippets/fractions-equality": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Fractions: Equality"
             }
         },
         "./snippets/coulombs-law": {
+            "category": "Physics",
             "label": {
                 "_": "Coulomb's Law"
             }
         },
         "./snippets/graphing-quadratics": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Graphing Quadratics"
             }
         },
         "./snippets/masses-and-springs": {
+            "category": "Physics",
             "label": {
                 "_": "Masses and Springs"
             }
         },
         "./snippets/equality-explorer-two-variables": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Equality Explorer: Two Variables"
             }
         },
         "./snippets/equality-explorer-basics": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Equality Explorer: Basics"
             }
         },
         "./snippets/equality-explorer": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Equality Explorer"
             }
         },
         "./snippets/area-model-algebra": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Area Model Algebra"
             }
         },
         "./snippets/area-model-decimals": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Area Model Decimals"
             }
         },
         "./snippets/area-model-multiplication": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Area Model Multiplication"
             }
         },
         "./snippets/area-model-introduction": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Area Model Introduction"
             }
         },
         "./snippets/gene-expression-essentials": {
+            "category": "Biology",
             "label": {
                 "_": "Gene Expression Essentials"
             }
         },
         "./snippets/capacitor-lab-basics": {
+            "category": "Physics",
             "label": {
                 "_": "Capacitor Lab: Basics"
             }
         },
         "./snippets/circuit-construction-kit-dc-virtual-lab": {
+            "category": "Physics",
             "label": {
                 "_": "Circuit Construction Kit: DC - Virtual Lab"
             }
         },
         "./snippets/circuit-construction-kit-dc": {
+            "category": "Physics",
             "label": {
                 "_": "Circuit Construction Kit: DC"
             }
         },
         "./snippets/pendulum-lab": {
+            "category": "Physics",
             "label": {
                 "_": "Pendulum Lab"
             }
         },
         "./snippets/projectile-motion": {
+            "category": "Physics",
             "label": {
                 "_": "Projectile Motion"
             }
         },
         "./snippets/molecule-polarity": {
+            "category": "Chemistry",
             "label": {
                 "_": "Molecule Polarity"
             }
         },
         "./snippets/expression-exchange": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Expression Exchange"
             }
         },
         "./snippets/graphing-slope-intercept": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Graphing Slope-Intercept"
             }
         },
         "./snippets/function-builder-basics": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Function Builder: Basics"
             }
         },
         "./snippets/proportion-playground": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Proportion Playground"
             }
         },
         "./snippets/unit-rates": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Unit Rates"
             }
         },
         "./snippets/make-a-ten": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Make a Ten"
             }
         },
         "./snippets/states-of-matter-basics": {
+            "category": "Chemistry",
             "label": {
                 "_": "States of Matter: Basics"
             }
         },
         "./snippets/states-of-matter": {
+            "category": "Chemistry",
             "label": {
                 "_": "States of Matter"
             }
         },
         "./snippets/gravity-and-orbits": {
+            "category": "Earth & Space",
             "label": {
                 "_": "Gravity and Orbits"
             }
         },
         "./snippets/plinko-probability": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Plinko Probability"
             }
         },
         "./snippets/atomic-interactions": {
+            "category": "Chemistry",
             "label": {
                 "_": "Atomic Interactions"
             }
         },
         "./snippets/charges-and-fields": {
+            "category": "Physics",
             "label": {
                 "_": "Charges and Fields"
             }
         },
         "./snippets/rutherford-scattering": {
+            "category": "Physics",
             "label": {
                 "_": "Rutherford Scattering"
             }
         },
         "./snippets/function-builder": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Function Builder"
             }
         },
         "./snippets/isotopes-and-atomic-mass": {
+            "category": "Chemistry",
             "label": {
                 "_": "Isotopes and Atomic Mass"
             }
         },
         "./snippets/neuron": {
+            "category": "Biology",
             "label": {
                 "_": "Neuron"
             }
         },
         "./snippets/trig-tour": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Trig Tour"
             }
         },
         "./snippets/bending-light": {
+            "category": "Physics",
             "label": {
                 "_": "Bending Light"
             }
         },
         "./snippets/arithmetic": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Arithmetic"
             }
         },
         "./snippets/hookes-law": {
+            "category": "Physics",
             "label": {
                 "_": "Hooke's Law"
             }
         },
         "./snippets/molecules-and-light": {
+            "category": "Chemistry",
             "label": {
                 "_": "Molecules and Light"
             }
         },
         "./snippets/least-squares-regression": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Least-Squares Regression"
             }
         },
         "./snippets/molecule-shapes": {
+            "category": "Chemistry",
             "label": {
                 "_": "Molecule Shapes"
             }
         },
         "./snippets/molecule-shapes-basics": {
+            "category": "Chemistry",
             "label": {
                 "_": "Molecule Shapes: Basics"
             }
         },
         "./snippets/reactants-products-and-leftovers": {
+            "category": "Chemistry",
             "label": {
                 "_": "Reactants, Products and Leftovers"
             }
         },
         "./snippets/energy-skate-park-basics": {
+            "category": "Physics",
             "label": {
                 "_": "Energy Skate Park: Basics"
             }
         },
         "./snippets/faradays-law": {
+            "category": "Physics",
             "label": {
                 "_": "Faraday's Law"
             }
         },
         "./snippets/ph-scale-basics": {
+            "category": "Chemistry",
             "label": {
                 "_": "pH Scale: Basics"
             }
         },
         "./snippets/area-builder": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Area Builder"
             }
         },
         "./snippets/wave-on-a-string": {
+            "category": "Physics",
             "label": {
                 "_": "Wave on a String"
             }
         },
         "./snippets/color-vision": {
+            "category": "Biology",
             "label": {
                 "_": "Color Vision"
             }
         },
         "./snippets/ph-scale": {
+            "category": "Chemistry",
             "label": {
                 "_": "pH Scale"
             }
         },
         "./snippets/balancing-chemical-equations": {
+            "category": "Chemistry",
             "label": {
                 "_": "Balancing Chemical Equations"
             }
         },
         "./snippets/graphing-lines": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Graphing Lines"
             }
         },
         "./snippets/fraction-matcher": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Fraction Matcher"
             }
         },
         "./snippets/balancing-act": {
+            "category": "Physics",
             "label": {
                 "_": "Balancing Act"
             }
         },
         "./snippets/acid-base-solutions": {
+            "category": "Chemistry",
             "label": {
                 "_": "Acid-Base Solutions"
             }
         },
         "./snippets/under-pressure": {
+            "category": "Physics",
             "label": {
                 "_": "Under Pressure"
             }
         },
         "./snippets/friction": {
+            "category": "Physics",
             "label": {
                 "_": "Friction"
             }
         },
         "./snippets/forces-and-motion-basics": {
+            "category": "Physics",
             "label": {
                 "_": "Forces and Motion: Basics"
             }
         },
         "./snippets/john-travoltage": {
+            "category": "Physics",
             "label": {
                 "_": "John Travoltage"
             }
         },
         "./snippets/concentration": {
+            "category": "Chemistry",
             "label": {
                 "_": "Concentration"
             }
         },
         "./snippets/gravity-force-lab": {
+            "category": "Physics",
             "label": {
                 "_": "Gravity Force Lab"
             }
         },
         "./snippets/balloons-and-static-electricity": {
+            "category": "Physics",
             "label": {
                 "_": "Balloons and Static Electricity"
             }
         },
         "./snippets/beers-law-lab": {
+            "category": "Chemistry",
             "label": {
                 "_": "Beer's Law Lab"
             }
         },
         "./snippets/molarity": {
+            "category": "Chemistry",
             "label": {
                 "_": "Molarity"
             }
         },
         "./snippets/ohms-law": {
+            "category": "Physics",
             "label": {
                 "_": "Ohm's Law"
             }
         },
         "./snippets/resistance-in-a-wire": {
+            "category": "Physics",
             "label": {
                 "_": "Resistance in a Wire"
             }
         },
         "./snippets/build-an-atom": {
+            "category": "Chemistry",
             "label": {
                 "_": "Build an Atom"
             }
         },
         "./snippets/alpha-decay": {
+            "category": "Physics",
             "label": {
                 "_": "Alpha Decay"
             }
         },
         "./snippets/beta-decay": {
+            "category": "Physics",
             "label": {
                 "_": "Beta Decay"
             }
         },
         "./snippets/buoyancy": {
+            "category": "Physics",
             "label": {
                 "_": "Buoyancy"
             }
         },
         "./snippets/buoyancy-basics": {
+            "category": "Physics",
             "label": {
                 "_": "Buoyancy: Basics"
             }
         },
         "./snippets/faradays-electromagnetic-lab": {
+            "category": "Physics",
             "label": {
                 "_": "Faraday's Electromagnetic Lab"
             }
         },
         "./snippets/generator": {
+            "category": "Physics",
             "label": {
                 "_": "Generator"
             }
         },
         "./snippets/magnet-and-compass": {
+            "category": "Physics",
             "label": {
                 "_": "Magnet and Compass"
             }
         },
         "./snippets/magnets-and-electromagnets": {
+            "category": "Physics",
             "label": {
                 "_": "Magnets and Electromagnets"
             }
         },
         "./snippets/membrane-transport": {
+            "category": "Biology",
             "label": {
                 "_": "Membrane Transport"
             }
         },
         "./snippets/models-of-the-hydrogen-atom": {
+            "category": "Physics",
             "label": {
                 "_": "Models of the Hydrogen Atom"
             }
         },
         "./snippets/number-pairs": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Number Pairs"
             }
         },
         "./snippets/projectile-data-lab": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Projectile Data Lab"
             }
         },
         "./snippets/projectile-sampling-distributions": {
+            "category": "Math & Statistics",
             "label": {
                 "_": "Projectile Sampling Distributions"
             }
         },
         "./snippets/quantum-bound-states": {
+            "category": "Physics",
             "label": {
                 "_": "Quantum Bound States"
             }
         },
         "./snippets/quantum-coin-toss": {
+            "category": "Physics",
             "label": {
                 "_": "Quantum Coin Toss"
             }
         },
         "./snippets/quantum-measurement": {
+            "category": "Physics",
             "label": {
                 "_": "Quantum Measurement"
             }
         },
         "./snippets/quantum-wave-interference": {
+            "category": "Physics",
             "label": {
                 "_": "Quantum Wave Interference"
             }
