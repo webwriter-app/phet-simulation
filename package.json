@@ -1,7 +1,7 @@
 {
     "name": "@webwriter/phet-simulation",
-    "version": "2.0.0",
-    "description": "Explore physics, chemistry, mathematics, and biology with interactive PhET simulations.",
+    "version": "2.1.0",
+    "description": "Explore science and mathematics through interactive PhET simulations.",
     "repository": {
         "type": "git",
         "url": "https://github.com/webwriter-app/phet-simulation.git"
@@ -9,161 +9,118 @@
     "keywords": [
         "webwriter-widget",
         "widget-simulational",
-        "widget-conceptual",
-        "widget-contextual",
-        "widget-lang-en",
-        "widget-lang-af",
-        "widget-lang-ak",
-        "widget-lang-am",
-        "widget-lang-ar",
-        "widget-lang-ar-KW",
-        "widget-lang-ar-LY",
-        "widget-lang-ar-MA",
-        "widget-lang-ar-SA",
-        "widget-lang-ar-SY",
-        "widget-lang-ay",
-        "widget-lang-az",
-        "widget-lang-be",
-        "widget-lang-bg",
-        "widget-lang-bi",
-        "widget-lang-bn",
-        "widget-lang-bo",
-        "widget-lang-bs",
-        "widget-lang-ca",
-        "widget-lang-cs",
-        "widget-lang-cy",
-        "widget-lang-da",
-        "widget-lang-de",
-        "widget-lang-ee",
-        "widget-lang-efi",
-        "widget-lang-el",
-        "widget-lang-en-CA",
-        "widget-lang-en-GB",
-        "widget-lang-es",
-        "widget-lang-es-CO",
-        "widget-lang-es-ES",
-        "widget-lang-es-MX",
-        "widget-lang-es-PE",
-        "widget-lang-es-UY",
-        "widget-lang-et",
-        "widget-lang-eu",
-        "widget-lang-fa",
-        "widget-lang-fa-AF",
-        "widget-lang-fi",
-        "widget-lang-fil",
-        "widget-lang-fo",
-        "widget-lang-fr",
-        "widget-lang-ga",
-        "widget-lang-gl",
-        "widget-lang-gu",
-        "widget-lang-ha",
-        "widget-lang-he",
-        "widget-lang-hi",
-        "widget-lang-hr",
-        "widget-lang-ht",
-        "widget-lang-hu",
-        "widget-lang-hy",
-        "widget-lang-id",
-        "widget-lang-ig",
-        "widget-lang-is",
-        "widget-lang-it",
-        "widget-lang-ja",
-        "widget-lang-ka",
-        "widget-lang-ki",
-        "widget-lang-kk",
-        "widget-lang-km",
-        "widget-lang-kn",
-        "widget-lang-ko",
-        "widget-lang-ku",
-        "widget-lang-ku-TR",
-        "widget-lang-lg",
-        "widget-lang-lo",
-        "widget-lang-lt",
-        "widget-lang-lv",
-        "widget-lang-mg",
-        "widget-lang-mi",
-        "widget-lang-mk",
-        "widget-lang-ml",
-        "widget-lang-mn",
-        "widget-lang-mr",
-        "widget-lang-ms",
-        "widget-lang-mt",
-        "widget-lang-my",
-        "widget-lang-nah",
-        "widget-lang-nb",
-        "widget-lang-ne",
-        "widget-lang-nl",
-        "widget-lang-nn",
-        "widget-lang-nso",
-        "widget-lang-ny",
-        "widget-lang-oc",
-        "widget-lang-om",
-        "widget-lang-or",
-        "widget-lang-pl",
-        "widget-lang-ps",
-        "widget-lang-pt",
-        "widget-lang-pt-BR",
-        "widget-lang-qu",
-        "widget-lang-ro",
-        "widget-lang-ru",
-        "widget-lang-rw",
-        "widget-lang-sd",
-        "widget-lang-se",
-        "widget-lang-si",
-        "widget-lang-sk",
-        "widget-lang-sl",
-        "widget-lang-sn",
-        "widget-lang-sq",
-        "widget-lang-sr",
-        "widget-lang-sr-Latn",
-        "widget-lang-st",
-        "widget-lang-sv",
-        "widget-lang-sw",
-        "widget-lang-ta",
-        "widget-lang-te",
-        "widget-lang-tg",
-        "widget-lang-th",
-        "widget-lang-ti",
-        "widget-lang-tk",
-        "widget-lang-tn",
-        "widget-lang-tr",
-        "widget-lang-tsz",
-        "widget-lang-tw",
-        "widget-lang-uk",
-        "widget-lang-ur",
-        "widget-lang-uz",
-        "widget-lang-vi",
-        "widget-lang-wo",
-        "widget-lang-xh",
-        "widget-lang-yo",
-        "widget-lang-zh-CN",
-        "widget-lang-zh-HK",
-        "widget-lang-zh-TW",
-        "widget-lang-zu",
-        "widget-online",
-        "iscedf2013-05",
-        "iscedf2013-06",
-        "isced2011-0",
+        "iscedf2013-0511",
+        "iscedf2013-0531",
+        "iscedf2013-0532",
+        "iscedf2013-0533",
+        "iscedf2013-054",
         "isced2011-1",
         "isced2011-2",
         "isced2011-3",
-        "flash",
         "animations",
         "PhET",
+        "widget-editable",
+        "widget-allows-pointer-input",
+        "widget-configurable",
+        "widget-stateful",
+        "widget-supports-dynamic-loading",
+        "widget-standalone",
+        "widget-lang-en",
         "widget-lang-en-US",
+        "widget-lang-en-GB",
+        "widget-lang-en-CA",
         "widget-lang-en-AU",
         "widget-lang-en-IN",
+        "widget-lang-ar",
+        "widget-lang-bg",
         "widget-lang-zh",
         "widget-lang-zh-Hans",
         "widget-lang-zh-Hant",
+        "widget-lang-hr",
+        "widget-lang-cs",
+        "widget-lang-da",
+        "widget-lang-nl",
+        "widget-lang-et",
+        "widget-lang-fi",
+        "widget-lang-fr",
+        "widget-lang-de",
+        "widget-lang-de-AT",
+        "widget-lang-de-CH",
+        "widget-lang-el",
+        "widget-lang-hu",
+        "widget-lang-ga",
+        "widget-lang-it",
+        "widget-lang-lv",
+        "widget-lang-lt",
+        "widget-lang-mt",
+        "widget-lang-pl",
+        "widget-lang-pt",
         "widget-lang-pt-PT",
+        "widget-lang-pt-BR",
+        "widget-lang-ro",
+        "widget-lang-ru",
+        "widget-lang-sk",
+        "widget-lang-sl",
+        "widget-lang-es",
+        "widget-lang-sv",
+        "widget-lang-sq",
+        "widget-lang-eu",
+        "widget-lang-bn",
+        "widget-lang-bs",
+        "widget-lang-cnr",
+        "widget-lang-ca",
+        "widget-lang-ca-valencia",
+        "widget-lang-ca-balear",
+        "widget-lang-gl",
+        "widget-lang-gu",
+        "widget-lang-hi",
+        "widget-lang-is",
+        "widget-lang-ja",
+        "widget-lang-kn",
+        "widget-lang-ko",
+        "widget-lang-lb",
+        "widget-lang-mk",
+        "widget-lang-mr",
+        "widget-lang-ne",
         "widget-lang-no",
-        "widget-lang-sr-Cyrl",
+        "widget-lang-nb",
+        "widget-lang-nn",
+        "widget-lang-or",
+        "widget-lang-fa",
+        "widget-lang-pa",
+        "widget-lang-sr",
+        "widget-lang-si",
+        "widget-lang-te",
+        "widget-lang-tr",
+        "widget-lang-uk",
+        "widget-lang-ur",
+        "widget-lang-cy",
+        "widget-lang-ta",
+        "widget-lang-ml",
+        "widget-lang-jv",
+        "widget-lang-id",
+        "widget-lang-ms",
         "widget-lang-tl",
-        "widget-lang-kmr",
-        "widget-lang-kmr-Latn",
-        "widget-lang-af-ZA",
-        "widget-lang-af-NA"
+        "widget-lang-my",
+        "widget-lang-th",
+        "widget-lang-vi",
+        "widget-lang-km",
+        "widget-lang-kk",
+        "widget-lang-ky",
+        "widget-lang-mn",
+        "widget-lang-uz",
+        "widget-lang-tg",
+        "widget-lang-ka",
+        "widget-lang-hy",
+        "widget-lang-he",
+        "widget-lang-az",
+        "widget-lang-be",
+        "widget-lang-la",
+        "widget-lang-am",
+        "widget-lang-so",
+        "widget-lang-sw",
+        "widget-lang-ha",
+        "widget-lang-af"
     ],
     "license": "MIT AND GPL-3.0-only AND CC-BY-NC-4.0",
     "author": {
@@ -579,641 +536,1534 @@
     "editingConfig": {
         "./widgets/webwriter-phet-simulation": {
             "label": {
-                "_": "PhET Simulation"
+                "_": "PhET Simulation",
+                "en": "PhET Simulation",
+                "en-US": "PhET Simulation",
+                "en-GB": "PhET Simulation",
+                "en-CA": "PhET Simulation",
+                "en-AU": "PhET Simulation",
+                "en-IN": "PhET Simulation"
             },
             "uninsertable": true
         },
         ".": {
             "label": {
-                "_": "PhET Simulations"
+                "_": "PhET Simulations",
+                "en": "PhET Simulations",
+                "en-US": "PhET Simulations",
+                "en-GB": "PhET Simulations",
+                "en-CA": "PhET Simulations",
+                "en-AU": "PhET Simulations",
+                "en-IN": "PhET Simulations"
             },
             "description": {
-                "_": "Explore physics, chemistry, mathematics, and biology with interactive PhET simulations."
+                "_": "Explore science and mathematics through interactive PhET simulations.",
+                "en": "Explore science and mathematics through interactive PhET simulations.",
+                "en-US": "Explore science and mathematics through interactive PhET simulations.",
+                "en-GB": "Explore science and mathematics through interactive PhET simulations.",
+                "en-CA": "Explore science and mathematics through interactive PhET simulations.",
+                "en-AU": "Explore science and mathematics through interactive PhET simulations.",
+                "en-IN": "Explore science and mathematics through interactive PhET simulations."
             }
         },
         "./snippets/center-and-variability": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Center and Variability"
+                "_": "Center and Variability",
+                "en": "Center and Variability",
+                "en-US": "Center and Variability",
+                "en-GB": "Center and Variability",
+                "en-CA": "Center and Variability",
+                "en-AU": "Center and Variability",
+                "en-IN": "Center and Variability"
             }
         },
         "./snippets/build-a-nucleus": {
+            "category": "Physics",
             "label": {
-                "_": "Build a Nucleus"
+                "_": "Build a Nucleus",
+                "en": "Build a Nucleus",
+                "en-US": "Build a Nucleus",
+                "en-GB": "Build a Nucleus",
+                "en-CA": "Build a Nucleus",
+                "en-AU": "Build a Nucleus",
+                "en-IN": "Build a Nucleus"
             }
         },
         "./snippets/keplers-laws": {
+            "category": "Earth & Space",
             "label": {
-                "_": "Kepler's Laws"
+                "_": "Kepler's Laws",
+                "en": "Kepler's Laws",
+                "en-US": "Kepler's Laws",
+                "en-GB": "Kepler's Laws",
+                "en-CA": "Kepler's Laws",
+                "en-AU": "Kepler's Laws",
+                "en-IN": "Kepler's Laws"
             }
         },
         "./snippets/sound-waves": {
+            "category": "Physics",
             "label": {
-                "_": "Sound Waves"
+                "_": "Sound Waves",
+                "en": "Sound Waves",
+                "en-US": "Sound Waves",
+                "en-GB": "Sound Waves",
+                "en-CA": "Sound Waves",
+                "en-AU": "Sound Waves",
+                "en-IN": "Sound Waves"
             }
         },
         "./snippets/quadrilateral": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Quadrilateral"
+                "_": "Quadrilateral",
+                "en": "Quadrilateral",
+                "en-US": "Quadrilateral",
+                "en-GB": "Quadrilateral",
+                "en-CA": "Quadrilateral",
+                "en-AU": "Quadrilateral",
+                "en-IN": "Quadrilateral"
             }
         },
         "./snippets/my-solar-system": {
+            "category": "Earth & Space",
             "label": {
-                "_": "My Solar System"
+                "_": "My Solar System",
+                "en": "My Solar System",
+                "en-US": "My Solar System",
+                "en-GB": "My Solar System",
+                "en-CA": "My Solar System",
+                "en-AU": "My Solar System",
+                "en-IN": "My Solar System"
             }
         },
         "./snippets/calculus-grapher": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Calculus Grapher"
+                "_": "Calculus Grapher",
+                "en": "Calculus Grapher",
+                "en-US": "Calculus Grapher",
+                "en-GB": "Calculus Grapher",
+                "en-CA": "Calculus Grapher",
+                "en-AU": "Calculus Grapher",
+                "en-IN": "Calculus Grapher"
             }
         },
         "./snippets/number-compare": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Number Compare"
+                "_": "Number Compare",
+                "en": "Number Compare",
+                "en-US": "Number Compare",
+                "en-GB": "Number Compare",
+                "en-CA": "Number Compare",
+                "en-AU": "Number Compare",
+                "en-IN": "Number Compare"
             }
         },
         "./snippets/number-play": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Number Play"
+                "_": "Number Play",
+                "en": "Number Play",
+                "en-US": "Number Play",
+                "en-GB": "Number Play",
+                "en-CA": "Number Play",
+                "en-AU": "Number Play",
+                "en-IN": "Number Play"
             }
         },
         "./snippets/greenhouse-effect": {
+            "category": "Earth & Space",
             "label": {
-                "_": "Greenhouse Effect"
+                "_": "Greenhouse Effect",
+                "en": "Greenhouse Effect",
+                "en-US": "Greenhouse Effect",
+                "en-GB": "Greenhouse Effect",
+                "en-CA": "Greenhouse Effect",
+                "en-AU": "Greenhouse Effect",
+                "en-IN": "Greenhouse Effect"
             }
         },
         "./snippets/geometric-optics-basics": {
+            "category": "Physics",
             "label": {
-                "_": "Geometric Optics: Basics"
+                "_": "Geometric Optics: Basics",
+                "en": "Geometric Optics: Basics",
+                "en-US": "Geometric Optics: Basics",
+                "en-GB": "Geometric Optics: Basics",
+                "en-CA": "Geometric Optics: Basics",
+                "en-AU": "Geometric Optics: Basics",
+                "en-IN": "Geometric Optics: Basics"
             }
         },
         "./snippets/mean-share-and-balance": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Mean: Share and Balance"
+                "_": "Mean: Share and Balance",
+                "en": "Mean: Share and Balance",
+                "en-US": "Mean: Share and Balance",
+                "en-GB": "Mean: Share and Balance",
+                "en-CA": "Mean: Share and Balance",
+                "en-AU": "Mean: Share and Balance",
+                "en-IN": "Mean: Share and Balance"
             }
         },
         "./snippets/geometric-optics": {
+            "category": "Physics",
             "label": {
-                "_": "Geometric Optics"
+                "_": "Geometric Optics",
+                "en": "Geometric Optics",
+                "en-US": "Geometric Optics",
+                "en-GB": "Geometric Optics",
+                "en-CA": "Geometric Optics",
+                "en-AU": "Geometric Optics",
+                "en-IN": "Geometric Optics"
             }
         },
         "./snippets/density": {
+            "category": "Physics",
             "label": {
-                "_": "Density"
+                "_": "Density",
+                "en": "Density",
+                "en-US": "Density",
+                "en-GB": "Density",
+                "en-CA": "Density",
+                "en-AU": "Density",
+                "en-IN": "Density"
             }
         },
         "./snippets/circuit-construction-kit-ac": {
+            "category": "Physics",
             "label": {
-                "_": "Circuit Construction Kit: AC"
+                "_": "Circuit Construction Kit: AC",
+                "en": "Circuit Construction Kit: AC",
+                "en-US": "Circuit Construction Kit: AC",
+                "en-GB": "Circuit Construction Kit: AC",
+                "en-CA": "Circuit Construction Kit: AC",
+                "en-AU": "Circuit Construction Kit: AC",
+                "en-IN": "Circuit Construction Kit: AC"
             }
         },
         "./snippets/circuit-construction-kit-ac-virtual-lab": {
+            "category": "Physics",
             "label": {
-                "_": "Circuit Construction Kit: AC - Virtual Lab"
+                "_": "Circuit Construction Kit: AC - Virtual Lab",
+                "en": "Circuit Construction Kit: AC - Virtual Lab",
+                "en-US": "Circuit Construction Kit: AC - Virtual Lab",
+                "en-GB": "Circuit Construction Kit: AC - Virtual Lab",
+                "en-CA": "Circuit Construction Kit: AC - Virtual Lab",
+                "en-AU": "Circuit Construction Kit: AC - Virtual Lab",
+                "en-IN": "Circuit Construction Kit: AC - Virtual Lab"
             }
         },
         "./snippets/normal-modes": {
+            "category": "Physics",
             "label": {
-                "_": "Normal Modes"
+                "_": "Normal Modes",
+                "en": "Normal Modes",
+                "en-US": "Normal Modes",
+                "en-GB": "Normal Modes",
+                "en-CA": "Normal Modes",
+                "en-AU": "Normal Modes",
+                "en-IN": "Normal Modes"
             }
         },
         "./snippets/fourier-making-waves": {
+            "category": "Physics",
             "label": {
-                "_": "Fourier: Making Waves"
+                "_": "Fourier: Making Waves",
+                "en": "Fourier: Making Waves",
+                "en-US": "Fourier: Making Waves",
+                "en-GB": "Fourier: Making Waves",
+                "en-CA": "Fourier: Making Waves",
+                "en-AU": "Fourier: Making Waves",
+                "en-IN": "Fourier: Making Waves"
             }
         },
         "./snippets/number-line-distance": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Number Line: Distance"
+                "_": "Number Line: Distance",
+                "en": "Number Line: Distance",
+                "en-US": "Number Line: Distance",
+                "en-GB": "Number Line: Distance",
+                "en-CA": "Number Line: Distance",
+                "en-AU": "Number Line: Distance",
+                "en-IN": "Number Line: Distance"
             }
         },
         "./snippets/ratio-and-proportion": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Ratio and Proportion"
+                "_": "Ratio and Proportion",
+                "en": "Ratio and Proportion",
+                "en-US": "Ratio and Proportion",
+                "en-GB": "Ratio and Proportion",
+                "en-CA": "Ratio and Proportion",
+                "en-AU": "Ratio and Proportion",
+                "en-IN": "Ratio and Proportion"
             }
         },
         "./snippets/collision-lab": {
+            "category": "Physics",
             "label": {
-                "_": "Collision Lab"
+                "_": "Collision Lab",
+                "en": "Collision Lab",
+                "en-US": "Collision Lab",
+                "en-GB": "Collision Lab",
+                "en-CA": "Collision Lab",
+                "en-AU": "Collision Lab",
+                "en-IN": "Collision Lab"
             }
         },
         "./snippets/number-line-operations": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Number Line: Operations"
+                "_": "Number Line: Operations",
+                "en": "Number Line: Operations",
+                "en-US": "Number Line: Operations",
+                "en-GB": "Number Line: Operations",
+                "en-CA": "Number Line: Operations",
+                "en-AU": "Number Line: Operations",
+                "en-IN": "Number Line: Operations"
             }
         },
         "./snippets/energy-skate-park": {
+            "category": "Physics",
             "label": {
-                "_": "Energy Skate Park"
+                "_": "Energy Skate Park",
+                "en": "Energy Skate Park",
+                "en-US": "Energy Skate Park",
+                "en-GB": "Energy Skate Park",
+                "en-CA": "Energy Skate Park",
+                "en-AU": "Energy Skate Park",
+                "en-IN": "Energy Skate Park"
             }
         },
         "./snippets/build-a-molecule": {
+            "category": "Chemistry",
             "label": {
-                "_": "Build a Molecule"
+                "_": "Build a Molecule",
+                "en": "Build a Molecule",
+                "en-US": "Build a Molecule",
+                "en-GB": "Build a Molecule",
+                "en-CA": "Build a Molecule",
+                "en-AU": "Build a Molecule",
+                "en-IN": "Build a Molecule"
             }
         },
         "./snippets/natural-selection": {
+            "category": "Biology",
             "label": {
-                "_": "Natural Selection"
+                "_": "Natural Selection",
+                "en": "Natural Selection",
+                "en-US": "Natural Selection",
+                "en-GB": "Natural Selection",
+                "en-CA": "Natural Selection",
+                "en-AU": "Natural Selection",
+                "en-IN": "Natural Selection"
             }
         },
         "./snippets/number-line-integers": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Number Line: Integers"
+                "_": "Number Line: Integers",
+                "en": "Number Line: Integers",
+                "en-US": "Number Line: Integers",
+                "en-GB": "Number Line: Integers",
+                "en-CA": "Number Line: Integers",
+                "en-AU": "Number Line: Integers",
+                "en-IN": "Number Line: Integers"
             }
         },
         "./snippets/vector-addition-equations": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Vector Addition: Equations"
+                "_": "Vector Addition: Equations",
+                "en": "Vector Addition: Equations",
+                "en-US": "Vector Addition: Equations",
+                "en-GB": "Vector Addition: Equations",
+                "en-CA": "Vector Addition: Equations",
+                "en-AU": "Vector Addition: Equations",
+                "en-IN": "Vector Addition: Equations"
             }
         },
         "./snippets/vector-addition": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Vector Addition"
+                "_": "Vector Addition",
+                "en": "Vector Addition",
+                "en-US": "Vector Addition",
+                "en-GB": "Vector Addition",
+                "en-CA": "Vector Addition",
+                "en-AU": "Vector Addition",
+                "en-IN": "Vector Addition"
             }
         },
         "./snippets/curve-fitting": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Curve Fitting"
+                "_": "Curve Fitting",
+                "en": "Curve Fitting",
+                "en-US": "Curve Fitting",
+                "en-GB": "Curve Fitting",
+                "en-CA": "Curve Fitting",
+                "en-AU": "Curve Fitting",
+                "en-IN": "Curve Fitting"
             }
         },
         "./snippets/gravity-force-lab-basics": {
+            "category": "Physics",
             "label": {
-                "_": "Gravity Force Lab: Basics"
+                "_": "Gravity Force Lab: Basics",
+                "en": "Gravity Force Lab: Basics",
+                "en-US": "Gravity Force Lab: Basics",
+                "en-GB": "Gravity Force Lab: Basics",
+                "en-CA": "Gravity Force Lab: Basics",
+                "en-AU": "Gravity Force Lab: Basics",
+                "en-IN": "Gravity Force Lab: Basics"
             }
         },
         "./snippets/waves-intro": {
+            "category": "Physics",
             "label": {
-                "_": "Waves Intro"
+                "_": "Waves Intro",
+                "en": "Waves Intro",
+                "en-US": "Waves Intro",
+                "en-GB": "Waves Intro",
+                "en-CA": "Waves Intro",
+                "en-AU": "Waves Intro",
+                "en-IN": "Waves Intro"
             }
         },
         "./snippets/diffusion": {
+            "category": "Chemistry",
             "label": {
-                "_": "Diffusion"
+                "_": "Diffusion",
+                "en": "Diffusion",
+                "en-US": "Diffusion",
+                "en-GB": "Diffusion",
+                "en-CA": "Diffusion",
+                "en-AU": "Diffusion",
+                "en-IN": "Diffusion"
             }
         },
         "./snippets/gases-intro": {
+            "category": "Physics",
             "label": {
-                "_": "Gases Intro"
+                "_": "Gases Intro",
+                "en": "Gases Intro",
+                "en-US": "Gases Intro",
+                "en-GB": "Gases Intro",
+                "en-CA": "Gases Intro",
+                "en-AU": "Gases Intro",
+                "en-IN": "Gases Intro"
             }
         },
         "./snippets/gas-properties": {
+            "category": "Physics",
             "label": {
-                "_": "Gas Properties"
+                "_": "Gas Properties",
+                "en": "Gas Properties",
+                "en-US": "Gas Properties",
+                "en-GB": "Gas Properties",
+                "en-CA": "Gas Properties",
+                "en-AU": "Gas Properties",
+                "en-IN": "Gas Properties"
             }
         },
         "./snippets/blackbody-spectrum": {
+            "category": "Physics",
             "label": {
-                "_": "Blackbody Spectrum"
+                "_": "Blackbody Spectrum",
+                "en": "Blackbody Spectrum",
+                "en-US": "Blackbody Spectrum",
+                "en-GB": "Blackbody Spectrum",
+                "en-CA": "Blackbody Spectrum",
+                "en-AU": "Blackbody Spectrum",
+                "en-IN": "Blackbody Spectrum"
             }
         },
         "./snippets/masses-and-springs-basics": {
+            "category": "Physics",
             "label": {
-                "_": "Masses and Springs: Basics"
+                "_": "Masses and Springs: Basics",
+                "en": "Masses and Springs: Basics",
+                "en-US": "Masses and Springs: Basics",
+                "en-GB": "Masses and Springs: Basics",
+                "en-CA": "Masses and Springs: Basics",
+                "en-AU": "Masses and Springs: Basics",
+                "en-IN": "Masses and Springs: Basics"
             }
         },
         "./snippets/energy-forms-and-changes": {
+            "category": "Physics",
             "label": {
-                "_": "Energy Forms and Changes"
+                "_": "Energy Forms and Changes",
+                "en": "Energy Forms and Changes",
+                "en-US": "Energy Forms and Changes",
+                "en-GB": "Energy Forms and Changes",
+                "en-CA": "Energy Forms and Changes",
+                "en-AU": "Energy Forms and Changes",
+                "en-IN": "Energy Forms and Changes"
             }
         },
         "./snippets/wave-interference": {
+            "category": "Physics",
             "label": {
-                "_": "Wave Interference"
+                "_": "Wave Interference",
+                "en": "Wave Interference",
+                "en-US": "Wave Interference",
+                "en-GB": "Wave Interference",
+                "en-CA": "Wave Interference",
+                "en-AU": "Wave Interference",
+                "en-IN": "Wave Interference"
             }
         },
         "./snippets/fractions-mixed-numbers": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Fractions: Mixed Numbers"
+                "_": "Fractions: Mixed Numbers",
+                "en": "Fractions: Mixed Numbers",
+                "en-US": "Fractions: Mixed Numbers",
+                "en-GB": "Fractions: Mixed Numbers",
+                "en-CA": "Fractions: Mixed Numbers",
+                "en-AU": "Fractions: Mixed Numbers",
+                "en-IN": "Fractions: Mixed Numbers"
             }
         },
         "./snippets/fractions-intro": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Fractions: Intro"
+                "_": "Fractions: Intro",
+                "en": "Fractions: Intro",
+                "en-US": "Fractions: Intro",
+                "en-GB": "Fractions: Intro",
+                "en-CA": "Fractions: Intro",
+                "en-AU": "Fractions: Intro",
+                "en-IN": "Fractions: Intro"
             }
         },
         "./snippets/build-a-fraction": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Build a Fraction"
+                "_": "Build a Fraction",
+                "en": "Build a Fraction",
+                "en-US": "Build a Fraction",
+                "en-GB": "Build a Fraction",
+                "en-CA": "Build a Fraction",
+                "en-AU": "Build a Fraction",
+                "en-IN": "Build a Fraction"
             }
         },
         "./snippets/fractions-equality": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Fractions: Equality"
+                "_": "Fractions: Equality",
+                "en": "Fractions: Equality",
+                "en-US": "Fractions: Equality",
+                "en-GB": "Fractions: Equality",
+                "en-CA": "Fractions: Equality",
+                "en-AU": "Fractions: Equality",
+                "en-IN": "Fractions: Equality"
             }
         },
         "./snippets/coulombs-law": {
+            "category": "Physics",
             "label": {
-                "_": "Coulomb's Law"
+                "_": "Coulomb's Law",
+                "en": "Coulomb's Law",
+                "en-US": "Coulomb's Law",
+                "en-GB": "Coulomb's Law",
+                "en-CA": "Coulomb's Law",
+                "en-AU": "Coulomb's Law",
+                "en-IN": "Coulomb's Law"
             }
         },
         "./snippets/graphing-quadratics": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Graphing Quadratics"
+                "_": "Graphing Quadratics",
+                "en": "Graphing Quadratics",
+                "en-US": "Graphing Quadratics",
+                "en-GB": "Graphing Quadratics",
+                "en-CA": "Graphing Quadratics",
+                "en-AU": "Graphing Quadratics",
+                "en-IN": "Graphing Quadratics"
             }
         },
         "./snippets/masses-and-springs": {
+            "category": "Physics",
             "label": {
-                "_": "Masses and Springs"
+                "_": "Masses and Springs",
+                "en": "Masses and Springs",
+                "en-US": "Masses and Springs",
+                "en-GB": "Masses and Springs",
+                "en-CA": "Masses and Springs",
+                "en-AU": "Masses and Springs",
+                "en-IN": "Masses and Springs"
             }
         },
         "./snippets/equality-explorer-two-variables": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Equality Explorer: Two Variables"
+                "_": "Equality Explorer: Two Variables",
+                "en": "Equality Explorer: Two Variables",
+                "en-US": "Equality Explorer: Two Variables",
+                "en-GB": "Equality Explorer: Two Variables",
+                "en-CA": "Equality Explorer: Two Variables",
+                "en-AU": "Equality Explorer: Two Variables",
+                "en-IN": "Equality Explorer: Two Variables"
             }
         },
         "./snippets/equality-explorer-basics": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Equality Explorer: Basics"
+                "_": "Equality Explorer: Basics",
+                "en": "Equality Explorer: Basics",
+                "en-US": "Equality Explorer: Basics",
+                "en-GB": "Equality Explorer: Basics",
+                "en-CA": "Equality Explorer: Basics",
+                "en-AU": "Equality Explorer: Basics",
+                "en-IN": "Equality Explorer: Basics"
             }
         },
         "./snippets/equality-explorer": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Equality Explorer"
+                "_": "Equality Explorer",
+                "en": "Equality Explorer",
+                "en-US": "Equality Explorer",
+                "en-GB": "Equality Explorer",
+                "en-CA": "Equality Explorer",
+                "en-AU": "Equality Explorer",
+                "en-IN": "Equality Explorer"
             }
         },
         "./snippets/area-model-algebra": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Area Model Algebra"
+                "_": "Area Model Algebra",
+                "en": "Area Model Algebra",
+                "en-US": "Area Model Algebra",
+                "en-GB": "Area Model Algebra",
+                "en-CA": "Area Model Algebra",
+                "en-AU": "Area Model Algebra",
+                "en-IN": "Area Model Algebra"
             }
         },
         "./snippets/area-model-decimals": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Area Model Decimals"
+                "_": "Area Model Decimals",
+                "en": "Area Model Decimals",
+                "en-US": "Area Model Decimals",
+                "en-GB": "Area Model Decimals",
+                "en-CA": "Area Model Decimals",
+                "en-AU": "Area Model Decimals",
+                "en-IN": "Area Model Decimals"
             }
         },
         "./snippets/area-model-multiplication": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Area Model Multiplication"
+                "_": "Area Model Multiplication",
+                "en": "Area Model Multiplication",
+                "en-US": "Area Model Multiplication",
+                "en-GB": "Area Model Multiplication",
+                "en-CA": "Area Model Multiplication",
+                "en-AU": "Area Model Multiplication",
+                "en-IN": "Area Model Multiplication"
             }
         },
         "./snippets/area-model-introduction": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Area Model Introduction"
+                "_": "Area Model Introduction",
+                "en": "Area Model Introduction",
+                "en-US": "Area Model Introduction",
+                "en-GB": "Area Model Introduction",
+                "en-CA": "Area Model Introduction",
+                "en-AU": "Area Model Introduction",
+                "en-IN": "Area Model Introduction"
             }
         },
         "./snippets/gene-expression-essentials": {
+            "category": "Biology",
             "label": {
-                "_": "Gene Expression Essentials"
+                "_": "Gene Expression Essentials",
+                "en": "Gene Expression Essentials",
+                "en-US": "Gene Expression Essentials",
+                "en-GB": "Gene Expression Essentials",
+                "en-CA": "Gene Expression Essentials",
+                "en-AU": "Gene Expression Essentials",
+                "en-IN": "Gene Expression Essentials"
             }
         },
         "./snippets/capacitor-lab-basics": {
+            "category": "Physics",
             "label": {
-                "_": "Capacitor Lab: Basics"
+                "_": "Capacitor Lab: Basics",
+                "en": "Capacitor Lab: Basics",
+                "en-US": "Capacitor Lab: Basics",
+                "en-GB": "Capacitor Lab: Basics",
+                "en-CA": "Capacitor Lab: Basics",
+                "en-AU": "Capacitor Lab: Basics",
+                "en-IN": "Capacitor Lab: Basics"
             }
         },
         "./snippets/circuit-construction-kit-dc-virtual-lab": {
+            "category": "Physics",
             "label": {
-                "_": "Circuit Construction Kit: DC - Virtual Lab"
+                "_": "Circuit Construction Kit: DC - Virtual Lab",
+                "en": "Circuit Construction Kit: DC - Virtual Lab",
+                "en-US": "Circuit Construction Kit: DC - Virtual Lab",
+                "en-GB": "Circuit Construction Kit: DC - Virtual Lab",
+                "en-CA": "Circuit Construction Kit: DC - Virtual Lab",
+                "en-AU": "Circuit Construction Kit: DC - Virtual Lab",
+                "en-IN": "Circuit Construction Kit: DC - Virtual Lab"
             }
         },
         "./snippets/circuit-construction-kit-dc": {
+            "category": "Physics",
             "label": {
-                "_": "Circuit Construction Kit: DC"
+                "_": "Circuit Construction Kit: DC",
+                "en": "Circuit Construction Kit: DC",
+                "en-US": "Circuit Construction Kit: DC",
+                "en-GB": "Circuit Construction Kit: DC",
+                "en-CA": "Circuit Construction Kit: DC",
+                "en-AU": "Circuit Construction Kit: DC",
+                "en-IN": "Circuit Construction Kit: DC"
             }
         },
         "./snippets/pendulum-lab": {
+            "category": "Physics",
             "label": {
-                "_": "Pendulum Lab"
+                "_": "Pendulum Lab",
+                "en": "Pendulum Lab",
+                "en-US": "Pendulum Lab",
+                "en-GB": "Pendulum Lab",
+                "en-CA": "Pendulum Lab",
+                "en-AU": "Pendulum Lab",
+                "en-IN": "Pendulum Lab"
             }
         },
         "./snippets/projectile-motion": {
+            "category": "Physics",
             "label": {
-                "_": "Projectile Motion"
+                "_": "Projectile Motion",
+                "en": "Projectile Motion",
+                "en-US": "Projectile Motion",
+                "en-GB": "Projectile Motion",
+                "en-CA": "Projectile Motion",
+                "en-AU": "Projectile Motion",
+                "en-IN": "Projectile Motion"
             }
         },
         "./snippets/molecule-polarity": {
+            "category": "Chemistry",
             "label": {
-                "_": "Molecule Polarity"
+                "_": "Molecule Polarity",
+                "en": "Molecule Polarity",
+                "en-US": "Molecule Polarity",
+                "en-GB": "Molecule Polarity",
+                "en-CA": "Molecule Polarity",
+                "en-AU": "Molecule Polarity",
+                "en-IN": "Molecule Polarity"
             }
         },
         "./snippets/expression-exchange": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Expression Exchange"
+                "_": "Expression Exchange",
+                "en": "Expression Exchange",
+                "en-US": "Expression Exchange",
+                "en-GB": "Expression Exchange",
+                "en-CA": "Expression Exchange",
+                "en-AU": "Expression Exchange",
+                "en-IN": "Expression Exchange"
             }
         },
         "./snippets/graphing-slope-intercept": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Graphing Slope-Intercept"
+                "_": "Graphing Slope-Intercept",
+                "en": "Graphing Slope-Intercept",
+                "en-US": "Graphing Slope-Intercept",
+                "en-GB": "Graphing Slope-Intercept",
+                "en-CA": "Graphing Slope-Intercept",
+                "en-AU": "Graphing Slope-Intercept",
+                "en-IN": "Graphing Slope-Intercept"
             }
         },
         "./snippets/function-builder-basics": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Function Builder: Basics"
+                "_": "Function Builder: Basics",
+                "en": "Function Builder: Basics",
+                "en-US": "Function Builder: Basics",
+                "en-GB": "Function Builder: Basics",
+                "en-CA": "Function Builder: Basics",
+                "en-AU": "Function Builder: Basics",
+                "en-IN": "Function Builder: Basics"
             }
         },
         "./snippets/proportion-playground": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Proportion Playground"
+                "_": "Proportion Playground",
+                "en": "Proportion Playground",
+                "en-US": "Proportion Playground",
+                "en-GB": "Proportion Playground",
+                "en-CA": "Proportion Playground",
+                "en-AU": "Proportion Playground",
+                "en-IN": "Proportion Playground"
             }
         },
         "./snippets/unit-rates": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Unit Rates"
+                "_": "Unit Rates",
+                "en": "Unit Rates",
+                "en-US": "Unit Rates",
+                "en-GB": "Unit Rates",
+                "en-CA": "Unit Rates",
+                "en-AU": "Unit Rates",
+                "en-IN": "Unit Rates"
             }
         },
         "./snippets/make-a-ten": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Make a Ten"
+                "_": "Make a Ten",
+                "en": "Make a Ten",
+                "en-US": "Make a Ten",
+                "en-GB": "Make a Ten",
+                "en-CA": "Make a Ten",
+                "en-AU": "Make a Ten",
+                "en-IN": "Make a Ten"
             }
         },
         "./snippets/states-of-matter-basics": {
+            "category": "Chemistry",
             "label": {
-                "_": "States of Matter: Basics"
+                "_": "States of Matter: Basics",
+                "en": "States of Matter: Basics",
+                "en-US": "States of Matter: Basics",
+                "en-GB": "States of Matter: Basics",
+                "en-CA": "States of Matter: Basics",
+                "en-AU": "States of Matter: Basics",
+                "en-IN": "States of Matter: Basics"
             }
         },
         "./snippets/states-of-matter": {
+            "category": "Chemistry",
             "label": {
-                "_": "States of Matter"
+                "_": "States of Matter",
+                "en": "States of Matter",
+                "en-US": "States of Matter",
+                "en-GB": "States of Matter",
+                "en-CA": "States of Matter",
+                "en-AU": "States of Matter",
+                "en-IN": "States of Matter"
             }
         },
         "./snippets/gravity-and-orbits": {
+            "category": "Earth & Space",
             "label": {
-                "_": "Gravity and Orbits"
+                "_": "Gravity and Orbits",
+                "en": "Gravity and Orbits",
+                "en-US": "Gravity and Orbits",
+                "en-GB": "Gravity and Orbits",
+                "en-CA": "Gravity and Orbits",
+                "en-AU": "Gravity and Orbits",
+                "en-IN": "Gravity and Orbits"
             }
         },
         "./snippets/plinko-probability": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Plinko Probability"
+                "_": "Plinko Probability",
+                "en": "Plinko Probability",
+                "en-US": "Plinko Probability",
+                "en-GB": "Plinko Probability",
+                "en-CA": "Plinko Probability",
+                "en-AU": "Plinko Probability",
+                "en-IN": "Plinko Probability"
             }
         },
         "./snippets/atomic-interactions": {
+            "category": "Chemistry",
             "label": {
-                "_": "Atomic Interactions"
+                "_": "Atomic Interactions",
+                "en": "Atomic Interactions",
+                "en-US": "Atomic Interactions",
+                "en-GB": "Atomic Interactions",
+                "en-CA": "Atomic Interactions",
+                "en-AU": "Atomic Interactions",
+                "en-IN": "Atomic Interactions"
             }
         },
         "./snippets/charges-and-fields": {
+            "category": "Physics",
             "label": {
-                "_": "Charges and Fields"
+                "_": "Charges and Fields",
+                "en": "Charges and Fields",
+                "en-US": "Charges and Fields",
+                "en-GB": "Charges and Fields",
+                "en-CA": "Charges and Fields",
+                "en-AU": "Charges and Fields",
+                "en-IN": "Charges and Fields"
             }
         },
         "./snippets/rutherford-scattering": {
+            "category": "Physics",
             "label": {
-                "_": "Rutherford Scattering"
+                "_": "Rutherford Scattering",
+                "en": "Rutherford Scattering",
+                "en-US": "Rutherford Scattering",
+                "en-GB": "Rutherford Scattering",
+                "en-CA": "Rutherford Scattering",
+                "en-AU": "Rutherford Scattering",
+                "en-IN": "Rutherford Scattering"
             }
         },
         "./snippets/function-builder": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Function Builder"
+                "_": "Function Builder",
+                "en": "Function Builder",
+                "en-US": "Function Builder",
+                "en-GB": "Function Builder",
+                "en-CA": "Function Builder",
+                "en-AU": "Function Builder",
+                "en-IN": "Function Builder"
             }
         },
         "./snippets/isotopes-and-atomic-mass": {
+            "category": "Chemistry",
             "label": {
-                "_": "Isotopes and Atomic Mass"
+                "_": "Isotopes and Atomic Mass",
+                "en": "Isotopes and Atomic Mass",
+                "en-US": "Isotopes and Atomic Mass",
+                "en-GB": "Isotopes and Atomic Mass",
+                "en-CA": "Isotopes and Atomic Mass",
+                "en-AU": "Isotopes and Atomic Mass",
+                "en-IN": "Isotopes and Atomic Mass"
             }
         },
         "./snippets/neuron": {
+            "category": "Biology",
             "label": {
-                "_": "Neuron"
+                "_": "Neuron",
+                "en": "Neuron",
+                "en-US": "Neuron",
+                "en-GB": "Neuron",
+                "en-CA": "Neuron",
+                "en-AU": "Neuron",
+                "en-IN": "Neuron"
             }
         },
         "./snippets/trig-tour": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Trig Tour"
+                "_": "Trig Tour",
+                "en": "Trig Tour",
+                "en-US": "Trig Tour",
+                "en-GB": "Trig Tour",
+                "en-CA": "Trig Tour",
+                "en-AU": "Trig Tour",
+                "en-IN": "Trig Tour"
             }
         },
         "./snippets/bending-light": {
+            "category": "Physics",
             "label": {
-                "_": "Bending Light"
+                "_": "Bending Light",
+                "en": "Bending Light",
+                "en-US": "Bending Light",
+                "en-GB": "Bending Light",
+                "en-CA": "Bending Light",
+                "en-AU": "Bending Light",
+                "en-IN": "Bending Light"
             }
         },
         "./snippets/arithmetic": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Arithmetic"
+                "_": "Arithmetic",
+                "en": "Arithmetic",
+                "en-US": "Arithmetic",
+                "en-GB": "Arithmetic",
+                "en-CA": "Arithmetic",
+                "en-AU": "Arithmetic",
+                "en-IN": "Arithmetic"
             }
         },
         "./snippets/hookes-law": {
+            "category": "Physics",
             "label": {
-                "_": "Hooke's Law"
+                "_": "Hooke's Law",
+                "en": "Hooke's Law",
+                "en-US": "Hooke's Law",
+                "en-GB": "Hooke's Law",
+                "en-CA": "Hooke's Law",
+                "en-AU": "Hooke's Law",
+                "en-IN": "Hooke's Law"
             }
         },
         "./snippets/molecules-and-light": {
+            "category": "Chemistry",
             "label": {
-                "_": "Molecules and Light"
+                "_": "Molecules and Light",
+                "en": "Molecules and Light",
+                "en-US": "Molecules and Light",
+                "en-GB": "Molecules and Light",
+                "en-CA": "Molecules and Light",
+                "en-AU": "Molecules and Light",
+                "en-IN": "Molecules and Light"
             }
         },
         "./snippets/least-squares-regression": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Least-Squares Regression"
+                "_": "Least-Squares Regression",
+                "en": "Least-Squares Regression",
+                "en-US": "Least-Squares Regression",
+                "en-GB": "Least-Squares Regression",
+                "en-CA": "Least-Squares Regression",
+                "en-AU": "Least-Squares Regression",
+                "en-IN": "Least-Squares Regression"
             }
         },
         "./snippets/molecule-shapes": {
+            "category": "Chemistry",
             "label": {
-                "_": "Molecule Shapes"
+                "_": "Molecule Shapes",
+                "en": "Molecule Shapes",
+                "en-US": "Molecule Shapes",
+                "en-GB": "Molecule Shapes",
+                "en-CA": "Molecule Shapes",
+                "en-AU": "Molecule Shapes",
+                "en-IN": "Molecule Shapes"
             }
         },
         "./snippets/molecule-shapes-basics": {
+            "category": "Chemistry",
             "label": {
-                "_": "Molecule Shapes: Basics"
+                "_": "Molecule Shapes: Basics",
+                "en": "Molecule Shapes: Basics",
+                "en-US": "Molecule Shapes: Basics",
+                "en-GB": "Molecule Shapes: Basics",
+                "en-CA": "Molecule Shapes: Basics",
+                "en-AU": "Molecule Shapes: Basics",
+                "en-IN": "Molecule Shapes: Basics"
             }
         },
         "./snippets/reactants-products-and-leftovers": {
+            "category": "Chemistry",
             "label": {
-                "_": "Reactants, Products and Leftovers"
+                "_": "Reactants, Products and Leftovers",
+                "en": "Reactants, Products and Leftovers",
+                "en-US": "Reactants, Products and Leftovers",
+                "en-GB": "Reactants, Products and Leftovers",
+                "en-CA": "Reactants, Products and Leftovers",
+                "en-AU": "Reactants, Products and Leftovers",
+                "en-IN": "Reactants, Products and Leftovers"
             }
         },
         "./snippets/energy-skate-park-basics": {
+            "category": "Physics",
             "label": {
-                "_": "Energy Skate Park: Basics"
+                "_": "Energy Skate Park: Basics",
+                "en": "Energy Skate Park: Basics",
+                "en-US": "Energy Skate Park: Basics",
+                "en-GB": "Energy Skate Park: Basics",
+                "en-CA": "Energy Skate Park: Basics",
+                "en-AU": "Energy Skate Park: Basics",
+                "en-IN": "Energy Skate Park: Basics"
             }
         },
         "./snippets/faradays-law": {
+            "category": "Physics",
             "label": {
-                "_": "Faraday's Law"
+                "_": "Faraday's Law",
+                "en": "Faraday's Law",
+                "en-US": "Faraday's Law",
+                "en-GB": "Faraday's Law",
+                "en-CA": "Faraday's Law",
+                "en-AU": "Faraday's Law",
+                "en-IN": "Faraday's Law"
             }
         },
         "./snippets/ph-scale-basics": {
+            "category": "Chemistry",
             "label": {
-                "_": "pH Scale: Basics"
+                "_": "pH Scale: Basics",
+                "en": "pH Scale: Basics",
+                "en-US": "pH Scale: Basics",
+                "en-GB": "pH Scale: Basics",
+                "en-CA": "pH Scale: Basics",
+                "en-AU": "pH Scale: Basics",
+                "en-IN": "pH Scale: Basics"
             }
         },
         "./snippets/area-builder": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Area Builder"
+                "_": "Area Builder",
+                "en": "Area Builder",
+                "en-US": "Area Builder",
+                "en-GB": "Area Builder",
+                "en-CA": "Area Builder",
+                "en-AU": "Area Builder",
+                "en-IN": "Area Builder"
             }
         },
         "./snippets/wave-on-a-string": {
+            "category": "Physics",
             "label": {
-                "_": "Wave on a String"
+                "_": "Wave on a String",
+                "en": "Wave on a String",
+                "en-US": "Wave on a String",
+                "en-GB": "Wave on a String",
+                "en-CA": "Wave on a String",
+                "en-AU": "Wave on a String",
+                "en-IN": "Wave on a String"
             }
         },
         "./snippets/color-vision": {
+            "category": "Biology",
             "label": {
-                "_": "Color Vision"
+                "_": "Color Vision",
+                "en": "Color Vision",
+                "en-US": "Color Vision",
+                "en-GB": "Color Vision",
+                "en-CA": "Color Vision",
+                "en-AU": "Color Vision",
+                "en-IN": "Color Vision"
             }
         },
         "./snippets/ph-scale": {
+            "category": "Chemistry",
             "label": {
-                "_": "pH Scale"
+                "_": "pH Scale",
+                "en": "pH Scale",
+                "en-US": "pH Scale",
+                "en-GB": "pH Scale",
+                "en-CA": "pH Scale",
+                "en-AU": "pH Scale",
+                "en-IN": "pH Scale"
             }
         },
         "./snippets/balancing-chemical-equations": {
+            "category": "Chemistry",
             "label": {
-                "_": "Balancing Chemical Equations"
+                "_": "Balancing Chemical Equations",
+                "en": "Balancing Chemical Equations",
+                "en-US": "Balancing Chemical Equations",
+                "en-GB": "Balancing Chemical Equations",
+                "en-CA": "Balancing Chemical Equations",
+                "en-AU": "Balancing Chemical Equations",
+                "en-IN": "Balancing Chemical Equations"
             }
         },
         "./snippets/graphing-lines": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Graphing Lines"
+                "_": "Graphing Lines",
+                "en": "Graphing Lines",
+                "en-US": "Graphing Lines",
+                "en-GB": "Graphing Lines",
+                "en-CA": "Graphing Lines",
+                "en-AU": "Graphing Lines",
+                "en-IN": "Graphing Lines"
             }
         },
         "./snippets/fraction-matcher": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Fraction Matcher"
+                "_": "Fraction Matcher",
+                "en": "Fraction Matcher",
+                "en-US": "Fraction Matcher",
+                "en-GB": "Fraction Matcher",
+                "en-CA": "Fraction Matcher",
+                "en-AU": "Fraction Matcher",
+                "en-IN": "Fraction Matcher"
             }
         },
         "./snippets/balancing-act": {
+            "category": "Physics",
             "label": {
-                "_": "Balancing Act"
+                "_": "Balancing Act",
+                "en": "Balancing Act",
+                "en-US": "Balancing Act",
+                "en-GB": "Balancing Act",
+                "en-CA": "Balancing Act",
+                "en-AU": "Balancing Act",
+                "en-IN": "Balancing Act"
             }
         },
         "./snippets/acid-base-solutions": {
+            "category": "Chemistry",
             "label": {
-                "_": "Acid-Base Solutions"
+                "_": "Acid-Base Solutions",
+                "en": "Acid-Base Solutions",
+                "en-US": "Acid-Base Solutions",
+                "en-GB": "Acid-Base Solutions",
+                "en-CA": "Acid-Base Solutions",
+                "en-AU": "Acid-Base Solutions",
+                "en-IN": "Acid-Base Solutions"
             }
         },
         "./snippets/under-pressure": {
+            "category": "Physics",
             "label": {
-                "_": "Under Pressure"
+                "_": "Under Pressure",
+                "en": "Under Pressure",
+                "en-US": "Under Pressure",
+                "en-GB": "Under Pressure",
+                "en-CA": "Under Pressure",
+                "en-AU": "Under Pressure",
+                "en-IN": "Under Pressure"
             }
         },
         "./snippets/friction": {
+            "category": "Physics",
             "label": {
-                "_": "Friction"
+                "_": "Friction",
+                "en": "Friction",
+                "en-US": "Friction",
+                "en-GB": "Friction",
+                "en-CA": "Friction",
+                "en-AU": "Friction",
+                "en-IN": "Friction"
             }
         },
         "./snippets/forces-and-motion-basics": {
+            "category": "Physics",
             "label": {
-                "_": "Forces and Motion: Basics"
+                "_": "Forces and Motion: Basics",
+                "en": "Forces and Motion: Basics",
+                "en-US": "Forces and Motion: Basics",
+                "en-GB": "Forces and Motion: Basics",
+                "en-CA": "Forces and Motion: Basics",
+                "en-AU": "Forces and Motion: Basics",
+                "en-IN": "Forces and Motion: Basics"
             }
         },
         "./snippets/john-travoltage": {
+            "category": "Physics",
             "label": {
-                "_": "John Travoltage"
+                "_": "John Travoltage",
+                "en": "John Travoltage",
+                "en-US": "John Travoltage",
+                "en-GB": "John Travoltage",
+                "en-CA": "John Travoltage",
+                "en-AU": "John Travoltage",
+                "en-IN": "John Travoltage"
             }
         },
         "./snippets/concentration": {
+            "category": "Chemistry",
             "label": {
-                "_": "Concentration"
+                "_": "Concentration",
+                "en": "Concentration",
+                "en-US": "Concentration",
+                "en-GB": "Concentration",
+                "en-CA": "Concentration",
+                "en-AU": "Concentration",
+                "en-IN": "Concentration"
             }
         },
         "./snippets/gravity-force-lab": {
+            "category": "Physics",
             "label": {
-                "_": "Gravity Force Lab"
+                "_": "Gravity Force Lab",
+                "en": "Gravity Force Lab",
+                "en-US": "Gravity Force Lab",
+                "en-GB": "Gravity Force Lab",
+                "en-CA": "Gravity Force Lab",
+                "en-AU": "Gravity Force Lab",
+                "en-IN": "Gravity Force Lab"
             }
         },
         "./snippets/balloons-and-static-electricity": {
+            "category": "Physics",
             "label": {
-                "_": "Balloons and Static Electricity"
+                "_": "Balloons and Static Electricity",
+                "en": "Balloons and Static Electricity",
+                "en-US": "Balloons and Static Electricity",
+                "en-GB": "Balloons and Static Electricity",
+                "en-CA": "Balloons and Static Electricity",
+                "en-AU": "Balloons and Static Electricity",
+                "en-IN": "Balloons and Static Electricity"
             }
         },
         "./snippets/beers-law-lab": {
+            "category": "Chemistry",
             "label": {
-                "_": "Beer's Law Lab"
+                "_": "Beer's Law Lab",
+                "en": "Beer's Law Lab",
+                "en-US": "Beer's Law Lab",
+                "en-GB": "Beer's Law Lab",
+                "en-CA": "Beer's Law Lab",
+                "en-AU": "Beer's Law Lab",
+                "en-IN": "Beer's Law Lab"
             }
         },
         "./snippets/molarity": {
+            "category": "Chemistry",
             "label": {
-                "_": "Molarity"
+                "_": "Molarity",
+                "en": "Molarity",
+                "en-US": "Molarity",
+                "en-GB": "Molarity",
+                "en-CA": "Molarity",
+                "en-AU": "Molarity",
+                "en-IN": "Molarity"
             }
         },
         "./snippets/ohms-law": {
+            "category": "Physics",
             "label": {
-                "_": "Ohm's Law"
+                "_": "Ohm's Law",
+                "en": "Ohm's Law",
+                "en-US": "Ohm's Law",
+                "en-GB": "Ohm's Law",
+                "en-CA": "Ohm's Law",
+                "en-AU": "Ohm's Law",
+                "en-IN": "Ohm's Law"
             }
         },
         "./snippets/resistance-in-a-wire": {
+            "category": "Physics",
             "label": {
-                "_": "Resistance in a Wire"
+                "_": "Resistance in a Wire",
+                "en": "Resistance in a Wire",
+                "en-US": "Resistance in a Wire",
+                "en-GB": "Resistance in a Wire",
+                "en-CA": "Resistance in a Wire",
+                "en-AU": "Resistance in a Wire",
+                "en-IN": "Resistance in a Wire"
             }
         },
         "./snippets/build-an-atom": {
+            "category": "Chemistry",
             "label": {
-                "_": "Build an Atom"
+                "_": "Build an Atom",
+                "en": "Build an Atom",
+                "en-US": "Build an Atom",
+                "en-GB": "Build an Atom",
+                "en-CA": "Build an Atom",
+                "en-AU": "Build an Atom",
+                "en-IN": "Build an Atom"
             }
         },
         "./snippets/alpha-decay": {
+            "category": "Physics",
             "label": {
-                "_": "Alpha Decay"
+                "_": "Alpha Decay",
+                "en": "Alpha Decay",
+                "en-US": "Alpha Decay",
+                "en-GB": "Alpha Decay",
+                "en-CA": "Alpha Decay",
+                "en-AU": "Alpha Decay",
+                "en-IN": "Alpha Decay"
             }
         },
         "./snippets/beta-decay": {
+            "category": "Physics",
             "label": {
-                "_": "Beta Decay"
+                "_": "Beta Decay",
+                "en": "Beta Decay",
+                "en-US": "Beta Decay",
+                "en-GB": "Beta Decay",
+                "en-CA": "Beta Decay",
+                "en-AU": "Beta Decay",
+                "en-IN": "Beta Decay"
             }
         },
         "./snippets/buoyancy": {
+            "category": "Physics",
             "label": {
-                "_": "Buoyancy"
+                "_": "Buoyancy",
+                "en": "Buoyancy",
+                "en-US": "Buoyancy",
+                "en-GB": "Buoyancy",
+                "en-CA": "Buoyancy",
+                "en-AU": "Buoyancy",
+                "en-IN": "Buoyancy"
             }
         },
         "./snippets/buoyancy-basics": {
+            "category": "Physics",
             "label": {
-                "_": "Buoyancy: Basics"
+                "_": "Buoyancy: Basics",
+                "en": "Buoyancy: Basics",
+                "en-US": "Buoyancy: Basics",
+                "en-GB": "Buoyancy: Basics",
+                "en-CA": "Buoyancy: Basics",
+                "en-AU": "Buoyancy: Basics",
+                "en-IN": "Buoyancy: Basics"
             }
         },
         "./snippets/faradays-electromagnetic-lab": {
+            "category": "Physics",
             "label": {
-                "_": "Faraday's Electromagnetic Lab"
+                "_": "Faraday's Electromagnetic Lab",
+                "en": "Faraday's Electromagnetic Lab",
+                "en-US": "Faraday's Electromagnetic Lab",
+                "en-GB": "Faraday's Electromagnetic Lab",
+                "en-CA": "Faraday's Electromagnetic Lab",
+                "en-AU": "Faraday's Electromagnetic Lab",
+                "en-IN": "Faraday's Electromagnetic Lab"
             }
         },
         "./snippets/generator": {
+            "category": "Physics",
             "label": {
-                "_": "Generator"
+                "_": "Generator",
+                "en": "Generator",
+                "en-US": "Generator",
+                "en-GB": "Generator",
+                "en-CA": "Generator",
+                "en-AU": "Generator",
+                "en-IN": "Generator"
             }
         },
         "./snippets/magnet-and-compass": {
+            "category": "Physics",
             "label": {
-                "_": "Magnet and Compass"
+                "_": "Magnet and Compass",
+                "en": "Magnet and Compass",
+                "en-US": "Magnet and Compass",
+                "en-GB": "Magnet and Compass",
+                "en-CA": "Magnet and Compass",
+                "en-AU": "Magnet and Compass",
+                "en-IN": "Magnet and Compass"
             }
         },
         "./snippets/magnets-and-electromagnets": {
+            "category": "Physics",
             "label": {
-                "_": "Magnets and Electromagnets"
+                "_": "Magnets and Electromagnets",
+                "en": "Magnets and Electromagnets",
+                "en-US": "Magnets and Electromagnets",
+                "en-GB": "Magnets and Electromagnets",
+                "en-CA": "Magnets and Electromagnets",
+                "en-AU": "Magnets and Electromagnets",
+                "en-IN": "Magnets and Electromagnets"
             }
         },
         "./snippets/membrane-transport": {
+            "category": "Biology",
             "label": {
-                "_": "Membrane Transport"
+                "_": "Membrane Transport",
+                "en": "Membrane Transport",
+                "en-US": "Membrane Transport",
+                "en-GB": "Membrane Transport",
+                "en-CA": "Membrane Transport",
+                "en-AU": "Membrane Transport",
+                "en-IN": "Membrane Transport"
             }
         },
         "./snippets/models-of-the-hydrogen-atom": {
+            "category": "Physics",
             "label": {
-                "_": "Models of the Hydrogen Atom"
+                "_": "Models of the Hydrogen Atom",
+                "en": "Models of the Hydrogen Atom",
+                "en-US": "Models of the Hydrogen Atom",
+                "en-GB": "Models of the Hydrogen Atom",
+                "en-CA": "Models of the Hydrogen Atom",
+                "en-AU": "Models of the Hydrogen Atom",
+                "en-IN": "Models of the Hydrogen Atom"
             }
         },
         "./snippets/number-pairs": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Number Pairs"
+                "_": "Number Pairs",
+                "en": "Number Pairs",
+                "en-US": "Number Pairs",
+                "en-GB": "Number Pairs",
+                "en-CA": "Number Pairs",
+                "en-AU": "Number Pairs",
+                "en-IN": "Number Pairs"
             }
         },
         "./snippets/projectile-data-lab": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Projectile Data Lab"
+                "_": "Projectile Data Lab",
+                "en": "Projectile Data Lab",
+                "en-US": "Projectile Data Lab",
+                "en-GB": "Projectile Data Lab",
+                "en-CA": "Projectile Data Lab",
+                "en-AU": "Projectile Data Lab",
+                "en-IN": "Projectile Data Lab"
             }
         },
         "./snippets/projectile-sampling-distributions": {
+            "category": "Math & Statistics",
             "label": {
-                "_": "Projectile Sampling Distributions"
+                "_": "Projectile Sampling Distributions",
+                "en": "Projectile Sampling Distributions",
+                "en-US": "Projectile Sampling Distributions",
+                "en-GB": "Projectile Sampling Distributions",
+                "en-CA": "Projectile Sampling Distributions",
+                "en-AU": "Projectile Sampling Distributions",
+                "en-IN": "Projectile Sampling Distributions"
             }
         },
         "./snippets/quantum-bound-states": {
+            "category": "Physics",
             "label": {
-                "_": "Quantum Bound States"
+                "_": "Quantum Bound States",
+                "en": "Quantum Bound States",
+                "en-US": "Quantum Bound States",
+                "en-GB": "Quantum Bound States",
+                "en-CA": "Quantum Bound States",
+                "en-AU": "Quantum Bound States",
+                "en-IN": "Quantum Bound States"
             }
         },
         "./snippets/quantum-coin-toss": {
+            "category": "Physics",
             "label": {
-                "_": "Quantum Coin Toss"
+                "_": "Quantum Coin Toss",
+                "en": "Quantum Coin Toss",
+                "en-US": "Quantum Coin Toss",
+                "en-GB": "Quantum Coin Toss",
+                "en-CA": "Quantum Coin Toss",
+                "en-AU": "Quantum Coin Toss",
+                "en-IN": "Quantum Coin Toss"
             }
         },
         "./snippets/quantum-measurement": {
+            "category": "Physics",
             "label": {
-                "_": "Quantum Measurement"
+                "_": "Quantum Measurement",
+                "en": "Quantum Measurement",
+                "en-US": "Quantum Measurement",
+                "en-GB": "Quantum Measurement",
+                "en-CA": "Quantum Measurement",
+                "en-AU": "Quantum Measurement",
+                "en-IN": "Quantum Measurement"
             }
         },
         "./snippets/quantum-wave-interference": {
+            "category": "Physics",
             "label": {
-                "_": "Quantum Wave Interference"
+                "_": "Quantum Wave Interference",
+                "en": "Quantum Wave Interference",
+                "en-US": "Quantum Wave Interference",
+                "en-GB": "Quantum Wave Interference",
+                "en-CA": "Quantum Wave Interference",
+                "en-AU": "Quantum Wave Interference",
+                "en-IN": "Quantum Wave Interference"
             }
         }
     },

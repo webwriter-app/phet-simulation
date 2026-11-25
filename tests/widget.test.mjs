@@ -164,6 +164,12 @@ if (!process.env.PHET_TEST_ARTIFACT_DIR) {
       assert.equal(manifest.exports[path], path)
       assert.ok(existsSync(new URL(path, packageURL)), `Missing package asset: ${path}`)
     }
+    const subjects = new Set(["Biology", "Chemistry", "Earth & Space", "Math & Statistics", "Physics"])
+    for (const name of names) {
+      const snippet = `./snippets/${name}`
+      assert.equal(manifest.exports[`${snippet}.html`], `${snippet}.html`)
+      assert.ok(subjects.has(manifest.editingConfig[snippet]?.category), `Missing or invalid insertion category: ${snippet}`)
+    }
   })
 }
 const ids = process.env.PHET_TEST_SIMULATIONS?.split(",") ??

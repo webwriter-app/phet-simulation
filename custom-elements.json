@@ -143,6 +143,31 @@
             },
             {
               "kind": "field",
+              "name": "#switchingPort",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#drawerLocale",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#simulationChoices",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "offlineImports",
+              "static": true,
+              "parameters": [
+                {
+                  "name": "element"
+                }
+              ]
+            },
+            {
+              "kind": "field",
               "name": "type"
             },
             {
@@ -157,18 +182,15 @@
               "readonly": true
             },
             {
-              "kind": "method",
-              "name": "#simulationLocale",
+              "kind": "field",
+              "name": "#language",
               "privacy": "private",
-              "parameters": [
-                {
-                  "name": "locales"
-                },
-                {
-                  "name": "fallback",
-                  "default": "\"en\""
-                }
-              ]
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "optionGroups",
+              "readonly": true
             },
             {
               "kind": "field",
@@ -255,18 +277,38 @@
               "parameters": [
                 {
                   "name": "revision"
+                },
+                {
+                  "name": "switching",
+                  "default": "false"
                 }
               ]
             },
             {
               "kind": "method",
-              "name": "#readSnapshot",
+              "name": "#flushBeforeSwitch",
               "privacy": "private"
             },
             {
               "kind": "method",
+              "name": "#readSnapshot",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "type"
+                }
+              ]
+            },
+            {
+              "kind": "method",
               "name": "#snapshotBlock",
-              "privacy": "private"
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "type",
+                  "default": "this.type"
+                }
+              ]
             },
             {
               "kind": "method",
@@ -275,6 +317,9 @@
               "parameters": [
                 {
                   "name": "snapshot"
+                },
+                {
+                  "name": "type"
                 }
               ]
             },
@@ -310,8 +355,26 @@
             },
             {
               "kind": "method",
+              "name": "#statusText",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "message"
+                },
+                {
+                  "name": "title"
+                }
+              ]
+            },
+            {
+              "kind": "method",
               "name": "#refreshOptions",
               "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "innerHTML",
+              "default": "` <style> :host { display: block; min-width: 460px; height: 420px; min-height: 300px; } div { display: flex; flex-direction: column; height: 100%; } iframe { flex: 1 1 0; min-height: 0; border: 0; width: 100%; } output { display: block; padding: .4em .65em; font: inherit; } output[hidden] { display: none; } </style> <div><output role=\"status\" hidden></output></div> `"
             }
           ],
           "events": [
@@ -369,9 +432,15 @@
             "name": "HTMLElement"
           },
           "tagName": "webwriter-phet-simulation",
-          "customElement": true,
-          "modulePath": "widgets/webwriter-phet-simulation.js",
-          "definitionPath": "widgets/webwriter-phet-simulation.js"
+          "customElement": true
+        },
+        {
+          "kind": "variable",
+          "name": "disabled",
+          "type": {
+            "text": "boolean"
+          },
+          "default": "!this.isContentEditable"
         }
       ],
       "exports": [
