@@ -8,6 +8,13 @@ import {join} from "node:path"
 import {once} from "node:events"
 import {pathToFileURL} from "node:url"
 import test from "node:test"
+import {drawerText, matchSimulationLocale} from "../localization/drawer.js"
+
+test("drawer localization checks exact locale IDs before Intl fallbacks", () => {
+  assert.match(drawerText("Preferences", "tl"), /Kagustuhan/)
+  assert.match(drawerText("Simulation", "cnr"), /Симулација/)
+  assert.equal(matchSimulationLocale("no", ["en", "nb"]), "nb")
+})
 
 const browser = process.env.CHROME_BIN ?? [
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -156,6 +163,12 @@ if (!process.env.PHET_TEST_ARTIFACT_DIR) {
       const path = `./sims/${file}.js`
       assert.equal(manifest.exports[path], path)
       assert.ok(existsSync(new URL(path, packageURL)), `Missing package asset: ${path}`)
+    }
+    const subjects = new Set(["Biology", "Chemistry", "Earth & Space", "Math & Statistics", "Physics"])
+    for (const name of names) {
+      const snippet = `./snippets/${name}`
+      assert.equal(manifest.exports[`${snippet}.html`], `${snippet}.html`)
+      assert.ok(subjects.has(manifest.editingConfig[snippet]?.category), `Missing or invalid insertion category: ${snippet}`)
     }
   })
 }
