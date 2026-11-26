@@ -1,6 +1,6 @@
 {
     "name": "@webwriter/phet-simulation",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "Explore science and mathematics through interactive PhET simulations.",
     "repository": {
         "type": "git",
@@ -512,6 +512,7 @@
         "./snippets/build-an-atom.html": "./snippets/build-an-atom.html",
         "./icon": "./icon.svg",
         "./preview": "./assets/preview.mp4",
+        "./preview/de": "./assets/preview-de.mp4",
         "./snippets/alpha-decay.html": "./snippets/alpha-decay.html",
         "./snippets/beta-decay.html": "./snippets/beta-decay.html",
         "./snippets/buoyancy.html": "./snippets/buoyancy.html",
