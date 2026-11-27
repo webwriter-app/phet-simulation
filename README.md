@@ -1,5 +1,5 @@
-# PhET Simulations (`@webwriter/phet-simulation@2.2.1`)
-[License: MIT AND GPL-3.0-only AND CC-BY-NC-4.0](LICENSE) | Version: 2.2.1
+# PhET Simulations (`@webwriter/phet-simulation@2.2.2`)
+[License: MIT AND GPL-3.0-only AND CC-BY-NC-4.0](LICENSE) | Version: 2.2.2
 
 Explore science and mathematics through interactive PhET simulations.
 
